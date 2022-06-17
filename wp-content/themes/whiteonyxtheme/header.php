@@ -10,50 +10,73 @@
  */
 
 ?>
+
 <!doctype html>
-<html <?php language_attributes(); ?>>
-<head>
-	<meta charset="<?php bloginfo( 'charset' ); ?>">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="profile" href="https://gmpg.org/xfn/11">
+<html lang="en">
 
-	<?php wp_head(); ?>
-</head>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
 
-<body <?php body_class(); ?>>
-<?php wp_body_open(); ?>
-<div id="page" class="site">
-	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'studio_main_theme' ); ?></a>
+		<?php wp_head(); ?>
+		<title>Home Page - Borne - Agency Portfolio Template</title>
+		<link rel="icon" type="image/x-icon" href="<?php echo get_template_directory_uri();?>/assets/images/icon/favicon.jpg">
+	</head>
 
-	<header id="masthead" class="site-header">
-		<div class="site-branding">
-			<?php
-			the_custom_logo();
-			if ( is_front_page() && is_home() ) :
-				?>
-				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-				<?php
-			else :
-				?>
-				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
-				<?php
-			endif;
-			$studio_main_theme_description = get_bloginfo( 'description', 'display' );
-			if ( $studio_main_theme_description || is_customize_preview() ) :
-				?>
-				<p class="site-description"><?php echo $studio_main_theme_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></p>
-			<?php endif; ?>
-		</div><!-- .site-branding -->
 
-		<nav id="site-navigation" class="main-navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'studio_main_theme' ); ?></button>
-			<?php
-			wp_nav_menu(
-				array(
-					'theme_location' => 'menu-1',
-					'menu_id'        => 'primary-menu',
-				)
-			);
-			?>
-		</nav><!-- #site-navigation -->
-	</header><!-- #masthead -->
+	<body class="body_entity">
+
+		<!-- body_wrap - start -->
+		<div class="body_wrap">
+
+			<!-- backtotop - start -->
+			<div class="backtotop">
+				<a href="#" class="scroll">
+					Back to top
+				</a>
+			</div>
+			<!-- backtotop - end -->
+
+			<!-- preloader - start -->
+			<!-- <div id="preloader"></div> -->
+			<!-- preloader - end -->
+
+			<!-- live chat - start -->
+			<div class="livechat_wrapper">
+				<button class="livechat_btn">
+					<span>
+						<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M18 0H2C0.9 0 0 0.9 0 2V20L4 16H18C19.1 16 20 15.1 20 14V2C20 0.9 19.1 0 18 0Z" fill="white"/>
+						</svg>
+					</span>
+					<small>Live Chat</small>
+				</button>
+			</div>
+			<!-- live chat - end -->
+
+			<!-- header_section - start
+			================================================== -->
+			<header class="header_section main-header" id="myHeader">
+  		  <a href="../index.html" class="header-logo">
+					<span><b>White Onyx</b> Studio.</span>
+				</a>
+  		  <!-- <div class="header-desc">Студія створення сайтів під ключ у Львові</div> -->
+  		  <div class="header-contacts">
+  		    WHITEONYXSTUDIO@GMAIL.COM
+  		    (067)-123-23-23
+  		  </div>
+  		  <div class="menu-icon btn">
+  		    <div class="wrapper open-btn">
+  		      <svg width="25" height="15" viewBox="0 0 25 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+  		      <rect width="25" height="1" fill="white"/>
+  		      <rect y="7" width="25" height="1" fill="white"/>
+  		      <rect y="14" width="25" height="1" fill="white"/>
+  		    </svg>
+  		    </div>
+  		  </div>
+  		</header>
+			<!-- header_section - end
+			================================================== -->
+
+

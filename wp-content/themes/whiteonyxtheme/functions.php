@@ -139,14 +139,33 @@ add_action( 'widgets_init', 'studio_main_theme_widgets_init' );
  */
 function studio_main_theme_scripts() {
 	wp_enqueue_style( 'studio_main_theme-style', get_stylesheet_uri(), array(), _S_VERSION );
+
 	wp_style_add_data( 'studio_main_theme-style', 'rtl', 'replace' );
 
-	wp_enqueue_script( 'studio_main_theme-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
 
-	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
-		wp_enqueue_script( 'comment-reply' );
+
+	wp_enqueue_style( 'bootstrap-style', get_template_directory_uri() .'/assets/css/bootstrap.min.css' );
+	wp_enqueue_style( 'fontawesone-style', get_template_directory_uri() .'/assets/css/fontawesome.css' );
+	wp_enqueue_style( 'magnific-style', get_template_directory_uri() .'/assets/css/magnific-popup.css' );
+	wp_enqueue_style( 'nice-select-style', get_template_directory_uri() .'/assets/css/nice-select.css' );
+
+
+	wp_enqueue_style( 'slick-style', get_template_directory_uri() .'/assets/css/slick.css', rand(111,9999), 'all' );
+	wp_enqueue_style( 'slick-theme-style', get_template_directory_uri() .'/assets/css/slick-theme.css', rand(111,9999), 'all' );
+  wp_enqueue_style( 'main-style', get_template_directory_uri() .'/assets/css/style.css', rand(111,9991), 'all' );
+
+	wp_deregister_script( 'jquery-core' );
+	wp_register_script( 'jquery-core', '//code.jquery.com/jquery-3.6.0.min.js');
+	wp_enqueue_script( 'jquery' );
+
+	wp_enqueue_script( 'studio_main_theme-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
+	wp_enqueue_script( 'popper-script', get_template_directory_uri() . '/assets/js/popper.min.js', array(), _S_VERSION, true );
+	wp_enqueue_script( 'jq-plugins-script', get_template_directory_uri() . '/assets/js/jquery-plugins-collection.js', array(), _S_VERSION, true );
+	wp_enqueue_script( 'bootstrap-script', get_template_directory_uri() . '/assets/js/bootstrap.min.js', array(), _S_VERSION, true );
+	wp_enqueue_script( 'main-script', get_template_directory_uri() . '/assets/js/main.js', array(), _S_VERSION, true );
+
+
 	}
-}
 add_action( 'wp_enqueue_scripts', 'studio_main_theme_scripts' );
 
 /**
@@ -174,5 +193,107 @@ require get_template_directory() . '/inc/customizer.php';
  */
 if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
+}
+
+
+/*
+* Create Custom Post Types For Portfolio Posts And Reviews.
+*/
+
+add_action('init', 'add_custom_post_types');
+function add_custom_post_types(){
+
+		register_post_type('case', array(
+		'labels'             => array(
+			'name'               => 'Portfolio Case', // Основное название типа записи
+			'singular_name'      => 'Portfolio Case', // отдельное название записи типа Book
+			'add_new'            => 'Add Portfolio Case',
+			'add_new_item'       => 'Add new Portfolio Case',
+			'edit_item'          => 'Edit Portfolio Case',
+			'new_item'           => 'New Portfolio Case',
+			'view_item'          => 'View Portfolio Case',
+			'search_items'       => 'Find Portfolio Cases',
+			'not_found'          => 'Portfolio Case found',
+			'not_found_in_trash' => '',
+			'parent_item_colon'  => '',
+			'menu_name'          => 'Portfolio Cases'
+
+		  ),
+		'public'             => true,
+		'publicly_queryable' => true,
+		'show_ui'            => true,
+		'show_in_menu'       => true,
+		'menu_icon'          =>'dashicons-portfolio',
+		'query_var'          => true,
+		'rewrite'            => true,
+		'capability_type'    => 'post',
+		'has_archive'        => true,
+		'hierarchical'       => false,
+		'taxonomies'         => array('category'),
+		'menu_position'      => null,
+		'supports'           => array('title','editor','author','excerpt','comments','template','custom-fields', 'page-attributes'),
+	) );
+
+	register_post_type('services', array(
+		'labels'             => array(
+			'name'               => 'Services', // Основное название типа записи
+			'singular_name'      => 'Service', // отдельное название записи типа Book
+			'add_new'            => 'Add Service',
+			'add_new_item'       => 'Add new Service',
+			'edit_item'          => 'Edit Service',
+			'new_item'           => 'New Service',
+			'view_item'          => 'View Service',
+			'search_items'       => 'Find Service',
+			'not_found'          => 'Service found',
+			'not_found_in_trash' => '',
+			'parent_item_colon'  => '',
+			'menu_name'          => 'Services'
+
+		  ),
+		'public'             => true,
+		'publicly_queryable' => true,
+		'show_ui'            => true,
+		'show_in_menu'       => true,
+		'menu_icon'          =>'dashicons-rest-api',
+		'query_var'          => true,
+		'rewrite'            => true,
+		'capability_type'    => 'post',
+		'has_archive'        => true,
+		'hierarchical'       => false,
+		'taxonomies'         => array('category'),
+		'menu_position'      => null,
+		'supports'           => array('title','editor','author','excerpt','comments','template','custom-fields', 'page-attributes'),
+	) );
+
+	register_post_type('testemonials', array(
+		'labels'             => array(
+			'name'               => 'Testemonials', // Основное название типа записи
+			'singular_name'      => 'Testemonial', // отдельное название записи типа Book
+			'add_new'            => 'Add Testemonial',
+			'add_new_item'       => 'Add new Testemonial',
+			'edit_item'          => 'Edit Testemonial',
+			'new_item'           => 'New Testemonials',
+			'view_item'          => 'View Testemonials',
+			'search_items'       => 'Find Testemonials',
+			'not_found'          => 'Testemonials found',
+			'not_found_in_trash' => '',
+			'parent_item_colon'  => '',
+			'menu_name'          => 'Testemonialss'
+
+		  ),
+		'public'             => true,
+		'publicly_queryable' => true,
+		'show_ui'            => true,
+		'show_in_menu'       => true,
+		'menu_icon'          =>'dashicons-testimonial',
+		'query_var'          => true,
+		'rewrite'            => true,
+		'capability_type'    => 'post',
+		'has_archive'        => true,
+		'hierarchical'       => false,
+		'taxonomies'         => array('category'),
+		'menu_position'      => null,
+		'supports'           => array('title','editor','author','excerpt','comments','template','custom-fields', 'page-attributes'),
+	) );
 }
 

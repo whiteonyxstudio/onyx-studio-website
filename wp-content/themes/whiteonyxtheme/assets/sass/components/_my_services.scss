@@ -1,0 +1,133 @@
+.services {
+
+  // background-color: @green-light ;
+
+  .services-wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    column-gap: 30px;
+    grid-template-rows: auto;
+
+    .service {
+      padding: 0px;
+      margin-bottom: 30px;
+
+      img,
+      svg {
+        margin-bottom: 30px;
+        width: 50px;
+        height: auto;
+      }
+
+      h3 {
+        // font-size: 30px;
+        font-size: 25px;
+         @include med();
+        color: black;
+        margin-bottom: 20px;
+
+      }
+
+      p {
+        width: 100%;
+        font-size: 18px;
+        line-height: 1.5;
+      }
+
+      .main-link {
+        font-size: 16px;
+        text-decoration: none;
+
+        svg {
+          width: 10px;
+          height: 10px;
+          margin-bottom: 0;
+        }
+      }
+
+    }
+
+    .service-cta {
+      .sub-header-wrapper {
+        width: 300px;
+
+        span {
+          font-size: 20px;
+        }
+      }
+
+      h3 {
+        font-size: 25px;
+      }
+    }
+  }
+}
+
+// Medium devices (tablets, 576px and up)
+@media (min-width: 576px) {
+  .services {
+    .services-wrapper {
+      grid-template-columns: 1fr 1fr;
+
+      .service {
+        margin-bottom: 45px;
+      }
+    }
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+  .services {
+    .services-wrapper {
+      grid-template-columns: 1fr 1fr;
+
+      .service {
+
+        img,
+        svg {
+          width: 75px;
+        }
+      }
+    }
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+  .services {
+    .services-wrapper {}
+  }
+}
+
+// X-Large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+  .services {
+    .services-wrapper {
+      grid-template-columns: 1fr 1fr;
+
+      .service {
+
+        img,
+        svg {
+          width: 100px;
+        }
+      }
+    }
+  }
+}
+
+// XX-Large devices (larger desktops, 1400px and up)
+@media (min-width: 1400px) {
+  .services {
+    .services-wrapper {
+      grid-template-columns: 1fr 1fr;
+
+      .service {
+        p {
+          width: 75%;
+        }
+      }
+    }
+  }
+}
