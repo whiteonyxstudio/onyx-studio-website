@@ -359,6 +359,12 @@ section {
     }
   }
 }
+@media (min-width: 1200px) {
+  .main-header {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+}
 
 
 .open-btn {
@@ -606,8 +612,7 @@ section {
                 color: #000;
                 font-size: 40px;
                 font-weight: 500;
-                
-                
+                padding: 10px 5px;
                 -webkit-text-stroke-width: 1px;
                 -webkit-text-stroke-color: #000;
                 -webkit-text-fill-color: #000;
@@ -619,6 +624,7 @@ section {
           }
           .social-nav{
             .li{
+              
               a{
                 font-size: 30px;
               }

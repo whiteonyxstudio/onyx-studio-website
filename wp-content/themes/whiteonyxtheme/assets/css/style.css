@@ -1293,6 +1293,10 @@ section {
     background-color: transparent; }
     .main-header .header-contacts {
       margin-right: 15px; } }
+@media (min-width: 1200px) {
+  .main-header {
+    padding-left: 100px;
+    padding-right: 100px; } }
 .open-btn {
   font-size: 1rem;
   text-transform: uppercase;
@@ -1505,6 +1509,7 @@ section {
       color: #000;
       font-size: 40px;
       font-weight: 500;
+      padding: 10px 5px;
       -webkit-text-stroke-width: 1px;
       -webkit-text-stroke-color: #000;
       -webkit-text-fill-color: #000; }

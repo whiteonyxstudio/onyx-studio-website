@@ -45,13 +45,7 @@ function studio_main_theme_setup() {
 		* @link https://developer.wordpress.org/themes/functionality/featured-images-post-thumbnails/
 		*/
 	add_theme_support( 'post-thumbnails' );
-
-	// This theme uses wp_nav_menu() in one location.
-	register_nav_menus(
-		array(
-			'menu-1' => esc_html__( 'Primary', 'studio_main_theme' ),
-		)
-	);
+	
 
 	/*
 		* Switch default core markup for search form, comment form, and comments
@@ -163,7 +157,7 @@ function studio_main_theme_scripts() {
 	wp_enqueue_script( 'jq-plugins-script', get_template_directory_uri() . '/assets/js/jquery-plugins-collection.js', array(), _S_VERSION, true );
 	wp_enqueue_script( 'bootstrap-script', get_template_directory_uri() . '/assets/js/bootstrap.min.js', array(), _S_VERSION, true );
 	wp_enqueue_script( 'main-script', get_template_directory_uri() . '/assets/js/main.js', array(), _S_VERSION, true );
-
+	wp_enqueue_script( 'fontawesome', 'https://kit.fontawesome.com/8d258d854c.js');
 
 	}
 add_action( 'wp_enqueue_scripts', 'studio_main_theme_scripts' );
@@ -295,5 +289,19 @@ function add_custom_post_types(){
 		'menu_position'      => null,
 		'supports'           => array('title','editor','author','excerpt','comments','template','custom-fields', 'page-attributes'),
 	) );
+}
+
+/*
+* Add Manu Locations for menu popup and footer links.
+*/
+
+add_action( 'after_setup_theme', 'add_navigation_menus' );
+
+function add_navigation_menus() {
+	register_nav_menu( 'main_menu', 'Main Navigation' );
+	register_nav_menu( 'services_menu', 'Services Navigation' );
+	register_nav_menu( 'useful_menu', 'Useful Navigation' );
+	register_nav_menu( 'footer_studio_menu', 'Footer Studio Navigation' );
+	register_nav_menu( 'footer_social_menu', 'Footer Social Navigation' );
 }
 

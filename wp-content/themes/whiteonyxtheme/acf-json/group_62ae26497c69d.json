@@ -1,11 +1,49 @@
 {
-    "key": "group_62acac8e77720",
-    "title": "S00-FAQ",
+    "key": "group_62ae26497c69d",
+    "title": "S01-Steps Section",
     "fields": [
         {
-            "key": "field_62acac95d2d57",
-            "label": "FAQ Accordion",
-            "name": "s00_faq_accordion",
+            "key": "field_62ae269581f50",
+            "label": "Small Header",
+            "name": "s01_small_header",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_62ae26c081f51",
+            "label": "Large Header",
+            "name": "s01_largeheader",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_62ae26d681f52",
+            "label": "Steps Table",
+            "name": "s01_steps_table",
             "type": "repeater",
             "instructions": "",
             "required": 0,
@@ -19,12 +57,12 @@
             "min": 0,
             "max": 0,
             "layout": "table",
-            "button_label": "",
+            "button_label": "Add Step",
             "sub_fields": [
                 {
-                    "key": "field_62acacaed2d58",
-                    "label": "FAQ question",
-                    "name": "faq_question",
+                    "key": "field_62ae26ee81f53",
+                    "label": "Step Name",
+                    "name": "step_name",
                     "type": "text",
                     "instructions": "",
                     "required": 0,
@@ -41,10 +79,10 @@
                     "maxlength": ""
                 },
                 {
-                    "key": "field_62acacb9d2d59",
-                    "label": "FAQ  Answer",
-                    "name": "faq__answer",
-                    "type": "text",
+                    "key": "field_62ae270481f54",
+                    "label": "Step Test",
+                    "name": "step_text",
+                    "type": "textarea",
                     "instructions": "",
                     "required": 0,
                     "conditional_logic": 0,
@@ -55,9 +93,9 @@
                     },
                     "default_value": "",
                     "placeholder": "",
-                    "prepend": "",
-                    "append": "",
-                    "maxlength": ""
+                    "maxlength": "",
+                    "rows": "",
+                    "new_lines": ""
                 }
             ]
         }
@@ -80,5 +118,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1655648965
+    "modified": 1655649014
 }

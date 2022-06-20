@@ -20,8 +20,6 @@
 		<meta http-equiv="x-ua-compatible" content="ie=edge">
 
 		<?php wp_head(); ?>
-		<title>Home Page - Borne - Agency Portfolio Template</title>
-		<link rel="icon" type="image/x-icon" href="<?php echo get_template_directory_uri();?>/assets/images/icon/favicon.jpg">
 	</head>
 
 
@@ -58,13 +56,13 @@
 			<!-- header_section - start
 			================================================== -->
 			<header class="header_section main-header" id="myHeader">
-  		  <a href="../index.html" class="header-logo">
+  		  <a href="<?php echo get_home_url(); ?>" class="header-logo">
 					<span><b>White Onyx</b> Studio.</span>
 				</a>
   		  <!-- <div class="header-desc">Студія створення сайтів під ключ у Львові</div> -->
   		  <div class="header-contacts">
-  		    WHITEONYXSTUDIO@GMAIL.COM
-  		    (067)-123-23-23
+  		    <a href="mainto:whiteonyxstudi@gmail.com">WHITEONYXSTUDIO@GMAIL.COM</a>
+  		    <a href="tel:1-562-867-5309">(067)-123-23-23</a>
   		  </div>
   		  <div class="menu-icon btn">
   		    <div class="wrapper open-btn">
