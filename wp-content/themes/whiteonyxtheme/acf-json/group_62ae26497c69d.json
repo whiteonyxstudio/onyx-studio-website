@@ -1,6 +1,6 @@
 {
     "key": "group_62ae26497c69d",
-    "title": "S01-Steps Section",
+    "title": "S01-Steps Section (Paragraphs)",
     "fields": [
         {
             "key": "field_62ae269581f50",
@@ -107,6 +107,13 @@
                 "operator": "==",
                 "value": "archive-services.php"
             }
+        ],
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "single_service_template.php"
+            }
         ]
     ],
     "menu_order": 0,
@@ -118,5 +125,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1655649014
+    "modified": 1655751888
 }

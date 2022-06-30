@@ -1,6 +1,6 @@
 {
     "key": "group_62ae275cbdcb0",
-    "title": "S02-Industries Section",
+    "title": "S02-Industries Section (Paragraphs)",
     "fields": [
         {
             "key": "field_62ae275cc4722",
@@ -118,5 +118,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1655580610
+    "modified": 1655751686
 }

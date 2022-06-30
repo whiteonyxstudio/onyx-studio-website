@@ -700,6 +700,8 @@
 }
 .participation_number{
 	width: 50%;
+	display: flex;
+	
 	h3,h2{
 		display: inline-block;
 		font-size: 40px;
@@ -707,6 +709,7 @@
 	}
 	span{
 		font-size: 40px;
+		line-height: 1.2;
 	}
 }
 .participation_content{

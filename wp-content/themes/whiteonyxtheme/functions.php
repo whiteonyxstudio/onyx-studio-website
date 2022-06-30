@@ -225,7 +225,7 @@ function add_custom_post_types(){
 		'hierarchical'       => false,
 		'taxonomies'         => array('category'),
 		'menu_position'      => null,
-		'supports'           => array('title','editor','author','excerpt','comments','template','custom-fields', 'page-attributes'),
+		'supports'           => array('title','excerpt','template','custom-fields','thumbnail', 'page-attributes'),
 	) );
 
 	register_post_type('services', array(
@@ -256,7 +256,7 @@ function add_custom_post_types(){
 		'hierarchical'       => false,
 		'taxonomies'         => array('category'),
 		'menu_position'      => null,
-		'supports'           => array('title','editor','author','excerpt','comments','template','custom-fields', 'page-attributes'),
+		'supports'           => array('title','excerpt','template','custom-fields','thumbnail', 'page-attributes'),
 	) );
 
 	register_post_type('testemonials', array(

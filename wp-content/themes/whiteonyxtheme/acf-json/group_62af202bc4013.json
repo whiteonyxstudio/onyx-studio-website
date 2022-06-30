@@ -24,7 +24,7 @@
         {
             "key": "field_62af202bca615",
             "label": "Images galley",
-            "name": "s10_images_galley",
+            "name": "s10_images_gallery",
             "type": "repeater",
             "instructions": "",
             "required": 0,
@@ -72,7 +72,7 @@
             {
                 "param": "post_type",
                 "operator": "==",
-                "value": "post"
+                "value": "case"
             }
         ]
     ],
@@ -85,5 +85,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1655644242
+    "modified": 1655917104
 }

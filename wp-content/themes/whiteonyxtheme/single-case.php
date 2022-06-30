@@ -14,12 +14,7 @@
 									<h1 class="big_title text_effect_wrap">
 										<span class="text_effect_wrap1">
 											<span class="text_effect_wrap2">
-												<span class="text_effect_wrap3 text-break">Corporate</span>
-											</span>
-										</span>
-										<span class="text_effect_wrap1">
-											<span class="text_effect_wrap2">
-												<span class="text_effect_wrap3 text-break">Real Estate Website</span>
+												<span class="text_effect_wrap3 text-break"><?php the_title(); ?></span>
 											</span>
 										</span>
 									</h1>
@@ -37,10 +32,10 @@
 							<div class="col-12 col-md-6 col-lg-5 text-start order-4">
 								
 								<p class="case_description">
-									We have developed a custom affilite website for spanish online casiono portal, where you can explore all online betting and casino services
+									<?php the_field('s06_case_description'); ?>
 								</p>
-								<a class="btn_text btn_text_white" href="about.html">
-									<span>Visit website</span> 
+								<a class="btn_text btn_text_white" href="<?php the_field('s06_project_link'); ?>">
+									<span><?php the_field('s06_project_link_name'); ?></span> 
 									<svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
 										<path d="M10 0V7.50063H9.16833V1.42131L0.587991 10L0 9.41015L8.57868 0.833125H2.49418V0H10Z" fill="white"></path>
 									</svg>
@@ -55,14 +50,17 @@
 
 
 				<section class="image_section section_space px-0 pt-0 pb-0">
-					<img src="<?php echo get_template_directory_uri(); ?>/assets/images/cases/riel-full-width.jpg" alt="">
+					<?php 
+						$image = get_field('s06_full_width_image');
+						if( !empty( $image ) ): ?>
+					  <img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+					<?php endif; ?>
 				</section>
 				
 
 				<section class="about_section section_space">
 					<div class="container">
-						<div class="row">
-
+						<div class="row">	
 							<div class="col-lg-5 col-xl-4" >									
 									<div class="section_title">
 										<h3 class="big_title text_effect_wrap">
@@ -78,24 +76,23 @@
 								<ul class="portfolio_details_info ul_li">
 									<li>
 										<h4>Date:</h4>
-										<p class="mb-0">June 16, 2021</p>
+										<p class="mb-0"><?php the_field('s07_project_date'); ?></p>
 									</li>
 									<li>
 										<h4>Services:</h4>
-										<p class="mb-0">Branding</p>
+										<p class="mb-0"><?php the_field('s07_project_services'); ?></p>
 									</li>
 									<li>
 										<h4>Client:</h4>
-										<p class="mb-0">Wilium jhon</p>
+										<p class="mb-0"><?php the_field('s07_project_client'); ?></p>
 									</li>
 									<li>
 										<h4>Tags:</h4>
-										<p class="mb-0">Design, Branding</p>
+										<p class="mb-0"><?php the_field('s07_project_tags'); ?></p>
 									</li>
 								</ul>
 								<p class="p-0  mt-0">
-										Transformed in his bed into a horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections. The bedding was hardly able to cover it and seemed ready to slide off any moment. His many legs, pitifully thin compared with the size of the rest of him waved.
-										Transformed in his bed into a horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections. The bedding was hardly able to cover it and seemed ready to slide off any moment. His many legs, pitifully thin compared with the size of the rest of him waved.
+										<?php the_field('s07_about_project_text'); ?>
 								</p>
 							</div>
 						</div>
@@ -106,7 +103,11 @@
 					<div class="container">
 						<div class="row">	
 							<div class="col-12">
-								<img src="<?php echo get_template_directory_uri(); ?>/assets/images/cases/case-overview.jpg" alt="">
+								<?php 
+									$image = get_field('s07_about_project_main_image');
+									if( !empty( $image ) ): ?>
+								  <img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+								<?php endif; ?>
 							</div>
 						</div>
 					</div>
@@ -165,36 +166,25 @@
           		</div>
 
 							<div class=" col-12 col-lg-8 col-xl-7">
-								<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum blanditiis dolorum deserunt esse, temporibus non neque earum eius iure. Laboriosam, cumque eos. Culpa modi tempora, blanditiis reiciendis eum repellat perferendis.</p>
+								<p><?php the_field('s09_challanges_text'); ?></p>
 								<div class="participation border-0">
-									<div class="participation_step">
-									 <div class="participation_number">
-										 <span style="color:#afed10;">01.</span>
-										 <h3>Analytics</h3>
-									 </div>
-									 <div class="participation_content">
-										 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam velit voluptas numquam voluptatem, beatae perferendis, maxime blanditiis eius optio dolore hic deserunt. Totam laudantium iusto fugit molestias sint sequi tempora?</p>
-									 </div>
-									</div>
-									<div class="participation_step">
-									 <div class="participation_number">
-										 <span style="color:#afed10;">02.</span>
-										 <h3 >Prototyping</h3>
-									 </div>
-									 <div class="participation_content">
-										 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam velit voluptas numquam voluptatem, beatae perferendis, maxime blanditiis eius optio dolore hic deserunt. Totam laudantium iusto fugit molestias sint sequi tempora?</p>
-									 </div>
-									</div>
-									<div class="participation_step">
-									 <div class="participation_number">
-										 <span style="color:#afed10;">03.</span>
-										 <h3>Visualization</h3>
-									 </div>
-									 <div class="participation_content">
-										 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam velit voluptas numquam voluptatem, beatae perferendis, maxime blanditiis eius optio dolore hic deserunt. Totam laudantium iusto fugit molestias sint sequi tempora?</p>
-									 </div>
-									</div>
-									
+								
+									<?php if( have_rows('s09_challanges_list') ): ?>
+									    <?php $counter=1; while( have_rows('s09_challanges_list') ): the_row(); 
+									        $image = get_sub_field('image');
+									        ?>
+									       		<div class="participation_step">
+														 <div class="participation_number">
+															 <span style="color:#afed10;">0<?php echo $counter; ?>.</span>
+															 <h3><?php the_sub_field('challange_name'); ?></h3>
+														 </div>
+														 <div class="participation_content">
+															 <p><?php the_sub_field('challange_text'); ?></p>
+														 </div>
+														</div>
+									    <?php $counter++; endwhile; ?>
+									<?php endif; ?>
+
 								</div>
 							</div>
 						</div>
@@ -207,13 +197,15 @@
 				<section class="case_gallery_section section_space pt-0">
 					<div class="container">
 						<div class="row">
-							<div class="col-12 col-lg-6"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/cases/overview-image-1.jpg" alt=""></div>
-							<div class="col-12 col-lg-6"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/cases/overview-image-2.jpg" alt=""></div>
-							
+							<?php if( have_rows('s09_images_gallery') ): ?>
+							    <?php while( have_rows('s09_images_gallery') ): the_row(); 
+							        $image = get_sub_field('gallery_image');
+							        ?>
+							        <div class="col-12 col-lg-6"><img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" /></div>
+							    <?php endwhile; ?>
+							<?php endif; ?>		
+						
 						</div>
-						<div class="row">	
-							<div class="col-12 col-lg-6"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/cases/overview-image-2.jpg" alt=""></div>
-							<div class="col-12 col-lg-6"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/cases/overview-image-1.jpg" alt=""></div></div>
 					</div>
 				</section>
 
@@ -233,7 +225,7 @@
 								</div>
 							</div>
 							<div class="col-12 col-lg-8 col-xl-7">
-								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, eum beatae iusto incidunt numquam maxime, provident distinctio ratione officiis unde hic ducimus doloribus at reprehenderit! Ex ipsum possimus eius quod. Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe eos eaque ipsum excepturi sit ipsam qui sed laboriosam velit cumque blanditiis consectetur expedita necessitatibus ducimus, voluptatem ullam neque doloremque aut?</p>
+								<p><?php the_field('s10_design_text'); ?></p>
 							</div>
 						</div>
 					</div>
@@ -243,13 +235,14 @@
 				<section class="case_gallery_section section_space pt-0">
 					<div class="container">
 						<div class="row">
-							<div class="col-12 col-lg-6"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/cases/overview-image-1.jpg" alt=""></div>
-							<div class="col-12 col-lg-6"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/cases/overview-image-2.jpg" alt=""></div>
-							
+							<?php if( have_rows('s10_images_gallery') ): ?>
+							    <?php while( have_rows('s10_images_gallery') ): the_row(); 
+							        $image = get_sub_field('gallery_image');
+							        ?>
+							        <div class="col-12 col-lg-6"><img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" /></div>
+							    <?php endwhile; ?>
+							<?php endif; ?>		
 						</div>
-						<div class="row">	
-							<div class="col-12 col-lg-6"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/cases/overview-image-2.jpg" alt=""></div>
-							<div class="col-12 col-lg-6"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/cases/overview-image-1.jpg" alt=""></div></div>
 					</div>
 				</section>
 
@@ -261,42 +254,30 @@
 									<h3 class="big_title text_effect_wrap">
 										<span class="text_effect_wrap1">
 											<span class="text_effect_wrap2">
-												<span class="text_effect_wrap3 text-break">We've developed templates for residential compounds websites, admin panel and calculators</span>
+												<span class="text_effect_wrap3 text-break"><?php the_field('s11_results_header'); ?></span>
 											</span>
 										</span>
 									</h3>
 								</div>
 							</div>
 							<div class="col-lg-7 offset-lg-5">
-								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore a, quo iste, ut optio voluptate officiis ipsum quas nisi omnis libero temporibus provident consectetur earum vel sit nulla eligendi quisquam!</p>
+								<p><?php the_field('s11_results_text'); ?></p>
 								<div class="participation border-0">
-									<div class="participation_step">
-									 <div class="participation_number">
-										 <span style="color:#afed10;">01.</span>
-										 <h3>Analytics</h3>
-									 </div>
-									 <div class="participation_content">
-										 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam velit voluptas numquam voluptatem, beatae perferendis, maxime blanditiis eius optio dolore hic deserunt.</p>
-									 </div>
-									</div>
-									<div class="participation_step">
-									 <div class="participation_number">
-										 <span style="color:#afed10;">02.</span>
-										 <h3 >Protoype Stage</h3>
-									 </div>
-									 <div class="participation_content">
-										 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam velit voluptas numquam voluptatem, beatae perferendis, maxime blanditiis eius optio dolore hic deserunt. Totam laudantium iusto fugit molestias sint sequi tempora?</p>
-									 </div>
-									</div>
-									<div class="participation_step">
-									 <div class="participation_number">
-										 <span style="color:#afed10;">03.</span>
-										 <h3>Visualization</h3>
-									 </div>
-									 <div class="participation_content">
-										 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam velit voluptas numquam voluptatem, beatae perferendis, maxime blanditiis eius optio dolore hic deserunt. Totam laudantium iusto fugit molestias sint sequi tempora?</p>
-									 </div>
-									</div>
+									<?php if( have_rows('s11_results_list') ): ?>
+									    <?php $counter=1; while( have_rows('s11_results_list') ): the_row(); 
+									        $image = get_sub_field('image');
+									        ?>
+									       		<div class="participation_step">
+														 <div class="participation_number">
+															 <span style="color:#afed10;">0<?php echo $counter; ?>.</span>
+															 <h3><?php the_sub_field('challange_name'); ?></h3>
+														 </div>
+														 <div class="participation_content">
+															 <p><?php the_sub_field('challange_text'); ?></p>
+														 </div>
+														</div>
+									    <?php $counter++; endwhile; ?>
+									<?php endif; ?>
 								</div>
 							</div>
 						</div>

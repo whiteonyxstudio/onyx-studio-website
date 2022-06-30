@@ -37,170 +37,84 @@
 				<section class="blog_archive_section section_space ">
 					<div class="container">
 						<div class="row justify-content-lg-between justify-content-md-center justify-content-sm-center">
-							<div class="col-12 col-sm-12 col-md-12  col-lg-8 ">
-								<div class="blog_standard_layout">
-									<a class="item_image" href="blog_sigle.html">
-										<img src="<?php echo get_template_directory_uri(); ?>/assets/images/blog/tech-start-up.jpg" alt="image_not_found">
-									</a>
-									<div class="item_content">
-										<ul class="post_meta ul_li text-uppercase">
-											<li>By - <a href="#!">Admin</a></li>
-											<li><a href="#!">Branding</a></li>
-										</ul>
-										<h3 class="item_title text_effect_wrap">
-											<a href="blog_single.html">
-												<span class="text_effect_wrap1">
-													<span class="text_effect_wrap2">
-														<span class="text_effect_wrap3">Marketing plays an important role</span>
-													</span>
-												</span>
-											</a>
-										</h3>
-										<p>
-											Northely was hardly able to cover it and seemed ready to slide off any moment his many legs, pitifully thin compared with the size of the rest of him, waved about helplessly as he looked what's happened to me he thought It wasn't a dream. His room proper over the horizonela
-										</p>
-										<a class="btn_text text-uppercase" href="blog_single.html"><span>Read More</span> <i class="fal fa-long-arrow-right"></i></a>
-									</div>
-								</div>
+							<div class="col-12 col-sm-12 col-md-12 col-lg-8 ">
 
-								<div class="blog_standard_layout">
-									<a class="item_image" href="blog_single.html">
-										<img src="<?php echo get_template_directory_uri(); ?>/assets/images/blog/dental-business.jpg" alt="image_not_found">
-									</a>
-									<div class="item_content">
-										<ul class="post_meta ul_li text-uppercase">
-											<li>By - <a href="#!">Admin</a></li>
-											<li><a href="#!">Branding</a></li>
-										</ul>
-										<h3 class="item_title text_effect_wrap">
-											<a href="blog_single.html">
-												<span class="text_effect_wrap1">
-													<span class="text_effect_wrap2">
-														<span class="text_effect_wrap3">Marketing collateral pays important roles</span>
-													</span>
-												</span>
-											</a>
-										</h3>
-										<p>
-											Northely was hardly able to cover it and seemed ready to slide off any moment his many legs, pitifully thin compared with the size of the rest of him, waved about helplessly as he looked what's happened to me he thought It wasn't a dream. His room proper over the horizonela
-										</p>
-										<a class="btn_text text-uppercase" href="blog_single.html"><span>Read More</span> <i class="fal fa-long-arrow-right"></i></a>
+							<article class="blog_standard_layout">
+								<div class="item_image">
+									<div class="blog_image_carousel">
+										<div class="slider_item">
+											<img src="<?php echo get_template_directory_uri(); ?>/assets/images/blog/seo-1.jpg" alt="image_not_found">
+										</div>
+										<div class="slider_item">
+											<img src="<?php echo get_template_directory_uri(); ?>/assets/images/blog/seo-2.jpg" alt="image_not_found">
+										</div>
+										<div class="slider_item">
+											<img src="<?php echo get_template_directory_uri(); ?>/assets/images/blog/seo-3.jpg" alt="image_not_found">
+										</div>
+									</div>
+									<div class="carousel_nav">
+										<button type="button" class="bic_left_arrow"><i class="fal fa-long-arrow-left"></i></button>
+										<button type="button" class="bic_right_arrow"><i class="fal fa-long-arrow-right"></i></button>
 									</div>
 								</div>
+								<div class="item_content">
+									<ul class="post_meta ul_li text-uppercase">
+										<li>By - <a href="#!">Admin</a></li>
+										<li><a href="#!">Branding</a></li>
+									</ul>
+									<h3 class="item_title text_effect_wrap">
+										<a href="blog_single.html">
+											<span class="text_effect_wrap1">
+												<span class="text_effect_wrap2">
+													<span class="text_effect_wrap3">Person and improve your startup</span>
+												</span>
+											</span>
+										</a>
+									</h3>
+									<p>
+										Northely was hardly able to cover it and seemed ready to slide off any moment his many legs, pitifully thin compared with the size of the rest of him, waved about helplessly as he looked what's happened to me he thought It wasn't a dream. His room proper over the horizonela
+									</p>
+									<a class="btn_text text-uppercase" href="blog_single.html"><span>Read More</span> <i class="fal fa-long-arrow-right"></i></a>
+								</div>
+							</article>
 
-								<div class="blog_standard_layout">
-									<div class="item_image">
-										<div class="blog_image_carousel">
-											<div class="slider_item">
-												<img src="<?php echo get_template_directory_uri(); ?>/assets/images/blog/seo-1.jpg" alt="image_not_found">
-											</div>
-											<div class="slider_item">
-												<img src="<?php echo get_template_directory_uri(); ?>/assets/images/blog/seo-2.jpg" alt="image_not_found">
-											</div>
-											<div class="slider_item">
-												<img src="<?php echo get_template_directory_uri(); ?>/assets/images/blog/seo-3.jpg" alt="image_not_found">
-											</div>
-										</div>
-										<div class="carousel_nav">
-											<button type="button" class="bic_left_arrow"><i class="fal fa-long-arrow-left"></i></button>
-											<button type="button" class="bic_right_arrow"><i class="fal fa-long-arrow-right"></i></button>
-										</div>
-									</div>
-									<div class="item_content">
-										<ul class="post_meta ul_li text-uppercase">
-											<li>By - <a href="#!">Admin</a></li>
-											<li><a href="#!">Branding</a></li>
-										</ul>
-										<h3 class="item_title text_effect_wrap">
-											<a href="blog_single.html">
-												<span class="text_effect_wrap1">
-													<span class="text_effect_wrap2">
-														<span class="text_effect_wrap3">Person and improve your startup</span>
-													</span>
-												</span>
-											</a>
-										</h3>
-										<p>
-											Northely was hardly able to cover it and seemed ready to slide off any moment his many legs, pitifully thin compared with the size of the rest of him, waved about helplessly as he looked what's happened to me he thought It wasn't a dream. His room proper over the horizonela
-										</p>
-										<a class="btn_text text-uppercase" href="blog_single.html"><span>Read More</span> <i class="fal fa-long-arrow-right"></i></a>
-									</div>
-								</div>
+							<?php 
+                if ( have_posts() ) {
+                  $counter=1;
+                	while ( have_posts() ) {
+                		the_post(); 
+                		?>
+                      <article class="blog_standard_layout">
+												<a class="item_image" href="<?php the_permalink(); ?>">
+													<img src="<?php echo get_template_directory_uri(); ?>/assets/images/blog/tech-start-up.jpg" alt="image_not_found">
+												</a>
+												<div class="item_content">
+													<ul class="post_meta ul_li text-uppercase">
+														<li>By - <a href="#!">Admin</a></li>
+														<li><a href="#!">Branding</a></li>
+													</ul>
+													<h3 class="item_title text_effect_wrap">
+														<a href="<?php the_permalink(); ?>">
+															<span class="text_effect_wrap1">
+																<span class="text_effect_wrap2">
+																	<span class="text_effect_wrap3"><?php the_title(); ?></span>
+																</span>
+															</span>
+														</a>
+													</h3>
+													<p>
+														<?php echo get_the_excerpt(); ?>
+													</p>
+													<a class="btn_text text-uppercase" href="<?php the_permalink(); ?>"><span>Read More</span> <i class="fal fa-long-arrow-right"></i></a>
+												</div>
+											</article>
+                    <?php
+                    $counter++;
+                	} // end while
+                } // end if
+              ?>
 
-								<div class="blog_standard_layout">
-									<div class="item_image">
-										<div class="blog_image_carousel">
-											<div class="slider_item">
-												<img src="<?php echo get_template_directory_uri(); ?>/assets/images/blog/checklist.jpg" alt="image_not_found">
-											</div>
-											<div class="slider_item">
-												<img src="<?php echo get_template_directory_uri(); ?>/assets/images/blog/checklist.jpg" alt="image_not_found">
-											</div>
-										</div>
-										<div class="carousel_nav">
-											<button type="button" class="bic_left_arrow"><i class="fal fa-long-arrow-left"></i></button>
-											<button type="button" class="bic_right_arrow"><i class="fal fa-long-arrow-right"></i></button>
-										</div>
-									</div>
-									<div class="item_content">
-										<ul class="post_meta ul_li text-uppercase">
-											<li>By - <a href="#!">Admin</a></li>
-											<li><a href="#!">Branding</a></li>
-										</ul>
-										<h3 class="item_title text_effect_wrap">
-											<a href="blog_details.html">
-												<span class="text_effect_wrap1">
-													<span class="text_effect_wrap2">
-														<span class="text_effect_wrap3">Person and improve your startup</span>
-													</span>
-												</span>
-											</a>
-										</h3>
-										<p>
-											Northely was hardly able to cover it and seemed ready to slide off any moment his many legs, pitifully thin compared with the size of the rest of him, waved about helplessly as he looked what's happened to me he thought It wasn't a dream. His room proper over the horizonela
-										</p>
-										<a class="btn_text text-uppercase" href="blog_details.html"><span>Read More</span> <i class="fal fa-long-arrow-right"></i></a>
-									</div>
-								</div>
 
-								<div class="blog_standard_layout">
-									<div class="item_image">
-										<div class="blog_image_carousel">
-											<div class="slider_item">
-												<img src="<?php echo get_template_directory_uri(); ?>/assets/images/blog/seo-1.jpg" alt="image_not_found">
-											</div>
-											<div class="slider_item">
-												<img src="<?php echo get_template_directory_uri(); ?>/assets/images/blog/seo-2.jpg" alt="image_not_found">
-											</div>
-											<div class="slider_item">
-												<img src="<?php echo get_template_directory_uri(); ?>/assets/images/blog/seo-3.jpg" alt="image_not_found">
-											</div>
-										</div>
-										<div class="carousel_nav">
-											<button type="button" class="bic_left_arrow"><i class="fal fa-long-arrow-left"></i></button>
-											<button type="button" class="bic_right_arrow"><i class="fal fa-long-arrow-right"></i></button>
-										</div>
-									</div>
-									<div class="item_content">
-										<ul class="post_meta ul_li text-uppercase">
-											<li>By - <a href="#!">Admin</a></li>
-											<li><a href="#!">Branding</a></li>
-										</ul>
-										<h3 class="item_title text_effect_wrap">
-											<a href="blog_details.html">
-												<span class="text_effect_wrap1">
-													<span class="text_effect_wrap2">
-														<span class="text_effect_wrap3">Person and improve your startup</span>
-													</span>
-												</span>
-											</a>
-										</h3>
-										<p>
-											Northely was hardly able to cover it and seemed ready to slide off any moment his many legs, pitifully thin compared with the size of the rest of him, waved about helplessly as he looked what's happened to me he thought It wasn't a dream. His room proper over the horizonela
-										</p>
-										<a class="btn_text text-uppercase" href="blog_details.html"><span>Read More</span> <i class="fal fa-long-arrow-right"></i></a>
-									</div>
-								</div>
 
 								<ul class="pagination_nav ul_li">
 									<li class="d-none"><a href="#!">prev</a></li>

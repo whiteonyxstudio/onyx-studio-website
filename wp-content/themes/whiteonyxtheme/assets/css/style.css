@@ -5173,13 +5173,17 @@ section {
       flex-wrap: wrap; }
 
 .participation_number {
-  width: 50%; }
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
   .participation_number h3, .participation_number h2 {
     display: inline-block;
     font-size: 40px;
     margin-left: 20px; }
   .participation_number span {
-    font-size: 40px; }
+    font-size: 40px;
+    line-height: 1.2; }
 
 .participation_content {
   width: 50%; }

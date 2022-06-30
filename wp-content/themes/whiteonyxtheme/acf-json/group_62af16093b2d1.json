@@ -118,7 +118,21 @@
             {
                 "param": "page_template",
                 "operator": "==",
+                "value": "service-category-template.php"
+            }
+        ],
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
                 "value": "archive-services.php"
+            }
+        ],
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "services"
             }
         ]
     ],
@@ -131,5 +145,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1655649039
+    "modified": 1655751792
 }

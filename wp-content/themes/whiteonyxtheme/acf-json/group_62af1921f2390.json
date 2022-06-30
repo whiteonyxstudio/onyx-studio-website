@@ -1,6 +1,6 @@
 {
     "key": "group_62af1921f2390",
-    "title": "S06-Case Hero Screen",
+    "title": "S06-Project Hero Screen",
     "fields": [
         {
             "key": "field_62af1937491fc",
@@ -139,7 +139,7 @@
                 "class": "",
                 "id": ""
             },
-            "return_format": "url",
+            "return_format": "array",
             "preview_size": "full",
             "library": "all",
             "min_width": "",
@@ -180,7 +180,7 @@
             {
                 "param": "post_type",
                 "operator": "==",
-                "value": "post"
+                "value": "case"
             }
         ]
     ],
@@ -193,5 +193,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1655645779
+    "modified": 1655911397
 }

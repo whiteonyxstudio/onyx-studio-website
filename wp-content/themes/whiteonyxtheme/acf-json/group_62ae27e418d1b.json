@@ -1,6 +1,6 @@
 {
     "key": "group_62ae27e418d1b",
-    "title": "S03-Process Section",
+    "title": "S03-Process Section (Table)",
     "fields": [
         {
             "key": "field_62ae27ee72daa",
@@ -181,7 +181,21 @@
             {
                 "param": "post_type",
                 "operator": "==",
-                "value": "post"
+                "value": "services"
+            }
+        ],
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "single_service_template.php"
+            }
+        ],
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "service-category-template.php"
             }
         ]
     ],
@@ -194,5 +208,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1655580923
+    "modified": 1655751924
 }

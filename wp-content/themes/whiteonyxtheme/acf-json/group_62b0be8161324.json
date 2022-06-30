@@ -1,12 +1,12 @@
 {
-    "key": "group_62af1f95c9f0c",
-    "title": "S09-Project Challanges",
+    "key": "group_62b0be8161324",
+    "title": "S16-Development Services",
     "fields": [
         {
-            "key": "field_62af1fa2ca7fa",
-            "label": "Challanges Text",
-            "name": "s09_challanges_text",
-            "type": "textarea",
+            "key": "field_62b0bea811845",
+            "label": "Development Page Link",
+            "name": "s16_development_page_link",
+            "type": "link",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -15,16 +15,12 @@
                 "class": "",
                 "id": ""
             },
-            "default_value": "",
-            "placeholder": "",
-            "maxlength": "",
-            "rows": "",
-            "new_lines": ""
+            "return_format": "url"
         },
         {
-            "key": "field_62af1fb3ca7fb",
-            "label": "Challanges List",
-            "name": "s09_challanges_list",
+            "key": "field_62b0becf11846",
+            "label": "Development Accodrion",
+            "name": "s16_development_accodrion",
             "type": "repeater",
             "instructions": "",
             "required": 0,
@@ -41,9 +37,9 @@
             "button_label": "",
             "sub_fields": [
                 {
-                    "key": "field_62af1fc1ca7fc",
-                    "label": "Challange Name",
-                    "name": "challange_name",
+                    "key": "field_62b0bf08d552a",
+                    "label": "Service Name",
+                    "name": "service_name",
                     "type": "text",
                     "instructions": "",
                     "required": 0,
@@ -60,10 +56,10 @@
                     "maxlength": ""
                 },
                 {
-                    "key": "field_62af1fd6ca7fd",
-                    "label": "Challange Text",
-                    "name": "challange_text",
-                    "type": "textarea",
+                    "key": "field_62b0bf1ad552b",
+                    "label": "Service Description",
+                    "name": "service_description",
+                    "type": "text",
                     "instructions": "",
                     "required": 0,
                     "conditional_logic": 0,
@@ -74,36 +70,15 @@
                     },
                     "default_value": "",
                     "placeholder": "",
-                    "maxlength": "",
-                    "rows": "",
-                    "new_lines": ""
-                }
-            ]
-        },
-        {
-            "key": "field_62af1ff612aeb",
-            "label": "Images gallery",
-            "name": "s09_images_gallery",
-            "type": "repeater",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "collapsed": "",
-            "min": 0,
-            "max": 0,
-            "layout": "table",
-            "button_label": "Add Image",
-            "sub_fields": [
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
                 {
-                    "key": "field_62af200f12aec",
-                    "label": "Gallery Image",
-                    "name": "gallery_image",
-                    "type": "image",
+                    "key": "field_62b0bf2bd552c",
+                    "label": "Service Details Content",
+                    "name": "service_details_content",
+                    "type": "wysiwyg",
                     "instructions": "",
                     "required": 0,
                     "conditional_logic": 0,
@@ -112,16 +87,26 @@
                         "class": "",
                         "id": ""
                     },
-                    "return_format": "array",
-                    "preview_size": "full",
-                    "library": "all",
-                    "min_width": "",
-                    "min_height": "",
-                    "min_size": "",
-                    "max_width": "",
-                    "max_height": "",
-                    "max_size": "",
-                    "mime_types": ""
+                    "default_value": "",
+                    "tabs": "all",
+                    "toolbar": "full",
+                    "media_upload": 1,
+                    "delay": 0
+                },
+                {
+                    "key": "field_62b0bf40d552d",
+                    "label": "Learn More Link",
+                    "name": "learn_more_link",
+                    "type": "link",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "url"
                 }
             ]
         }
@@ -129,9 +114,9 @@
     "location": [
         [
             {
-                "param": "post_type",
+                "param": "page_template",
                 "operator": "==",
-                "value": "case"
+                "value": "archive-services.php"
             }
         ]
     ],
@@ -144,5 +129,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1655758344
+    "modified": 1655750694
 }

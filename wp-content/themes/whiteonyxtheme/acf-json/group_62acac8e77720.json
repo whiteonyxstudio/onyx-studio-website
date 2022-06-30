@@ -69,6 +69,20 @@
                 "operator": "==",
                 "value": "archive-services.php"
             }
+        ],
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "service-category-template.php"
+            }
+        ],
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "single_service_template.php"
+            }
         ]
     ],
     "menu_order": 0,
@@ -80,5 +94,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1655648965
+    "modified": 1655751997
 }

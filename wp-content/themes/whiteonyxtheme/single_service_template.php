@@ -1,5 +1,5 @@
   <?php /* Template Name: Single Service Page
-      */ ?>
+	*/ ?>
  <?php get_header(); ?>
 
 			<!-- main body - start

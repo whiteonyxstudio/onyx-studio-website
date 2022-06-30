@@ -3,6 +3,25 @@
     "title": "S11-Project Results",
     "fields": [
         {
+            "key": "field_62b34aa845bba",
+            "label": "Results Header",
+            "name": "s11_results_header",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
             "key": "field_62af205c27263",
             "label": "Results Text",
             "name": "s11_results_text",
@@ -131,7 +150,7 @@
             {
                 "param": "post_type",
                 "operator": "==",
-                "value": "post"
+                "value": "case"
             }
         ]
     ],
@@ -144,5 +163,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1655645630
+    "modified": 1655917485
 }
