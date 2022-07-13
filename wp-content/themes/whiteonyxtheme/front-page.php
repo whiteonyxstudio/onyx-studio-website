@@ -7,7 +7,7 @@
 				<section class="slider_section">
 					<div class="main_slider">
 
-            <div class="slider_item d-flex  align-items-start align-items-lg-center" style="background-image: url(<?php echo get_template_directory_uri();?>/assets/images/slider/slide-1.webp')">
+            <div class="slider_item d-flex  align-items-start align-items-lg-center" style="background-image: url('<?php echo get_template_directory_uri();?>/assets/images/slider/slide-1.webp')">
 							<div class="slider_content banner_section">
 								<h3 class="banner_title text_effect_wrap">
                   <?php get_template_directory_uri(); ?>
@@ -72,7 +72,7 @@
 						</div>
 
 
-						<div class="slider_item d-flex  align-items-start align-items-lg-center" style="background-image: url(<?php echo get_template_directory_uri();?>/assets/images/slider/slide-3.wep">
+						<div class="slider_item d-flex  align-items-start align-items-lg-center" style="background-image: url('<?php echo get_template_directory_uri();?>/assets/images/slider/slide-3.webp')">
 							<div class="slider_content  banner_section">
 								<h3 class="banner_title text_effect_wrap ">
 										<span class="text_effect_wrap1">
