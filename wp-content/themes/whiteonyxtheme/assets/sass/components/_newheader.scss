@@ -397,7 +397,7 @@ section {
   }
 
   .main-popup {
-    position: fixed;
+    position: absolute;
     right: 0;
     height: 100vh;
     width: 100%;
@@ -416,7 +416,7 @@ section {
   }
 
   .popup-header {
-    position: fixed;
+    position: absolute;
     top: 0;
     width: 100%;
     padding: 10px 15px;
@@ -482,15 +482,19 @@ section {
         justify-content: space-between;
 
         li {
-          margin-bottom: 20px;
+          margin-bottom: 15px;
           margin-top: 0px;
           a {
             text-decoration: none;
             color: black;
-            font-size: 25px;
-            font-weight: 300;
             line-height: 1;
-            // @include med();
+            color: #000;
+            font-size: 40px;
+            font-weight: 500;
+            padding: 10px 5px;
+            -webkit-text-stroke-width: 1px;
+            -webkit-text-stroke-color: #000;
+            -webkit-text-fill-color: #000;
           }
         }
       }

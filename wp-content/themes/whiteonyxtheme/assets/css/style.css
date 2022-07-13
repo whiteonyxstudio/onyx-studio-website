@@ -1356,7 +1356,7 @@ section {
     width: 0;
     position: fixed; }
   .popup .main-popup {
-    position: fixed;
+    position: absolute;
     right: 0;
     height: 100vh;
     width: 100%;
@@ -1379,7 +1379,7 @@ section {
     .popup .main-popup::-webkit-scrollbar {
       display: none; }
   .popup .popup-header {
-    position: fixed;
+    position: absolute;
     top: 0;
     width: 100%;
     padding: 10px 15px;
@@ -1455,14 +1455,19 @@ section {
             -ms-flex-pack: justify;
                 justify-content: space-between; }
         .popup .popup-content .menu-wrapper ul li {
-          margin-bottom: 20px;
+          margin-bottom: 15px;
           margin-top: 0px; }
           .popup .popup-content .menu-wrapper ul li a {
             text-decoration: none;
             color: black;
-            font-size: 25px;
-            font-weight: 300;
-            line-height: 1; }
+            line-height: 1;
+            color: #000;
+            font-size: 40px;
+            font-weight: 500;
+            padding: 10px 5px;
+            -webkit-text-stroke-width: 1px;
+            -webkit-text-stroke-color: #000;
+            -webkit-text-fill-color: #000; }
       .popup .popup-content .menu-wrapper .social-nav {
         display: -webkit-box;
         display: -ms-flexbox;
