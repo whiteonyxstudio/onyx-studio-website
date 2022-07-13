@@ -163,6 +163,18 @@ function studio_main_theme_scripts() {
 add_action( 'wp_enqueue_scripts', 'studio_main_theme_scripts' );
 
 /**
+ * Remove Gutenberg Library.
+ */
+
+add_action( 'wp_enqueue_scripts', 'remove_block_css', 100 );
+function remove_block_css() {
+wp_dequeue_style( 'wp-block-library' ); // WordPress core
+wp_dequeue_style( 'wp-block-library-theme' ); // WordPress core
+wp_dequeue_style( 'wc-block-style' ); // WooCommerce
+wp_dequeue_style( 'storefront-gutenberg-blocks' ); // Storefront theme
+}
+
+/**
  * Implement the Custom Header feature.
  */
 require get_template_directory() . '/inc/custom-header.php';
