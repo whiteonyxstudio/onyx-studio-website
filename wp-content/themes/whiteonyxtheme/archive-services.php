@@ -1,5 +1,6 @@
 
       <?php get_header(); ?>
+			<?php $service_page_id = get_page_by_path( 'studio-services' ); ?>
 
 			<!-- main body - start
 			================================================== -->
@@ -55,7 +56,7 @@
 							</div>
 							
 							<div class="col-12 col-sm-5 col-md-5 col-lg-3 d-flex justify-content-start justify-content-md-end align-items-center">
-								<a class="btn_text more_btn" href="<?php the_field('s16_development_page_link',19); ?>">
+								<a class="btn_text more_btn" href="<?php the_field('s16_development_page_link',$service_page_id); ?>">
 									<span>More about Development</span> 
 									<svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
 										<path d="M10 0V7.50063H9.16833V1.42131L0.587991 10L0 9.41015L8.57868 0.833125H2.49418V0H10Z" fill="white"></path>
@@ -66,9 +67,9 @@
 							<div class="col-12 col-md-12 col-lg-9 offset-lg-3">
 								<div class="accordion accordion-flush services-accordion large-accordion mt-0" id="accordionFlushExample">
 
-									<?php if( have_rows('s16_development_accodrion',19) ): ?>
+									<?php if( have_rows('s16_development_accodrion',$service_page_id) ): ?>
 									    
-									    <?php $counter=1; while( have_rows('s16_development_accodrion',19) ): the_row(); 
+									    <?php $counter=1; while( have_rows('s16_development_accodrion',$service_page_id) ): the_row(); 
 									    ?>
 									    	<div class="accordion-item">
 								  			  <h2 class="accordion-header" id="flush-heading<?php echo $counter; ?>">
@@ -148,7 +149,7 @@
 							</div>
 							
 							<div class="col-12 col-sm-5 col-md-5 col-lg-3 d-flex justify-content-start justify-content-md-end align-items-center">
-								<a class="btn_text more_btn" href="<?php the_field('s19_design_page_link',19); ?>">
+								<a class="btn_text more_btn" href="<?php the_field('s19_design_page_link',$service_page_id); ?>">
 									<span>More about Design</span> 
 									<svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
 										<path d="M10 0V7.50063H9.16833V1.42131L0.587991 10L0 9.41015L8.57868 0.833125H2.49418V0H10Z" fill="white"></path>
@@ -159,9 +160,9 @@
 							<div class="col-12 col-md-12 col-lg-9 offset-lg-3">
 								<div class="accordion accordion-flush services-accordion large-accordion mt-0" id="accordionFlushExample">
 								  
-									<?php if( have_rows('s19_design_accodrion',19) ): ?>
+									<?php if( have_rows('s19_design_accodrion',$service_page_id) ): ?>
 									    
-									    <?php $counter=1; while( have_rows('s19_design_accodrion',19) ): the_row(); 
+									    <?php $counter=1; while( have_rows('s19_design_accodrion',$service_page_id) ): the_row(); 
 									    ?>
 									    	<div class="accordion-item">
 								  			  <h2 class="accordion-header" id="flush-heading<?php echo $counter; ?>">
@@ -240,7 +241,7 @@
 							</div>
 							
 							<div class="col-12 col-sm-5 col-md-5 col-lg-3 d-flex justify-content-start justify-content-md-end align-items-center">
-								<a class="btn_text more_btn" href="<?php the_field('s20_seo_page_link',19); ?>">
+								<a class="btn_text more_btn" href="<?php the_field('s20_seo_page_link',$service_page_id); ?>">
 									<span>More about SEO  Services</span> 
 									<svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
 										<path d="M10 0V7.50063H9.16833V1.42131L0.587991 10L0 9.41015L8.57868 0.833125H2.49418V0H10Z" fill="white"></path>
@@ -250,9 +251,9 @@
 
 							<div class="col-12 col-md-12 col-lg-9 offset-lg-3">
 								<div class="accordion accordion-flush services-accordion large-accordion mt-0" id="accordionFlushExample">
-								  <?php if( have_rows('s20_seo_accodrion',19) ): ?>
+								  <?php if( have_rows('s20_seo_accodrion',$service_page_id) ): ?>
 									    
-									    <?php $counter=1; while( have_rows('s20_seo_accodrion',19) ): the_row(); 
+									    <?php $counter=1; while( have_rows('s20_seo_accodrion',$service_page_id) ): the_row(); 
 									    ?>
 									    	<div class="accordion-item">
 								  			  <h2 class="accordion-header" id="flush-heading<?php echo $counter; ?>">
@@ -312,7 +313,7 @@
 							<div class="col-lg-12">
 								<div class="section_title style_2">
 									<h2 class="small_title">
-										<?php the_field('s04_small_header',19); ?>
+										<?php the_field('s04_small_header',$service_page_id); ?>
 										<span class="line"></span>
 									</h2>
 								</div>
@@ -323,12 +324,12 @@
 										<h3 class="big_title text_effect_wrap">
 											<span class="text_effect_wrap1">
 												<span class="text_effect_wrap2">
-													<span class="text_effect_wrap3 text-break"><?php the_field('s04_large_header_1_row',19); ?></span>
+													<span class="text_effect_wrap3 text-break"><?php the_field('s04_large_header_1_row',$service_page_id); ?></span>
 												</span>
 											</span>
 											<span class="text_effect_wrap1">
 												<span class="text_effect_wrap2">
-													<span class="text_effect_wrap3 text-break"><?php the_field('s04_large_header_2_row',19); ?></span>
+													<span class="text_effect_wrap3 text-break"><?php the_field('s04_large_header_2_row',$service_page_id); ?></span>
 												</span>
 											</span>
 										</h3>
@@ -336,11 +337,11 @@
 							</div>
 							<div class="col-lg-5 ">
 								<p class="p-0  mt-0">
-									<?php the_field('s04_section_content',19); ?>
+									<?php the_field('s04_section_content',$service_page_id); ?>
 								</p>
 								
-								<a class="btn_text btn_text_white" href="<?php the_field('s04_button_url',19); ?>">
-									<span><?php the_field('s04_button_text',19); ?></span> 
+								<a class="btn_text btn_text_white" href="<?php the_field('s04_button_url',$service_page_id); ?>">
+									<span><?php the_field('s04_button_text',$service_page_id); ?></span> 
 									<svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
 										<path d="M10 0V7.50063H9.16833V1.42131L0.587991 10L0 9.41015L8.57868 0.833125H2.49418V0H10Z" fill="white"></path>
 									</svg>
@@ -363,7 +364,7 @@
 							<div class="col-lg-12">
 								<div class="section_title style_2">
 									<h2 class="small_title">
-										<?php the_field('s01_small_header',19); ?>
+										<?php the_field('s01_small_header',$service_page_id); ?>
 										<span class="line"></span>
 									</h2>
 								</div>
@@ -373,7 +374,7 @@
 									<h3 class="big_title text_effect_wrap">
 										<span class="text_effect_wrap1">
 											<span class="text_effect_wrap2">
-												<span class="text_effect_wrap3 text-break"><?php the_field('s01_largeheader',19); ?></span>
+												<span class="text_effect_wrap3 text-break"><?php the_field('s01_largeheader',$service_page_id); ?></span>
 											</span>
 										</span>
 										<span class="text_effect_wrap1">
@@ -386,9 +387,9 @@
 							</div>
 							<div class="col-lg-12">
 								<div class="development-steps">
-									<?php if( have_rows('s01_steps_table',19) ): ?>
+									<?php if( have_rows('s01_steps_table',$service_page_id) ): ?>
 
-									    <?php $counter=1; while( have_rows('s01_steps_table',19) ): the_row(); 
+									    <?php $counter=1; while( have_rows('s01_steps_table',$service_page_id) ): the_row(); 
 									        ?>
 									       	<div class="development-steps-item">
 														<h4><sup><?php echo $counter; ?></sup><?php the_sub_field('step_name'); ?></h4>
@@ -443,7 +444,7 @@
 							</div>
 
 							<div class="col-12 col-sm-6  col-lg-3 d-flex  justify-content-start justify-content-lg-end align-items-end">
-								<a class="btn_text more_btn" href="<?php the_field('s17_portfolio_page_link',19); ?>"> 
+								<a class="btn_text more_btn" href="<?php the_field('s17_portfolio_page_link',$service_page_id); ?>"> 
 									<span>See all projects</span> 
 									<svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
 										<path d="M10 0V7.50063H9.16833V1.42131L0.587991 10L0 9.41015L8.57868 0.833125H2.49418V0H10Z" fill="white"></path>
@@ -571,9 +572,9 @@
 								</div>
 								<div class="accordion accordion-flush services-accordion" id="accordionFlushExample">
 
-									<?php if( have_rows('s00_faq_accordion',19) ): ?>
+									<?php if( have_rows('s00_faq_accordion',$service_page_id) ): ?>
 									    
-									    <?php while( have_rows('s00_faq_accordion',19) ): the_row(); 
+									    <?php while( have_rows('s00_faq_accordion',$service_page_id) ): the_row(); 
 									    ?>
 
 												<div class="accordion-item">
