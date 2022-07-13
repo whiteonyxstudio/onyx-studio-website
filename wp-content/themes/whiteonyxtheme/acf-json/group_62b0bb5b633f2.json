@@ -18,8 +18,8 @@
             "collapsed": "",
             "min": 0,
             "max": 0,
-            "layout": "table",
-            "button_label": "",
+            "layout": "row",
+            "button_label": "Add Service Category",
             "sub_fields": [
                 {
                     "key": "field_62b0bb8cb3cb1",
@@ -76,8 +76,8 @@
                 },
                 {
                     "key": "field_62b0bbceb3cb4",
-                    "label": "Service Description",
-                    "name": "service_description",
+                    "label": "Service Content",
+                    "name": "service_content",
                     "type": "wysiwyg",
                     "instructions": "",
                     "required": 0,
@@ -184,5 +184,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1655907139
+    "modified": 1657055074
 }

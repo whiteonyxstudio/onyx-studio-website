@@ -65,7 +65,7 @@
 							<form action="" class="main_contact_form">
 								<div class="row">
 									<div class="col-lg-6 ">
-										<p class="p-24">Provide Contact Info</p>
+										<p class="p-24">1. Provide Contact Info</p>
 									</div>
  
 									<div class="col-lg-6 bread">
@@ -79,17 +79,17 @@
 								</div>
 								<div class="row section_space">
 									<div class="col-lg-6 ">
-										<p class="p-24">Choose service</p>
+										<p class="p-24">2. Choose service</p>
 									</div>
  
 									<div class="col-lg-6 d-flex flex-wrap">
 										<div class="checkbox_wrap">
 											<input type="checkbox" name="" id="" placeholder="Corporate Website">
-											<label for="">Corporate Website</label>
+											<label for="">Website Creation</label>
 										</div>
 										<div class="checkbox_wrap">
 											<input type="checkbox" name="" id="" placeholder="">
-											<label for="">Landing Page</label>
+											<label for="">Website design</label>
 										</div>
 										<div class="checkbox_wrap">
 											<input type="checkbox" name="" id="" placeholder="">
@@ -97,15 +97,11 @@
 										</div>
 										<div class="checkbox_wrap">
 											<input type="checkbox" name="" id="" placeholder="">
-											<label for="">Web design</label>
+											<label for="">Search Engine Optimization</label>
 										</div>
 										<div class="checkbox_wrap">
 											<input type="checkbox" name="" id="" placeholder="">
-											<label for="">Mobile Design</label>
-										</div>
-										<div class="checkbox_wrap">
-											<input type="checkbox" name="" id="" placeholder="">
-											<label for="">Search engine Optimization</label>
+											<label for="">Custom Solution</label>
 										</div>
 										<p>*Choose one or more opions</p>
 									</div>
@@ -113,7 +109,7 @@
 								</div>
 								<div class="row">
 									<div class="col-lg-6 ">
-										<p class="p-24">Describe your project</p>
+										<p class="p-24">3. Describe your project</p>
 									</div>
  
 									<div class="col-lg-6">

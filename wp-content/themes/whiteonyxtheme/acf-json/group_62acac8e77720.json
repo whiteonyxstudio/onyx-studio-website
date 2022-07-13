@@ -42,8 +42,8 @@
                 },
                 {
                     "key": "field_62acacb9d2d59",
-                    "label": "FAQ  Answer",
-                    "name": "faq__answer",
+                    "label": "FAQ Answer",
+                    "name": "faq_answer",
                     "type": "text",
                     "instructions": "",
                     "required": 0,
@@ -83,6 +83,13 @@
                 "operator": "==",
                 "value": "single_service_template.php"
             }
+        ],
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "services"
+            }
         ]
     ],
     "menu_order": 0,
@@ -94,5 +101,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1655751997
+    "modified": 1657027048
 }

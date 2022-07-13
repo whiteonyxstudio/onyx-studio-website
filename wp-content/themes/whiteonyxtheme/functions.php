@@ -193,11 +193,43 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 /*
 * Create Custom Post Types For Portfolio Posts And Reviews.
 */
+add_action( 'init', 'register_custom_taxonomies');
+function register_custom_taxonomies()
+{
+  register_taxonomy( 'project-category', 'portfolio', array(
+	"hierarchical" => true,
+	"label" => "Project Category",
+	"singular_label" => "Project Category",
+	'query_var' => true,
+	'rewrite' => array( 'slug' => 'project-category', 'with_front' => false ),
+	'public' => true,
+	'show_ui' => true,
+	'show_in_rest' => true,
+	'show_tagcloud' => true,
+	'show_admin_column' => true,
+	'_builtin' => false,
+	'show_in_nav_menus' => true
+  ));
+	 register_taxonomy( 'service-category', 'services', array(
+	"hierarchical" => true,
+	"label" => "Service Category",
+	"singular_label" => "Service Category",
+	'query_var' => true,
+	'rewrite' => array( 'slug' => 'service-category', 'with_front' => false ),
+	'public' => true,
+	'show_ui' => true,
+	'show_in_rest' => true,
+	'show_tagcloud' => true,
+	'show_admin_column' => true,
+	'_builtin' => false,
+	'show_in_nav_menus' => true
+  ));
+}
 
 add_action('init', 'add_custom_post_types');
 function add_custom_post_types(){
 
-		register_post_type('case', array(
+		register_post_type('portfolio', array(
 		'labels'             => array(
 			'name'               => 'Portfolio Case', // Основное название типа записи
 			'singular_name'      => 'Portfolio Case', // отдельное название записи типа Book
@@ -217,15 +249,18 @@ function add_custom_post_types(){
 		'publicly_queryable' => true,
 		'show_ui'            => true,
 		'show_in_menu'       => true,
+		'show_in_rest'       => true,
 		'menu_icon'          =>'dashicons-portfolio',
 		'query_var'          => true,
 		'rewrite'            => true,
 		'capability_type'    => 'post',
 		'has_archive'        => true,
 		'hierarchical'       => false,
-		'taxonomies'         => array('category'),
+		'exclude_from_search'=> false,
+		'show-in_nav_menus'   =>true, 
+		'taxonomies'         => array('project-category'),
 		'menu_position'      => null,
-		'supports'           => array('title','excerpt','template','custom-fields','thumbnail', 'page-attributes'),
+		'supports'           => array('title','excerpt','template','custom-fields','thumbnail','page-attributes'),
 	) );
 
 	register_post_type('services', array(
@@ -254,9 +289,9 @@ function add_custom_post_types(){
 		'capability_type'    => 'post',
 		'has_archive'        => true,
 		'hierarchical'       => false,
-		'taxonomies'         => array('category'),
+		'taxonomies'         => array('service-category'),
 		'menu_position'      => null,
-		'supports'           => array('title','excerpt','template','custom-fields','thumbnail', 'page-attributes'),
+		'supports'           => array('title','excerpt','template','custom-fields','thumbnail', 'slug', 'page-attributes'),
 	) );
 
 	register_post_type('testemonials', array(
@@ -304,4 +339,63 @@ function add_navigation_menus() {
 	register_nav_menu( 'footer_studio_menu', 'Footer Studio Navigation' );
 	register_nav_menu( 'footer_social_menu', 'Footer Social Navigation' );
 }
+
+
+function example_cats_related_post() {
+
+    $post_id = get_the_ID();
+    $cat_ids = array();
+    $categories = get_the_category( $post_id );
+
+    if(!empty($categories) && !is_wp_error($categories)):
+        foreach ($categories as $category):
+            array_push($cat_ids, $category->term_id);
+        endforeach;
+    endif;
+
+    $current_post_type = get_post_type($post_id);
+
+    $query_args = array( 
+        'category__in'   => $cat_ids,
+        'post_type'      => $current_post_type,
+        'post__not_in'    => array($post_id),
+        'posts_per_page'  => '3',
+     );
+
+    $related_cats_post = new WP_Query( $query_args );
+
+    if($related_cats_post->have_posts()):
+         while($related_cats_post->have_posts()): $related_cats_post->the_post(); ?>
+
+						<div class="blog_standard_layout">
+							<a class="item_image" href="<?php the_permalink(); ?>">
+								<?php the_post_thumbnail('full'); ?>
+							</a>
+							<div class="item_content">
+								<ul class="post_meta ul_li text-uppercase">
+									<li>By - <?php $author_id=$post->post_author; the_author_meta( 'display_name' , $author_id ); ?></li>
+									<li><a href="#!">Web Development</a></li>
+								</ul>
+								<h3 class="item_title text_effect_wrap">
+									<a href="<?php the_permalink(); ?>">
+										<span class="text_effect_wrap1">
+											<span class="text_effect_wrap2">
+												<span class="text_effect_wrap3"><?php the_title(); ?></span>
+											</span>
+										</span>
+									</a>
+								</h3>
+								<a class="btn_text text-uppercase" href="<?php the_permalink(); ?>"><span>Read More</span><i class="fal fa-long-arrow-right"></i></a>
+							</div>
+						</div>
+
+        <?php endwhile;
+        // Restore original Post Data
+        wp_reset_postdata();
+    endif;
+}
+
+
+
+
 

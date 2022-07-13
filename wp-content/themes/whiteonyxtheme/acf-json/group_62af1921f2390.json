@@ -180,7 +180,7 @@
             {
                 "param": "post_type",
                 "operator": "==",
-                "value": "case"
+                "value": "portfolio"
             }
         ]
     ],
@@ -193,5 +193,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1655911397
+    "modified": 1656946787
 }

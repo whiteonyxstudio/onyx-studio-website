@@ -1,0 +1,96 @@
+/* 3.12 - Contact - start
+================================================== */
+.main_contact_info {
+  padding-right: 30px;
+}
+.main_contact_info .area_title {
+  font-size: 28px;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+.main_contact_info p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+.main_contact_info li {
+  font-size: 18px;
+}
+.main_contact_info li:not(:last-child) {
+  margin-bottom: 3px;
+}
+.main_contact_info li span {
+  font-weight: 500;
+  color: #000;
+}
+
+.contact_form_area {
+  padding-top: 106px;
+}
+
+.main_contact_form .form_item {
+  display: block;
+  width: 500px;
+  max-width: 500px;
+  font-size: 25px;
+  line-height: 2;
+  border: 1px solid black;
+}
+.main_contact_form .form_item input, .main_contact_form .form_item textarea {
+  padding: 6px 24px;
+  height: auto;
+  border: none;
+  font-size: 20px;
+}
+.main_contact_form .form_textarea {
+  border: none;
+  outline: none;
+}
+.main_contact_form .checkbox_wrap {
+  margin-bottom: 15px;
+  width: 100%;
+}
+.main_contact_form .checkbox_wrap input[type=checkbox] {
+  /* Double-sized Checkboxes */
+  -ms-transform: scale(1);
+  /* IE */
+  -moz-transform: scale(1.2);
+  /* FF */
+  -webkit-transform: scale(1.3);
+  /* Safari and Chrome */
+  -o-transform: scale(1.4);
+  /* Opera */
+  transform: scale(1.5);
+  padding: 10px;
+  margin-right: 10px;
+}
+.main_contact_form .checkbox_wrap label {
+  font-size: 25px;
+  line-height: 1;
+}
+
+.p-24 {
+  font-size: 24px;
+  text-transform: uppercase;
+  color: black;
+  font-weight: 500;
+}
+
+.map_section {
+  height: 640px;
+  margin-left: 40px;
+  position: relative;
+}
+.map_section iframe {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+#mapBox {
+  min-height: 700px;
+}
+
+/* 3.12 - Contact - end
+================================================== */

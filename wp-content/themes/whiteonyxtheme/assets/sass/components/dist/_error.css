@@ -1,0 +1,41 @@
+/* 3.17 - Error - start
+================================================== */
+.error_section .loadmore_btn_wrap {
+  margin-top: 60px;
+}
+.error_section h2 {
+  line-height: 1;
+  font-size: 288px;
+  margin-bottom: -30px;
+}
+.error_section h3 {
+  line-height: 1;
+  font-size: 33px;
+  margin-bottom: 25px;
+}
+.error_section p {
+  font-size: 20px;
+  line-height: 1.28;
+  margin-bottom: 0px;
+}
+
+.thank_you_section .loadmore_btn_wrap {
+  margin-top: 60px;
+}
+.thank_you_section h2 {
+  line-height: 1;
+  font-size: 110px;
+}
+.thank_you_section h3 {
+  line-height: 1;
+  font-size: 33px;
+  margin-bottom: 25px;
+}
+.thank_you_section p {
+  font-size: 24px;
+  line-height: 1.28;
+  margin-bottom: 0px;
+}
+
+/* 3.17 - Error - end
+================================================== */

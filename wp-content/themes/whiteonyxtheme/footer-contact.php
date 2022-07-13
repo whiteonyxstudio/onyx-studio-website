@@ -7,27 +7,58 @@
   		        <div class="row">
   		          <div class="col-xxl-12 menu-wrapper">
   		            <span class="small_title">Main Menu</span>
-  		            <ul>
-  		              <li><a class="nav-link" href="index.html">Home</a></li>
-  		              <li><a class="nav-link" href="services.html">Services</a></li>
-										<li><a class="nav-link" href="portfolio_classic.html">Portfolio</a></li>
-  		              <li><a class="nav-link" href="about.html">About</a></li>
-  		              <li><a class="nav-link" href="contact.html">Contact Us</a></li>
-  		            </ul>
+									<?php 
+      							wp_nav_menu( [
+      								'theme_location'  => 'main_menu',
+      								'container'       => false, 
+      								'menu_id'         => '',
+      								'echo'            => true,
+      								'fallback_cb'     => 'wp_page_menu',
+      								'before'          => '',
+      								'after'           => '',
+      								'link_before'     => '',
+      								'link_after'      => '',
+      								'items_wrap'      => '<ul >%3$s</ul>',
+      								'depth'           => 0,
+      								'walker'          => '',
+      							] );
+            			?>
   		            <span>Services</span>
-  		            <ul>
-  		              <li><a class="nav-link" href="web-development.html">Web developemnt</a></li>
-  		              <li><a class="nav-link" href="web_design.html">Web Design</a></li>
-  		              <li><a class="nav-link" href="seo.html">SEO</a></li>
-  		              <li><a class="nav-link" href="branding.html">Branding</a></li>
-  		            </ul>
+									<?php 
+      							wp_nav_menu( [
+      								'theme_location'  => 'services_menu',
+      								'container'       => false, 
+      								'menu_id'         => '',
+      								'echo'            => true,
+      								'fallback_cb'     => 'wp_page_menu',
+      								'before'          => '',
+      								'after'           => '',
+      								'link_before'     => '',
+      								'link_after'      => '',
+      								'items_wrap'      => '<ul >%3$s</ul>',
+      								'depth'           => 0,
+      								'walker'          => '',
+      							] );
+            			?>
+  		            
   		            <span>Useful links</span>
-  		            <ul>
-  		              <li><a class="nav-link" href="blog.html">Blog</a></li>
-  		              <li><a class="nav-link" href="web_design.html">Web Design</a></li>
-  		              <li><a class="nav-link" href="seo.html">SEO</a></li>
-  		              <li><a class="nav-link" href="branding.html">Branding</a></li>
-  		            </ul>
+									<?php 
+      							wp_nav_menu( [
+      								'theme_location'  => 'useful_menu',
+      								'container'       => false, 
+      								'menu_id'         => '',
+      								'echo'            => true,
+      								'fallback_cb'     => 'wp_page_menu',
+      								'before'          => '',
+      								'after'           => '',
+      								'link_before'     => '',
+      								'link_after'      => '',
+      								'items_wrap'      => '<ul >%3$s</ul>',
+      								'depth'           => 0,
+      								'walker'          => '',
+      							] );
+            			?>
+  		            
   		            <span>Soc. networks</span>
   		            <ul class="social-nav">
   		              <li><a target="_blank" href="https://www.instagram.com/whiteonyx.studio/"><i class="fa fa-instagram"></i></a></li>

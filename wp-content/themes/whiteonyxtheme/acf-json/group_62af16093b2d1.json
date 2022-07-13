@@ -42,8 +42,8 @@
         },
         {
             "key": "field_62af164ae74ec",
-            "label": "Large Header  Row",
-            "name": "s04_large_header__row",
+            "label": "Large Header 2 Row",
+            "name": "s04_large_header_2_row",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -123,16 +123,23 @@
         ],
         [
             {
-                "param": "page_template",
+                "param": "post_type",
                 "operator": "==",
-                "value": "archive-services.php"
+                "value": "services"
             }
         ],
         [
             {
-                "param": "post_type",
+                "param": "page_template",
                 "operator": "==",
-                "value": "services"
+                "value": "services-template.php"
+            }
+        ],
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "services-achive-content"
             }
         ]
     ],
@@ -145,5 +152,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1655751792
+    "modified": 1657293489
 }

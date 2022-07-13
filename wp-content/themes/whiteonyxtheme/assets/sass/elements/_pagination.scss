@@ -49,5 +49,43 @@
 		}
 	}
 }
+
+
+.pagination{
+	.nav-links{
+		display: flex;
+		.page-numbers{
+		height: 56px;
+		padding: 5px;
+		display: flex;
+		color: #000;
+		min-width: 56px;
+		font-size: 21px;
+		font-weight: 500;
+		align-items: center;
+		justify-content: center;
+		font-family: $secondary_font;
+			&:hover,
+			&.active {
+				a {
+					background-color: #303030;
+					color: #fff;
+				}
+			}
+			&:first-child {
+				margin-right: 10px;
+			}
+			&:last-child {
+				margin-left: 10px;
+			}
+		}
+		.page-numbers.current{
+				background-color: #303030;
+				color: #fff;
+		}
+		
+	}
+}
+
 /* 2.13 - Pagination Nav Style - end
 ================================================== */

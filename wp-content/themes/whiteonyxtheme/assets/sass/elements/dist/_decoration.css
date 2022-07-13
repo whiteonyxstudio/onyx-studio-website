@@ -1,0 +1,13 @@
+/* 2.5 - Template Decoration Settings - start
+================================================== */
+.decoration_wrap {
+  z-index: 1;
+  position: relative;
+}
+.decoration_wrap .decoration_item {
+  z-index: -1;
+  position: absolute;
+}
+
+/* 2.5 - Template Decoration Settings - end
+================================================== */

@@ -7,24 +7,108 @@
 
 				<!-- breadcrumb_section - start
 				================================================== -->
-				<section class="breadcrumb_section service-main  lime_bg">
+				<section class="breadcrumb_section service-main lime_bg ">
 					<div class="container">
 						<div class="row">
-							<div class="col-12 col-md-10 col-lg-9">
-								<h1 class="page_title">
-									<span class="d-block">Web Development.</span>
-								</h1>
-								<p class="">
-									WE LINK SALES, MARKETING, PRODUCTION, DOCUMENTS, WAREHOUSE AND LOGISTICS INTO A SINGLE SYSTEM
-								</p>
+							<div class="col-12 col-md-6 col-lg-10 order-1 order-md-1">
+								
+								<div class="section_title style_2">
+									<h1 class="big_title text_effect_wrap">
+										<span class="text_effect_wrap1">
+											<span class="text_effect_wrap2">
+												<span class="text_effect_wrap3 text-break"><?php the_field('s21_hero_title'); ?></span>
+											</span>
+										</span>
+									</h1>
+								</div>
+							</div>
+
+							<div class="col-12 col-md-6 col-lg-4 order-3 order-md-2">
 								<div data-animation="fadeInUp2" data-delay=".6s">
 									<a class="btn btn_white" href="contact.html">Start a project</a>
 								</div>
+							</div>
+
+							<div class="col-12 col-md-6 col-lg-8 text-start order-2 order-md-3">
+
+								<p class="case_description">
+									<?php the_field('s21_hero_description'); ?>
+								</p>
+
 							</div>
 						</div>
 					</div>
 				</section>
 				<!-- breadcrumb_section - end
+				================================================== -->
+
+
+				<!-- participation_section - start
+				================================================== -->
+				<!-- <section class="participation_section section_space ">
+					<div class="container">
+						<div class="row">
+							
+							<div class="col-12 col-lg-4 col-xl-3">
+								<div class="section_title">
+									<h3 class="big_title text_effect_wrap">
+										<span class="text_effect_wrap1">
+											<span class="text_effect_wrap2">
+												<span class="text_effect_wrap3 text-break">We will help You</span>
+											</span>
+										</span>
+									</h3>
+								</div>
+          		</div>
+
+							<div class=" col-12 col-lg-8 offset-xl-1 col-xl-8">
+							
+								<div class="participation no_content border-0 	">
+									<div class="participation_step">
+									 <div class="participation_number">
+										 <span style="color:#afed10;">01.</span>
+										 <h3>Scale you business</h3>
+									 </div>
+									 
+									</div>
+									<div class="participation_step">
+									 <div class="participation_number">
+										 <span style="color:#afed10;">02.</span>
+										 <h3>Decrease expences</h3>
+									 </div>
+									 
+									</div>
+									<div class="participation_step">
+									 <div class="participation_number">
+										 <span style="color:#afed10;">03.</span>
+										 <h3>Develop a marketing platform</h3>
+									 </div>
+									</div>
+									<div class="participation_step">
+									 <div class="participation_number">
+										 <span style="color:#afed10;">04.</span>
+										 <h3>Power-up your Brand</h3>
+									 </div>
+									</div>
+									<div class="participation_step">
+									 <div class="participation_number">
+										 <span style="color:#afed10;">05.</span>
+										 <h3>Establish connection with new clients</h3>
+									 </div>
+									</div>
+									<div class="participation_step">
+									 <div class="participation_number">
+										 <span style="color:#afed10;">05.</span>
+										 <h3>Generate more Leads</h3>
+									 </div>
+									</div>
+									
+								</div>
+							</div>
+						</div>
+					</div>
+				</section> -->
+				<!-- participation_section - end
 				================================================== -->
 
 				<!-- about_section - start
@@ -36,35 +120,35 @@
 							<div class="col-lg-12">
 								<div class="section_title style_2">
 									<h2 class="small_title">
-										we build
+										<?php the_field('s04_small_header'); ?>
 										<span class="line"></span>
 									</h2>
 								</div>
 							</div>
-							<div class="col-lg-6">
+							<div class="col-lg-7">
 									
 									<div class="section_title style_2">
 										<h3 class="big_title text_effect_wrap">
 											<span class="text_effect_wrap1">
 												<span class="text_effect_wrap2">
-													<span class="text_effect_wrap3 text-break">Websites that</span>
+													<span class="text_effect_wrap3 text-break"><?php the_field('s04_large_header_1_row'); ?></span>
 												</span>
 											</span>
 											<span class="text_effect_wrap1">
 												<span class="text_effect_wrap2">
-													<span class="text_effect_wrap3 text-break">solve problems</span>
+													<span class="text_effect_wrap3 text-break"><?php the_field('s04_large_header_2_row'); ?></span>
 												</span>
 											</span>
 										</h3>
 									</div>
 							</div>
-							<div class="col-lg-5 offset-lg-1 ">
+							<div class="col-lg-5 ">
 								<p class="p-0  mt-0">
-										Transformed in his bed into a horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections. The bedding was hardly able to cover it and seemed ready to slide off any moment. His many legs, pitifully thin compared with the size of the rest of him waved.
-									</p>
+									<?php the_field('s04_section_content'); ?>
+								</p>
 								
-								<a class="btn_text" href="about.html">
-									<span>Talk to us</span> 
+								<a class="btn_text btn_text_white" href="<?php the_field('s04_button_url'); ?>">
+									<span><?php the_field('s04_button_text'); ?></span> 
 									<svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
 										<path d="M10 0V7.50063H9.16833V1.42131L0.587991 10L0 9.41015L8.57868 0.833125H2.49418V0H10Z" fill="white"></path>
 									</svg>
@@ -77,7 +161,7 @@
 				<!-- about_section - end
 				================================================== -->
 
-				<!-- services_section - start
+				<!-- services_section1- start
 				================================================== -->
 				<section class="services section_space pb-0">
 					<div class="container">
@@ -85,442 +169,75 @@
 
 							<div class="col-lg-3">
 								<div class="section_title style_2">
-									<h2 class="small_title">
+									<h2 class="small_title ">
 										01
 										<span class="line"></span>
 									</h2>
+									
 								</div>
 							</div>
-							<div class="col-lg-5">
-								<div class="section_title ">
+							<div class="col-12 col-sm-7 col-md-7 col-lg-9">
+								<div class="section_title style_2">
 									<h3 class="big_title text_effect_wrap">
 										<span class="text_effect_wrap1">
 											<span class="text_effect_wrap2">
-												<span class="text_effect_wrap3 text-break">Developemnt</span>
+												<span class="text_effect_wrap3 text-break"><?php the_field('s16_section_name'); ?></span>
 											</span>
 										</span>
 									</h3>
 								</div>
 							</div>
 							
-							<div class="col-12 col-lg-3 offset-lg-1 d-flex justify-content-start justify-content-lg-end align-items-center">
-								<a class="btn_text more_btn" href="about.html">
-									<span>More about Development</span> 
-									<svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path d="M10 0V7.50063H9.16833V1.42131L0.587991 10L0 9.41015L8.57868 0.833125H2.49418V0H10Z" fill="white"></path>
-									</svg>
-								</a>
-							</div>
+							
 
 							<div class="col-12 col-md-12 col-lg-9 offset-lg-3">
 								<div class="accordion accordion-flush services-accordion large-accordion mt-0" id="accordionFlushExample">
-								  <div class="accordion-item">
-								    <h2 class="accordion-header" id="flush-headingOne">
-								      <button class="accordion-button  collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-								        <div class="blog_simple_layout">
-													<h3 class="item_title text_effect_wrap ">
-														<span class="text_effect_wrap1">
-															<span class="text_effect_wrap2">
-																<span class="text_effect_wrap3">Landing Pages</span>
-															</span>
-														</span>
-													</h3>
-													
-												</div>
-								      </button>
-								    </h2>
-								    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-								      <div class="accordion-body">
-												<div class="blog_simple_layout">
-													<div class="blog_col">
-														<p>
-															Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque voluptates cupiditate dicta iure veritatis labore optio eaque enim ipsa facere suscipit sed dolore soluta, nemo voluptatibus! Perspiciatis excepturi sapiente quod.
-														</p>
-														<a class="btn_text" href="web-development.html">
-															<span>Learn more</span> 
-															<svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-																<path d="M10 0V7.50063H9.16833V1.42131L0.587991 10L0 9.41015L8.57868 0.833125H2.49418V0H10Z" fill=""></path>
-															</svg>
-														</a>
-													</div>
-													<div class="blog_col blog_col_1">
-														
-														<ul class="service-list">
-															<li class="service-list-item">
-																<a href="landing_page.html">
-																	<span>01 </span>
-																	<span class="service-item-name">Landing Pages</span>
-																	<svg width="44" height="17" viewBox="0 0 44 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-																	  <path d="M39.7777 4.77763C39.973 4.58236 39.973 4.26578 39.7777 4.07052L36.5957 0.888538C36.4005 0.693276 36.0839 0.693276 35.8886 0.888538C35.6934 1.0838 35.6934 1.40038 35.8886 1.59565L38.7171 4.42407L35.8886 7.2525C35.6934 7.44776 35.6934 7.76434 35.8886 7.95961C36.0839 8.15487 36.4005 8.15487 36.5957 7.95961L39.7777 4.77763ZM4.57617 4.92407L39.4242 4.92407V3.92407L4.57617 3.92407V4.92407Z" fill="black"/>
-																	</svg>
-																</a>
-															</li>
-															<li class="service-list-item">
-																<a href="landing_page.html">
-																	<span>02</span>
-																	<span class="service-item-name">Bisness card websites</span> 
-																	<svg width="44" height="17" viewBox="0 0 44 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-																	  <path d="M39.7777 4.77763C39.973 4.58236 39.973 4.26578 39.7777 4.07052L36.5957 0.888538C36.4005 0.693276 36.0839 0.693276 35.8886 0.888538C35.6934 1.0838 35.6934 1.40038 35.8886 1.59565L38.7171 4.42407L35.8886 7.2525C35.6934 7.44776 35.6934 7.76434 35.8886 7.95961C36.0839 8.15487 36.4005 8.15487 36.5957 7.95961L39.7777 4.77763ZM4.57617 4.92407L39.4242 4.92407V3.92407L4.57617 3.92407V4.92407Z" fill="black"/>
-																	</svg>
-																</a>
-															</li>
-															<li class="service-list-item">
-																<a href="landing_page.html">
-																	<span>03 </span>
-																	<span class="service-item-name">Corporate websites</span>
-																	<svg width="44" height="17" viewBox="0 0 44 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-																	  <path d="M39.7777 4.77763C39.973 4.58236 39.973 4.26578 39.7777 4.07052L36.5957 0.888538C36.4005 0.693276 36.0839 0.693276 35.8886 0.888538C35.6934 1.0838 35.6934 1.40038 35.8886 1.59565L38.7171 4.42407L35.8886 7.2525C35.6934 7.44776 35.6934 7.76434 35.8886 7.95961C36.0839 8.15487 36.4005 8.15487 36.5957 7.95961L39.7777 4.77763ZM4.57617 4.92407L39.4242 4.92407V3.92407L4.57617 3.92407V4.92407Z" fill="black"/>
-																	</svg>
-																</a>
-															</li>
-															<li class="service-list-item">
-																<a href="landing_page.html">
-																	<span>04 </span>
-																	<span class="service-item-name">Promo Websites</span>
-																	<svg width="44" height="17" viewBox="0 0 44 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-																	  <path d="M39.7777 4.77763C39.973 4.58236 39.973 4.26578 39.7777 4.07052L36.5957 0.888538C36.4005 0.693276 36.0839 0.693276 35.8886 0.888538C35.6934 1.0838 35.6934 1.40038 35.8886 1.59565L38.7171 4.42407L35.8886 7.2525C35.6934 7.44776 35.6934 7.76434 35.8886 7.95961C36.0839 8.15487 36.4005 8.15487 36.5957 7.95961L39.7777 4.77763ZM4.57617 4.92407L39.4242 4.92407V3.92407L4.57617 3.92407V4.92407Z" fill="black"/>
-																	</svg>
-																</a>
-															</li>
-															<li class="service-list-item">
-																<a href="landing_page.html">
-																	<span>05</span>
-																	<span class="service-item-name">Blogs</span>
-																	<svg width="44" height="17" viewBox="0 0 44 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-																	  <path d="M39.7777 4.77763C39.973 4.58236 39.973 4.26578 39.7777 4.07052L36.5957 0.888538C36.4005 0.693276 36.0839 0.693276 35.8886 0.888538C35.6934 1.0838 35.6934 1.40038 35.8886 1.59565L38.7171 4.42407L35.8886 7.2525C35.6934 7.44776 35.6934 7.76434 35.8886 7.95961C36.0839 8.15487 36.4005 8.15487 36.5957 7.95961L39.7777 4.77763ZM4.57617 4.92407L39.4242 4.92407V3.92407L4.57617 3.92407V4.92407Z" fill="black"/>
-																	</svg>
-																</a>
-															</li>
-															<li class="service-list-item">
-																<a href="landing_page.html">
-																	<span>06 </span>
-																	<span class="service-item-name">Custom Solutions</span>
-																	<svg width="44" height="17" viewBox="0 0 44 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-																	  <path d="M39.7777 4.77763C39.973 4.58236 39.973 4.26578 39.7777 4.07052L36.5957 0.888538C36.4005 0.693276 36.0839 0.693276 35.8886 0.888538C35.6934 1.0838 35.6934 1.40038 35.8886 1.59565L38.7171 4.42407L35.8886 7.2525C35.6934 7.44776 35.6934 7.76434 35.8886 7.95961C36.0839 8.15487 36.4005 8.15487 36.5957 7.95961L39.7777 4.77763ZM4.57617 4.92407L39.4242 4.92407V3.92407L4.57617 3.92407V4.92407Z" fill="black"/>
-																	</svg>
-																</a>
-															</li>
-														</ul>
-														<div data-animation="fadeInUp2" data-delay=".6s">
-															<a class="btn btn_white" href="contact.html">Start a project</a>
+
+									<?php if( have_rows('s16_development_accodrion') ): ?>
+									    
+									    <?php $counter=1; while( have_rows('s16_development_accodrion') ): the_row(); 
+									    ?>
+									    	<div class="accordion-item">
+								  			  <h2 class="accordion-header" id="flush-heading<?php echo $counter; ?>">
+								  			    <button class="accordion-button  collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse<?php echo $counter; ?>" aria-expanded="false" aria-controls="flush-collapse<?php echo $counter; ?>">
+								  			      <div class="blog_simple_layout">
+																<div class="mb-0">
+																	<h3 class="item_title text_effect_wrap ">
+																		<span class="text_effect_wrap1">
+																			<span class="text_effect_wrap2">
+																				<span class="text_effect_wrap3"><?php the_sub_field('service_name'); ?></span>
+																			</span>
+																		</span>
+																	</h3>
+																</div>
+															</div>
+								  			    </button>
+								  			  </h2>
+								  			  <div id="flush-collapse<?php echo $counter; ?>" class="accordion-collapse collapse" aria-labelledby="flush-heading<?php echo $counter; ?>" data-bs-parent="#accordionFlushExample">
+								  			    <div class="accordion-body">
+															<div class="blog_simple_layout">
+																<div class="blog_col">
+																	<p><?php the_sub_field('service_description'); ?></p>
+																	<a class="btn_text" href="<?php the_sub_field('learn_more_link'); ?>">
+																		<span>Learn more</span> 
+																		<svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+																			<path d="M10 0V7.50063H9.16833V1.42131L0.587991 10L0 9.41015L8.57868 0.833125H2.49418V0H10Z" fill="white"></path>
+																		</svg>
+																	</a>
+																</div>
+																<div class="blog_col blog_col_1">
+																	<?php the_sub_field('service_details_content'); ?>
+																	<div data-animation="fadeInUp2" data-delay=".6s">
+																		<a class="btn btn_white" href="contact.html">Start a project</a>
+																	</div>
+																</div>
+															</div>
 														</div>
-													</div>
-												</div>
-											</div>
-								    </div>
-								  </div>
-								  <div class="accordion-item">
-								    <h2 class="accordion-header" id="flush-headingTwo">
-								      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-								        <div class="blog_simple_layout">
-													<h3 class="item_title text_effect_wrap">
-														<span class="text_effect_wrap1">
-															<span class="text_effect_wrap2">
-																<span class="text_effect_wrap3">Business Websites</span>
-															</span>
-														</span>
-													</h3>
-												</div>
-								      </button>
-								    </h2>
-								    <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-								      <div class="accordion-body">
-												<div class="blog_simple_layout">
-													<div class="blog_col">
-														<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam atque eum illum ipsa suscipit quasi ea harum eveniet, nemo in quo ipsam modi natus minima doloremque sunt eaque! Perferendis, ab?</p>
-														<a class="btn_text" href="web_design.html">
-															<span>Learn more</span> 
-															<svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-																<path d="M10 0V7.50063H9.16833V1.42131L0.587991 10L0 9.41015L8.57868 0.833125H2.49418V0H10Z" fill="white"></path>
-															</svg>
-														</a>
-													</div>
-													<div class="blog_col blog_col_1">
-														<ul class="service-list">
-															<li class="service-list-item">
-																<a href="">
-																	<span>01 </span>
-																	<span class="service-item-name">Landing Pages</span>
-																	<svg width="44" height="17" viewBox="0 0 44 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-																	  <path d="M39.7777 4.77763C39.973 4.58236 39.973 4.26578 39.7777 4.07052L36.5957 0.888538C36.4005 0.693276 36.0839 0.693276 35.8886 0.888538C35.6934 1.0838 35.6934 1.40038 35.8886 1.59565L38.7171 4.42407L35.8886 7.2525C35.6934 7.44776 35.6934 7.76434 35.8886 7.95961C36.0839 8.15487 36.4005 8.15487 36.5957 7.95961L39.7777 4.77763ZM4.57617 4.92407L39.4242 4.92407V3.92407L4.57617 3.92407V4.92407Z" fill="black"/>
-																	</svg>
-																</a>
-															</li>
-															<li class="service-list-item">
-																<a href="">
-																	<span>02</span>
-																	<span class="service-item-name">Bisness card websites</span> 
-																	<svg width="44" height="17" viewBox="0 0 44 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-																	  <path d="M39.7777 4.77763C39.973 4.58236 39.973 4.26578 39.7777 4.07052L36.5957 0.888538C36.4005 0.693276 36.0839 0.693276 35.8886 0.888538C35.6934 1.0838 35.6934 1.40038 35.8886 1.59565L38.7171 4.42407L35.8886 7.2525C35.6934 7.44776 35.6934 7.76434 35.8886 7.95961C36.0839 8.15487 36.4005 8.15487 36.5957 7.95961L39.7777 4.77763ZM4.57617 4.92407L39.4242 4.92407V3.92407L4.57617 3.92407V4.92407Z" fill="black"/>
-																	</svg>
-																</a>
-															</li>
-															<li class="service-list-item">
-																<a href="">
-																	<span>03 </span>
-																	<span class="service-item-name">Corporate websites</span>
-																	<svg width="44" height="17" viewBox="0 0 44 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-																	  <path d="M39.7777 4.77763C39.973 4.58236 39.973 4.26578 39.7777 4.07052L36.5957 0.888538C36.4005 0.693276 36.0839 0.693276 35.8886 0.888538C35.6934 1.0838 35.6934 1.40038 35.8886 1.59565L38.7171 4.42407L35.8886 7.2525C35.6934 7.44776 35.6934 7.76434 35.8886 7.95961C36.0839 8.15487 36.4005 8.15487 36.5957 7.95961L39.7777 4.77763ZM4.57617 4.92407L39.4242 4.92407V3.92407L4.57617 3.92407V4.92407Z" fill="black"/>
-																	</svg>
-																</a>
-															</li>
-															<li class="service-list-item">
-																<a href="">
-																	<span>04 </span>
-																	<span class="service-item-name">Promo Websites</span>
-																	<svg width="44" height="17" viewBox="0 0 44 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-																	  <path d="M39.7777 4.77763C39.973 4.58236 39.973 4.26578 39.7777 4.07052L36.5957 0.888538C36.4005 0.693276 36.0839 0.693276 35.8886 0.888538C35.6934 1.0838 35.6934 1.40038 35.8886 1.59565L38.7171 4.42407L35.8886 7.2525C35.6934 7.44776 35.6934 7.76434 35.8886 7.95961C36.0839 8.15487 36.4005 8.15487 36.5957 7.95961L39.7777 4.77763ZM4.57617 4.92407L39.4242 4.92407V3.92407L4.57617 3.92407V4.92407Z" fill="black"/>
-																	</svg>
-																</a>
-															</li>
-															
-														</ul>
-														<div data-animation="fadeInUp2" data-delay=".6s">
-															<a class="btn btn_white" href="contact.html">Start a project</a>
-														</div>
-													</div>
-												</div>
-											</div>
-								    </div>
-								  </div>
-									<div class="accordion-item">
-								    <h2 class="accordion-header" id="flush-heading2">
-								      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse2" aria-expanded="false" aria-controls="flush-collapse2">
-								        <div class="blog_simple_layout">
-													<h3 class="item_title text_effect_wrap">
-														<span class="text_effect_wrap1">
-															<span class="text_effect_wrap2">
-																<span class="text_effect_wrap3">Corporate Websites</span>
-															</span>
-														</span> 
-													</h3>
-												</div>
-								      </button>
-								    </h2>
-								    <div id="flush-collapse2" class="accordion-collapse collapse" aria-labelledby="flush-heading2" data-bs-parent="#accordionFlushExample">
-								      <div class="accordion-body">
-												<div class="blog_simple_layout">
-													<div class="blog_col">
-														<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam atque eum illum ipsa suscipit quasi ea harum eveniet, nemo in quo ipsam modi natus minima doloremque sunt eaque! Perferendis, ab?</p>
-														<a class="btn_text" href="branding.html">
-															<span>Learn more</span> 
-															<svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-																<path d="M10 0V7.50063H9.16833V1.42131L0.587991 10L0 9.41015L8.57868 0.833125H2.49418V0H10Z" fill="white"></path>
-															</svg>
-														</a>
-													</div>
-													<div class="blog_col blog_col_1">
-														<ul class="service-list">
-															<li class="service-list-item">
-																<a href="">
-																	<span>01 </span>
-																	<span class="service-item-name">Brand identity</span>
-																	<svg width="44" height="17" viewBox="0 0 44 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-																	  <path d="M39.7777 4.77763C39.973 4.58236 39.973 4.26578 39.7777 4.07052L36.5957 0.888538C36.4005 0.693276 36.0839 0.693276 35.8886 0.888538C35.6934 1.0838 35.6934 1.40038 35.8886 1.59565L38.7171 4.42407L35.8886 7.2525C35.6934 7.44776 35.6934 7.76434 35.8886 7.95961C36.0839 8.15487 36.4005 8.15487 36.5957 7.95961L39.7777 4.77763ZM4.57617 4.92407L39.4242 4.92407V3.92407L4.57617 3.92407V4.92407Z" fill="black"/>
-																	</svg>
-																</a>
-															</li>
-															<li class="service-list-item">
-																<a href="">
-																	<span>02</span>
-																	<span class="service-item-name">Corporate logo design</span> 
-																	<svg width="44" height="17" viewBox="0 0 44 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-																	  <path d="M39.7777 4.77763C39.973 4.58236 39.973 4.26578 39.7777 4.07052L36.5957 0.888538C36.4005 0.693276 36.0839 0.693276 35.8886 0.888538C35.6934 1.0838 35.6934 1.40038 35.8886 1.59565L38.7171 4.42407L35.8886 7.2525C35.6934 7.44776 35.6934 7.76434 35.8886 7.95961C36.0839 8.15487 36.4005 8.15487 36.5957 7.95961L39.7777 4.77763ZM4.57617 4.92407L39.4242 4.92407V3.92407L4.57617 3.92407V4.92407Z" fill="black"/>
-																	</svg>
-																</a>
-															</li>
-															<li class="service-list-item">
-																<a href="">
-																	<span>03 </span>
-																	<span class="service-item-name">Corporate documentation</span>
-																	<svg width="44" height="17" viewBox="0 0 44 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-																	  <path d="M39.7777 4.77763C39.973 4.58236 39.973 4.26578 39.7777 4.07052L36.5957 0.888538C36.4005 0.693276 36.0839 0.693276 35.8886 0.888538C35.6934 1.0838 35.6934 1.40038 35.8886 1.59565L38.7171 4.42407L35.8886 7.2525C35.6934 7.44776 35.6934 7.76434 35.8886 7.95961C36.0839 8.15487 36.4005 8.15487 36.5957 7.95961L39.7777 4.77763ZM4.57617 4.92407L39.4242 4.92407V3.92407L4.57617 3.92407V4.92407Z" fill="black"/>
-																	</svg>
-																</a>
-															</li>
-															<li class="service-list-item">
-																<a href="">
-																	<span>04 </span>
-																	<span class="service-item-name">Content design</span>
-																	<svg width="44" height="17" viewBox="0 0 44 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-																	  <path d="M39.7777 4.77763C39.973 4.58236 39.973 4.26578 39.7777 4.07052L36.5957 0.888538C36.4005 0.693276 36.0839 0.693276 35.8886 0.888538C35.6934 1.0838 35.6934 1.40038 35.8886 1.59565L38.7171 4.42407L35.8886 7.2525C35.6934 7.44776 35.6934 7.76434 35.8886 7.95961C36.0839 8.15487 36.4005 8.15487 36.5957 7.95961L39.7777 4.77763ZM4.57617 4.92407L39.4242 4.92407V3.92407L4.57617 3.92407V4.92407Z" fill="black"/>
-																	</svg>
-																</a>
-															</li>
-														</ul>
-														<div data-animation="fadeInUp2" data-delay=".6s">
-															<a class="btn btn_white" href="contact.html">Start a project</a>
-														</div>
-													</div>
-												</div>
-											</div>
-								    </div>
-								  </div>
-									<div class="accordion-item">
-								    <h2 class="accordion-header" id="flush-heading3">
-								      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse3" aria-expanded="false" aria-controls="flush-collapse3">
-								        <div class="blog_simple_layout">
-													<h3 class="item_title text_effect_wrap">
-														<span class="text_effect_wrap1">
-															<span class="text_effect_wrap2">
-																<span class="text_effect_wrap3">Promo Websites</span>
-															</span>
-														</span>
-													</h3>
-												</div>
-								      </button>
-								    </h2>
-								    <div id="flush-collapse3" class="accordion-collapse collapse" aria-labelledby="flush-heading3" data-bs-parent="#accordionFlushExample">
-								      <div class="accordion-body">
-												<div class="blog_simple_layout">
-													<div class="blog_col">
-														<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam atque eum illum ipsa suscipit quasi ea harum eveniet, nemo in quo ipsam modi natus minima doloremque sunt eaque! Perferendis, ab?</p>
-														<a class="btn_text" href="seo.html">
-															<span>Learn more</span> 
-															<svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-																<path d="M10 0V7.50063H9.16833V1.42131L0.587991 10L0 9.41015L8.57868 0.833125H2.49418V0H10Z" fill="white"></path>
-															</svg>
-														</a>
-													</div>
-													<div class="blog_col blog_col_1">
-														<ul class="service-list">
-															<li class="service-list-item">
-																<a href="">
-																	<span>01 </span>
-																	<span class="service-item-name">Brand identity</span>
-																	<svg width="44" height="17" viewBox="0 0 44 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-																	  <path d="M39.7777 4.77763C39.973 4.58236 39.973 4.26578 39.7777 4.07052L36.5957 0.888538C36.4005 0.693276 36.0839 0.693276 35.8886 0.888538C35.6934 1.0838 35.6934 1.40038 35.8886 1.59565L38.7171 4.42407L35.8886 7.2525C35.6934 7.44776 35.6934 7.76434 35.8886 7.95961C36.0839 8.15487 36.4005 8.15487 36.5957 7.95961L39.7777 4.77763ZM4.57617 4.92407L39.4242 4.92407V3.92407L4.57617 3.92407V4.92407Z" fill="black"/>
-																	</svg>
-																</a>
-															</li>
-															<li class="service-list-item">
-																<a href="">
-																	<span>02</span>
-																	<span class="service-item-name">Corporate logo design</span> 
-																	<svg width="44" height="17" viewBox="0 0 44 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-																	  <path d="M39.7777 4.77763C39.973 4.58236 39.973 4.26578 39.7777 4.07052L36.5957 0.888538C36.4005 0.693276 36.0839 0.693276 35.8886 0.888538C35.6934 1.0838 35.6934 1.40038 35.8886 1.59565L38.7171 4.42407L35.8886 7.2525C35.6934 7.44776 35.6934 7.76434 35.8886 7.95961C36.0839 8.15487 36.4005 8.15487 36.5957 7.95961L39.7777 4.77763ZM4.57617 4.92407L39.4242 4.92407V3.92407L4.57617 3.92407V4.92407Z" fill="black"/>
-																	</svg>
-																</a>
-															</li>
-															<li class="service-list-item">
-																<a href="">
-																	<span>03 </span>
-																	<span class="service-item-name">Corporate documentation</span>
-																	<svg width="44" height="17" viewBox="0 0 44 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-																	  <path d="M39.7777 4.77763C39.973 4.58236 39.973 4.26578 39.7777 4.07052L36.5957 0.888538C36.4005 0.693276 36.0839 0.693276 35.8886 0.888538C35.6934 1.0838 35.6934 1.40038 35.8886 1.59565L38.7171 4.42407L35.8886 7.2525C35.6934 7.44776 35.6934 7.76434 35.8886 7.95961C36.0839 8.15487 36.4005 8.15487 36.5957 7.95961L39.7777 4.77763ZM4.57617 4.92407L39.4242 4.92407V3.92407L4.57617 3.92407V4.92407Z" fill="black"/>
-																	</svg>
-																</a>
-															</li>
-															<li class="service-list-item">
-																<a href="">
-																	<span>04 </span>
-																	<span class="service-item-name">Content design</span>
-																	<svg width="44" height="17" viewBox="0 0 44 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-																	  <path d="M39.7777 4.77763C39.973 4.58236 39.973 4.26578 39.7777 4.07052L36.5957 0.888538C36.4005 0.693276 36.0839 0.693276 35.8886 0.888538C35.6934 1.0838 35.6934 1.40038 35.8886 1.59565L38.7171 4.42407L35.8886 7.2525C35.6934 7.44776 35.6934 7.76434 35.8886 7.95961C36.0839 8.15487 36.4005 8.15487 36.5957 7.95961L39.7777 4.77763ZM4.57617 4.92407L39.4242 4.92407V3.92407L4.57617 3.92407V4.92407Z" fill="black"/>
-																	</svg>
-																</a>
-															</li>
-														</ul>
-														<div data-animation="fadeInUp2" data-delay=".6s">
-															<a class="btn btn_white" href="contact.html">Start a project</a>
-														</div>
-													</div>
-												</div>
-											</div>
-								    </div>
-								  </div>
-									<div class="accordion-item">
-								    <h2 class="accordion-header" id="flush-heading4">
-								      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse4" aria-expanded="false" aria-controls="flush-collapse4">
-								        <div class="blog_simple_layout">
-													<h3 class="item_title text_effect_wrap">
-														<span class="text_effect_wrap1">
-															<span class="text_effect_wrap2">
-																<span class="text_effect_wrap3">Blogs</span>
-															</span>
-														</span>
-													</h3>
-												</div>
-								      </button>
-								    </h2>
-								    <div id="flush-collapse4" class="accordion-collapse collapse" aria-labelledby="flush-heading4" data-bs-parent="#accordionFlushExample">
-								      <div class="accordion-body">
-												<div class="blog_simple_layout">
-													<div class="blog_col">
-														<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam atque eum illum ipsa suscipit quasi ea harum eveniet, nemo in quo ipsam modi natus minima doloremque sunt eaque! Perferendis, ab?</p>
-														<a class="btn_text" href="ppc.html">
-															<span>Learn more</span> 
-															<svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-																<path d="M10 0V7.50063H9.16833V1.42131L0.587991 10L0 9.41015L8.57868 0.833125H2.49418V0H10Z" fill="white"></path>
-															</svg>
-														</a>
-													</div>
-													<div class="blog_col blog_col_1">
-														<p>
-															We cover all  stages to  deliver a fully working product.
-														</p>
-														<ul>
-															<li>Briefing</li>
-															<li>Prototyping</li>
-															<li>Design</li>
-															<li>Development</li>
-															<li>Testing</li>
-															<li>Support</li>
-														</ul>
-														<div data-animation="fadeInUp2" data-delay=".6s">
-															<a class="btn btn_white" href="contact.html">Start a project</a>
-														</div>
-													</div>
-												</div>
-											</div>
-								    </div>
-								  </div>
-									<div class="accordion-item">
-								    <h2 class="accordion-header" id="flush-heading5">
-								      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse5" aria-expanded="false" aria-controls="flush-collapse5">
-								        <div class="blog_simple_layout">
-													<h3 class="item_title text_effect_wrap">
-														<span class="text_effect_wrap1">
-															<span class="text_effect_wrap2">
-																<span class="text_effect_wrap3">Custom Solutions</span>
-															</span>
-														</span>
-													</h3>
-												</div>
-								      </button>
-								    </h2>
-								    <div id="flush-collapse5" class="accordion-collapse collapse" aria-labelledby="flush-heading5" data-bs-parent="#accordionFlushExample">
-								      <div class="accordion-body">
-												<div class="blog_simple_layout">
-													<div class="blog_col">
-														<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam atque eum illum ipsa suscipit quasi ea harum eveniet, nemo in quo ipsam modi natus minima doloremque sunt eaque! Perferendis, ab?</p>
-														<a class="btn_text" href="mobile_design.html">
-															<span>Learn more</span> 
-															<svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-																<path d="M10 0V7.50063H9.16833V1.42131L0.587991 10L0 9.41015L8.57868 0.833125H2.49418V0H10Z" fill="white"></path>
-															</svg>
-														</a>
-													</div>
-													<div class="blog_col blog_col_1">
-														<p>
-															We cover all  stages to  deliver a fully working product.
-														</p>
-														<ul>
-															<li>Briefing</li>
-															<li>Prototyping</li>
-															<li>Design</li>
-															<li>Development</li>
-															<li>Testing</li>
-															<li>Support</li>
-														</ul>
-														<div data-animation="fadeInUp2" data-delay=".6s">
-															<a class="btn btn_white" href="contact.html">Start a project</a>
-														</div>
-													</div>
-												</div>
-											</div>
-								    </div>
-								  </div>
+								  			  </div>
+								  			</div>    
+									    <?php $counter++; endwhile; ?>
+									<?php endif; ?>
+
 								</div>
           		</div>
 						</div>
@@ -529,7 +246,7 @@
 				<!-- services_section - end
 				================================================== -->
 
-				<!-- team_section - start
+				<!-- portfolio_section - start
 				================================================== -->
 				<section class="team_section section_space">
 					<div class="container">
@@ -544,7 +261,7 @@
 								</div>
 							</div>
 							
-							<div class="col-12 col-lg-7">
+							<div class="col-12 col-sm-6 col-lg-6">
 								<div class="about_content mt-0">
 									<div class="section_title style_2">
 										<h3 class="big_title text_effect_wrap">
@@ -559,92 +276,52 @@
 												</span>
 											</span>
 										</h3>
-										
 									</div>
 								</div>
-								<a class="btn_text" href="blog_details.html">
-									<span>More Projects</span>
+							</div>
+
+							<div class="col-12 col-sm-6  col-lg-3 d-flex  justify-content-start justify-content-lg-end align-items-end">
+								<a class="btn_text more_btn" href="<?php the_field('s17_portfolio_page_link'); ?>"> 
+									<span>See all projects</span> 
 									<svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path d="M10 0V7.50063H9.16833V1.42131L0.587991 10L0 9.41015L8.57868 0.833125H2.49418V0H10Z" fill="white" />
+										<path d="M10 0V7.50063H9.16833V1.42131L0.587991 10L0 9.41015L8.57868 0.833125H2.49418V0H10Z" fill="white"></path>
 									</svg>
 								</a>
 							</div>
 
-							<div class="offset-0 col-12  offset-lg-3 col-lg-9 col-md-7">
+							<div class="offset-0 col-12 col-md-12 offset-lg-3 col-lg-9 ">
 								<div class="team_carousel_wrap">
 									<div class="team_carousel row" data-slick='{"dots": false, "arrows": false}'>
-										<div class="slider_item col">
-											<div class="team_grid_layout">
-												<div class="team_person_image">
-													<img src="<?php echo get_template_directory_uri(); ?>/assets/images/portfolio/portfolio-1.png" alt="image_not_found">
-												</div>
-												<div class="team_content">
-													<h3 class="team_person_name">Blex gordan</h3>
-													<span class="team_person_title text-uppercase">Project manager</span>
-												</div>
-											</div>
-										</div>
 
-										<div class="slider_item col">
-											<div class="team_grid_layout">
-												<div class="team_person_image">
-													<img src="<?php echo get_template_directory_uri(); ?>/assets/images/portfolio/portfolio-2.png" alt="image_not_found">
-												</div>
-												<div class="team_content">
-													<h3 class="team_person_name">Blex gordan</h3>
-													<span class="team_person_title text-uppercase">Project manager</span>
-												</div>
-											</div>
-										</div>
-
-										<div class="slider_item col">
-											<div class="team_grid_layout">
-												<div class="team_person_image">
-													<img src="<?php echo get_template_directory_uri(); ?>/assets/images/portfolio/portfolio-3.png" alt="image_not_found">
-												</div>
-												<div class="team_content">
-													<h3 class="team_person_name">Eoin hebalger</h3>
-													<span class="team_person_title text-uppercase">UI/UX designer</span>
-												</div>
-											</div>
-										</div>
-
-										<div class="slider_item col">
-											<div class="team_grid_layout">
-												<div class="team_person_image">
-													<img src="<?php echo get_template_directory_uri(); ?>/assets/images/portfolio/portfolio-1.png" alt="image_not_found">
-												</div>
-												<div class="team_content">
-													<h3 class="team_person_name">Blex gordan</h3>
-													<span class="team_person_title text-uppercase">Project manager</span>
-												</div>
-											</div>
-										</div>
-
-										<div class="slider_item col">
-											<div class="team_grid_layout">
-												<div class="team_person_image">
-													<img src="<?php echo get_template_directory_uri(); ?>/assets/images/portfolio/portfolio-2.png" alt="image_not_found">
-												</div>
-												<div class="team_content">
-													<h3 class="team_person_name">Blex gordan</h3>
-													<span class="team_person_title text-uppercase">Project manager</span>
-												</div>
-											</div>
-										</div>
-
-										<div class="slider_item col">
-											<div class="team_grid_layout">
-												<div class="team_person_image">
-													<img src="<?php echo get_template_directory_uri(); ?>/assets/images/portfolio/portfolio-3.png" alt="image_not_found">
-												</div>
-												<div class="team_content">
-													<h3 class="team_person_name">Eoin hebalger</h3>
-													<span class="team_person_title text-uppercase">UI/UX designer</span>
-												</div>
-											</div>
-										</div>
-										
+										<?php
+											$featured_posts = get_field('s17_featured_projects_slider');
+											if( $featured_posts ): ?>
+											    <?php foreach( $featured_posts as $post ): 
+											        // Setup this post for WP functions (variable must be named $post).
+											        setup_postdata($post); ?>
+											        <div class="slider_item col">
+																<div class="team_grid_layout">
+																	<div class="team_person_image">
+																		<a href="<?php the_permalink(); ?>">
+																			<?php 
+																			$image = get_field('s06_project_square_image');
+																			if( !empty( $image ) ): ?>
+																			    <img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+																			<?php endif; ?>
+																		</a>
+																	</div>
+																	<div class="team_content">
+																		<h3 class="team_person_name"><?php the_field('s07-project_brand_name'); ?></h3>
+																		<span class="team_person_title text-uppercase"><?php the_field('s07_project_deliverable'); ?></span>
+																	</div>
+																</div>
+															</div>
+											    <?php endforeach; ?>
+											<?php 
+											// Reset the global post object so that the rest of the page works correctly.
+											wp_reset_postdata(); ?>
+										<?php endif; ?>
+																				
 									</div>
 								</div>
 							</div>
@@ -652,7 +329,7 @@
 						</div>
 					</div>
 				</section>
-				<!-- team_section - end
+				<!-- portfolio_section - end
 				================================================== -->
 
 				
@@ -707,13 +384,13 @@
 							<div class="col-12">
 								<div class="section_title style_2">
 									<h2 class="small_title">
-										process
+										<?php the_field('s03_small_header'); ?>
 										<span class="line"></span>
 									</h2>
 									<h3 class="big_title text_effect_wrap">
 										<span class="text_effect_wrap1">
 											<span class="text_effect_wrap2">
-												<span class="text_effect_wrap3 text-break">How we run <br> Our projects</span>
+												<span class="text_effect_wrap3 text-break"><?php the_field('s03_large_header'); ?></span>
 											</span>
 										</span>
 									</h3>
@@ -736,72 +413,23 @@
 										<div class="line"></div>
 									</div>
 								</div>
-								<div class="process_row">
-									<div class="process_stage">
-										<p><sup>01</sup> Business research and strategy</p>
-									</div>
-									<div class="process_works">
-										<p>Marketing research, market analysis, business planning to determine the front of the project</p>
-									</div>
-									<div class="process_results">
-										<p>Defining tasks and deadlines for their implementation</p>
-									</div>
-								</div>
-								<div class="process_row">
-									<div class="process_stage">
-										<p><sup>02</sup>Prototype development</p>
-									</div>
-									<div class="process_works">
-										<p>Preparation of preliminary design models for further development of the corporate portal project</p>
-									</div>
-									<div class="process_results">
-										<p>Ready-made product concept that can be taken into development</p>
-									</div>
-								</div>
-								<div class="process_row">
-									<div class="process_stage">
-										<p><sup>03</sup>Design development</p>
-									</div>
-									<div class="process_works">
-										<p>Creation of visual and interface solutions for the project of the corporate site, as well as their coordination with the client</p>
-									</div>
-									<div class="process_results">
-										<p>Ready UI / UX for the project</p>
-									</div>
-								</div>
-								<div class="process_row">
-									<div class="process_stage">
-										<p><sup>04</sup>Programming</p>
-									</div>
-									<div class="process_works">
-										<p>Writing code by programmers and subsequent testing of the developed product before release</p>
-									</div>
-									<div class="process_results">
-										<p>Technical readiness of the project</p>
-									</div>
-								</div>
-								<div class="process_row">
-									<div class="process_stage">
-										<p><sup>05</sup>Connection of third-party services</p>
-									</div>
-									<div class="process_works">
-										<p>Integration into the site of a set of any necessary tools (online maps, chatbots, messengers, etc.)</p>
-									</div>
-									<div class="process_results">
-										<p>The site has the necessary customer services</p>
-									</div>
-								</div>
-								<div class="process_row">
-									<div class="process_stage">
-										<p><sup>06</sup>Release and support</p>
-									</div>
-									<div class="process_works">
-										<p>Release and further launch of the project, warranty and post-warranty service of the corporate portal</p>
-									</div>
-									<div class="process_results">
-										<p>The client is satisfied with the quality of the corporate website</p>
-									</div>
-								</div>
+
+								<?php if( have_rows('s03_process_table') ): ?>
+								    <?php $counter=1; while( have_rows('s03_process_table') ): the_row(); 
+								    ?>
+								    	<div class="process_row">
+												<div class="process_stage">
+													<p><sup>0<?php echo $counter; ?></sup><?php the_sub_field('stage_name'); ?></p>
+												</div>
+												<div class="process_works">
+													<p><?php the_sub_field('works text'); ?></p>
+												</div>
+												<div class="process_results">
+													<p><?php the_sub_field('results_text'); ?></p>
+												</div>
+											</div>    
+								    <?php $counter++; endwhile; ?>
+								<?php endif; ?>
 							</div>
 						</div>
 					</div>
@@ -813,29 +441,29 @@
 
 				<!-- steps_section - start
 				================================================== -->
-				<section class="service_section  section_space mt-0 pt-0">
+				<section class="stages_section  section_space mt-0 ">
 					<div class="decoration_item service_sec_bg"></div>
 					<div class="container">
 						<div class="row">
 							<div class="col-lg-12">
 								<div class="section_title style_2">
 									<h2 class="small_title">
-										collaborations
+										<?php the_field('s01_small_header'); ?>
 										<span class="line"></span>
 									</h2>
 								</div>
 							</div>
-							<div class="col-lg-12">
+							<div class="col-lg-10">
 								<div class="section_title style_2">
 									<h3 class="big_title text_effect_wrap">
 										<span class="text_effect_wrap1">
 											<span class="text_effect_wrap2">
-												<span class="text_effect_wrap3 text-break">What we give</span>
+												<span class="text_effect_wrap3 text-break"><?php the_field('s01_largeheader'); ?></span>
 											</span>
 										</span>
 										<span class="text_effect_wrap1">
 											<span class="text_effect_wrap2">
-												<span class="text_effect_wrap3 text-break">to our Customers</span>
+												<span class="text_effect_wrap3 text-break"></span>
 											</span>
 										</span>
 									</h3>
@@ -843,30 +471,17 @@
 							</div>
 							<div class="col-lg-12">
 								<div class="development-steps">
-									<div class="development-steps-item">
-										<h4><sup>01</sup>Healthcare</h4>
-										<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium quibusdam a sed pariatur doloremque provident, ullam inventore praesentium eum officia autem, quia rerum eius ipsum suscipit porro nihil consequatur sequi.</p>
-									</div>
-									<div class="development-steps-item">
-										<h4><sup>01</sup>Real Estate</h4>
-										<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium quibusdam a sed pariatur doloremque provident, ullam inventore praesentium eum officia autem, quia rerum eius ipsum suscipit porro nihil consequatur sequi.</p>
-									</div>
-									<div class="development-steps-item">
-										<h4><sup>01</sup>Unique design</h4>
-										<p>Lorem ipsum dolor,  Accusantium quibusdam a sed pariatur doloremque provident, ullam inventore praesentium eum officia autem, quia rerum eius ipsum suscipit porro nihil consequatur sequi.</p>
-									</div>
-									<div class="development-steps-item">
-										<h4><sup>01</sup>Fittness</h4>
-										<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium quibusdam a sed pariatur doloremque provident, ullam inventore praesentium eum officia autem, quia rerum eius ipsum suscipit porro nihil consequatur sequi.</p>
-									</div>
-									<div class="development-steps-item">
-										<h4><sup>01</sup>Affiliate marketing business</h4>
-										<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium quibusdam a sed pariatur doloremque provident, ullam inventore praesentium eum officia autem, quia rerum eius ipsum suscipit porro nihil consequatur sequi.</p>
-									</div>
-									<div class="development-steps-item">
-										<h4><sup>01</sup>Media Production</h4>
-										<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium quibusdam a sed pariatur doloremque provident, ullam inventore praesentium eum officia autem, quia rerum eius ipsum suscipit porro nihil consequatur sequi.</p>
-									</div>
+									<?php if( have_rows('s01_steps_table') ): ?>
+
+									    <?php $counter=1; while( have_rows('s01_steps_table') ): the_row(); 
+									        ?>
+									       	<div class="development-steps-item">
+														<h4><sup> 0<?php echo $counter; ?> </sup><?php the_sub_field('step_name'); ?></h4>
+														<p><?php the_sub_field('step_text'); ?></p>
+													</div>
+									    <?php $counter++; endwhile; ?>
+
+									<?php endif; ?>
 								</div>
 							</div>
 						</div>
@@ -948,238 +563,42 @@
 									
 								</div>
 								<div class="accordion accordion-flush services-accordion" id="accordionFlushExample">
-								  <div class="accordion-item">
-								    <h2 class="accordion-header" id="flush-headingOne">
-								      <button class="accordion-button  collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-								        <div class="blog_simple_layout">
-													<h3 class="item_title text_effect_wrap">
-															<span class="text_effect_wrap1">
-																<span class="text_effect_wrap2">
-																	<span class="text_effect_wrap3">How long does it take to build a Landing page?</span>
-																</span>
-															</span>
-														</h3>
-													
-												</div>
-								      </button>
-								    </h2>
-								    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-								      <div class="accordion-body">
-												<div class="blog_simple_layout">
-													<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem quisquam voluptate, aliquid tenetur, nulla error ab vero nobis deserunt, possimus vitae cupiditate consequatur autem. Alias quibusdam atque in recusandae eveniet?
-														Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur sit amet possimus eligendi nulla voluptatum deleniti illum dolor minus sed hic, non corporis nemo voluptas id aliquid expedita eaque at.
-														Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum iure vel nobis aliquid, culpa sint! Praesentium, in itaque! Facere qui saepe sit repudiandae laudantium reiciendis ducimus voluptate consectetur placeat eveniet.
-													</p>
-												</div>
-											</div>
-								    </div>
-								  </div>
-								  <div class="accordion-item">
-								    <h2 class="accordion-header" id="flush-headingTwo">
-								      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-								        <div class="blog_simple_layout">
-													<div class="blog_col">
-														<h3 class="item_title text_effect_wrap ">
-															<span class="text_effect_wrap1">
-																<span class="text_effect_wrap2">
-																	<span class="text_effect_wrap3">Business website</span>
-																</span>
-															</span>
-														</h3>
-													</div>
-													<div class="blog_col blog_col_1">
-														
-													</div>
-												</div>
-								      </button>
-								    </h2>
-								    <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-								      <div class="accordion-body">
-												<div class="blog_simple_layout">
-													<div class="blog_col">
-														<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam atque eum illum ipsa suscipit quasi ea harum eveniet, nemo in quo ipsam modi natus minima doloremque sunt eaque! Perferendis, ab?</p>
-														<a class="btn_text" href="web_design.html">
-														<span>Learn more</span> 
-														<svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-															<path d="M10 0V7.50063H9.16833V1.42131L0.587991 10L0 9.41015L8.57868 0.833125H2.49418V0H10Z" fill="white"></path>
-														</svg>
-													</a>
-													</div>
-													<div class="blog_col blog_col_1">
-														<p>
-															We cover all  stages to  deliver a fully working product.
-														</p>
-														<ul>
-															<li>Briefing</li>
-															<li>Prototyping</li>
-															<li>Design</li>
-															<li>Development</li>
-															<li>Testing</li>
-															<li>Support</li>
-														</ul>
-														<div data-animation="fadeInUp2" data-delay=".6s">
-															<a class="btn btn_white" href="contact.html">Start a project</a>
-														</div>
-													</div>
-												</div>
-											</div>
-								    </div>
-								  </div>
-									<div class="accordion-item">
-								    <h2 class="accordion-header" id="flush-heading2">
-								      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse2" aria-expanded="false" aria-controls="flush-collapse2">
-								        <div class="blog_simple_layout">
-													<div class="blog_col">
-														<h3 class="item_title text_effect_wrap">
-															<span class="text_effect_wrap1">
-																<span class="text_effect_wrap2">
-																	<span class="text_effect_wrap3">Corporate Websites</span>
-																</span>
-															</span>
-															 
-														</h3>
-														
-													</div>
-													<div class="blog_col blog_col_1">
-														
-													</div>
-												</div>
-								      </button>
-								    </h2>
-								    <div id="flush-collapse2" class="accordion-collapse collapse" aria-labelledby="flush-heading2" data-bs-parent="#accordionFlushExample">
-								      <div class="accordion-body">
-												<div class="blog_simple_layout">
-													<div class="blog_col">
-														<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam atque eum illum ipsa suscipit quasi ea harum eveniet, nemo in quo ipsam modi natus minima doloremque sunt eaque! Perferendis, ab?</p>
-														<a class="btn_text" href="branding.html">
-														<span>Learn more</span> 
-														<svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-															<path d="M10 0V7.50063H9.16833V1.42131L0.587991 10L0 9.41015L8.57868 0.833125H2.49418V0H10Z" fill="white"></path>
-														</svg>
-													</a>
-													</div>
-													<div class="blog_col blog_col_1">
-														<p>
-															We cover all  stages to  deliver a fully working product.
-														</p>
-														<ul>
-															<li>Briefing</li>
-															<li>Prototyping</li>
-															<li>Design</li>
-															<li>Development</li>
-															<li>Testing</li>
-															<li>Support</li>
-														</ul>
-														<div data-animation="fadeInUp2" data-delay=".6s">
-															<a class="btn btn_white" href="contact.html">Start a project</a>
-														</div>
-													</div>
-												</div>
-											</div>
-								    </div>
-								  </div>
-									<div class="accordion-item">
-								    <h2 class="accordion-header" id="flush-heading3">
-								      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse3" aria-expanded="false" aria-controls="flush-collapse3">
-								        <div class="blog_simple_layout">
-													<div class="blog_col">
-														<h3 class="item_title text_effect_wrap">
-															<span class="text_effect_wrap1">
-																<span class="text_effect_wrap2">
-																	<span class="text_effect_wrap3">Affiliate websites</span>
-																</span>
-															</span>
-														</h3>
-													</div>
-													<div class="blog_col blog_col_1">
-														
-													</div>
-												</div>
-								      </button>
-								    </h2>
-								    <div id="flush-collapse3" class="accordion-collapse collapse" aria-labelledby="flush-heading3" data-bs-parent="#accordionFlushExample">
-								      <div class="accordion-body">
-												<div class="blog_simple_layout">
-													<div class="blog_col">
-														<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam atque eum illum ipsa suscipit quasi ea harum eveniet, nemo in quo ipsam modi natus minima doloremque sunt eaque! Perferendis, ab?</p>
-														<a class="btn_text" href="seo.html">
-															<span>Learn more</span> 
-															<svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-																<path d="M10 0V7.50063H9.16833V1.42131L0.587991 10L0 9.41015L8.57868 0.833125H2.49418V0H10Z" fill="white"></path>
-															</svg>
-														</a>
-													</div>
-													<div class="blog_col blog_col_1">
-														<p>
-															We cover all  stages to  deliver a fully working product.
-														</p>
-														<ul>
-															<li>Briefing</li>
-															<li>Prototyping</li>
-															<li>Design</li>
-															<li>Development</li>
-															<li>Testing</li>
-															<li>Support</li>
-														</ul>
-														<div data-animation="fadeInUp2" data-delay=".6s">
-															<a class="btn btn_white" href="contact.html">Start a project</a>
-														</div>
-													</div>
-												</div>
-											</div>
-								    </div>
-								  </div>
-									<div class="accordion-item">
-								    <h2 class="accordion-header" id="flush-heading4">
-								      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse4" aria-expanded="false" aria-controls="flush-collapse4">
-								        <div class="blog_simple_layout">
-													<div class="blog_col">
-														<h3 class="item_title text_effect_wrap">
-															<span class="text_effect_wrap1">
-																<span class="text_effect_wrap2">
-																	<span class="text_effect_wrap3">Blogs</span>
-																</span>
-															</span>
-														</h3>
-													</div>
-													<div class="blog_col blog_col_1">
-														
-													</div>
-												</div>
-								      </button>
-								    </h2>
-								    <div id="flush-collapse4" class="accordion-collapse collapse" aria-labelledby="flush-heading4" data-bs-parent="#accordionFlushExample">
-								      <div class="accordion-body">
-												<div class="blog_simple_layout">
-													<div class="blog_col">
-														<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam atque eum illum ipsa suscipit quasi ea harum eveniet, nemo in quo ipsam modi natus minima doloremque sunt eaque! Perferendis, ab?</p>
-														<a class="btn_text" href="seo.html">
-															<span>Learn more</span> 
-															<svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-																<path d="M10 0V7.50063H9.16833V1.42131L0.587991 10L0 9.41015L8.57868 0.833125H2.49418V0H10Z" fill="white"></path>
-															</svg>
-														</a>
-													</div>
-													<div class="blog_col blog_col_1">
-														<p>
-															We cover all  stages to  deliver a fully working product.
-														</p>
-														<ul>
-															<li>Briefing</li>
-															<li>Prototyping</li>
-															<li>Design</li>
-															<li>Development</li>
-															<li>Testing</li>
-															<li>Support</li>
-														</ul>
-														<div data-animation="fadeInUp2" data-delay=".6s">
-															<a class="btn btn_white" href="contact.html">Start a project</a>
-														</div>
-													</div>
-												</div>
-											</div>
-								    </div>
-								  </div>
+								  
+										<?php if( have_rows('s00_faq_accordion') ): ?>
+									    
+									    <?php $counter=1; while( have_rows('s00_faq_accordion') ): the_row(); 
+										    ?>
+
+													<div class="accordion-item"> 
+								  				  <h2 class="accordion-header" id="flush-heading<?php echo $counter; ?>">
+								  				    <button class="accordion-button  collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse<?php echo $counter; ?>" aria-expanded="false" aria-controls="flush-collapse<?php echo $counter; ?>">
+								  				      <div class="blog_simple_layout">
+																	<h3 class="item_title text_effect_wrap">
+																			<span class="text_effect_wrap1">
+																				<span class="text_effect_wrap2">
+																					<span class="text_effect_wrap3"><?php the_sub_field('faq_question'); ?></span>
+																				</span>
+																			</span>
+																		</h3>
+
+																</div>
+								  				    </button>
+								  				  </h2>
+								  				  <div id="flush-collapse<?php echo $counter; ?>" class="accordion-collapse collapse" aria-labelledby="flush-heading<?php echo $counter; ?>" data-bs-parent="#accordionFlushExample">
+								  				    <div class="accordion-body">
+																<div class="blog_simple_layout">
+																	<p>
+																		<?php the_sub_field('faq_answer'); ?>
+																	</p>
+																</div>
+															</div>
+								  				  </div>
+								  				</div> <!-- accordion-item -->
+
+										    <?php $counter++; endwhile; ?>
+											
+										<?php endif; ?>
+
 								</div>
           		</div>
 						</div>

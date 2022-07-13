@@ -11,10 +11,10 @@
 						<div class="row">
 							<div class="col-12 col-md-10 col-lg-9">
 								<h1 class="page_title">
-									<span class="d-block">Landing pages</span>
+									<span class="d-block"><?php the_field('s23_hero_title'); ?></span>
 								</h1>
-								<p class="">
-									We link sales, design, and marketin into effective web-pages that sell 
+								<p>
+									<?php the_field('s23_hero_description'); ?>
 								</p>
 								<div data-animation="fadeInUp2" data-delay=".6s">
 									<a class="btn btn_white" href="contact.html">Start a project</a>
@@ -28,29 +28,29 @@
 
 				<!-- steps_section - start
 				================================================== -->
-				<section class="service_section  section_space mt-0 ">
+				<section class="stages_section  section_space mt-0 ">
 					<div class="decoration_item service_sec_bg"></div>
 					<div class="container">
 						<div class="row">
 							<div class="col-lg-12">
 								<div class="section_title style_2">
 									<h2 class="small_title">
-										advantages
+										<?php the_field('s01_small_header'); ?>
 										<span class="line"></span>
 									</h2>
 								</div>
 							</div>
-							<div class="col-lg-12">
-								<div class="section_title ">
+							<div class="col-lg-10">
+								<div class="section_title style_2">
 									<h3 class="big_title text_effect_wrap">
 										<span class="text_effect_wrap1">
 											<span class="text_effect_wrap2">
-												<span class="text_effect_wrap3 text-break">When you need </span>
+												<span class="text_effect_wrap3 text-break"><?php the_field('s01_largeheader'); ?></span>
 											</span>
 										</span>
 										<span class="text_effect_wrap1">
 											<span class="text_effect_wrap2">
-												<span class="text_effect_wrap3 text-break">a Landing Page</span>
+												<span class="text_effect_wrap3 text-break"><?php the_field('s01_largeheader_2'); ?></span>
 											</span>
 										</span>
 									</h3>
@@ -58,30 +58,17 @@
 							</div>
 							<div class="col-lg-12">
 								<div class="development-steps">
-									<div class="development-steps-item">
-										<h4><sup>01</sup>Healthcare</h4>
-										<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium quibusdam a sed pariatur doloremque provident, ullam inventore praesentium eum officia autem, quia rerum eius ipsum suscipit porro nihil consequatur sequi.</p>
-									</div>
-									<div class="development-steps-item">
-										<h4><sup>01</sup>Real Estate</h4>
-										<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium quibusdam a sed pariatur doloremque provident, ullam inventore praesentium eum officia autem, quia rerum eius ipsum suscipit porro nihil consequatur sequi.</p>
-									</div>
-									<div class="development-steps-item">
-										<h4><sup>01</sup>Unique design</h4>
-										<p>Lorem ipsum dolor,  Accusantium quibusdam a sed pariatur doloremque provident, ullam inventore praesentium eum officia autem, quia rerum eius ipsum suscipit porro nihil consequatur sequi.</p>
-									</div>
-									<div class="development-steps-item">
-										<h4><sup>01</sup>Fittness</h4>
-										<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium quibusdam a sed pariatur doloremque provident, ullam inventore praesentium eum officia autem, quia rerum eius ipsum suscipit porro nihil consequatur sequi.</p>
-									</div>
-									<div class="development-steps-item">
-										<h4><sup>01</sup>Affiliate marketing business</h4>
-										<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium quibusdam a sed pariatur doloremque provident, ullam inventore praesentium eum officia autem, quia rerum eius ipsum suscipit porro nihil consequatur sequi.</p>
-									</div>
-									<div class="development-steps-item">
-										<h4><sup>01</sup>Media Production</h4>
-										<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium quibusdam a sed pariatur doloremque provident, ullam inventore praesentium eum officia autem, quia rerum eius ipsum suscipit porro nihil consequatur sequi.</p>
-									</div>
+									<?php if( have_rows('s01_steps_table') ): ?>
+
+									    <?php $counter=1; while( have_rows('s01_steps_table') ): the_row(); 
+									        ?>
+									       	<div class="development-steps-item">
+														<h4><sup> 0<?php echo $counter; ?> </sup><?php the_sub_field('step_name'); ?></h4>
+														<p><?php the_sub_field('step_text'); ?></p>
+													</div>
+									    <?php $counter++; endwhile; ?>
+
+									<?php endif; ?>
 								</div>
 							</div>
 						</div>
@@ -91,50 +78,50 @@
 				<!-- steps_section - end
 				================================================== -->
 
-				<!-- about_section - start
+			<!-- about_section - start
 				================================================== -->
 				<section class="about_section  section_space   mt-0 black-bg">
 					<div class="container">
 						<div class="row">
+
 							<div class="col-lg-12">
 								<div class="section_title style_2">
 									<h2 class="small_title">
-										we build
+										<?php the_field('s04_small_header'); ?>
 										<span class="line"></span>
 									</h2>
 								</div>
 							</div>
-							<div class="col-lg-6">
+							<div class="col-lg-7">
+									
 									<div class="section_title style_2">
 										<h3 class="big_title text_effect_wrap">
 											<span class="text_effect_wrap1">
 												<span class="text_effect_wrap2">
-													<span class="text_effect_wrap3 text-break">Websites that</span>
+													<span class="text_effect_wrap3 text-break"><?php the_field('s04_large_header_1_row'); ?></span>
 												</span>
 											</span>
 											<span class="text_effect_wrap1">
 												<span class="text_effect_wrap2">
-													<span class="text_effect_wrap3 text-break">solve problems</span>
+													<span class="text_effect_wrap3 text-break"><?php the_field('s04_large_header_2_row'); ?></span>
 												</span>
 											</span>
 										</h3>
 									</div>
 							</div>
-							<div class="col-lg-5 offset-lg-1 ">
+							<div class="col-lg-5 ">
 								<p class="p-0  mt-0">
-										Transformed in his bed into a horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections. The bedding was hardly able to cover it and seemed ready to slide off any moment. His many legs, pitifully thin compared with the size of the rest of him waved.
-									</p>
+									<?php the_field('s04_section_content'); ?>
+								</p>
 								
-								<a class="btn_text" href="about.html">
-									<span>Talk to us</span> 
+								<a class="btn_text btn_text_white" href="<?php the_field('s04_button_url'); ?>">
+									<span><?php the_field('s04_button_text'); ?></span> 
 									<svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
 										<path d="M10 0V7.50063H9.16833V1.42131L0.587991 10L0 9.41015L8.57868 0.833125H2.49418V0H10Z" fill="white"></path>
 									</svg>
 								</a>
 							</div>
-						</div>
-						<div class="row">
-
+							
 						</div>
 					</div>
 				</section>
@@ -149,7 +136,7 @@
 							<div class="col-12  col-lg-3">
 								<div class="section_title style_2">
 									<h2 class="small_title">
-										advantages
+										<?php the_field('s05_small_header'); ?>
 										<span class="line"></span>
 									</h2>
 								</div>
@@ -160,12 +147,12 @@
 										<h3 class="big_title text_effect_wrap">
 											<span class="text_effect_wrap1">
 												<span class="text_effect_wrap2">
-													<span class="text_effect_wrap3 text-break">Why you need</span>
+													<span class="text_effect_wrap3 text-break"><?php the_field('s05-large_header_1_row'); ?></span>
 												</span>
 											</span>
 											<span class="text_effect_wrap1">
 												<span class="text_effect_wrap2">
-													<span class="text_effect_wrap3 text-break">a Landing Page?</span>
+													<span class="text_effect_wrap3 text-break"><?php the_field('s05-large_header_2_row'); ?></span>
 												</span>
 											</span>
 										</h3>
@@ -176,37 +163,24 @@
 						<div class="row">
 							<div class="col-12 offset-lg-3 col-lg-7 ">
 								<div class="advantages">
-									<div class="advantages_step">
-										<div class="advantage_number" style="color:#afed10;">
-											01.
-										</div>
-										<div class="advantage_content">
-												<img src="<?php echo get_template_directory_uri(); ?>/assets/images/conversion-rate.png" alt="" class="adv_icon">
-												<h3 class="adv_header">Rapid Start</h3>
-												<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora voluptatibus magnam architecto, corporis deserunt quas autem laudantium, ipsa ab eligendi tempore minus sed recusandae? Natus neque libero soluta nam at.</p>
-										</div>
-									</div>
-									<div class="advantages_step">
-										<div class="advantage_number" style="color:#afed10;">
-											02.
-										</div>
-										<div class="advantage_content">
-												<img src="<?php echo get_template_directory_uri(); ?>/assets/images/online-business.png" alt="" class="adv_icon">
-												<h3 class="adv_header">Increased Sales</h3>
-												<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem sit perspiciatis at modi corrupti labore eius dolores nemo illo, reiciendis sunt esse, nisi doloribus recusandae quae itaque aliquid ab soluta.</p>
-										</div>
-									</div>
-									<div class="advantages_step">
-										<div class="advantage_number" style="color:#afed10;" >
-											03.
-										</div>
-										<div class="advantage_content">
-												<img src="<?php echo get_template_directory_uri(); ?>/assets/images/cost-per-click.png" alt="" class="adv_icon">
-												<h3 class="adv_header">Optimized for Conversion</h3>
-												<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla tempore error laboriosam nobis modi ipsa repudiandae itaque dolor vitae, esse autem corporis repellendus quis ducimus, inventore et. Iste, fuga adipisci!</p>
-										</div>
-									</div>
-									
+									<?php if( have_rows('s05_advantages_list') ): ?>
+									    <?php $counter=1; while( have_rows('s05_advantages_list') ): the_row(); 
+									    $image = get_sub_field('advantage_icon');
+									    ?>
+												<div class="advantages_step">
+													<div class="advantage_number" style="color:#afed10;">
+														0<?php echo $counter; ?>.
+													</div>
+													<div class="advantage_content">
+															<img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" class="adv_icon">
+															<h3 class="adv_header"><?php the_sub_field('advantage_heading'); ?></h3>
+															<p><?php the_sub_field('advantage_text'); ?></p>
+													</div>
+												</div>
+
+									    <?php $counter++; endwhile; ?>
+									<?php endif; ?>
+						
 								</div>
 							</div>
 						</div>
@@ -388,22 +362,27 @@
 
 				<!-- process_section - start
 				================================================== -->
-				<section class="process_section section_space ">
+
+				<section class="process_section section_space">
 					<div class="container">
 						<div class="row">
 							<div class="col-12">
 								<div class="section_title style_2">
 									<h2 class="small_title">
-										process
+										<?php the_field('s03_small_header'); ?>
 										<span class="line"></span>
 									</h2>
 									<h3 class="big_title text_effect_wrap">
 										<span class="text_effect_wrap1">
 											<span class="text_effect_wrap2">
-												<span class="text_effect_wrap3 text-break">How we build <br> Landing Pages</span>
+												<span class="text_effect_wrap3 text-break"><?php the_field('s03_large_header'); ?></span>
 											</span>
 										</span>
-										
+										<span class="text_effect_wrap1">
+											<span class="text_effect_wrap2">
+												<span class="text_effect_wrap3 text-break"><?php the_field('s03_large_header_2'); ?></span>
+											</span>
+										</span>
 									</h3>
 								</div>
 							</div>
@@ -424,76 +403,28 @@
 										<div class="line"></div>
 									</div>
 								</div>
-								<div class="process_row">
-									<div class="process_stage">
-										<p><sup>01</sup> Business research and strategy</p>
-									</div>
-									<div class="process_works">
-										<p>Marketing research, market analysis, business planning to determine the front of the project</p>
-									</div>
-									<div class="process_results">
-										<p>Defining tasks and deadlines for their implementation</p>
-									</div>
-								</div>
-								<div class="process_row">
-									<div class="process_stage">
-										<p><sup>02</sup>Prototype development</p>
-									</div>
-									<div class="process_works">
-										<p>Preparation of preliminary design models for further development of the corporate portal project</p>
-									</div>
-									<div class="process_results">
-										<p>Ready-made product concept that can be taken into development</p>
-									</div>
-								</div>
-								<div class="process_row">
-									<div class="process_stage">
-										<p><sup>03</sup>Design development</p>
-									</div>
-									<div class="process_works">
-										<p>Creation of visual and interface solutions for the project of the corporate site, as well as their coordination with the client</p>
-									</div>
-									<div class="process_results">
-										<p>Ready UI / UX for the project</p>
-									</div>
-								</div>
-								<div class="process_row">
-									<div class="process_stage">
-										<p><sup>04</sup>Programming</p>
-									</div>
-									<div class="process_works">
-										<p>Writing code by programmers and subsequent testing of the developed product before release</p>
-									</div>
-									<div class="process_results">
-										<p>Technical readiness of the project</p>
-									</div>
-								</div>
-								<div class="process_row">
-									<div class="process_stage">
-										<p><sup>05</sup>Connection of third-party services</p>
-									</div>
-									<div class="process_works">
-										<p>Integration into the site of a set of any necessary tools (online maps, chatbots, messengers, etc.)</p>
-									</div>
-									<div class="process_results">
-										<p>The site has the necessary customer services</p>
-									</div>
-								</div>
-								<div class="process_row">
-									<div class="process_stage">
-										<p><sup>06</sup>Release and support</p>
-									</div>
-									<div class="process_works">
-										<p>Release and further launch of the project, warranty and post-warranty service of the corporate portal</p>
-									</div>
-									<div class="process_results">
-										<p>The client is satisfied with the quality of the corporate website</p>
-									</div>
-								</div>
+
+								<?php if( have_rows('s03_process_table') ): ?>
+								    <?php $counter=1; while( have_rows('s03_process_table') ): the_row(); 
+								    ?>
+								    	<div class="process_row">
+												<div class="process_stage">
+													<p><sup>0<?php echo $counter; ?></sup><?php the_sub_field('stage_name'); ?></p>
+												</div>
+												<div class="process_works">
+													<p><?php the_sub_field('works text'); ?></p>
+												</div>
+												<div class="process_results">
+													<p><?php the_sub_field('results_text'); ?></p>
+												</div>
+											</div>    
+								    <?php $counter++; endwhile; ?>
+								<?php endif; ?>
 							</div>
 						</div>
 					</div>
 				</section>
+
 				<!-- process_section - end
 				================================================== -->
 
@@ -569,238 +500,42 @@
 									
 								</div>
 								<div class="accordion accordion-flush services-accordion" id="accordionFlushExample">
-								  <div class="accordion-item">
-								    <h2 class="accordion-header" id="flush-headingOne">
-								      <button class="accordion-button  collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-								        <div class="blog_simple_layout">
-													<h3 class="item_title text_effect_wrap">
-															<span class="text_effect_wrap1">
-																<span class="text_effect_wrap2">
-																	<span class="text_effect_wrap3">How long does it take to build a Landing page?</span>
-																</span>
-															</span>
-														</h3>
-													
-												</div>
-								      </button>
-								    </h2>
-								    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-								      <div class="accordion-body">
-												<div class="blog_simple_layout">
-													<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem quisquam voluptate, aliquid tenetur, nulla error ab vero nobis deserunt, possimus vitae cupiditate consequatur autem. Alias quibusdam atque in recusandae eveniet?
-														Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur sit amet possimus eligendi nulla voluptatum deleniti illum dolor minus sed hic, non corporis nemo voluptas id aliquid expedita eaque at.
-														Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum iure vel nobis aliquid, culpa sint! Praesentium, in itaque! Facere qui saepe sit repudiandae laudantium reiciendis ducimus voluptate consectetur placeat eveniet.
-													</p>
-												</div>
-											</div>
-								    </div>
-								  </div>
-								  <div class="accordion-item">
-								    <h2 class="accordion-header" id="flush-headingTwo">
-								      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-								        <div class="blog_simple_layout">
-													<div class="blog_col">
-														<h3 class="item_title text_effect_wrap ">
-															<span class="text_effect_wrap1">
-																<span class="text_effect_wrap2">
-																	<span class="text_effect_wrap3">Business website</span>
-																</span>
-															</span>
-														</h3>
-													</div>
-													<div class="blog_col blog_col_1">
-														
-													</div>
-												</div>
-								      </button>
-								    </h2>
-								    <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-								      <div class="accordion-body">
-												<div class="blog_simple_layout">
-													<div class="blog_col">
-														<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam atque eum illum ipsa suscipit quasi ea harum eveniet, nemo in quo ipsam modi natus minima doloremque sunt eaque! Perferendis, ab?</p>
-														<a class="btn_text" href="web_design.html">
-														<span>Learn more</span> 
-														<svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-															<path d="M10 0V7.50063H9.16833V1.42131L0.587991 10L0 9.41015L8.57868 0.833125H2.49418V0H10Z" fill="white"></path>
-														</svg>
-													</a>
-													</div>
-													<div class="blog_col blog_col_1">
-														<p>
-															We cover all  stages to  deliver a fully working product.
-														</p>
-														<ul>
-															<li>Briefing</li>
-															<li>Prototyping</li>
-															<li>Design</li>
-															<li>Development</li>
-															<li>Testing</li>
-															<li>Support</li>
-														</ul>
-														<div data-animation="fadeInUp2" data-delay=".6s">
-															<a class="btn btn_white" href="contact.html">Start a project</a>
-														</div>
-													</div>
-												</div>
-											</div>
-								    </div>
-								  </div>
-									<div class="accordion-item">
-								    <h2 class="accordion-header" id="flush-heading2">
-								      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse2" aria-expanded="false" aria-controls="flush-collapse2">
-								        <div class="blog_simple_layout">
-													<div class="blog_col">
-														<h3 class="item_title text_effect_wrap">
-															<span class="text_effect_wrap1">
-																<span class="text_effect_wrap2">
-																	<span class="text_effect_wrap3">Corporate Websites</span>
-																</span>
-															</span>
-															 
-														</h3>
-														
-													</div>
-													<div class="blog_col blog_col_1">
-														
-													</div>
-												</div>
-								      </button>
-								    </h2>
-								    <div id="flush-collapse2" class="accordion-collapse collapse" aria-labelledby="flush-heading2" data-bs-parent="#accordionFlushExample">
-								      <div class="accordion-body">
-												<div class="blog_simple_layout">
-													<div class="blog_col">
-														<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam atque eum illum ipsa suscipit quasi ea harum eveniet, nemo in quo ipsam modi natus minima doloremque sunt eaque! Perferendis, ab?</p>
-														<a class="btn_text" href="branding.html">
-														<span>Learn more</span> 
-														<svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-															<path d="M10 0V7.50063H9.16833V1.42131L0.587991 10L0 9.41015L8.57868 0.833125H2.49418V0H10Z" fill="white"></path>
-														</svg>
-													</a>
-													</div>
-													<div class="blog_col blog_col_1">
-														<p>
-															We cover all  stages to  deliver a fully working product.
-														</p>
-														<ul>
-															<li>Briefing</li>
-															<li>Prototyping</li>
-															<li>Design</li>
-															<li>Development</li>
-															<li>Testing</li>
-															<li>Support</li>
-														</ul>
-														<div data-animation="fadeInUp2" data-delay=".6s">
-															<a class="btn btn_white" href="contact.html">Start a project</a>
-														</div>
-													</div>
-												</div>
-											</div>
-								    </div>
-								  </div>
-									<div class="accordion-item">
-								    <h2 class="accordion-header" id="flush-heading3">
-								      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse3" aria-expanded="false" aria-controls="flush-collapse3">
-								        <div class="blog_simple_layout">
-													<div class="blog_col">
-														<h3 class="item_title text_effect_wrap">
-															<span class="text_effect_wrap1">
-																<span class="text_effect_wrap2">
-																	<span class="text_effect_wrap3">Affiliate websites</span>
-																</span>
-															</span>
-														</h3>
-													</div>
-													<div class="blog_col blog_col_1">
-														
-													</div>
-												</div>
-								      </button>
-								    </h2>
-								    <div id="flush-collapse3" class="accordion-collapse collapse" aria-labelledby="flush-heading3" data-bs-parent="#accordionFlushExample">
-								      <div class="accordion-body">
-												<div class="blog_simple_layout">
-													<div class="blog_col">
-														<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam atque eum illum ipsa suscipit quasi ea harum eveniet, nemo in quo ipsam modi natus minima doloremque sunt eaque! Perferendis, ab?</p>
-														<a class="btn_text" href="seo.html">
-															<span>Learn more</span> 
-															<svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-																<path d="M10 0V7.50063H9.16833V1.42131L0.587991 10L0 9.41015L8.57868 0.833125H2.49418V0H10Z" fill="white"></path>
-															</svg>
-														</a>
-													</div>
-													<div class="blog_col blog_col_1">
-														<p>
-															We cover all  stages to  deliver a fully working product.
-														</p>
-														<ul>
-															<li>Briefing</li>
-															<li>Prototyping</li>
-															<li>Design</li>
-															<li>Development</li>
-															<li>Testing</li>
-															<li>Support</li>
-														</ul>
-														<div data-animation="fadeInUp2" data-delay=".6s">
-															<a class="btn btn_white" href="contact.html">Start a project</a>
-														</div>
-													</div>
-												</div>
-											</div>
-								    </div>
-								  </div>
-									<div class="accordion-item">
-								    <h2 class="accordion-header" id="flush-heading4">
-								      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse4" aria-expanded="false" aria-controls="flush-collapse4">
-								        <div class="blog_simple_layout">
-													<div class="blog_col">
-														<h3 class="item_title text_effect_wrap">
-															<span class="text_effect_wrap1">
-																<span class="text_effect_wrap2">
-																	<span class="text_effect_wrap3">Blogs</span>
-																</span>
-															</span>
-														</h3>
-													</div>
-													<div class="blog_col blog_col_1">
-														
-													</div>
-												</div>
-								      </button>
-								    </h2>
-								    <div id="flush-collapse4" class="accordion-collapse collapse" aria-labelledby="flush-heading4" data-bs-parent="#accordionFlushExample">
-								      <div class="accordion-body">
-												<div class="blog_simple_layout">
-													<div class="blog_col">
-														<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam atque eum illum ipsa suscipit quasi ea harum eveniet, nemo in quo ipsam modi natus minima doloremque sunt eaque! Perferendis, ab?</p>
-														<a class="btn_text" href="seo.html">
-															<span>Learn more</span> 
-															<svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-																<path d="M10 0V7.50063H9.16833V1.42131L0.587991 10L0 9.41015L8.57868 0.833125H2.49418V0H10Z" fill="white"></path>
-															</svg>
-														</a>
-													</div>
-													<div class="blog_col blog_col_1">
-														<p>
-															We cover all  stages to  deliver a fully working product.
-														</p>
-														<ul>
-															<li>Briefing</li>
-															<li>Prototyping</li>
-															<li>Design</li>
-															<li>Development</li>
-															<li>Testing</li>
-															<li>Support</li>
-														</ul>
-														<div data-animation="fadeInUp2" data-delay=".6s">
-															<a class="btn btn_white" href="contact.html">Start a project</a>
-														</div>
-													</div>
-												</div>
-											</div>
-								    </div>
-								  </div>
+								  
+										<?php if( have_rows('s00_faq_accordion') ): ?>
+									    
+									    <?php $counter=1; while( have_rows('s00_faq_accordion') ): the_row(); 
+										    ?>
+
+													<div class="accordion-item"> 
+								  				  <h2 class="accordion-header" id="flush-heading<?php echo $counter; ?>">
+								  				    <button class="accordion-button  collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse<?php echo $counter; ?>" aria-expanded="false" aria-controls="flush-collapse<?php echo $counter; ?>">
+								  				      <div class="blog_simple_layout">
+																	<h3 class="item_title text_effect_wrap">
+																			<span class="text_effect_wrap1">
+																				<span class="text_effect_wrap2">
+																					<span class="text_effect_wrap3"><?php the_sub_field('faq_question'); ?></span>
+																				</span>
+																			</span>
+																		</h3>
+
+																</div>
+								  				    </button>
+								  				  </h2>
+								  				  <div id="flush-collapse<?php echo $counter; ?>" class="accordion-collapse collapse" aria-labelledby="flush-heading<?php echo $counter; ?>" data-bs-parent="#accordionFlushExample">
+								  				    <div class="accordion-body">
+																<div class="blog_simple_layout">
+																	<p>
+																		<?php the_sub_field('faq_answer'); ?>
+																	</p>
+																</div>
+															</div>
+								  				  </div>
+								  				</div> <!-- accordion-item -->
+
+										    <?php $counter++; endwhile; ?>
+											
+										<?php endif; ?>
+
 								</div>
           		</div>
 						</div>

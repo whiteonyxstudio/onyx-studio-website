@@ -41,6 +41,25 @@
             "maxlength": ""
         },
         {
+            "key": "field_62cae8df751fc",
+            "label": "Large Header 2",
+            "name": "s01_largeheader_2",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
             "key": "field_62ae26d681f52",
             "label": "Steps Table",
             "name": "s01_steps_table",
@@ -105,7 +124,7 @@
             {
                 "param": "page_template",
                 "operator": "==",
-                "value": "archive-services.php"
+                "value": "service-category-template.php"
             }
         ],
         [
@@ -113,6 +132,13 @@
                 "param": "page_template",
                 "operator": "==",
                 "value": "single_service_template.php"
+            }
+        ],
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "services"
             }
         ]
     ],
@@ -125,5 +151,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1655751888
+    "modified": 1657465061
 }

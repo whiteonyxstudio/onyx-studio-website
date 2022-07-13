@@ -150,6 +150,13 @@
                 "operator": "==",
                 "value": "single_service_template.php"
             }
+        ],
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "services"
+            }
         ]
     ],
     "menu_order": 0,
@@ -161,5 +168,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1655751969
+    "modified": 1657461456
 }

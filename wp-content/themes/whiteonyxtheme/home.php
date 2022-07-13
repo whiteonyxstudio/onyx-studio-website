@@ -1,4 +1,9 @@
+
 <?php get_header(); ?>
+<?php
+$page_for_posts = get_option( 'page_for_posts' );
+?>
+
 			<!-- main body - start
 			================================================== -->
 			<main>
@@ -16,13 +21,17 @@
 							<div class="container mx-0 px-0">
 								<div class="row">
 									<div class="filter_nav_wrap">
+
 										<ul class="filter-btns-group button-group ul_li">
-											<li><button class="button active" data-filter="*">All<sup>10</sup></button></li>
-											<li><button class="button" data-filter=".creative">Web development<sup>12</sup></button></li>
-											<li><button class="button" data-filter=".branding">Web design<sup>08</sup></button></li>
-											<li><button class="button" data-filter=".insparation">Branding<sup>03</sup></button></li>
-											<li><button class="button" data-filter=".design">SEO<sup>01</sup></button></li>
+											<li><a href="" class="button">All<sup>10</sup></a></li>
+											<?php $categories = get_categories(); 
+												foreach($categories as $category) {
+
+												echo '<li><a href="' . get_category_link($category->term_id) . '" class="button" >' . $category->name . '<sup>'. $category->count .'</sup></a></li>';
+											}
+											?>
 										</ul>
+
 									</div>
 								</div>
 							</div>
@@ -39,45 +48,6 @@
 						<div class="row justify-content-lg-between justify-content-md-center justify-content-sm-center">
 							<div class="col-12 col-sm-12 col-md-12 col-lg-8 ">
 
-							<article class="blog_standard_layout">
-								<div class="item_image">
-									<div class="blog_image_carousel">
-										<div class="slider_item">
-											<img src="<?php echo get_template_directory_uri(); ?>/assets/images/blog/seo-1.jpg" alt="image_not_found">
-										</div>
-										<div class="slider_item">
-											<img src="<?php echo get_template_directory_uri(); ?>/assets/images/blog/seo-2.jpg" alt="image_not_found">
-										</div>
-										<div class="slider_item">
-											<img src="<?php echo get_template_directory_uri(); ?>/assets/images/blog/seo-3.jpg" alt="image_not_found">
-										</div>
-									</div>
-									<div class="carousel_nav">
-										<button type="button" class="bic_left_arrow"><i class="fal fa-long-arrow-left"></i></button>
-										<button type="button" class="bic_right_arrow"><i class="fal fa-long-arrow-right"></i></button>
-									</div>
-								</div>
-								<div class="item_content">
-									<ul class="post_meta ul_li text-uppercase">
-										<li>By - <a href="#!">Admin</a></li>
-										<li><a href="#!">Branding</a></li>
-									</ul>
-									<h3 class="item_title text_effect_wrap">
-										<a href="blog_single.html">
-											<span class="text_effect_wrap1">
-												<span class="text_effect_wrap2">
-													<span class="text_effect_wrap3">Person and improve your startup</span>
-												</span>
-											</span>
-										</a>
-									</h3>
-									<p>
-										Northely was hardly able to cover it and seemed ready to slide off any moment his many legs, pitifully thin compared with the size of the rest of him, waved about helplessly as he looked what's happened to me he thought It wasn't a dream. His room proper over the horizonela
-									</p>
-									<a class="btn_text text-uppercase" href="blog_single.html"><span>Read More</span> <i class="fal fa-long-arrow-right"></i></a>
-								</div>
-							</article>
-
 							<?php 
                 if ( have_posts() ) {
                   $counter=1;
@@ -86,7 +56,7 @@
                 		?>
                       <article class="blog_standard_layout">
 												<a class="item_image" href="<?php the_permalink(); ?>">
-													<img src="<?php echo get_template_directory_uri(); ?>/assets/images/blog/tech-start-up.jpg" alt="image_not_found">
+													<?php the_post_thumbnail('full'); ?>
 												</a>
 												<div class="item_content">
 													<ul class="post_meta ul_li text-uppercase">
@@ -114,15 +84,16 @@
                 } // end if
               ?>
 
+								
 
-
-								<ul class="pagination_nav ul_li">
-									<li class="d-none"><a href="#!">prev</a></li>
-									<li class="active"><a href="#!">1</a></li>
-									<li><a href="#!">2</a></li>
-									<li><a href="#!">3</a></li>
-									<li><a href="#!">next</a></li>
-								</ul>
+                <?php
+                    the_posts_pagination( array(
+                    'mid_size' => 2,
+                    'prev_text' => __( 'Prev', 'textdomain' ),
+                    'next_text' => __( 'next', 'textdomain' ),
+                    ) );
+                ?>
+                
 							</div>
 
 							<div class="col-12 col-sm-12 col-md-12 col-lg-4  ">
@@ -131,33 +102,33 @@
 									<div class="sb_widget sb_category">
 										<h3 class="sb_widget_title text-uppercase">Categories</h3>
 										<ul class="ul_li_block">
-											<li><a href="blog_category.html">Branding</a></li>
-											<li><a href="blog_category.html">Art direction</a></li>
-											<li><a href="blog_category.html">App development</a></li>
-											<li><a href="blog_category.html">Graphic design</a></li>
+											<?php $categories = get_categories(); 
+												foreach($categories as $category) {
+													if( $category->count>0){
+															echo '<li><a href="' . get_category_link($category->term_id) . '" class="button" >' . $category->name . '<sup>'. $category->count .'</sup></a></li>';
+													}
+												}
+											?>
 										</ul>
 									</div>
 
 									<div class="sb_widget sb_recent_post">
-										<h3 class="sb_widget_title text-uppercase">Recent Post</h3>
-										<div class="recent_post_item">
-											<h3 class="item_title">
-												<a href="#!">Ransformed in his bed into a horrible vermin</a>
-											</h3>
-											<span class="post_date text-uppercase">25 Mar 2021</span>
-										</div>
-										<div class="recent_post_item">
-											<h3 class="item_title">
-												<a href="#!">Northely was hardly able to cover ready</a>
-											</h3>
-											<span class="post_date text-uppercase">25 Apr 2021</span>
-										</div>
-										<div class="recent_post_item">
-											<h3 class="item_title">
-												<a href="#!">Moment his many legs pitifully thin</a>
-											</h3>
-											<span class="post_date text-uppercase">25 Apr 2021</span>
-										</div>
+										<h3 class="sb_widget_title text-uppercase">Featured Posts</h3>
+										<?php
+										$featured_posts = get_field('s24_popular_posts',$page_for_posts);
+										if( $featured_posts ): ?>
+										    <?php foreach( $featured_posts as $featured_post ): 
+										        $permalink = get_permalink( $featured_post->ID );
+										        $title = get_the_title( $featured_post->ID );
+										        ?>
+															<div class="recent_post_item">
+																<h3 class="item_title">
+																	<a href="<?php echo $permalink; ?>"><?php echo $title; ?></a>
+																</h3>
+																<span class="post_date text-uppercase"><?php echo get_the_date( ); ?></span>
+															</div>
+										    <?php endforeach; ?>
+										<?php endif; ?>
 									</div>
 
 									<div class="sb_widget sb_banner black-bg">

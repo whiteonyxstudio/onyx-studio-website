@@ -1,0 +1,67 @@
+/* 2.16 - Comment - start
+================================================== */
+.comment_area {
+  margin: 60px 0px 70px;
+}
+.comment_area .comment_items_list > li:not(:last-child) {
+  margin-bottom: 50px;
+}
+.comment_area .comment_items_list > li > .comment_items_list {
+  padding-left: 60px;
+}
+.comment_area .comment_items_list > li > .comment_items_list > li {
+  margin-top: 40px;
+}
+.comment_area .comment_items_list > li > .comment_items_list > li:not(:last-child) {
+  margin-bottom: 0px;
+}
+
+.comment_item {
+  position: relative;
+}
+.comment_item .comment_thumbnail {
+  float: left;
+  width: 130px;
+  margin-right: 25px;
+  background-color: #000000;
+}
+.comment_item .comment_content {
+  display: table;
+}
+.comment_item .comment_name {
+  font-size: 18px;
+  margin-top: 10px;
+  margin-bottom: 8px;
+}
+.comment_item .comment_date {
+  display: block;
+  color: #A6A6A6;
+  line-height: 1;
+  font-size: 12px;
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+.comment_item p {
+  color: #404040;
+  font-size: 18px;
+}
+.comment_item .reply_btn {
+  top: 10px;
+  right: 0px;
+  color: #000;
+  font-size: 15px;
+  position: absolute;
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+.comment_form p {
+  font-size: 17px;
+  margin-bottom: 40px;
+}
+.comment_form .form_item textarea {
+  min-height: 215px;
+}
+
+/* 2.16 - Comment - end
+================================================== */

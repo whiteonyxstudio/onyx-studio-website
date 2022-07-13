@@ -4,7 +4,7 @@
 			<main>
 				<!-- breadcrumb_section - start
 				================================================== -->
-				<section class="breadcrumb_section section_space  pb-0 light_blue_bg">
+				<section class="breadcrumb_section section_space  pb-0 <?php the_field('s12_post_head_color'); ?>">
 					<div class="container">
 						<div class="row">
 							<div class="col-lg-8 col-md-8 col-sm-10">
@@ -14,21 +14,41 @@
 											<div class="filter_nav_wrap">
 												<!-- <h3 class="filter_nav_title text-uppercase">Breadcrumbs:</h3> -->
 												<ul class="filter-btns-group button-group ul_li">
-													<li><a href="index.html" class="breadcrumb_link button active" data-filter="*">Home</a></li>
-													<li><a href="blog.html" class="breadcrumb_link button" data-filter=".creative">Blog<sup>237</sup></a></li>
-													<li><a href="blog.html" class="breadcrumb_link button" data-filter=".branding">Web design<sup>74</sup></a></li>
+													<li><a href="<?php echo get_home_url(); ?>" class="breadcrumb_link button active" data-filter="*">Home</a></li>
+													<?php 
+														$category = get_the_category();
+														$link = get_category_link( $category[0]->term_id );
+														$category_id =  $category[0]->term_id;
+														$category_name =  $category[0]->name ;
+													
+														$cat_args=array(
+														'cat' => $category_id,
+														'post_type'=>'post'
+														);
+														$catTypes = new WP_Query($cat_args);
+														$numberOfCat_Posts=$catTypes->found_posts;
+
+														$post_args=array(
+														'post_type'=>'post'
+														);
+														$postTypes = new WP_Query($post_args);
+														$numberOfBlog_Posts=$postTypes->found_posts;
+														
+													?>
+													<li><a href="<?php echo get_post_type_archive_link( 'post' ); ?>" class="breadcrumb_link button" data-filter=".creative">Blog<sup><?php echo $numberOfBlog_Posts; ?></sup></a></li>
+													<a href="<?php echo $link; ?>" class="breadcrumb_link button" data-filter=".branding"><?php echo $category_name; ?><sup><?php echo $numberOfCat_Posts; ?></sup></a></li>
 												</ul>
 											</div>
 										</div>
 									</div>
 								</div>
 								<h1 class="page_title">
-									<span class="d-block">How to develop a website for a technology startup</span>
+									<span class="d-block"><?php the_title(); ?></span>
 								</h1>
 								<div class="tagandshare_links">
 									<ul class="post_meta ul_li text-uppercase">
-										<li>By - <a href="#!">Alex Pozdnii</a></li>
-										<li>20 Apr 2021</li>
+										<li>By - <?php $author_id=$post->post_author; the_author_meta( 'display_name' , $author_id ); ?></li>
+										<li><?php  echo get_the_date( );  ?></li>
 									</ul>
 								</div>
 							</div>
@@ -45,121 +65,12 @@
 						<div class="row justify-content-lg-between justify-content-md-center justify-content-sm-center">
 							<div class="col-12 col-sm-12 col-md-12 col-lg-8 ">
 								<div class="details_image">
-									<img src="../assets/images/blog/dental-business.jpg" alt="image_not_found">
+									<?php the_post_thumbnail('full'); ?>
 								</div>
 								<div class="details_content text_editor">
-									
-									<h2 class="details_item_title" id="header-1">
-										What is the difference between a web application and a website?
-									</h2>
-									<p>
-										Bedding was hardly able to cover it and seemed ready to slide off any moment his many legs, pitifully thin compared with the size of the rest of him, waved about helplessly as he looked what's happened to me he thought It wasn't a dream. His room proper human
-									</p>
-									<p>
-										Hardly able to cover it and seemed ready to slide off any moment his many legs, pitifully thin compared with the size of the rest of him, waved about helplessly as he looked what's happened to me he thought It wasn't a dream. His room proper human arogen horizonon
-									</p>
 
-									<h3 class="title_text">
-										E-commerce applications
-									</h3>
-									<p>
-										Arches into stiff sections. The bedding was hardly able to cover it and seemed ready to slide off any moment. His many legs, pitifully thin compared with the size of the rest of him, waved about helplessly as he looked What's happened to me he thought. It wasn't a dream. His room, a proper human room although a little too small, lay peacefully between its four familina about the northa
-									</p>
+									<?php the_content(); ?>
 
-									<h2 class="details_item_title" id="header-2">
-										Portal web applications
-									</h2>
-									<p>
-										Bedding was hardly able to cover it and seemed ready to slide off any moment his many legs, pitifully thin compared with the size of the rest of him, waved about helplessly as he looked what's happened to me he thought It wasn't a dream. His room proper human
-									</p>
-									<p>
-										Hardly able to cover it and seemed ready to slide off any moment his many legs, pitifully thin compared with the size of the rest of him, waved about helplessly as he looked what's happened to me he thought It wasn't a dream. His room proper human arogen horizonon
-									</p>
-
-									<h3 class="title_text">
-										Demands Business because more
-									</h3>
-									<p>
-										Arches into stiff sections. The bedding was hardly able to cover it and seemed ready to slide off any moment. His many legs, pitifully thin compared with the size of the rest of him, waved about helplessly as he looked What's happened to me he thought. It wasn't a dream. His room, a proper human room although a little too small, lay peacefully between its four familina about the northa
-									</p>
-									
-									<h2 class="details_item_title" id="header-3">
-										Front-end frameworks
-									</h2>
-									<p>
-										Bedding was hardly able to cover it and seemed ready to slide off any moment his many legs, pitifully thin compared with the size of the rest of him, waved about helplessly as he looked what's happened to me he thought It wasn't a dream. His room proper human
-									</p>
-									<p>
-										Hardly able to cover it and seemed ready to slide off any moment his many legs, pitifully thin compared with the size of the rest of him, waved about helplessly as he looked what's happened to me he thought It wasn't a dream. His room proper human arogen horizonon
-									</p>
-
-									<h3 class="title_text">
-										Demands Business because more
-									</h3>
-									<p>
-										Arches into stiff sections. The bedding was hardly able to cover it and seemed ready to slide off any moment. His many legs, pitifully thin compared with the size of the rest of him, waved about helplessly as he looked What's happened to me he thought. It wasn't a dream. His room, a proper human room although a little too small, lay peacefully between its four familina about the northa
-									</p>
-									<h2 class="details_item_title" id="header-4">
-										Front-end frameworks
-									</h2>
-									<p>
-										Bedding was hardly able to cover it and seemed ready to slide off any moment his many legs, pitifully thin compared with the size of the rest of him, waved about helplessly as he looked what's happened to me he thought It wasn't a dream. His room proper human
-									</p>
-									<p>
-										Hardly able to cover it and seemed ready to slide off any moment his many legs, pitifully thin compared with the size of the rest of him, waved about helplessly as he looked what's happened to me he thought It wasn't a dream. His room proper human arogen horizonon
-									</p>
-									<h2 class="details_item_title">
-										Front-end frameworks
-									</h2>
-									<ol type="1" >
-											<li>What is the difference between a web application and a website?</li>
-											<li><a href="">E-commerce applications</a></li>
-											<li><a href="">Portal web applications</a></li>
-											<li><a href="">Front-end frameworks</a></li>
-											<li><a href="">CMS web applications</a></li>
-											<li><a href="">Skills needed for web app development</a></li>
-										</ol>
-									<p>
-										Bedding was hardly able to cover it and seemed ready to slide off any moment his many legs, pitifully thin compared with the size of the rest of him, waved about helplessly as he looked what's happened to me he thought It wasn't a dream. His room proper human
-									</p>
-									<p>
-										Hardly able to cover it and seemed ready to slide off any moment his many legs, pitifully thin compared with the size of the rest of him, waved about helplessly as he looked what's happened to me he thought It wasn't a dream. His room proper human arogen horizonon
-									</p>
-
-									<h3 class="title_text">
-										Demands Business because more
-									</h3>
-									<p>
-										Arches into stiff sections. The bedding was hardly able to cover it and seemed ready to slide off any moment. His many legs, pitifully thin compared with the size of the rest of him, waved about helplessly as he looked What's happened to me he thought. It wasn't a dream. His room, a proper human room although a little too small, lay peacefully between its four familina about the northa
-									</p>
-									<h2 class="details_item_title">
-										Summary
-									</h2>
-									<p>
-										Bedding was hardly able to cover it and seemed ready to slide off any moment his many legs, pitifully thin compared with the size of the rest of him, waved about helplessly as he looked what's happened to me he thought It wasn't a dream. His room proper human
-									</p>
-									<p>
-										Hardly able to cover it and seemed ready to slide off any moment his many legs, pitifully thin compared with the size of the rest of him, waved about helplessly as he looked what's happened to me he thought It wasn't a dream. His room proper human arogen horizonon
-									</p>
-
-									<!-- <div class="sb_widget sb_banner black-bg">
-										<h3 class="sb_widget_title text-uppercase mb-0">Want to get useful content?</h3>
-										<p >Subscribe to our blog!</p>
-										<form action="#">
-											<div class="form_item">
-												<input type="email" name="email" placeholder="Your Email*">
-											</div>
-											<div class="form_item">
-												<input type="email" name="email" placeholder="Your Email*">
-											</div>
-											<buton type="submit" class="btn btn_border border_dark text-uppercase" href="about.html">   Subscribe   </buton>
-										</form>
-									</div> -->
-									
-									<!-- <div class="nextprev_post_wrap">
-										<a class="prev_post" href="#!"><i class="fal fa-long-arrow-left"></i> Prev post</a>
-										<a class="next_post" href="#!">Next post <i class="fal fa-long-arrow-right"></i></a>
-									</div> -->
 								</div>
 							</div>
 
@@ -181,10 +92,10 @@
 									<div class="sb_widget sb_share">
 										<h3 class="sb_widget_title text-uppercase">Share Post</h3>
 										<ul class="social_primary ul_li">
-											<li><a href="#!"><i class="fab fa-facebook-f"></i></a></li>
-											<li><a href="#!"><i class="fab fa-twitter"></i></a></li>
-											<li><a href="#!"><i class="fab fa-linkedin-in"></i></a></li>
-											<li><a href="#!"><i class="fab fa-telegram"></i></a></li>
+											<li><a href="https://www.facebook.com/sharer/sharer.php?u=<?php the_permalink(); ?>" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+											<li><a href="http://twitter.com/share?url=<?php the_permalink(); ?>&text=<?php the_title(); ?>" target="_blank" ><i class="fab fa-twitter"></i></a></li>
+											<li><a href="https://www.linkedin.com/sharing/share-offsite/?url=<?php the_permalink(); ?>" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+											<li><a href="https://t.me/share/url?url=<?php the_permalink(); ?>" target="_blank"><i class="fab fa-telegram"></i></a></li>
 										</ul>
 									</div>
 
@@ -226,14 +137,23 @@
 									<div class="sb_widget sb_category">
 										<h3 class="sb_widget_title text-uppercase">Categories</h3>
 										<ul class="ul_li_block">
-											<li><a href="#!">Branding</a></li>
-											<li><a href="#!">Art direction</a></li>
-											<li><a href="#!">App development</a></li>
-											<li><a href="#!">Graphic design</a></li>
+											<?php 
+												$post_args=array(
+												'post_type'=>'post'
+												);
+												$postTypes = new WP_Query($post_args);
+												$numberOfBlog_Posts=$postTypes->found_posts;
+											?>
+											<li><a href="<?php echo get_post_type_archive_link( 'post' ); ?>">All<sup><?php echo $numberOfBlog_Posts; ?></sup></a></li>
+											<?php $categories = get_categories(); 
+												foreach($categories as $category) {
+													if( $category->count>0){
+															echo '<li><a href="' . get_category_link($category->term_id) . '" class="button" >' . $category->name . '<sup>'. $category->count .'</sup></a></li>';
+													}
+												}
+											?>
 										</ul>
 									</div>
-
-									
 
 									<div class="sb_widget sb_tags">
 										<h3 class="sb_widget_title text-uppercase">Tags</h3>
@@ -246,8 +166,6 @@
 											<li><a href="#!">services</a></li>
 										</ul>
 									</div>
-
-									
 
 								</aside>
 							</div>
@@ -265,96 +183,9 @@
 								</h2>
 							</div>
 							<div class="col-12 also_post_grid">
-								<div class="blog_standard_layout">
-									<a class="item_image" href="blog_details.html">
-										<img src="<?php echo get_template_directory_uri(); ?>/assets/images/blog/tech-start-up.jpg" alt="image_not_found">
-									</a>
-									<div class="item_content">
-										<ul class="post_meta ul_li text-uppercase">
-											<li>By - <a href="#!">Admin</a></li>
-											<li><a href="#!">Web Development</a></li>
-										</ul>
-										<h3 class="item_title text_effect_wrap">
-											<a href="blog_details.html">
-												<span class="text_effect_wrap1">
-													<span class="text_effect_wrap2">
-														<span class="text_effect_wrap3">Marketing collateral pays important roles</span>
-													</span>
-												</span>
-											</a>
-										</h3>
-										
-										<a class="btn_text text-uppercase" href="blog_details.html"><span>Read More</span> <i class="fal fa-long-arrow-right"></i></a>
-									</div>
-								</div>
 
-								<div class="blog_standard_layout">
-									<div class="item_image">
-										<div class="blog_image_carousel">
-											<div class="slider_item">
-												<img src="<?php echo get_template_directory_uri(); ?>/assets/images/blog/seo-1.jpg" alt="image_not_found">
-											</div>
-											<div class="slider_item">
-												<img src="<?php echo get_template_directory_uri(); ?>/assets/images/blog/seo-2.jpg" alt="image_not_found">
-											</div>
-										</div>
-										<div class="carousel_nav">
-											<button type="button" class="bic_left_arrow"><i class="fal fa-long-arrow-left"></i></button>
-											<button type="button" class="bic_right_arrow"><i class="fal fa-long-arrow-right"></i></button>
-										</div>
-									</div>
-									<div class="item_content">
-										<ul class="post_meta ul_li text-uppercase">
-											<li>By - <a href="#!">Admin</a></li>
-											<li><a href="#!">Design</a></li>
-										</ul>
-										<h3 class="item_title text_effect_wrap">
-											<a href="blog_details.html">
-												<span class="text_effect_wrap1">
-													<span class="text_effect_wrap2">
-														<span class="text_effect_wrap3">Person and improve your startup</span>
-													</span>
-												</span>
-											</a>
-										</h3>
-										
-										<a class="btn_text text-uppercase" href="blog_details.html"><span>Read More</span> <i class="fal fa-long-arrow-right"></i></a>
-									</div>
-								</div>
-
-								<div class="blog_standard_layout">
-									<div class="item_image">
-										<div class="blog_image_carousel">
-											<div class="slider_item">
-												<img src="<?php echo get_template_directory_uri(); ?>/assets/images/blog/seo-1.jpg" alt="image_not_found">
-											</div>
-											<div class="slider_item">
-												<img src="<?php echo get_template_directory_uri(); ?>/assets/images/blog/seo-2.jpg" alt="image_not_found">
-											</div>
-										</div>
-										<div class="carousel_nav">
-											<button type="button" class="bic_left_arrow"><i class="fal fa-long-arrow-left"></i></button>
-											<button type="button" class="bic_right_arrow"><i class="fal fa-long-arrow-right"></i></button>
-										</div>
-									</div>
-									<div class="item_content">
-										<ul class="post_meta ul_li text-uppercase">
-											<li>By - <a href="#!">Admin</a></li>
-											<li><a href="#!">Branding</a></li>
-										</ul>
-										<h3 class="item_title text_effect_wrap">
-											<a href="blog_details.html">
-												<span class="text_effect_wrap1">
-													<span class="text_effect_wrap2">
-														<span class="text_effect_wrap3">Person and improve your startup</span>
-													</span>
-												</span>
-											</a>
-										</h3>
-										
-										<a class="btn_text text-uppercase" href="blog_details.html"><span>Read More</span> <i class="fal fa-long-arrow-right"></i></a>
-									</div>
-								</div>
+								<?php example_cats_related_post(); ?>
+								
 							</div>
 						</div>
 					</div>

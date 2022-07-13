@@ -3,6 +3,25 @@
     "title": "S16-Development Services",
     "fields": [
         {
+            "key": "field_62c837301f13b",
+            "label": "Section Name",
+            "name": "s16_section_name",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
             "key": "field_62b0bea811845",
             "label": "Development Page Link",
             "name": "s16_development_page_link",
@@ -116,7 +135,14 @@
             {
                 "param": "page_template",
                 "operator": "==",
-                "value": "archive-services.php"
+                "value": "services-template.php"
+            }
+        ],
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "service-category-template.php"
             }
         ]
     ],
@@ -129,5 +155,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1655750694
+    "modified": 1657288514
 }

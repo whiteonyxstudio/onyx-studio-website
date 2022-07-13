@@ -41,47 +41,9 @@
             "maxlength": ""
         },
         {
-            "key": "field_62ae280e5efe6",
-            "label": "First Row name",
-            "name": "s03_first_row_name",
-            "type": "text",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": "",
-            "maxlength": ""
-        },
-        {
-            "key": "field_62ae28375efe8",
-            "label": "Second Row name",
-            "name": "s03_second_row_name",
-            "type": "text",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": "",
-            "maxlength": ""
-        },
-        {
-            "key": "field_62ae28375efe7",
-            "label": "Third Row name",
-            "name": "s03_third_row_name",
+            "key": "field_62cae085a71b0",
+            "label": "Large Header",
+            "name": "s03_large_header_2",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -208,5 +170,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1655751924
+    "modified": 1657462939
 }

@@ -52,7 +52,7 @@
             "label": "Post Head Color",
             "name": "s12_post_head_color",
             "type": "text",
-            "instructions": "",
+            "instructions": "To setup the post head color type in the right  CSS class:",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -85,5 +85,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1655648930
+    "modified": 1657538189
 }

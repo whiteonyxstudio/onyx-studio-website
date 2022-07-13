@@ -270,6 +270,9 @@ section {
     &:hover {
       color: black;
     }
+    a{
+      color: black;
+    }
   }
 
   .menu-icon {
@@ -403,7 +406,7 @@ section {
     line-height: 1rem;
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
+    align-items: top;
     transform: translateX(-100%);
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none; 
@@ -424,7 +427,6 @@ section {
     text-align: right;
 
     .close-btn {
-      
       border: 1px solid black;
       width: 40px;
       height: 40px;
@@ -449,6 +451,7 @@ section {
     width: 100%;
     height: auto;
     margin-top: 50px;
+    padding-top: 25px;
     .menu-wrapper {
       width: 100%;
       display: flex;
@@ -473,18 +476,19 @@ section {
         margin-bottom: 36px;
         list-style: none;
         // border-left: 1px solid $main-green;
-        border-left: 1px solid black;
+        border-left: 1px solid $dark-green;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
 
         li {
-          margin-bottom: 0px;
+          margin-bottom: 20px;
           margin-top: 0px;
           a {
             text-decoration: none;
             color: black;
             font-size: 25px;
+            font-weight: 300;
             line-height: 1;
             // @include med();
           }
