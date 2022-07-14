@@ -475,6 +475,10 @@ button {
     float: left;
     list-style: none;
     display: inline-block; }
+    .ul_li > li a,
+    .ul_li_right > li a,
+    .ul_li_center > li a {
+      color: black; }
 
 .ul_li {
   -webkit-box-pack: start;
@@ -5425,3 +5429,6 @@ section {
 
 .service_category_hero .page_title {
   margin-bottom: 100px; }
+
+.filter-btns-group li a {
+  color: black; }
