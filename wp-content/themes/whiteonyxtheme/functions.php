@@ -147,7 +147,6 @@ function studio_main_theme_scripts() {
 	wp_style_add_data( 'studio_main_theme-style', 'rtl', 'replace' );
 
 
-	wp_enqueue_style( 'bootstrap-grid', get_template_directory_uri() .'/assets/css/bootstrap-grid.min.css' );
 	wp_enqueue_style( 'bootstrap-style', get_template_directory_uri() .'/assets/css/bootstrap.min.css' );
 	wp_enqueue_style( 'fontawesone-style', get_template_directory_uri() .'/assets/css/fontawesome.css' );
 	wp_enqueue_style( 'magnific-style', get_template_directory_uri() .'/assets/css/magnific-popup.css' );
