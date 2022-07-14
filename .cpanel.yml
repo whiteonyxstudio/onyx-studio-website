@@ -1,0 +1,6 @@
+deployment:
+  tasks:
+    - export WPC=/home/opopztbo/public_html
+    - /bin/rm -rf $WPC
+    - /bin/mkdir $WPC
+    - /bin/cp -r * $WPC
