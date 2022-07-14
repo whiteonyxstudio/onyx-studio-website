@@ -155,18 +155,6 @@
 										</ul>
 									</div>
 
-									<div class="sb_widget sb_tags">
-										<h3 class="sb_widget_title text-uppercase">Tags</h3>
-										<ul class="tags_primary ul_li text-uppercase">
-											<li><a href="#!">Portfolio</a></li>
-											<li><a href="#!">branding</a></li>
-											<li><a href="#!">art</a></li>
-											<li><a href="#!">philoshipy</a></li>
-											<li><a href="#!">analylic</a></li>
-											<li><a href="#!">services</a></li>
-										</ul>
-									</div>
-
 								</aside>
 							</div>
 						</div>

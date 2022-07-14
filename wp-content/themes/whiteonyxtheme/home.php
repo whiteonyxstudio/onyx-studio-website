@@ -141,19 +141,7 @@ $page_for_posts = get_option( 'page_for_posts' );
 											<buton type="submit" class="btn btn_border border_dark text-uppercase" href="about.html">   Subscribe   </buton>
 										</form>
 									</div>
-
-									<div class="sb_widget sb_tags">
-										<h3 class="sb_widget_title text-uppercase">Tags</h3>
-										<ul class="tags_primary ul_li text-uppercase">
-											<li><a href="#!">Portfolio</a></li>
-											<li><a href="#!">branding</a></li>
-											<li><a href="#!">art</a></li>
-											<li><a href="#!">philoshipy</a></li>
-											<li><a href="#!">analylic</a></li>
-											<li><a href="#!">services</a></li>
-										</ul>
-									</div>
-
+									
 								</aside>
 							</div>
 						</div>
