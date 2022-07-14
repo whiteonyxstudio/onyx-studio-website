@@ -147,7 +147,7 @@ function studio_main_theme_scripts() {
 	wp_style_add_data( 'studio_main_theme-style', 'rtl', 'replace' );
 
 
-	wp_enqueue_style( 'bootstrap-style', get_template_directory_uri() .'/assets/css/bootstrap.min.css' );
+
 
 	
 
@@ -176,6 +176,7 @@ add_action( 'wp_enqueue_scripts', 'studio_main_theme_scripts' );
  */
 
 function prefix_add_footer_styles() {
+	wp_enqueue_style( 'bootstrap-style', get_template_directory_uri() .'/assets/css/bootstrap.min.css' );
   wp_enqueue_style( 'fontawesone-style', get_template_directory_uri() .'/assets/css/fontawesome.css' );
 	wp_enqueue_style( 'magnific-style', get_template_directory_uri() .'/assets/css/magnific-popup.css' );
 	wp_enqueue_style( 'nice-select-style', get_template_directory_uri() .'/assets/css/nice-select.css' );
