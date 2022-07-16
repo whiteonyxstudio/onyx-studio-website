@@ -321,7 +321,7 @@
 													<span class="text_effect_wrap3 text-break">Any enquiries? </span>
 												</span>
 											</span>
-											<a href="contact.html">
+											<a href="<?php the_field('s25_agency_contact_page_link', 'option'); ?>">
 												<span class="text_effect_wrap1">
 													<span class="text_effect_wrap2">
 														<span class="text_effect_wrap3 text-break">Get in touch now!</span>
@@ -356,7 +356,7 @@
 						</div>
 						<div class="row">
 							<div class="col-lg-6 col-md-6 col-sm-6">
-								<a class="portfolio_fullimage_layout" href="portfolio_details.html">
+								<a class="portfolio_fullimage_layout" href="#">
 									<img src="<?php echo get_template_directory_uri(); ?>/assets/images/portfolio/portfolio-item2.jpg" alt="image_not_found">
 									<span class="item_content">
 										<strong class="item_title">Brand promotion</strong>
@@ -366,7 +366,7 @@
 							</div>
 
 							<div class="col-lg-6 col-md-6 col-sm-6">
-								<a class="portfolio_fullimage_layout" href="portfolio_details.html">
+								<a class="portfolio_fullimage_layout" href="#">
 									<img src="<?php echo get_template_directory_uri(); ?>/assets/images/portfolio/portfolio-item2.jpg" alt="image_not_found">
 									<span class="item_content">
 										<strong class="item_title">Brand promotion</strong>

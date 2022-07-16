@@ -138,7 +138,7 @@ $page_for_posts = get_option( 'page_for_posts' );
 											<div class="form_item">
 												<input type="email" name="email" placeholder="Your Email*">
 											</div>
-											<buton type="submit" class="btn btn_border border_dark text-uppercase" href="about.html">   Subscribe   </buton>
+											<buton type="submit" class="btn btn_border border_dark text-uppercase" href="#">   Subscribe   </buton>
 										</form>
 									</div>
 									
