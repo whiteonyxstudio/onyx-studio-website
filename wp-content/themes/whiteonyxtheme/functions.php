@@ -425,21 +425,6 @@ function example_cats_related_post() {
 }
 
 
-if( function_exists('acf_add_options_page') ) {
-	
-	acf_add_options_page(array(
-		'page_title' 	=> 'Agency Global Settings',
-		'menu_title'	=> 'Agency Settings',
-		'menu_slug' 	=> 'agency-global-settings',
-		'capability'	=> 'edit_posts',
-		'redirect'		=> false
-	));
-	
-	
-	
-}
-
-
 
 
 

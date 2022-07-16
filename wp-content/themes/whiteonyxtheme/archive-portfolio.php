@@ -125,7 +125,7 @@
 													<span class="text_effect_wrap3 text-break">Any enquiries? </span>
 												</span>
 											</span>
-											<a href="<?php the_field('s25_agency_contact_page_link', 'option'); ?>">
+											<a href="contact.html">
 												<span class="text_effect_wrap1">
 													<span class="text_effect_wrap2">
 														<span class="text_effect_wrap3 text-break">Get in touch now!</span>
@@ -207,7 +207,7 @@
 																	<p>
 																		<?php the_sub_field('service_description'); ?>
 																	</p>
-																	<a class="btn_text" href="<?php the_sub_field('service_link'); ?>">
+																	<a class="btn_text" href="web-development.html">
 																		<span>Learn more</span> 
 																		<svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
 																			<path d="M10 0V7.50063H9.16833V1.42131L0.587991 10L0 9.41015L8.57868 0.833125H2.49418V0H10Z" fill=""></path>
@@ -233,7 +233,7 @@
 																		<?php endif; ?>
 																	</ul>
 																	<div data-animation="fadeInUp2" data-delay=".6s">
-																		<a class="btn btn_white" href="">Start a project</a>
+																		<a class="btn btn_white" href="contact.html">Start a project</a>
 																	</div>
 																</div>
 															</div>
@@ -242,6 +242,446 @@
 								  			</div>
 									    <?php $counter++; endwhile; ?>
 									<?php endif; ?>
+								  <div class="accordion-item">
+								    <h2 class="accordion-header" id="flush-headingOne">
+								      <button class="accordion-button  collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+								        <div class="blog_simple_layout">
+													<div class="blog_col mb-0">
+														<h3 class="item_title text_effect_wrap ">
+															<span class="text_effect_wrap1">
+																<span class="text_effect_wrap2">
+																	<span class="text_effect_wrap3">Landing Pages</span>
+																</span>
+															</span>
+														</h3>
+													</div>
+													<div class="blog_col blog_col_1">
+														<!-- <p>
+															Between its four familiar walls a collection of textile samples lay spread out on the 
+														</p> -->
+													</div>
+												</div>
+								      </button>
+								    </h2>
+								    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+								      <div class="accordion-body">
+												<div class="blog_simple_layout">
+													<div class="blog_col">
+														<p>
+															Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque voluptates cupiditate dicta iure veritatis labore optio eaque enim ipsa facere suscipit sed dolore soluta, nemo voluptatibus! Perspiciatis excepturi sapiente quod.
+														</p>
+														<a class="btn_text" href="web-development.html">
+															<span>Learn more</span> 
+															<svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+																<path d="M10 0V7.50063H9.16833V1.42131L0.587991 10L0 9.41015L8.57868 0.833125H2.49418V0H10Z" fill=""></path>
+															</svg>
+														</a>
+													</div>
+													<div class="blog_col blog_col_1">
+														
+														<ul class="service-list">
+															<li class="service-list-item">
+																<a href="landing_page.html">
+																	<span>01 </span>
+																	<span class="service-item-name">Landing Pages</span>
+																	<svg width="44" height="17" viewBox="0 0 44 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+																	  <path d="M39.7777 4.77763C39.973 4.58236 39.973 4.26578 39.7777 4.07052L36.5957 0.888538C36.4005 0.693276 36.0839 0.693276 35.8886 0.888538C35.6934 1.0838 35.6934 1.40038 35.8886 1.59565L38.7171 4.42407L35.8886 7.2525C35.6934 7.44776 35.6934 7.76434 35.8886 7.95961C36.0839 8.15487 36.4005 8.15487 36.5957 7.95961L39.7777 4.77763ZM4.57617 4.92407L39.4242 4.92407V3.92407L4.57617 3.92407V4.92407Z" fill="black"/>
+																	</svg>
+																</a>
+															</li>
+															<li class="service-list-item">
+																<a href="landing_page.html">
+																	<span>02</span>
+																	<span class="service-item-name">Bisness card websites</span> 
+																	<svg width="44" height="17" viewBox="0 0 44 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+																	  <path d="M39.7777 4.77763C39.973 4.58236 39.973 4.26578 39.7777 4.07052L36.5957 0.888538C36.4005 0.693276 36.0839 0.693276 35.8886 0.888538C35.6934 1.0838 35.6934 1.40038 35.8886 1.59565L38.7171 4.42407L35.8886 7.2525C35.6934 7.44776 35.6934 7.76434 35.8886 7.95961C36.0839 8.15487 36.4005 8.15487 36.5957 7.95961L39.7777 4.77763ZM4.57617 4.92407L39.4242 4.92407V3.92407L4.57617 3.92407V4.92407Z" fill="black"/>
+																	</svg>
+																</a>
+															</li>
+															<li class="service-list-item">
+																<a href="landing_page.html">
+																	<span>03 </span>
+																	<span class="service-item-name">Corporate websites</span>
+																	<svg width="44" height="17" viewBox="0 0 44 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+																	  <path d="M39.7777 4.77763C39.973 4.58236 39.973 4.26578 39.7777 4.07052L36.5957 0.888538C36.4005 0.693276 36.0839 0.693276 35.8886 0.888538C35.6934 1.0838 35.6934 1.40038 35.8886 1.59565L38.7171 4.42407L35.8886 7.2525C35.6934 7.44776 35.6934 7.76434 35.8886 7.95961C36.0839 8.15487 36.4005 8.15487 36.5957 7.95961L39.7777 4.77763ZM4.57617 4.92407L39.4242 4.92407V3.92407L4.57617 3.92407V4.92407Z" fill="black"/>
+																	</svg>
+																</a>
+															</li>
+															<li class="service-list-item">
+																<a href="landing_page.html">
+																	<span>04 </span>
+																	<span class="service-item-name">Promo Websites</span>
+																	<svg width="44" height="17" viewBox="0 0 44 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+																	  <path d="M39.7777 4.77763C39.973 4.58236 39.973 4.26578 39.7777 4.07052L36.5957 0.888538C36.4005 0.693276 36.0839 0.693276 35.8886 0.888538C35.6934 1.0838 35.6934 1.40038 35.8886 1.59565L38.7171 4.42407L35.8886 7.2525C35.6934 7.44776 35.6934 7.76434 35.8886 7.95961C36.0839 8.15487 36.4005 8.15487 36.5957 7.95961L39.7777 4.77763ZM4.57617 4.92407L39.4242 4.92407V3.92407L4.57617 3.92407V4.92407Z" fill="black"/>
+																	</svg>
+																</a>
+															</li>
+															<li class="service-list-item">
+																<a href="landing_page.html">
+																	<span>05</span>
+																	<span class="service-item-name">Blogs</span>
+																	<svg width="44" height="17" viewBox="0 0 44 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+																	  <path d="M39.7777 4.77763C39.973 4.58236 39.973 4.26578 39.7777 4.07052L36.5957 0.888538C36.4005 0.693276 36.0839 0.693276 35.8886 0.888538C35.6934 1.0838 35.6934 1.40038 35.8886 1.59565L38.7171 4.42407L35.8886 7.2525C35.6934 7.44776 35.6934 7.76434 35.8886 7.95961C36.0839 8.15487 36.4005 8.15487 36.5957 7.95961L39.7777 4.77763ZM4.57617 4.92407L39.4242 4.92407V3.92407L4.57617 3.92407V4.92407Z" fill="black"/>
+																	</svg>
+																</a>
+															</li>
+															<li class="service-list-item">
+																<a href="landing_page.html">
+																	<span>06 </span>
+																	<span class="service-item-name">Custom Solutions</span>
+																	<svg width="44" height="17" viewBox="0 0 44 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+																	  <path d="M39.7777 4.77763C39.973 4.58236 39.973 4.26578 39.7777 4.07052L36.5957 0.888538C36.4005 0.693276 36.0839 0.693276 35.8886 0.888538C35.6934 1.0838 35.6934 1.40038 35.8886 1.59565L38.7171 4.42407L35.8886 7.2525C35.6934 7.44776 35.6934 7.76434 35.8886 7.95961C36.0839 8.15487 36.4005 8.15487 36.5957 7.95961L39.7777 4.77763ZM4.57617 4.92407L39.4242 4.92407V3.92407L4.57617 3.92407V4.92407Z" fill="black"/>
+																	</svg>
+																</a>
+															</li>
+														</ul>
+														<div data-animation="fadeInUp2" data-delay=".6s">
+															<a class="btn btn_white" href="contact.html">Start a project</a>
+														</div>
+													</div>
+												</div>
+											</div>
+								    </div>
+								  </div>
+								  <div class="accordion-item">
+								    <h2 class="accordion-header" id="flush-headingTwo">
+								      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+								        <div class="blog_simple_layout">
+													<div class="blog_col mb-0">
+														<h3 class="item_title text_effect_wrap">
+															<span class="text_effect_wrap1">
+																<span class="text_effect_wrap2">
+																	<span class="text_effect_wrap3">Business Websites</span>
+																</span>
+															</span>
+														</h3>
+													</div>
+													<div class="blog_col blog_col_1">
+														<!-- <p>
+															Between its four familiar walls a collection of textile samples lay spread out on the 
+														</p> -->
+													</div>
+												</div>
+								      </button>
+								    </h2>
+								    <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+								      <div class="accordion-body">
+												<div class="blog_simple_layout">
+													<div class="blog_col">
+														<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam atque eum illum ipsa suscipit quasi ea harum eveniet, nemo in quo ipsam modi natus minima doloremque sunt eaque! Perferendis, ab?</p>
+														<a class="btn_text" href="web_design.html">
+															<span>Learn more</span> 
+															<svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+																<path d="M10 0V7.50063H9.16833V1.42131L0.587991 10L0 9.41015L8.57868 0.833125H2.49418V0H10Z" fill="white"></path>
+															</svg>
+														</a>
+													</div>
+													<div class="blog_col blog_col_1">
+														<ul class="service-list">
+															<li class="service-list-item">
+																<a href="">
+																	<span>01 </span>
+																	<span class="service-item-name">Landing Pages</span>
+																	<svg width="44" height="17" viewBox="0 0 44 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+																	  <path d="M39.7777 4.77763C39.973 4.58236 39.973 4.26578 39.7777 4.07052L36.5957 0.888538C36.4005 0.693276 36.0839 0.693276 35.8886 0.888538C35.6934 1.0838 35.6934 1.40038 35.8886 1.59565L38.7171 4.42407L35.8886 7.2525C35.6934 7.44776 35.6934 7.76434 35.8886 7.95961C36.0839 8.15487 36.4005 8.15487 36.5957 7.95961L39.7777 4.77763ZM4.57617 4.92407L39.4242 4.92407V3.92407L4.57617 3.92407V4.92407Z" fill="black"/>
+																	</svg>
+																</a>
+															</li>
+															<li class="service-list-item">
+																<a href="">
+																	<span>02</span>
+																	<span class="service-item-name">Bisness card websites</span> 
+																	<svg width="44" height="17" viewBox="0 0 44 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+																	  <path d="M39.7777 4.77763C39.973 4.58236 39.973 4.26578 39.7777 4.07052L36.5957 0.888538C36.4005 0.693276 36.0839 0.693276 35.8886 0.888538C35.6934 1.0838 35.6934 1.40038 35.8886 1.59565L38.7171 4.42407L35.8886 7.2525C35.6934 7.44776 35.6934 7.76434 35.8886 7.95961C36.0839 8.15487 36.4005 8.15487 36.5957 7.95961L39.7777 4.77763ZM4.57617 4.92407L39.4242 4.92407V3.92407L4.57617 3.92407V4.92407Z" fill="black"/>
+																	</svg>
+																</a>
+															</li>
+															<li class="service-list-item">
+																<a href="">
+																	<span>03 </span>
+																	<span class="service-item-name">Corporate websites</span>
+																	<svg width="44" height="17" viewBox="0 0 44 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+																	  <path d="M39.7777 4.77763C39.973 4.58236 39.973 4.26578 39.7777 4.07052L36.5957 0.888538C36.4005 0.693276 36.0839 0.693276 35.8886 0.888538C35.6934 1.0838 35.6934 1.40038 35.8886 1.59565L38.7171 4.42407L35.8886 7.2525C35.6934 7.44776 35.6934 7.76434 35.8886 7.95961C36.0839 8.15487 36.4005 8.15487 36.5957 7.95961L39.7777 4.77763ZM4.57617 4.92407L39.4242 4.92407V3.92407L4.57617 3.92407V4.92407Z" fill="black"/>
+																	</svg>
+																</a>
+															</li>
+															<li class="service-list-item">
+																<a href="">
+																	<span>04 </span>
+																	<span class="service-item-name">Promo Websites</span>
+																	<svg width="44" height="17" viewBox="0 0 44 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+																	  <path d="M39.7777 4.77763C39.973 4.58236 39.973 4.26578 39.7777 4.07052L36.5957 0.888538C36.4005 0.693276 36.0839 0.693276 35.8886 0.888538C35.6934 1.0838 35.6934 1.40038 35.8886 1.59565L38.7171 4.42407L35.8886 7.2525C35.6934 7.44776 35.6934 7.76434 35.8886 7.95961C36.0839 8.15487 36.4005 8.15487 36.5957 7.95961L39.7777 4.77763ZM4.57617 4.92407L39.4242 4.92407V3.92407L4.57617 3.92407V4.92407Z" fill="black"/>
+																	</svg>
+																</a>
+															</li>
+															
+														</ul>
+														<div data-animation="fadeInUp2" data-delay=".6s">
+															<a class="btn btn_white" href="contact.html">Start a project</a>
+														</div>
+													</div>
+												</div>
+											</div>
+								    </div>
+								  </div>
+									<div class="accordion-item">
+								    <h2 class="accordion-header" id="flush-heading2">
+								      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse2" aria-expanded="false" aria-controls="flush-collapse2">
+								        <div class="blog_simple_layout">
+													<div class="blog_col mb-0">
+														<h3 class="item_title text_effect_wrap">
+															<span class="text_effect_wrap1">
+																<span class="text_effect_wrap2">
+																	<span class="text_effect_wrap3">Corporate Websites</span>
+																</span>
+															</span> 
+														</h3>
+													</div>
+													<div class="blog_col blog_col_1">
+														<!-- <p>
+															Between its four familiar walls a collection of textile samples lay spread out on the 
+														</p> -->
+													</div>
+												</div>
+								      </button>
+								    </h2>
+								    <div id="flush-collapse2" class="accordion-collapse collapse" aria-labelledby="flush-heading2" data-bs-parent="#accordionFlushExample">
+								      <div class="accordion-body">
+												<div class="blog_simple_layout">
+													<div class="blog_col">
+														<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam atque eum illum ipsa suscipit quasi ea harum eveniet, nemo in quo ipsam modi natus minima doloremque sunt eaque! Perferendis, ab?</p>
+														<a class="btn_text" href="branding.html">
+															<span>Learn more</span> 
+															<svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+																<path d="M10 0V7.50063H9.16833V1.42131L0.587991 10L0 9.41015L8.57868 0.833125H2.49418V0H10Z" fill="white"></path>
+															</svg>
+														</a>
+													</div>
+													<div class="blog_col blog_col_1">
+														<ul class="service-list">
+															<li class="service-list-item">
+																<a href="">
+																	<span>01 </span>
+																	<span class="service-item-name">Brand identity</span>
+																	<svg width="44" height="17" viewBox="0 0 44 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+																	  <path d="M39.7777 4.77763C39.973 4.58236 39.973 4.26578 39.7777 4.07052L36.5957 0.888538C36.4005 0.693276 36.0839 0.693276 35.8886 0.888538C35.6934 1.0838 35.6934 1.40038 35.8886 1.59565L38.7171 4.42407L35.8886 7.2525C35.6934 7.44776 35.6934 7.76434 35.8886 7.95961C36.0839 8.15487 36.4005 8.15487 36.5957 7.95961L39.7777 4.77763ZM4.57617 4.92407L39.4242 4.92407V3.92407L4.57617 3.92407V4.92407Z" fill="black"/>
+																	</svg>
+																</a>
+															</li>
+															<li class="service-list-item">
+																<a href="">
+																	<span>02</span>
+																	<span class="service-item-name">Corporate logo design</span> 
+																	<svg width="44" height="17" viewBox="0 0 44 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+																	  <path d="M39.7777 4.77763C39.973 4.58236 39.973 4.26578 39.7777 4.07052L36.5957 0.888538C36.4005 0.693276 36.0839 0.693276 35.8886 0.888538C35.6934 1.0838 35.6934 1.40038 35.8886 1.59565L38.7171 4.42407L35.8886 7.2525C35.6934 7.44776 35.6934 7.76434 35.8886 7.95961C36.0839 8.15487 36.4005 8.15487 36.5957 7.95961L39.7777 4.77763ZM4.57617 4.92407L39.4242 4.92407V3.92407L4.57617 3.92407V4.92407Z" fill="black"/>
+																	</svg>
+																</a>
+															</li>
+															<li class="service-list-item">
+																<a href="">
+																	<span>03 </span>
+																	<span class="service-item-name">Corporate documentation</span>
+																	<svg width="44" height="17" viewBox="0 0 44 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+																	  <path d="M39.7777 4.77763C39.973 4.58236 39.973 4.26578 39.7777 4.07052L36.5957 0.888538C36.4005 0.693276 36.0839 0.693276 35.8886 0.888538C35.6934 1.0838 35.6934 1.40038 35.8886 1.59565L38.7171 4.42407L35.8886 7.2525C35.6934 7.44776 35.6934 7.76434 35.8886 7.95961C36.0839 8.15487 36.4005 8.15487 36.5957 7.95961L39.7777 4.77763ZM4.57617 4.92407L39.4242 4.92407V3.92407L4.57617 3.92407V4.92407Z" fill="black"/>
+																	</svg>
+																</a>
+															</li>
+															<li class="service-list-item">
+																<a href="">
+																	<span>04 </span>
+																	<span class="service-item-name">Content design</span>
+																	<svg width="44" height="17" viewBox="0 0 44 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+																	  <path d="M39.7777 4.77763C39.973 4.58236 39.973 4.26578 39.7777 4.07052L36.5957 0.888538C36.4005 0.693276 36.0839 0.693276 35.8886 0.888538C35.6934 1.0838 35.6934 1.40038 35.8886 1.59565L38.7171 4.42407L35.8886 7.2525C35.6934 7.44776 35.6934 7.76434 35.8886 7.95961C36.0839 8.15487 36.4005 8.15487 36.5957 7.95961L39.7777 4.77763ZM4.57617 4.92407L39.4242 4.92407V3.92407L4.57617 3.92407V4.92407Z" fill="black"/>
+																	</svg>
+																</a>
+															</li>
+														</ul>
+														<div data-animation="fadeInUp2" data-delay=".6s">
+															<a class="btn btn_white" href="contact.html">Start a project</a>
+														</div>
+													</div>
+												</div>
+											</div>
+								    </div>
+								  </div>
+									<div class="accordion-item">
+								    <h2 class="accordion-header" id="flush-heading3">
+								      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse3" aria-expanded="false" aria-controls="flush-collapse3">
+								        <div class="blog_simple_layout">
+													<div class="blog_col mb-0">
+														<h3 class="item_title text_effect_wrap">
+															<span class="text_effect_wrap1">
+																<span class="text_effect_wrap2">
+																	<span class="text_effect_wrap3">Promo Websites</span>
+																</span>
+															</span>
+														</h3>
+													</div>
+													<div class="blog_col blog_col_1">
+														
+													</div>
+												</div>
+								      </button>
+								    </h2>
+								    <div id="flush-collapse3" class="accordion-collapse collapse" aria-labelledby="flush-heading3" data-bs-parent="#accordionFlushExample">
+								      <div class="accordion-body">
+												<div class="blog_simple_layout">
+													<div class="blog_col">
+														<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam atque eum illum ipsa suscipit quasi ea harum eveniet, nemo in quo ipsam modi natus minima doloremque sunt eaque! Perferendis, ab?</p>
+														<a class="btn_text" href="seo.html">
+															<span>Learn more</span> 
+															<svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+																<path d="M10 0V7.50063H9.16833V1.42131L0.587991 10L0 9.41015L8.57868 0.833125H2.49418V0H10Z" fill="white"></path>
+															</svg>
+														</a>
+													</div>
+													<div class="blog_col blog_col_1">
+														<ul class="service-list">
+															<li class="service-list-item">
+																<a href="">
+																	<span>01 </span>
+																	<span class="service-item-name">Brand identity</span>
+																	<svg width="44" height="17" viewBox="0 0 44 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+																	  <path d="M39.7777 4.77763C39.973 4.58236 39.973 4.26578 39.7777 4.07052L36.5957 0.888538C36.4005 0.693276 36.0839 0.693276 35.8886 0.888538C35.6934 1.0838 35.6934 1.40038 35.8886 1.59565L38.7171 4.42407L35.8886 7.2525C35.6934 7.44776 35.6934 7.76434 35.8886 7.95961C36.0839 8.15487 36.4005 8.15487 36.5957 7.95961L39.7777 4.77763ZM4.57617 4.92407L39.4242 4.92407V3.92407L4.57617 3.92407V4.92407Z" fill="black"/>
+																	</svg>
+																</a>
+															</li>
+															<li class="service-list-item">
+																<a href="">
+																	<span>02</span>
+																	<span class="service-item-name">Corporate logo design</span> 
+																	<svg width="44" height="17" viewBox="0 0 44 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+																	  <path d="M39.7777 4.77763C39.973 4.58236 39.973 4.26578 39.7777 4.07052L36.5957 0.888538C36.4005 0.693276 36.0839 0.693276 35.8886 0.888538C35.6934 1.0838 35.6934 1.40038 35.8886 1.59565L38.7171 4.42407L35.8886 7.2525C35.6934 7.44776 35.6934 7.76434 35.8886 7.95961C36.0839 8.15487 36.4005 8.15487 36.5957 7.95961L39.7777 4.77763ZM4.57617 4.92407L39.4242 4.92407V3.92407L4.57617 3.92407V4.92407Z" fill="black"/>
+																	</svg>
+																</a>
+															</li>
+															<li class="service-list-item">
+																<a href="">
+																	<span>03 </span>
+																	<span class="service-item-name">Corporate documentation</span>
+																	<svg width="44" height="17" viewBox="0 0 44 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+																	  <path d="M39.7777 4.77763C39.973 4.58236 39.973 4.26578 39.7777 4.07052L36.5957 0.888538C36.4005 0.693276 36.0839 0.693276 35.8886 0.888538C35.6934 1.0838 35.6934 1.40038 35.8886 1.59565L38.7171 4.42407L35.8886 7.2525C35.6934 7.44776 35.6934 7.76434 35.8886 7.95961C36.0839 8.15487 36.4005 8.15487 36.5957 7.95961L39.7777 4.77763ZM4.57617 4.92407L39.4242 4.92407V3.92407L4.57617 3.92407V4.92407Z" fill="black"/>
+																	</svg>
+																</a>
+															</li>
+															<li class="service-list-item">
+																<a href="">
+																	<span>04 </span>
+																	<span class="service-item-name">Content design</span>
+																	<svg width="44" height="17" viewBox="0 0 44 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+																	  <path d="M39.7777 4.77763C39.973 4.58236 39.973 4.26578 39.7777 4.07052L36.5957 0.888538C36.4005 0.693276 36.0839 0.693276 35.8886 0.888538C35.6934 1.0838 35.6934 1.40038 35.8886 1.59565L38.7171 4.42407L35.8886 7.2525C35.6934 7.44776 35.6934 7.76434 35.8886 7.95961C36.0839 8.15487 36.4005 8.15487 36.5957 7.95961L39.7777 4.77763ZM4.57617 4.92407L39.4242 4.92407V3.92407L4.57617 3.92407V4.92407Z" fill="black"/>
+																	</svg>
+																</a>
+															</li>
+														</ul>
+														<div data-animation="fadeInUp2" data-delay=".6s">
+															<a class="btn btn_white" href="contact.html">Start a project</a>
+														</div>
+													</div>
+												</div>
+											</div>
+								    </div>
+								  </div>
+									<div class="accordion-item">
+								    <h2 class="accordion-header" id="flush-heading4">
+								      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse4" aria-expanded="false" aria-controls="flush-collapse4">
+								        <div class="blog_simple_layout">
+													<div class="blog_col mb-0">
+														<h3 class="item_title text_effect_wrap">
+															<span class="text_effect_wrap1">
+																<span class="text_effect_wrap2">
+																	<span class="text_effect_wrap3">Blogs</span>
+																</span>
+															</span>
+														</h3>
+													</div>
+													<div class="blog_col blog_col_1">
+													</div>
+												</div>
+								      </button>
+								    </h2>
+								    <div id="flush-collapse4" class="accordion-collapse collapse" aria-labelledby="flush-heading4" data-bs-parent="#accordionFlushExample">
+								      <div class="accordion-body">
+												<div class="blog_simple_layout">
+													<div class="blog_col">
+														<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam atque eum illum ipsa suscipit quasi ea harum eveniet, nemo in quo ipsam modi natus minima doloremque sunt eaque! Perferendis, ab?</p>
+														<a class="btn_text" href="ppc.html">
+															<span>Learn more</span> 
+															<svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+																<path d="M10 0V7.50063H9.16833V1.42131L0.587991 10L0 9.41015L8.57868 0.833125H2.49418V0H10Z" fill="white"></path>
+															</svg>
+														</a>
+													</div>
+													<div class="blog_col blog_col_1">
+														<p>
+															We cover all  stages to  deliver a fully working product.
+														</p>
+														<ul>
+															<li>Briefing</li>
+															<li>Prototyping</li>
+															<li>Design</li>
+															<li>Development</li>
+															<li>Testing</li>
+															<li>Support</li>
+														</ul>
+														<div data-animation="fadeInUp2" data-delay=".6s">
+															<a class="btn btn_white" href="contact.html">Start a project</a>
+														</div>
+													</div>
+												</div>
+											</div>
+								    </div>
+								  </div>
+									<div class="accordion-item">
+								    <h2 class="accordion-header" id="flush-heading5">
+								      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse5" aria-expanded="false" aria-controls="flush-collapse5">
+								        <div class="blog_simple_layout">
+													<div class="blog_col mb-0">
+														<h3 class="item_title text_effect_wrap">
+															<span class="text_effect_wrap1">
+																<span class="text_effect_wrap2">
+																	<span class="text_effect_wrap3">Custom Solutions</span>
+																</span>
+															</span>
+														</h3>
+													</div>
+													<div class="blog_col blog_col_1">
+													</div>
+												</div>
+								      </button>
+								    </h2>
+								    <div id="flush-collapse5" class="accordion-collapse collapse" aria-labelledby="flush-heading5" data-bs-parent="#accordionFlushExample">
+								      <div class="accordion-body">
+												<div class="blog_simple_layout">
+													<div class="blog_col">
+														<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam atque eum illum ipsa suscipit quasi ea harum eveniet, nemo in quo ipsam modi natus minima doloremque sunt eaque! Perferendis, ab?</p>
+														<a class="btn_text" href="mobile_design.html">
+															<span>Learn more</span> 
+															<svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+																<path d="M10 0V7.50063H9.16833V1.42131L0.587991 10L0 9.41015L8.57868 0.833125H2.49418V0H10Z" fill="white"></path>
+															</svg>
+														</a>
+													</div>
+													<div class="blog_col blog_col_1">
+														<p>
+															We cover all  stages to  deliver a fully working product.
+														</p>
+														<ul>
+															<li>Briefing</li>
+															<li>Prototyping</li>
+															<li>Design</li>
+															<li>Development</li>
+															<li>Testing</li>
+															<li>Support</li>
+														</ul>
+														<div data-animation="fadeInUp2" data-delay=".6s">
+															<a class="btn btn_white" href="contact.html">Start a project</a>
+														</div>
+													</div>
+												</div>
+											</div>
+								    </div>
+								  </div>
 								</div>
           		</div>
 						</div>
