@@ -1,0 +1,55 @@
+{
+    "key": "group_62d15ffedd187",
+    "title": "S25 Agency Global Settings",
+    "fields": [
+        {
+            "key": "field_62d1600e17692",
+            "label": "Agency Contact Page Link",
+            "name": "s25_agency_contact_page_link",
+            "type": "link",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "url"
+        },
+        {
+            "key": "field_62d1653043287",
+            "label": "Agency Start Poject Link",
+            "name": "s25_agency_start_project_link",
+            "type": "link",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "url"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "agency-global-settings"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1657890281
+}
