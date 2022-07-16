@@ -61,7 +61,7 @@
 				</a>
   		  <!-- <div class="header-desc">Студія створення сайтів під ключ у Львові</div> -->
   		  <div class="header-contacts">
-  		    <a href="mainto:whiteonyxstudi@gmail.com">WHITEONYXSTUDIO@GMAIL.COM</a>
+  		    <a href="mailto:whiteonyxstudi@gmail.com">WHITEONYXSTUDIO@GMAIL.COM</a>
   		    <a href="tel:1-562-867-5309">(067)-123-23-23</a>
   		  </div>
   		  <div class="menu-icon btn">

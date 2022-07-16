@@ -153,8 +153,8 @@
   		            <span>Soc. networks</span>
   		            <ul class="social-nav">
   		              <li><a target="_blank" href="https://www.instagram.com/whiteonyx.studio/"><i class="fa fa-instagram"></i></a></li>
-  		              <li><a target="_blank" href=""><i class="fa fa-facebook"></i></a></li>
-  		              <li><a target="_blank" href=""><i class="fa fa-linkedin"></i></a></li>
+  		              <li><a target="_blank" href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a></li>
+  		              <li><a target="_blank" href="https://www.linkedin.com/"><i class="fa fa-linkedin"></i></a></li>
   		              <li><a target="_blank" href="https://www.behance.net/whiteonyxstudio/"><i class="fa fa-behance"></i></a></li>
   		            </ul>
   		          </div>
