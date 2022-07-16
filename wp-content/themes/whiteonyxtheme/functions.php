@@ -164,7 +164,7 @@ function studio_main_theme_scripts() {
 	wp_enqueue_script( 'jq-plugins-script', get_template_directory_uri() . '/assets/js/jquery-plugins-collection.js', array(), _S_VERSION, true );
 	wp_enqueue_script( 'bootstrap-script', get_template_directory_uri() . '/assets/js/bootstrap.min.js', array(), _S_VERSION, true );
 	wp_enqueue_script( 'main-script', get_template_directory_uri() . '/assets/js/main.js', array(), _S_VERSION, true );
-	wp_enqueue_script( 'fontawesome', 'https://kit.fontawesome.com/8d258d854c.js');
+	
 
 	}
 add_action( 'wp_enqueue_scripts', 'studio_main_theme_scripts' );
@@ -176,6 +176,8 @@ add_action( 'wp_enqueue_scripts', 'studio_main_theme_scripts' );
 
 function prefix_add_footer_styles() {
 	wp_enqueue_style( 'fontawesone-style', get_template_directory_uri() .'/assets/css/fontawesome.css' );
+	wp_enqueue_script( 'fontawesome-script', 'https://kit.fontawesome.com/8d258d854c.js');
+	
 };
 add_action( 'get_footer', 'prefix_add_footer_styles' );
 
@@ -189,6 +191,8 @@ wp_dequeue_style( 'wp-block-library' ); // WordPress core
 wp_dequeue_style( 'wp-block-library-theme' ); // WordPress core
 wp_dequeue_style( 'wc-block-style' ); // WooCommerce
 wp_dequeue_style( 'storefront-gutenberg-blocks' ); // Storefront theme
+wp_dequeue_style( 'fontawesome' );
+wp_deregister_style( 'fontawesome' );
 }
 
 /**
