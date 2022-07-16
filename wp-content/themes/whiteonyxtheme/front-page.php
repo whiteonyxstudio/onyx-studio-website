@@ -9,7 +9,7 @@
 
             <div class="slider_item d-flex  align-items-start align-items-lg-center" style="background-image: url('<?php echo get_template_directory_uri();?>/assets/images/slider/slide-1.webp')">
 							<div class="slider_content banner_section">
-								<h3 class="banner_title text_effect_wrap">
+								<h1 class="banner_title text_effect_wrap">
                   <?php get_template_directory_uri(); ?>
 										<span class="text_effect_wrap1">
 											<span class="text_effect_wrap2">
@@ -31,7 +31,7 @@
 												<span class="text_effect_wrap3">Things</span>
 											</span>
 										</span>
-									</h3>
+									</h1>
 								<div data-animation="fadeInUp2" data-delay=".6s">
 									<a class="btn btn_white" href="<?php the_field('s25_agency_start_project_link', 'option'); ?>">Start Project</a>
 								</div>
