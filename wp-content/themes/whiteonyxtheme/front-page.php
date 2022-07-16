@@ -33,7 +33,7 @@
 										</span>
 									</h3>
 								<div data-animation="fadeInUp2" data-delay=".6s">
-									<a class="btn btn_white" href="contact.html">Start Project</a>
+									<a class="btn btn_white" href="<?php the_field('s25_agency_contact_page_link', 'option'); ?>">Start Project</a>
 								</div>
 							</div>
 						</div>
@@ -66,7 +66,7 @@
 									We develop optimized wesbsite websites that sell and rank high in google
 								</p> -->
 								<div data-animation="fadeInUp2" data-delay=".6s">
-									<a class="btn btn_white" href="contact.html">Contact us</a>
+									<a class="btn btn_white" href="<?php the_field('s25_agency_contact_page_link', 'option'); ?>">Contact us</a>
 								</div>
 							</div>
 						</div>
@@ -98,7 +98,7 @@
 									</h3>
 								
 								<div data-animation="fadeInUp2" data-delay=".6s">
-									<a class="btn btn_white" href="contact.html">Contact us</a>
+									<a class="btn btn_white" href="<?php the_field('s25_agency_contact_page_link', 'option'); ?>">Contact us</a>
 								</div>
 							</div>
 						</div>
@@ -218,7 +218,7 @@
 																	<p>
 																		<?php the_sub_field('service_description'); ?>
 																	</p>
-																	<a class="btn_text" href="web-development.html">
+																	<a class="btn_text" href="<?php the_sub_field('service_link'); ?>">
 																		<span>Learn more</span> 
 																		<svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
 																			<path d="M10 0V7.50063H9.16833V1.42131L0.587991 10L0 9.41015L8.57868 0.833125H2.49418V0H10Z" fill=""></path>
@@ -226,7 +226,6 @@
 																	</a>
 																</div>
 																<div class="blog_col blog_col_1">
-																	
 																	<ul class="service-list">
 																		<?php if( have_rows('services_sub_navigation') ): ?>
 																		    <?php $inner_counter=1; while( have_rows('services_sub_navigation') ): the_row(); 
@@ -244,7 +243,7 @@
 																		<?php endif; ?>
 																	</ul>
 																	<div data-animation="fadeInUp2" data-delay=".6s">
-																		<a class="btn btn_white" href="contact.html">Start a project</a>
+																		<a class="btn btn_white" href="<?php the_sub_field('start_project_link'); ?>">Start a project</a>
 																	</div>
 																</div>
 															</div>
@@ -384,7 +383,7 @@
 													<span class="text_effect_wrap3 text-break">Any enquiries? </span>
 												</span>
 											</span>
-											<a href="contact.html">
+											<a href="<?php the_field('s25_agency_contact_page_link', 'option'); ?>">
 												<span class="text_effect_wrap1">
 													<span class="text_effect_wrap2">
 														<span class="text_effect_wrap3 text-break">Get in touch now!</span>

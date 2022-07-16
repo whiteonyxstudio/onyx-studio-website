@@ -17,7 +17,7 @@
 									<?php the_field('s23_hero_description'); ?>
 								</p>
 								<div data-animation="fadeInUp2" data-delay=".6s">
-									<a class="btn btn_white" href="contact.html">Start a project</a>
+									<a class="btn btn_white" href="<?php the_field('s25_agency_start_project_link', 'option'); ?>">Start a project</a>
 								</div>
 							</div>
 						</div>
@@ -212,14 +212,14 @@
 													<span class="text_effect_wrap3 text-break">Any enquiries? </span>
 												</span>
 											</span>
-											<a href="contact.html">
+											<a href="<?php the_field('s25_agency_contact_page_link', 'option'); ?>">
 												<span class="text_effect_wrap1">
 													<span class="text_effect_wrap2">
 														<span class="text_effect_wrap3 text-break">Get in touch now!</span>
 													</span>
 												</span>
 											</a>
-											<a class="btn btn_border border_dark text-uppercase" href="about.html">Explore More</a>
+											<a class="btn btn_border border_dark text-uppercase" href="<?php the_field('s25_agency_contact_page_link', 'option'); ?>">Explore More</a>
 										</h3>
 									</div>
 								</div>
@@ -232,9 +232,9 @@
 
 				
 
-				<!-- latest_projects_section - start
+				<!-- portfolio_section - start
 				================================================== -->
-				<section class="team_section section_space pb-0">
+				<section class="team_section section_space">
 					<div class="container">
 						<div class="row">
 
@@ -247,7 +247,7 @@
 								</div>
 							</div>
 							
-							<div class="col-12 col-lg-7">
+							<div class="col-12 col-sm-6 col-lg-6">
 								<div class="about_content mt-0">
 									<div class="section_title style_2">
 										<h3 class="big_title text_effect_wrap">
@@ -262,92 +262,52 @@
 												</span>
 											</span>
 										</h3>
-										
 									</div>
 								</div>
-								<a class="btn_text" href="blog_details.html">
-									<span>Read More</span>
+							</div>
+
+							<div class="col-12 col-sm-6  col-lg-3 d-flex  justify-content-start justify-content-lg-end align-items-end">
+								<a class="btn_text more_btn" href="<?php echo get_post_type_archive_link('portfolio'); ?>"> 
+									<span>See all projects</span> 
 									<svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path d="M10 0V7.50063H9.16833V1.42131L0.587991 10L0 9.41015L8.57868 0.833125H2.49418V0H10Z" fill="white" />
+										<path d="M10 0V7.50063H9.16833V1.42131L0.587991 10L0 9.41015L8.57868 0.833125H2.49418V0H10Z" fill="white"></path>
 									</svg>
 								</a>
 							</div>
 
-							<div class="offset-0 col-12  offset-lg-3 col-lg-9 col-md-7">
+							<div class="offset-0 col-12 col-md-12 offset-lg-3 col-lg-9 ">
 								<div class="team_carousel_wrap">
 									<div class="team_carousel row" data-slick='{"dots": false, "arrows": false}'>
-										<div class="slider_item col">
-											<div class="team_grid_layout">
-												<div class="team_person_image">
-													<img src="<?php echo get_template_directory_uri(); ?>/assets/images/portfolio/portfolio-1.png" alt="image_not_found">
-												</div>
-												<div class="team_content">
-													<h3 class="team_person_name">Blex gordan</h3>
-													<span class="team_person_title text-uppercase">Project manager</span>
-												</div>
-											</div>
-										</div>
 
-										<div class="slider_item col">
-											<div class="team_grid_layout">
-												<div class="team_person_image">
-													<img src="<?php echo get_template_directory_uri(); ?>/assets/images/portfolio/portfolio-2.png" alt="image_not_found">
-												</div>
-												<div class="team_content">
-													<h3 class="team_person_name">Blex gordan</h3>
-													<span class="team_person_title text-uppercase">Project manager</span>
-												</div>
-											</div>
-										</div>
-
-										<div class="slider_item col">
-											<div class="team_grid_layout">
-												<div class="team_person_image">
-													<img src="<?php echo get_template_directory_uri(); ?>/assets/images/portfolio/portfolio-3.png" alt="image_not_found">
-												</div>
-												<div class="team_content">
-													<h3 class="team_person_name">Eoin hebalger</h3>
-													<span class="team_person_title text-uppercase">UI/UX designer</span>
-												</div>
-											</div>
-										</div>
-
-										<div class="slider_item col">
-											<div class="team_grid_layout">
-												<div class="team_person_image">
-													<img src="<?php echo get_template_directory_uri(); ?>/assets/images/portfolio/portfolio-1.png" alt="image_not_found">
-												</div>
-												<div class="team_content">
-													<h3 class="team_person_name">Blex gordan</h3>
-													<span class="team_person_title text-uppercase">Project manager</span>
-												</div>
-											</div>
-										</div>
-
-										<div class="slider_item col">
-											<div class="team_grid_layout">
-												<div class="team_person_image">
-													<img src="<?php echo get_template_directory_uri(); ?>/assets/images/portfolio/portfolio-2.png" alt="image_not_found">
-												</div>
-												<div class="team_content">
-													<h3 class="team_person_name">Blex gordan</h3>
-													<span class="team_person_title text-uppercase">Project manager</span>
-												</div>
-											</div>
-										</div>
-
-										<div class="slider_item col">
-											<div class="team_grid_layout">
-												<div class="team_person_image">
-													<img src="<?php echo get_template_directory_uri(); ?>/assets/images/portfolio/portfolio-3.png" alt="image_not_found">
-												</div>
-												<div class="team_content">
-													<h3 class="team_person_name">Eoin hebalger</h3>
-													<span class="team_person_title text-uppercase">UI/UX designer</span>
-												</div>
-											</div>
-										</div>
-										
+										<?php
+											$featured_posts = get_field('s17_featured_projects_slider');
+											if( $featured_posts ): ?>
+											    <?php foreach( $featured_posts as $post ): 
+											        // Setup this post for WP functions (variable must be named $post).
+											        setup_postdata($post); ?>
+											        <div class="slider_item col">
+																<div class="team_grid_layout">
+																	<div class="team_person_image">
+																		<a href="<?php the_permalink(); ?>">
+																			<?php 
+																			$image = get_field('s06_project_square_image');
+																			if( !empty( $image ) ): ?>
+																			    <img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+																			<?php endif; ?>
+																		</a>
+																	</div>
+																	<div class="team_content">
+																		<h3 class="team_person_name"><?php the_field('s07-project_brand_name'); ?></h3>
+																		<span class="team_person_title text-uppercase"><?php the_field('s07_project_deliverable'); ?></span>
+																	</div>
+																</div>
+															</div>
+											    <?php endforeach; ?>
+											<?php 
+											// Reset the global post object so that the rest of the page works correctly.
+											wp_reset_postdata(); ?>
+										<?php endif; ?>
+																				
 									</div>
 								</div>
 							</div>
@@ -355,7 +315,7 @@
 						</div>
 					</div>
 				</section>
-				<!-- latest_projects - end
+				<!-- portfolio_section - end
 				================================================== -->
 
 				
@@ -451,7 +411,7 @@
 													<span class="text_effect_wrap3 text-break">Any enquiries? </span>
 												</span>
 											</span>
-											<a href="contact.html">
+											<a href="<?php the_field('s25_agency_contact_page_link', 'option'); ?>">
 												<span class="text_effect_wrap1">
 													<span class="text_effect_wrap2">
 														<span class="text_effect_wrap3 text-break">Get in touch now!</span>
@@ -553,7 +513,7 @@
 									<div class="extra_seo_banner">
 										<p class="extra_seo_text">Development and promotion of websites from White Onyx Studio studio</p>
 										<h3 class="extra_seo_header">Bespoke web development of websites in London</h3>
-										<a class="btn btn_white" href="contact.html">Discuss a Project</a>
+										<a class="btn btn_white" href="<?php the_field('s25_agency_contact_page_link', 'option'); ?>">Discuss a Project</a>
 									</div>
 								</div>
 								<div class="col-12 col-md-6">

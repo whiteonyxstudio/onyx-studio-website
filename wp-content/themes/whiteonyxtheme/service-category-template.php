@@ -25,7 +25,7 @@
 
 							<div class="col-12 col-md-6 col-lg-4 order-3 order-md-2">
 								<div data-animation="fadeInUp2" data-delay=".6s">
-									<a class="btn btn_white" href="contact.html">Start a project</a>
+									<a class="btn btn_white" href="<?php the_field('s25_agency_start_project_link', 'option'); ?>">Start a project</a>
 								</div>
 							</div>
 
@@ -228,7 +228,7 @@
 																<div class="blog_col blog_col_1">
 																	<?php the_sub_field('service_details_content'); ?>
 																	<div data-animation="fadeInUp2" data-delay=".6s">
-																		<a class="btn btn_white" href="contact.html">Start a project</a>
+																		<a class="btn btn_white" href="<?php the_field('s25_agency_contact_page_link', 'option'); ?>">Start a project</a>
 																	</div>
 																</div>
 															</div>
@@ -357,7 +357,7 @@
 													<span class="text_effect_wrap3 text-break">Any enquiries? </span>
 												</span>
 											</span>
-											<a href="contact.html">
+											<a href="<?php the_field('s25_agency_contact_page_link', 'option'); ?>">
 												<span class="text_effect_wrap1">
 													<span class="text_effect_wrap2">
 														<span class="text_effect_wrap3 text-break">Get in touch now!</span>
@@ -514,7 +514,7 @@
 													<span class="text_effect_wrap3 text-break">Any enquiries? </span>
 												</span>
 											</span>
-											<a href="contact.html">
+											<a href="<?php the_field('s25_agency_contact_page_link', 'option'); ?>">
 												<span class="text_effect_wrap1">
 													<span class="text_effect_wrap2">
 														<span class="text_effect_wrap3 text-break">Get in touch now!</span>
