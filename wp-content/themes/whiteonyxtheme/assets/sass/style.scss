@@ -207,10 +207,18 @@
 		.accordion-body{
 			padding-right: 0;
 			.blog_simple_layout{
+				&:first-child{
+						margin-top: 0;
+					}
 				border-top: 1px solid grey;
 				padding-top: 50px;
 			}
 		}
+	}
+}
+@media screen and (max-width: 992px){
+	.large-accordion .accordion-item .accordion-body .blog_simple_layout:first-child{
+		padding-top: 50px;
 	}
 }
 @media screen and (max-width: 768px){

@@ -574,12 +574,12 @@
 
 									<?php if( have_rows('s00_faq_accordion',$service_page_id) ): ?>
 									    
-									    <?php while( have_rows('s00_faq_accordion',$service_page_id) ): the_row(); 
+									    <?php $faq_counter=1; while( have_rows('s00_faq_accordion',$service_page_id) ): the_row(); 
 									    ?>
 
 												<div class="accordion-item">
-								  			  <h2 class="accordion-header" id="flush-headingOne">
-								  			    <button class="accordion-button  collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+								  			  <h2 class="accordion-header" id="flush-heading<?php echo $faq_counter; ?>">
+								  			    <button class="accordion-button  collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse<?php echo $faq_counter; ?>" aria-expanded="false" aria-controls="flush-collapse<?php echo $faq_counter; ?>">
 								  			      <div class="blog_simple_layout">
 																<h3 class="item_title text_effect_wrap">
 																		<span class="text_effect_wrap1">
@@ -592,7 +592,7 @@
 															</div>
 								  			    </button>
 								  			  </h2>
-								  			  <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+								  			  <div id="flush-collapse<?php echo $faq_counter; ?>" class="accordion-collapse collapse" aria-labelledby="flush-heading<?php echo $faq_counter; ?>" data-bs-parent="#accordionFlushExample">
 								  			    <div class="accordion-body">
 															<div class="blog_simple_layout">
 																<p>
@@ -603,11 +603,10 @@
 								  			  </div>
 								  			</div> <!-- accordion-item -->
 
-									    <?php endwhile; ?>
-									 
+									    <?php $faq_counter++; endwhile; ?>
+
 									<?php endif; ?>
-								  
-								  
+	
 								</div> <!-- accordion -->
 
           		</div>

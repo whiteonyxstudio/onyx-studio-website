@@ -151,7 +151,7 @@ function studio_main_theme_scripts() {
 
 	wp_enqueue_style( 'slick-style', get_template_directory_uri() .'/assets/css/slick.css', rand(111,9999), 'all' );
 	wp_enqueue_style( 'slick-theme-style', get_template_directory_uri() .'/assets/css/slick-theme.css', rand(111,9999), 'all' );
-  wp_enqueue_style( 'main-style', get_template_directory_uri() .'/assets/css/style.min.css', rand(111,9991), 'all' );
+  wp_enqueue_style( 'main-style', get_template_directory_uri() .'/assets/css/style.css', rand(111,9991), 'all' );
 
 	wp_deregister_script( 'jquery-core' );
 	wp_register_script( 'jquery-core', '//code.jquery.com/jquery-3.6.0.min.js');
@@ -426,7 +426,19 @@ function example_cats_related_post() {
     endif;
 }
 
-
+if( function_exists('acf_add_options_page') ) {
+	
+	acf_add_options_page(array(
+		'page_title' 	=> 'Agency Global Setup',
+		'menu_title'	=> 'Agency Setup',
+		'menu_slug' 	=> 'agency-global-setup',
+		'capability'	=> 'edit_posts',
+		'redirect'		=> false
+	));
+	
+	
+	
+}
 
 
 
