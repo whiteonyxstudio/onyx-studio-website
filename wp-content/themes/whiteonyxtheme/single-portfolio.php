@@ -22,7 +22,12 @@
 							</div>
 
 							<div class="col-12 col-md-6 col-lg-5 text-start order-1 order-md-2 text-md-center">
-								<img class="case-image" src="<?php echo get_template_directory_uri(); ?>/assets/images/cases/case-logo.png" alt="">
+								<?php 
+								$image = get_field('s06_brand_logo');
+								if( !empty( $image ) ): ?>
+								    <img class="case-image" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+								<?php endif; ?>
+								
 							</div>
 
 							<div class="col-12 col-md-6 col-lg-7 order-3">
