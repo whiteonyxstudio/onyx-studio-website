@@ -459,7 +459,7 @@ section {
       justify-content: center;
       
       span {
-        width: 35%;
+        width: 30%;
         margin-bottom: 36px;
         padding-right: 20px;
         color: black;
@@ -472,7 +472,7 @@ section {
       }
 
       ul {
-        width: 60%;
+        width: 70%;
         margin-bottom: 36px;
         list-style: none;
         // border-left: 1px solid $main-green;
@@ -552,9 +552,10 @@ section {
           }
 
           ul {
+            width: 80%;
             li {
               a {
-                font-size: 20px;
+                font-size: 40px;
               }
             }
           }
@@ -583,7 +584,7 @@ section {
           ul {
             li {
               a {
-                font-size: 20px;
+                font-size: 60px;
               }
             }
           }
@@ -614,6 +615,7 @@ section {
           }
 
           ul {
+            width: 60%;
             li {
               a {
                 line-height: 1;

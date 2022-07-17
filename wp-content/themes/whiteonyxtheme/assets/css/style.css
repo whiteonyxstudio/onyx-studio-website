@@ -1591,7 +1591,7 @@ section {
           -ms-flex-pack: center;
               justify-content: center; }
       .popup .popup-content .menu-wrapper span {
-        width: 35%;
+        width: 30%;
         margin-bottom: 36px;
         padding-right: 20px;
         color: black;
@@ -1601,7 +1601,7 @@ section {
         font-family: "Calibre",sans-serif;
         font-weight: 300; }
       .popup .popup-content .menu-wrapper ul {
-        width: 60%;
+        width: 70%;
         margin-bottom: 36px;
         list-style: none;
         border-left: 1px solid #0e2924;
@@ -1683,8 +1683,10 @@ section {
 @media (min-width: 768px) {
   .popup .main-popup .popup-content .menu-wrapper span {
     font-size: 20px; }
-  .popup .main-popup .popup-content .menu-wrapper ul li a {
-    font-size: 20px; } }
+  .popup .main-popup .popup-content .menu-wrapper ul {
+    width: 80%; }
+    .popup .main-popup .popup-content .menu-wrapper ul li a {
+      font-size: 40px; } }
 @media (min-width: 992px) {
   .popup .popup-header .close-btn {
     width: 50px;
@@ -1692,7 +1694,7 @@ section {
   .popup .main-popup .popup-content .menu-wrapper span {
     font-size: 20px; }
   .popup .main-popup .popup-content .menu-wrapper ul li a {
-    font-size: 20px; } }
+    font-size: 60px; } }
 @media (min-width: 1200px) {
   .popup .popup-overlay {
     width: 100%; }
@@ -1706,17 +1708,19 @@ section {
       padding-top: 25px; }
     .popup .main-popup .popup-content .menu-wrapper span {
       font-size: 20px; }
-    .popup .main-popup .popup-content .menu-wrapper ul li a {
-      line-height: 1;
-      color: #000;
-      font-size: 40px;
-      font-weight: 500;
-      padding: 10px 5px;
-      -webkit-text-stroke-width: 1px;
-      -webkit-text-stroke-color: #000;
-      -webkit-text-fill-color: #000; }
-      .popup .main-popup .popup-content .menu-wrapper ul li a:hover {
-        -webkit-text-fill-color: transparent; }
+    .popup .main-popup .popup-content .menu-wrapper ul {
+      width: 60%; }
+      .popup .main-popup .popup-content .menu-wrapper ul li a {
+        line-height: 1;
+        color: #000;
+        font-size: 40px;
+        font-weight: 500;
+        padding: 10px 5px;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: #000;
+        -webkit-text-fill-color: #000; }
+        .popup .main-popup .popup-content .menu-wrapper ul li a:hover {
+          -webkit-text-fill-color: transparent; }
     .popup .main-popup .popup-content .menu-wrapper .social-nav .li a {
       font-size: 30px; } }
 .social-links {
@@ -5026,7 +5030,7 @@ section {
 
 @media screen and (max-width: 992px) {
   .large-accordion .accordion-item .accordion-body .blog_simple_layout:first-child {
-    padding-top: 50px; } }
+    padding-top: 50; } }
 @media screen and (max-width: 768px) {
   .large-accordion .accordion-item .accordion-header .accordion-button .blog_simple_layout .item_title {
     font-size: 40px; } }

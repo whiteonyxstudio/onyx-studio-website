@@ -9,7 +9,7 @@
 
 				<!-- breadcrumb_section - start
 				================================================== -->
-				<section class="breadcrumb_section services-main black-bg">
+				<section class="breadcrumb_section services-main pb-0">
 					<div class="container">
 						<h1 class="page_title">
 							<span class="d-block">Portfolio</span>
