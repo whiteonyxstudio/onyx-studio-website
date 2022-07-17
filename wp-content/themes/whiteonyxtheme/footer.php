@@ -97,7 +97,7 @@
   		      <div class="container-fluid">
   		        <div class="row">
   		          <div class="col-xxl-12 menu-wrapper">
-  		            <span class="small_title">Main Menu</span>
+  		            <span class="small_title d-none">Main Menu</span>
 									<?php 
       							wp_nav_menu( [
       								'theme_location'  => 'main_menu',
@@ -114,25 +114,9 @@
       								'walker'          => '',
       							] );
             			?>
-  		            <span>Services</span>
-									<?php 
-      							wp_nav_menu( [
-      								'theme_location'  => 'services_menu',
-      								'container'       => false, 
-      								'menu_id'         => '',
-      								'echo'            => true,
-      								'fallback_cb'     => 'wp_page_menu',
-      								'before'          => '',
-      								'after'           => '',
-      								'link_before'     => '',
-      								'link_after'      => '',
-      								'items_wrap'      => '<ul >%3$s</ul>',
-      								'depth'           => 0,
-      								'walker'          => '',
-      							] );
-            			?>
   		            
-  		            <span>Useful links</span>
+  		            
+  		            <span class="small_title d-none" >Useful links</span>
 									<?php 
       							wp_nav_menu( [
       								'theme_location'  => 'useful_menu',
@@ -150,7 +134,7 @@
       							] );
             			?>
   		            
-  		            <span>Soc. networks</span>
+  		            <span class="small_title d-none" >Soc. networks</span>
   		            <ul class="social-nav">
   		              <li><a target="_blank" href="https://www.instagram.com/whiteonyx.studio/"><i class="fa fa-instagram"></i></a></li>
   		              <li><a target="_blank" href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a></li>

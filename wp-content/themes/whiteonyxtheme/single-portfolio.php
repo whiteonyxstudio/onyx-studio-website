@@ -31,7 +31,17 @@
 							</div>
 
 							<div class="col-12 col-md-6 col-lg-7 order-3">
-								<p class="lime"><a href="">WEB</a> / <a href="">DESIGN</a> / <a href="">SEO</a></p>
+
+							<?php $post_id=get_the_ID();  $categories = get_the_terms( $post_id, 'project-category' ); 
+								echo '<p class="lime">';
+								foreach($categories as $category) {
+									if( $category->count>0){
+											echo '<a href="' . get_category_link($category->term_id) . '" class="button text-uppercase" >' . $category->name . '</a> / ';
+									}
+								}
+
+								echo '</p>';
+							?>
 							</div>
 
 							<div class="col-12 col-md-6 col-lg-5 text-start order-4">
