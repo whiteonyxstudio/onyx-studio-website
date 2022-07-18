@@ -5598,3 +5598,11 @@ section {
 
 .filter-btns-group li a {
   color: black; }
+
+.contact-heading {
+  font-size: 30px;
+  padding-bottom: 2rem; }
+
+@media screen and (max-width: 576px) {
+  .contact_section .btn {
+    width: 100%; } }

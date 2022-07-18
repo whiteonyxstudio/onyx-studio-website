@@ -7,33 +7,35 @@
 				<section class="slider_section">
 					<div class="main_slider">
 
-            <div class="slider_item d-flex  align-items-start align-items-lg-center" style="background-image: url('<?php echo get_template_directory_uri();?>/assets/images/slider/slide-1.webp')">
+            <div class="slider_item d-flex align-items-start align-items-lg-center" style="background-image: url('<?php echo get_template_directory_uri();?>/assets/images/slider/slide-1.webp')">
 							<div class="slider_content banner_section">
-								<h1 class="banner_title text_effect_wrap">
-                  <?php get_template_directory_uri(); ?>
-										<span class="text_effect_wrap1">
-											<span class="text_effect_wrap2">
-												<span class="text_effect_wrap3">Creativite </span>
-											</span>
+								<h3 class="banner_title text_effect_wrap">
+									<span class="text_effect_wrap1">
+										<span class="text_effect_wrap2">
+											<span class="text_effect_wrap3">Creative</span>
 										</span>
-										<span class="text_effect_wrap1">
-											<span class="text_effect_wrap2">
-												<span class="text_effect_wrap3">Marketing </span>
-											</span>
+									</span>
+									<span class="text_effect_wrap1 text_outline">
+										<span class="text_effect_wrap2">
+											<span class="text_effect_wrap3">Marketing</span>
 										</span>
-										<span class="text_effect_wrap1 text_outline">
-											<span class="text_effect_wrap2">
-												<span class="text_effect_wrap3">Connecting </span>
-											</span>
+									</span>
+									<span class="text_effect_wrap1 ">
+										<span class="text_effect_wrap2">
+											<span class="text_effect_wrap3">Connecting</span>
 										</span>
-										<span class="text_effect_wrap1">
-											<span class="text_effect_wrap2">
-												<span class="text_effect_wrap3">Things</span>
-											</span>
+									</span>
+									<span class="text_effect_wrap1">
+										<span class="text_effect_wrap2">
+											<span class="text_effect_wrap3">Things</span>
 										</span>
-									</h1>
+									</span>
+								</h3>
+								<!-- <p data-animation="fadeInUp2" data-delay=".4s" class="text-dark">
+									We develop optimized wesbsite websites that sell and rank high in google
+								</p> -->
 								<div data-animation="fadeInUp2" data-delay=".6s">
-									<a class="btn btn_white" href="<?php the_field('s25_agency_start_project_link', 'option'); ?>">Start Project</a>
+									<a class="btn btn_white" href="<?php the_field('s25_agency_start_project_link', 'option'); ?>">Contact us</a>
 								</div>
 							</div>
 						</div>

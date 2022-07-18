@@ -1032,3 +1032,23 @@
     }
 	}
 }
+
+.contact-heading{
+	font-size: 30px;
+	padding-bottom: 2rem;
+}
+
+@media screen and (max-width: 1200px){
+	
+}
+@media screen and (max-width: 768px){
+	
+}
+
+@media screen and (max-width: 576px){
+	.contact_section{
+		.btn{
+			width: 100%;
+		}
+	}
+}
