@@ -12,13 +12,13 @@
 				<section class="breadcrumb_section">
 					<div class="container">
 						<div class="row">
-							<div class="col-12 col-lg-6 ">
+							<div class="col-12 col-lg-5 ">
 								<h1 class="page_title">
 									<span class="d-block">Contact </span>
 									<span class="d-block">us</span>
 								</h1>
 							</div>
-							<div class="col-lg-6">
+							<div class="col-lg-7">
 								<div class="row">
 
 									<div class="col-lg-6 col-md-6 col-sm-6">
@@ -60,7 +60,7 @@
 
 				<!-- contact_section - start
 				================================================== -->
-				<section class="contact_section">
+				<section class="contact_section section_space pt-0" >
 					<div class="container">
 						<div class="row">
 							<div class="col-12  ">
@@ -72,11 +72,11 @@
 						<div class="contact_form_area section_space pt-0">
 							<form action="" class="main_contact_form">
 								<div class="row">
-									<div class="col-lg-6 ">
+									<div class="  col-lg-5 ">
 										<p class="p-24 contact-heading">1. Provide Contact Info</p>
 									</div>
  
-									<div class="col-lg-6 bread">
+									<div class="col-lg-7 bread">
 										<div class="form_item"><input type="text"  placeholder="Name"></div>
 										<div class="form_item"><input type="text"  placeholder="Company"></div>
 										<div class="form_item"><input type="text"  placeholder="Phone Number"></div>
@@ -86,11 +86,11 @@
 
 								</div>
 								<div class="row section_space">
-									<div class="col-lg-6 ">
+									<div class=" col-lg-5 ">
 										<p class="p-24 contact-heading">2. Choose service</p>
 									</div>
  
-									<div class="col-lg-6 d-flex flex-wrap">
+									<div class="col-lg-7 d-flex flex-wrap">
 										<div class="checkbox_wrap">
 											<input type="checkbox" name="" id="" placeholder="Corporate Website">
 											<label for="">Website Creation</label>
@@ -116,11 +116,11 @@
 
 								</div>
 								<div class="row">
-									<div class="col-lg-6 ">
+									<div class="col-lg-5 ">
 										<p class="p-24 contact-heading">3. Describe your project</p>
 									</div>
  
-									<div class="col-lg-6">
+									<div class="col-lg-7">
 										
 										<div class="form_item">
 											<textarea id="" class="form_textarea" name="message" placeholder="Message*"></textarea>
