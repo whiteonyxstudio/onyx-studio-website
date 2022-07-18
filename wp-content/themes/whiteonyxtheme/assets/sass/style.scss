@@ -252,6 +252,7 @@
 					.item_title {
 						margin-bottom: 0;
 						line-height: 1;
+						font-weight: 500;
 					}
 				}
 			}
@@ -579,6 +580,14 @@
 	}
 	
 }
+@media screen and (max-width: 576px){
+	.service-main{
+		.btn{
+			width: 100%;
+		}
+	}
+}
+
 
 .lime{
 	color: #afed10;

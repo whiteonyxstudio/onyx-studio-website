@@ -5048,7 +5048,8 @@ section {
   padding-top: 35px; }
   .faq_accordion .accordion-item .accordion-header .accordion-button .blog_simple_layout .item_title {
     margin-bottom: 0;
-    line-height: 1; }
+    line-height: 1;
+    font-weight: 500; }
 
 .service-list {
   list-style: none;
@@ -5263,6 +5264,9 @@ section {
       margin-bottom: 50px; }
     .service-main .btn_text {
       margin-bottom: 25px; } }
+@media screen and (max-width: 576px) {
+  .service-main .btn {
+    width: 100%; } }
 .lime {
   color: #afed10; }
   .lime a, .lime h1, .lime h2 {
