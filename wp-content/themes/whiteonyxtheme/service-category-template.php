@@ -43,74 +43,6 @@
 				================================================== -->
 
 
-				<!-- participation_section - start
-				================================================== -->
-				<!-- <section class="participation_section section_space ">
-					<div class="container">
-						<div class="row">
-							
-							<div class="col-12 col-lg-4 col-xl-3">
-								<div class="section_title">
-									<h3 class="big_title text_effect_wrap">
-										<span class="text_effect_wrap1">
-											<span class="text_effect_wrap2">
-												<span class="text_effect_wrap3 text-break">We will help You</span>
-											</span>
-										</span>
-									</h3>
-								</div>
-          		</div>
-
-							<div class=" col-12 col-lg-8 offset-xl-1 col-xl-8">
-							
-								<div class="participation no_content border-0 	">
-									<div class="participation_step">
-									 <div class="participation_number">
-										 <span style="color:#afed10;">01.</span>
-										 <h3>Scale you business</h3>
-									 </div>
-									 
-									</div>
-									<div class="participation_step">
-									 <div class="participation_number">
-										 <span style="color:#afed10;">02.</span>
-										 <h3>Decrease expences</h3>
-									 </div>
-									 
-									</div>
-									<div class="participation_step">
-									 <div class="participation_number">
-										 <span style="color:#afed10;">03.</span>
-										 <h3>Develop a marketing platform</h3>
-									 </div>
-									</div>
-									<div class="participation_step">
-									 <div class="participation_number">
-										 <span style="color:#afed10;">04.</span>
-										 <h3>Power-up your Brand</h3>
-									 </div>
-									</div>
-									<div class="participation_step">
-									 <div class="participation_number">
-										 <span style="color:#afed10;">05.</span>
-										 <h3>Establish connection with new clients</h3>
-									 </div>
-									</div>
-									<div class="participation_step">
-									 <div class="participation_number">
-										 <span style="color:#afed10;">05.</span>
-										 <h3>Generate more Leads</h3>
-									 </div>
-									</div>
-									
-								</div>
-							</div>
-						</div>
-					</div>
-				</section> -->
-				<!-- participation_section - end
-				================================================== -->
-
 				<!-- about_section - start
 				================================================== -->
 				<section class="about_section  section_space   mt-0 black-bg">
@@ -391,6 +323,11 @@
 										<span class="text_effect_wrap1">
 											<span class="text_effect_wrap2">
 												<span class="text_effect_wrap3 text-break"><?php the_field('s03_large_header'); ?></span>
+											</span>
+										</span>
+										<span class="text_effect_wrap1">
+											<span class="text_effect_wrap2">
+												<span class="text_effect_wrap3 text-break"><?php the_field('s03_large_header_2'); ?></span>
 											</span>
 										</span>
 									</h3>
