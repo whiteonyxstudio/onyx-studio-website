@@ -32,57 +32,7 @@ Template Post Type: services
 				<!-- breadcrumb_section - end
 				================================================== -->
 
-				<!-- steps_section - start
-				================================================== -->
-				<section class="stages_section  section_space mt-0 ">
-					<div class="decoration_item service_sec_bg"></div>
-					<div class="container">
-						<div class="row">
-							<div class="col-lg-12">
-								<div class="section_title style_2">
-									<h2 class="small_title">
-										<?php the_field('s01_small_header'); ?>
-										<span class="line"></span>
-									</h2>
-								</div>
-							</div>
-							<div class="col-lg-10">
-								<div class="section_title style_2">
-									<h3 class="big_title text_effect_wrap">
-										<span class="text_effect_wrap1">
-											<span class="text_effect_wrap2">
-												<span class="text_effect_wrap3 text-break"><?php the_field('s01_largeheader'); ?></span>
-											</span>
-										</span>
-										<span class="text_effect_wrap1">
-											<span class="text_effect_wrap2">
-												<span class="text_effect_wrap3 text-break"><?php the_field('s01_largeheader_2'); ?></span>
-											</span>
-										</span>
-									</h3>
-								</div>
-							</div>
-							<div class="col-lg-12">
-								<div class="development-steps">
-									<?php if( have_rows('s01_steps_table') ): ?>
-
-									    <?php $counter=1; while( have_rows('s01_steps_table') ): the_row(); 
-									        ?>
-									       	<div class="development-steps-item">
-														<h4><sup> 0<?php echo $counter; ?> </sup><?php the_sub_field('step_name'); ?></h4>
-														<p><?php the_sub_field('step_text'); ?></p>
-													</div>
-									    <?php $counter++; endwhile; ?>
-
-									<?php endif; ?>
-								</div>
-							</div>
-						</div>
-						
-					</div>
-				</section>
-				<!-- steps_section - end
-				================================================== -->
+				
 
 			<!-- about_section - start
 				================================================== -->
