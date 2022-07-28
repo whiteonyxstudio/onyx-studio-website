@@ -1,6 +1,6 @@
   <?php
 /*
-Template Name: Full-width page layout
+Template Name: No Steps template
 Template Post Type: services
 */ 
 ?>
@@ -32,7 +32,6 @@ Template Post Type: services
 				<!-- breadcrumb_section - end
 				================================================== -->
 
-				
 
 			<!-- about_section - start
 				================================================== -->
