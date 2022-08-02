@@ -6,7 +6,7 @@
 
 				<!-- breadcrumb_section - start
 				================================================== -->
-				<section class="breadcrumb_section service-main lime_bg">
+				<section class="breadcrumb_section service-main">
 					<div class="container">
 						<div class="row">
 							<div class="col-12 col-md-10 col-lg-9">
