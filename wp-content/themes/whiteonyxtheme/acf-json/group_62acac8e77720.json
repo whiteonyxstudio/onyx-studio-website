@@ -44,7 +44,7 @@
                     "key": "field_62acacb9d2d59",
                     "label": "FAQ Answer",
                     "name": "faq_answer",
-                    "type": "text",
+                    "type": "textarea",
                     "instructions": "",
                     "required": 0,
                     "conditional_logic": 0,
@@ -55,9 +55,9 @@
                     },
                     "default_value": "",
                     "placeholder": "",
-                    "prepend": "",
-                    "append": "",
-                    "maxlength": ""
+                    "maxlength": "",
+                    "rows": "",
+                    "new_lines": ""
                 }
             ]
         }
@@ -67,7 +67,7 @@
             {
                 "param": "page_template",
                 "operator": "==",
-                "value": "archive-services.php"
+                "value": "default"
             }
         ],
         [
@@ -101,5 +101,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1657027048
+    "modified": 1660159104
 }
