@@ -90,6 +90,13 @@
                 "operator": "==",
                 "value": "services"
             }
+        ],
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "services-template.php"
+            }
         ]
     ],
     "menu_order": 0,
@@ -101,5 +108,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1660159104
+    "modified": 1661263089
 }
