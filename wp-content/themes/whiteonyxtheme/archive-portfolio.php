@@ -74,13 +74,22 @@
 												<?php the_post_thumbnail('full'); ?>
 												<span class="item_content">
 													<strong class="item_title"><?php the_title(); ?></strong>
-													<?php $cats = get_the_category($id); ?>
-													<small class="item_categories text-uppercase">
-														<?php foreach ( $cats as $cat ): ?>
-														     <?php echo $cat->name; echo '  '; ?>
-																 
-														<?php endforeach; ?>
-													</small>
+													<?php
+													   $args = array(
+													       'taxonomy' => 'project-category',
+													       'orderby' => 'name',
+													       'order'   => 'ASC'
+													   );
+																	 
+													   $cats = get_categories($args);
+														echo '<small class="item_categories text-uppercase" >';
+													   foreach($cats as $cat) {
+															 $first_string = $cat->name;
+															 echo $first_string . ", "; 
+													   }
+														 echo '</small>';
+													?>
+													
 													
 												</span>
 											</a>
