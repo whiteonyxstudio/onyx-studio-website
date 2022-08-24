@@ -84,8 +84,9 @@
 													   $cats = get_categories($args);
 														echo '<small class="item_categories text-uppercase" >';
 													   foreach($cats as $cat) {
-															 $first_string = $cat->name;
-															 echo $first_string . ", "; 
+															
+															 $string = $cat->name;
+															 echo $string . ", "; 
 													   }
 														 echo '</small>';
 													?>
