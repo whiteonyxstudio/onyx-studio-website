@@ -84,7 +84,7 @@
             "key": "field_62af1a0449200",
             "label": "Project Categories",
             "name": "s06_project_categories",
-            "type": "post_object",
+            "type": "taxonomy",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -93,14 +93,14 @@
                 "class": "",
                 "id": ""
             },
-            "post_type": [
-                "case"
-            ],
-            "taxonomy": "",
+            "taxonomy": "category",
+            "field_type": "multi_select",
             "allow_null": 0,
-            "multiple": 1,
-            "return_format": "object",
-            "ui": 1
+            "add_term": 1,
+            "save_terms": 0,
+            "load_terms": 0,
+            "return_format": "id",
+            "multiple": 0
         },
         {
             "key": "field_62af1a425de1a",
@@ -193,5 +193,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1656946787
+    "modified": 1661340140
 }
