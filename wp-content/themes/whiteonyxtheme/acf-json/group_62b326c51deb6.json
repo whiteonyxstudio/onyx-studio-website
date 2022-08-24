@@ -68,13 +68,6 @@
                 "operator": "==",
                 "value": "services-template.php"
             }
-        ],
-        [
-            {
-                "param": "post_type",
-                "operator": "==",
-                "value": "services"
-            }
         ]
     ],
     "menu_order": 0,
@@ -86,5 +79,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1661340140
+    "modified": 1657373376
 }

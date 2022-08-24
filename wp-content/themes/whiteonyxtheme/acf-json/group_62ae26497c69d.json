@@ -1,6 +1,6 @@
 {
     "key": "group_62ae26497c69d",
-    "title": "S01-Steps\/Industries\/Expertice Section (Paragraphs)",
+    "title": "S01-Steps Section (Paragraphs)",
     "fields": [
         {
             "key": "field_62ae269581f50",
@@ -124,6 +124,13 @@
             {
                 "param": "page_template",
                 "operator": "==",
+                "value": "service-category-template.php"
+            }
+        ],
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
                 "value": "single_service_template.php"
             }
         ],
@@ -132,20 +139,6 @@
                 "param": "post_type",
                 "operator": "==",
                 "value": "services"
-            }
-        ],
-        [
-            {
-                "param": "page_template",
-                "operator": "==",
-                "value": "services-template.php"
-            }
-        ],
-        [
-            {
-                "param": "page_template",
-                "operator": "==",
-                "value": "service-category-template.php"
             }
         ]
     ],
@@ -158,5 +151,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1661340140
+    "modified": 1657465061
 }
