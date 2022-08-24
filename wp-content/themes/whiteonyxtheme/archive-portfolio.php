@@ -75,23 +75,16 @@
 												<span class="item_content">
 													<strong class="item_title"><?php the_title(); ?></strong>
 													<?php
-													   $args = array(
-													       'taxonomy' => 'project-category',
-													       'orderby' => 'name',
-													       'order'   => 'ASC'
-													   );
-																	 
-													   $cats = get_categories($args);
-														echo '<small class="item_categories text-uppercase" >';
-													   foreach($cats as $cat) {
+														 $terms = get_the_terms( get_the_ID(), 'project-category' );
+													   
+															echo '<small class="item_categories text-uppercase" >';
+													   	foreach($terms as $term) {
 															
-															 $string = $cat->name;
+															 $string = $term->name;
 															 echo $string . ", "; 
-													   }
+													   	}
 														 echo '</small>';
 													?>
-													
-													
 												</span>
 											</a>
 										</div>
