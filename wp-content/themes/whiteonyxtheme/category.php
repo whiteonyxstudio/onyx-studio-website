@@ -11,7 +11,9 @@
 							<span class="d-block"><?php single_cat_title(); ?> Articles</span>
 						</h1>
 						<p class="mb-0 d-none d-md-inline">
-							REGULAR DOSE OF USEFUL CONTENT FROM OUR STUDIO EXPERTS
+							<?php 
+							the_archive_description(); 
+							?>
 						</p>
 						<div class="category-navigation d-block d-lg-none pt-0">
 							<div class="container mx-0 px-0">
