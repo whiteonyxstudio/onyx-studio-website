@@ -209,12 +209,12 @@
 										<h3 class="big_title text_effect_wrap mb-0">
 											<span class="text_effect_wrap1">
 												<span class="text_effect_wrap2">
-													<span class="text_effect_wrap3 text-break">Any enquiries? </span>
+													<span class="text_effect_wrap3 text-break">Don't wait!</span>
 												</span>
 											</span>
 											<span class="text_effect_wrap1">
 												<span class="text_effect_wrap2">
-													<span class="text_effect_wrap3 text-break">Contact Our team!</span>
+													<span class="text_effect_wrap3 text-break">We can start today!</span>
 												</span>
 											</span>
 											<a class="btn btn_border border_dark text-uppercase" href="<?php the_field('s25_agency_start_project_link', 'option'); ?>">Start a project now!</a>
