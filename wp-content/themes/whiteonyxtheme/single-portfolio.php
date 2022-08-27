@@ -303,12 +303,13 @@
 				<section class="case_gallery_section  section_space pt-0">
 					<div class="container">
 						<div class="row">
-							<div class="col-12 col-lg-6"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/cases/overview-image-1.jpg" alt=""></div>
-							<div class="col-12 col-lg-6"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/cases/overview-image-2.jpg" alt=""></div>
-						</div>
-						<div class="row">	
-							<div class="col-12 col-lg-6"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/cases/overview-image-2.jpg" alt=""></div>
-							<div class="col-12 col-lg-6"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/cases/overview-image-1.jpg" alt=""></div>
+							<?php if( have_rows('s11_images_gallery') ): ?>
+							    <?php while( have_rows('s11_images_gallery') ): the_row(); 
+							        $image = get_sub_field('gallery_image');
+							        ?>
+							        <div class="col-12 col-lg-6"><img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" /></div>
+							    <?php endwhile; ?>
+							<?php endif; ?>	
 						</div>
 					</div>
 				</section>
