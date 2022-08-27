@@ -212,13 +212,11 @@
 													<span class="text_effect_wrap3 text-break">Any enquiries? </span>
 												</span>
 											</span>
-											<a href="<?php the_field('s25_agency_contact_page_link', 'option'); ?>">
-												<span class="text_effect_wrap1">
-													<span class="text_effect_wrap2">
-														<span class="text_effect_wrap3 text-break">Contact Our team!</span>
-													</span>
+											<span class="text_effect_wrap1">
+												<span class="text_effect_wrap2">
+													<span class="text_effect_wrap3 text-break">Contact Our team!</span>
 												</span>
-											</a>
+											</span>
 											<a class="btn btn_border border_dark text-uppercase" href="<?php the_field('s25_agency_contact_page_link', 'option'); ?>">Get in touch now!</a>
 										</h3>
 									</div>
