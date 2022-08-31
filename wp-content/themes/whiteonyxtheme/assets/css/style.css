@@ -5610,3 +5610,5 @@ section {
 @media screen and (max-width: 576px) {
   .contact_section .btn {
     width: 100%; } }
+span.wpcf7-list-item {
+  display: block; }
