@@ -5612,4 +5612,5 @@ section {
     width: 100%; } }
 span.wpcf7-list-item {
   display: block;
-  font-size: 20px; }
+  font-size: 20px;
+  margin-bottom: 24px; }
