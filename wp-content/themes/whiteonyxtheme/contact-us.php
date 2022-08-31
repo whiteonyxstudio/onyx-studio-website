@@ -70,13 +70,13 @@
 								</h1>
 							</div>
 						<div class="contact_form_area section_space pt-0">
-							<form action="" class="main_contact_form">
+							<div class="main_contact_form">
 								
 								<?php
 									$custom_shortcode= get_field('s27_shortcode');
 									echo do_shortcode($custom_shortcode);
 									 ?>
-							</form>
+							</div>
 						</div>
 					</div>
 				</section>
