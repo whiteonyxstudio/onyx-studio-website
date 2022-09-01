@@ -1068,3 +1068,10 @@ span.wpcf7-list-item {
 	font-size: 20px;
 	margin-bottom: 24px;
 }
+
+.wpcf7-response-output{
+	@extend .col-xxl-7;
+	@extend .offset-xxl-3;
+}
+
+
