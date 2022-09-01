@@ -5618,4 +5618,5 @@ span.wpcf7-list-item {
 .wpcf7-response-output {
   width: auto;
   max-width: 700px;
-  line-height: 1; }
+  line-height: 1;
+  padding-top: 0.4rem; }
