@@ -75,7 +75,7 @@
 								<?php
 									$custom_shortcode= get_field('s27_shortcode');
 									echo do_shortcode($custom_shortcode);
-									 ?>
+								?>
 							</div>
 						</div>
 					</div>

@@ -32,68 +32,12 @@
 					<div class="container">
 						<div class="row">
 						<div class="contact_form_area section_space pt-0">
-							<form action="" class="main_contact_form">
-								<div class="row">
-									<div class="  col-lg-5 ">
-										<p class="p-24 contact-heading">1. Provide Contact Info</p>
-									</div>
- 
-									<div class="col-lg-7 bread">
-										<div class="form_item"><input type="text"  placeholder="Name"></div>
-										<div class="form_item"><input type="text"  placeholder="Company"></div>
-										<div class="form_item"><input type="text"  placeholder="Phone Number"></div>
-										<div class="form_item"><input type="text"  placeholder="Email*"></div>
-										<p>*Enter relevant personal information</p>
-									</div>
-
-								</div>
-								<div class="row section_space">
-									<div class=" col-lg-5 ">
-										<p class="p-24 contact-heading">2. Choose service</p>
-									</div>
- 
-									<div class="col-lg-7 d-flex flex-wrap">
-										<div class="checkbox_wrap">
-											<input type="checkbox" name="" id="" placeholder="Corporate Website">
-											<label for="">Website Creation</label>
-										</div>
-										<div class="checkbox_wrap">
-											<input type="checkbox" name="" id="" placeholder="">
-											<label for="">Website design</label>
-										</div>
-										<div class="checkbox_wrap">
-											<input type="checkbox" name="" id="" placeholder="">
-											<label for="">Branding</label>
-										</div>
-										<div class="checkbox_wrap">
-											<input type="checkbox" name="" id="" placeholder="">
-											<label for="">Search Engine Optimization</label>
-										</div>
-										<div class="checkbox_wrap">
-											<input type="checkbox" name="" id="" placeholder="">
-											<label for="">Custom Solution</label>
-										</div>
-										<p>*Choose one or more opions</p>
-									</div>
-
-								</div>
-								<div class="row">
-									<div class="col-lg-5 ">
-										<p class="p-24 contact-heading">3. Describe your project</p>
-									</div>
- 
-									<div class="col-lg-7">
-										
-										<div class="form_item">
-											<textarea id="" class="form_textarea" name="message" placeholder="Message*"></textarea>
-										</div>
-										
-										<p>*Write about the purpose of your project</p>
-
-										<button type="submit" class="btn btn_white text-uppercase">Send an application</button>
-									</div>
-								</div>
-							</form>
+							<div class="main_contact_form">
+								<?php
+									$custom_shortcode= get_field('s27_shortcode');
+									echo do_shortcode($custom_shortcode);
+								?>
+							</div>
 						</div>
 					</div>
 				</section>
