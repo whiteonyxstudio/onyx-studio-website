@@ -5622,3 +5622,23 @@ span.wpcf7-list-item {
 
 .wpcf7 form .wpcf7-response-output {
   padding-top: 0.8rem; }
+
+.single_service_hero {
+  background-color: black;
+  height: calc(100vh - 130px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .single_service_hero h1 {
+    color: white; }
+  .single_service_hero p {
+    font-size: 24px;
+    color: white;
+    font-weight: 300;
+    margin-bottom: 45px; }
+  .single_service_hero .btn_text_white {
+    margin-left: 30px;
+    color: white; }

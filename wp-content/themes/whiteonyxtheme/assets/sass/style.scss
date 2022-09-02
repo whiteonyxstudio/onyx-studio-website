@@ -1079,4 +1079,24 @@ span.wpcf7-list-item {
 	padding-top: 0.8rem;
 }
 
+.single_service_hero{
+	background-color: black;
+	height: calc(100vh - 130px);
+	display: flex;
+	align-items: center;
+	h1{
+		color:white;
+	}
+	p{
+		font-size: 24px;
+		color: white;
+		font-weight: 300;
+		margin-bottom: 45px;
+	}
+	.btn_text_white{
+		margin-left: 30px;
+		color: white;
+	}
+}
+
 
