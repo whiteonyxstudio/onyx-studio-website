@@ -5510,6 +5510,9 @@ section {
           align-items: center; }
   .case_hero_section .section_title {
     margin-bottom: 200px; }
+  .case_hero_section .case-image {
+    width: 70%;
+    height: auto; }
 
 @media screen and (max-width: 1200px) {
   .case_hero_section {
