@@ -12,7 +12,7 @@ Template Post Type: services
 
 				<!-- breadcrumb_section - start
 				================================================== -->
-				<section class="breadcrumb_section case_hero_section">
+				<section class="breadcrumb_section case_hero_section black-bg">
 					<div class="container">
 						<div class="row">
 							<div class="col-12 col-md-6 col-lg-7 order-2 order-md-1">
