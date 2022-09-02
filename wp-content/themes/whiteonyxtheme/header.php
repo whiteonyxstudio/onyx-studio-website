@@ -56,23 +56,22 @@
 			<!-- header_section - start
 			================================================== -->
 			<header class="header_section main-header" id="myHeader">
-  		  <a href="<?php echo get_home_url(); ?>" class="header-logo">
-					<span><b>White Onyx</b> Studio.</span>
-				</a>
-  		  <!-- <div class="header-desc">Студія створення сайтів під ключ у Львові</div> -->
-  		  <div class="header-contacts">
-  		    <a href="mailto:whiteonyxstudi@gmail.com">WHITEONYXSTUDIO@GMAIL.COM</a>
-  		    <a href="tel:1-562-867-5309">(067)-123-23-23</a>
-  		  </div>
-  		  <div class="menu-icon btn">
-  		    <div class="wrapper open-btn">
-  		      <svg width="25" height="15" viewBox="0 0 25 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-  		      <rect width="25" height="1" fill="white"/>
-  		      <rect y="7" width="25" height="1" fill="white"/>
-  		      <rect y="14" width="25" height="1" fill="white"/>
-  		    </svg>
-  		    </div>
-  		  </div>
+					<a href="<?php echo get_home_url(); ?>" class="header-logo">
+						<span><b>White Onyx</b> Studio.</span>
+					</a>
+					<div class="header-contacts">
+						<a href="mailto:whiteonyxstudi@gmail.com">WHITEONYXSTUDIO@GMAIL.COM</a>
+						<a href="tel:1-562-867-5309">(067)-123-23-23</a>
+					</div>
+					<div class="menu-icon btn">
+						<div class="wrapper open-btn">
+							<svg width="25" height="15" viewBox="0 0 25 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<rect width="25" height="1" fill="white"/>
+							<rect y="7" width="25" height="1" fill="white"/>
+							<rect y="14" width="25" height="1" fill="white"/>
+						</svg>
+						</div>
+					</div>
   		</header>
 			<!-- header_section - end
 			================================================== -->
