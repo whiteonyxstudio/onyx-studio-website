@@ -1,7 +1,7 @@
   <?php
 /*
 Template Name: Portfolio White Hero
-Template Post Type: services
+Template Post Type: portfolio
 */ 
 ?>
 

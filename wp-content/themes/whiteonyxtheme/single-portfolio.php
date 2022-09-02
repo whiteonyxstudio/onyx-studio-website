@@ -1,9 +1,4 @@
-  <?php
-/*
-Template Name: Portfolio White Hero
-Template Post Type: services
-*/ 
-?>
+
 
 <?php get_header(); ?>
 			<!-- main body - start
