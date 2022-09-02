@@ -5511,7 +5511,7 @@ section {
   .case_hero_section .section_title {
     margin-bottom: 200px; }
   .case_hero_section .case-image {
-    width: 70%;
+    width: 50%;
     height: auto; }
 
 @media screen and (max-width: 1200px) {
