@@ -1,6 +1,6 @@
   <?php
 /*
-Template Name: No Steps template 2
+Template Name: No Steps template 3
 Template Post Type: services
 */ 
 ?>
