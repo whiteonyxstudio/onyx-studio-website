@@ -255,7 +255,7 @@ Template Post Type: services
 							<div class="col-12 col-lg-3">
 								<div class="section_title style_2">
 									<h2 class="small_title">
-										portfolio
+										Portfolio
 										<span class="line"></span>
 									</h2>
 								</div>
@@ -272,7 +272,7 @@ Template Post Type: services
 											</span>
 											<span class="text_effect_wrap1">
 												<span class="text_effect_wrap2">
-													<span class="text_effect_wrap3 text-break">latest projects</span>
+													<span class="text_effect_wrap3 text-break">Latest Projects</span>
 												</span>
 											</span>
 										</h3>
