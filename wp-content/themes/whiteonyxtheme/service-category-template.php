@@ -250,47 +250,7 @@
 				<!-- about_section - end
 				================================================== -->
 
-				<!-- cta_section - start
-				================================================== -->
-				<section class="cta_section section_space ">
-					<div class="container">
-						<div class="row">
-
-							<div class="col-lg-3">
-								<div class="section_title style_2">
-									<h2 class="small_title">
-										contact us
-										<span class="line"></span>
-									</h2>
-								</div>
-							</div>
-              <div class="col-lg-7">
-								<div class="about_content mt-0">
-									<div class="section_title style_2">
-										<h3 class="big_title text_effect_wrap mb-0">
-											<span class="text_effect_wrap1">
-												<span class="text_effect_wrap2">
-													<span class="text_effect_wrap3 text-break">Any enquiries? </span>
-												</span>
-											</span>
-											<a href="<?php the_field('s25_agency_contact_page_link', 'option'); ?>">
-												<span class="text_effect_wrap1">
-													<span class="text_effect_wrap2">
-														<span class="text_effect_wrap3 text-break">Get in touch now!</span>
-													</span>
-												</span>
-											</a>
-										</h3>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</section>
-				<!-- cta_section - end
-				================================================== -->
-
-
+				
 				<!-- process_section - start
 				================================================== -->
 
