@@ -5645,3 +5645,46 @@ span.wpcf7-list-item {
   .single_service_hero .btn_text_white {
     margin-left: 30px;
     color: white; }
+
+.service-category-hero {
+  background-image: url(../images/ann-image.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  height: calc(100vh - 100px); }
+  .service-category-hero h1 {
+    color: white;
+    font-size: 120px;
+    line-height: 1; }
+  .service-category-hero p {
+    color: white;
+    font-size: 24px;
+    font-weight: 300;
+    margin-bottom: 45px; }
+  .service-category-hero .custom-flex {
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .service-category-hero .btn_text_white {
+    color: white;
+    margin-left: 30px; }
+
+@media screen and (max-width: 1200px) {
+  .service-category-hero {
+    background-size: auto 100%;
+    height: auto;
+    padding: 100px 0px; }
+    .service-category-hero h1 {
+      font-size: 72px; }
+    .service-category-hero p {
+      font-size: 19px; } }
+@media screen and (max-width: 576px) {
+  .service-category-hero h1 {
+    font-size: 60px; }
+  .service-category-hero .custom-flex {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start; } }
