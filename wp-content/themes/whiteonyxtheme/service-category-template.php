@@ -29,55 +29,7 @@
 				================================================== -->
 
 
-				<!-- about_section - start
-				================================================== -->
-				<section class="about_section  section_space   mt-0 black-bg">
-					<div class="container">
-						<div class="row">
-
-							<div class="col-lg-12">
-								<div class="section_title style_2">
-									<h2 class="small_title">
-										<?php the_field('s04_small_header'); ?>
-										<span class="line"></span>
-									</h2>
-								</div>
-							</div>
-							<div class="col-lg-7">
-									
-									<div class="section_title style_2">
-										<h3 class="big_title text_effect_wrap">
-											<span class="text_effect_wrap1">
-												<span class="text_effect_wrap2">
-													<span class="text_effect_wrap3 text-break"><?php the_field('s04_large_header_1_row'); ?></span>
-												</span>
-											</span>
-											<span class="text_effect_wrap1">
-												<span class="text_effect_wrap2">
-													<span class="text_effect_wrap3 text-break"><?php the_field('s04_large_header_2_row'); ?></span>
-												</span>
-											</span>
-										</h3>
-									</div>
-							</div>
-							<div class="col-lg-5 ">
-								<p class="p-0  mt-0">
-									<?php the_field('s04_section_content'); ?>
-								</p>
-								
-								<a class="btn_text btn_text_white" href="<?php the_field('s04_button_url'); ?>">
-									<span><?php the_field('s04_button_text'); ?></span> 
-									<svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path d="M10 0V7.50063H9.16833V1.42131L0.587991 10L0 9.41015L8.57868 0.833125H2.49418V0H10Z" fill="white"></path>
-									</svg>
-								</a>
-							</div>
-							
-						</div>
-					</div>
-				</section>
-				<!-- about_section - end
-				================================================== -->
+				
 
 				<!-- services_section1- start
 				================================================== -->
@@ -106,8 +58,6 @@
 								</div>
 							</div>
 							
-							
-
 							<div class="col-12 col-md-12 col-lg-9 offset-lg-3">
 								<div class="accordion accordion-flush services-accordion large-accordion mt-0" id="accordionFlushExample">
 
@@ -250,7 +200,55 @@
 				<!-- portfolio_section - end
 				================================================== -->
 
-				
+				<!-- about_section - start
+				================================================== -->
+				<section class="about_section  section_space   mt-0 black-bg">
+					<div class="container">
+						<div class="row">
+
+							<div class="col-lg-12">
+								<div class="section_title style_2">
+									<h2 class="small_title">
+										<?php the_field('s04_small_header'); ?>
+										<span class="line"></span>
+									</h2>
+								</div>
+							</div>
+							<div class="col-lg-7">
+									
+									<div class="section_title style_2">
+										<h3 class="big_title text_effect_wrap">
+											<span class="text_effect_wrap1">
+												<span class="text_effect_wrap2">
+													<span class="text_effect_wrap3 text-break"><?php the_field('s04_large_header_1_row'); ?></span>
+												</span>
+											</span>
+											<span class="text_effect_wrap1">
+												<span class="text_effect_wrap2">
+													<span class="text_effect_wrap3 text-break"><?php the_field('s04_large_header_2_row'); ?></span>
+												</span>
+											</span>
+										</h3>
+									</div>
+							</div>
+							<div class="col-lg-5 ">
+								<p class="p-0  mt-0">
+									<?php the_field('s04_section_content'); ?>
+								</p>
+								
+								<a class="btn_text btn_text_white" href="<?php the_field('s04_button_url'); ?>">
+									<span><?php the_field('s04_button_text'); ?></span> 
+									<svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M10 0V7.50063H9.16833V1.42131L0.587991 10L0 9.41015L8.57868 0.833125H2.49418V0H10Z" fill="white"></path>
+									</svg>
+								</a>
+							</div>
+							
+						</div>
+					</div>
+				</section>
+				<!-- about_section - end
+				================================================== -->
 
 				<!-- cta_section - start
 				================================================== -->
