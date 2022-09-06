@@ -25,40 +25,6 @@
 						</div>
 					</div>
 				</section>
-
-
-				<section class="breadcrumb_section service-main lime_bg ">
-					<div class="container">
-						<div class="row">
-							<div class="col-12 col-md-6 col-lg-10 order-1 order-md-1">
-								
-								<div class="section_title style_2">
-									<h1 class="big_title text_effect_wrap">
-										<span class="text_effect_wrap1">
-											<span class="text_effect_wrap2">
-												<span class="text_effect_wrap3 text-break"><?php the_field('s21_hero_title'); ?></span>
-											</span>
-										</span>
-									</h1>
-								</div>
-							</div>
-
-							<div class="col-12 col-md-6 col-lg-4 order-3 order-md-2">
-								<div data-animation="fadeInUp2" data-delay=".6s">
-									<a class="btn btn_white" href="<?php the_field('s25_agency_contact_page_link', 'option'); ?>">Start a project</a>
-								</div>
-							</div>
-
-							<div class="col-12 col-md-6 col-lg-8 text-start order-2 order-md-3">
-
-								<p class="case_description">
-									<?php the_field('s21_hero_description'); ?>
-								</p>
-
-							</div>
-						</div>
-					</div>
-				</section>
 				<!-- breadcrumb_section - end
 				================================================== -->
 
