@@ -372,9 +372,9 @@
 				<!-- steps_section - end
 				================================================== -->
 
-					<!-- cta_section - start
+				<!-- cta_section with button - start
 				================================================== -->
-				<section class="cta_section section_space ">
+				<section class="cta_section section_space">
 					<div class="container">
 						<div class="row">
 
@@ -392,16 +392,15 @@
 										<h3 class="big_title text_effect_wrap mb-0">
 											<span class="text_effect_wrap1">
 												<span class="text_effect_wrap2">
-													<span class="text_effect_wrap3 text-break">Any enquiries? </span>
+													<span class="text_effect_wrap3 text-break">Don't wait!</span>
 												</span>
 											</span>
-											<a href="<?php the_field('s25_agency_contact_page_link', 'option'); ?>">
-												<span class="text_effect_wrap1">
-													<span class="text_effect_wrap2">
-														<span class="text_effect_wrap3 text-break">Get in touch now!</span>
-													</span>
+											<span class="text_effect_wrap1">
+												<span class="text_effect_wrap2">
+													<span class="text_effect_wrap3 text-break">Let's start today!</span>
 												</span>
-											</a>
+											</span>
+											<a class="btn btn_border border_dark text-uppercase" href="<?php the_field('s25_agency_start_project_link', 'option'); ?>">Start a project now!</a>
 										</h3>
 									</div>
 								</div>
