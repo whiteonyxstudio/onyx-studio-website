@@ -136,10 +136,10 @@
   		            
   		            <span class="small_title d-none" >Soc. networks</span>
   		            <ul class="social-nav">
-  		              <li><a target="_blank" href="https://www.instagram.com/whiteonyx.studio/"><i class="fa fa-instagram"></i></a></li>
-  		              <li><a target="_blank" href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a></li>
-  		              <li><a target="_blank" href="https://www.linkedin.com/"><i class="fa fa-linkedin"></i></a></li>
-  		              <li><a target="_blank" href="https://www.behance.net/whiteonyxstudio/"><i class="fa fa-behance"></i></a></li>
+  		              <li><a target="_blank" href="<?php the_field('s25_agency_start_project_link', 's25_instagram_link'); ?>"><i class="fa fa-instagram"></i></a></li>
+  		              <li><a target="_blank" href="<?php the_field('s25_agency_start_project_link', 's25_facebook_link'); ?>"><i class="fa fa-facebook"></i></a></li>
+  		              <li><a target="_blank" href="<?php the_field('s25_agency_start_project_link', 's25_linkedin_link'); ?>"><i class="fa fa-linkedin"></i></a></li>
+  		              <li><a target="_blank" href="<?php the_field('s25_agency_start_project_link', 's25_behance_link'); ?>"><i class="fa fa-behance"></i></a></li>
   		            </ul>
   		          </div>
   		        </div>
