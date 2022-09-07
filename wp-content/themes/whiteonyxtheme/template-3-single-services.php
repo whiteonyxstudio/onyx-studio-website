@@ -15,7 +15,7 @@ Template Post Type: services
 
 				<!-- breadcrumb_section - start
 				================================================== -->
-				<section class="service-category-hero">
+				<section class="service-category-hero single-service-hero">
 					<div class="container custom-flex">
 						<div class="row">
 							<div class="col-xxl-10 ">

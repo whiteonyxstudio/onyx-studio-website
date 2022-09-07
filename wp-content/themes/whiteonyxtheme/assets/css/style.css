@@ -5672,6 +5672,9 @@ span.wpcf7-list-item {
     color: white;
     margin-left: 30px; }
 
+.single-service-hero {
+  background-image: url(../images/bg-single-service.jpg); }
+
 @media screen and (max-width: 1200px) {
   .service-category-hero {
     background-size: auto 100%;
