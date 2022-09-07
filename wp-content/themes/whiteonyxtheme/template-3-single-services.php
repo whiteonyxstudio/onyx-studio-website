@@ -28,27 +28,6 @@ Template Post Type: services
 					</div>
 				</section>
 
-				<section class="single_service_hero">
-					<div class="container">
-						<div class="row">
-							<div class="col-12 col-md-10 col-lg-9">
-								<h1 class="page_title">
-									<span class="d-block"><?php the_field('s23_hero_title'); ?></span>
-								</h1>
-								<p class="col-xxl-7">
-								<?php the_field('s23_hero_description'); ?>
-								</p>
-								<a class="btn btn_border border_dark text-uppercase" href="<?php the_field('s25_agency_start_project_link', 'option'); ?>">Start a project</a>
-								<a class="btn_text btn_text_white" href="#target_section">
-									<span>Explore more!</span> 
-									<svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path d="M10 0V7.50063H9.16833V1.42131L0.587991 10L0 9.41015L8.57868 0.833125H2.49418V0H10Z" fill="white"></path>
-									</svg>
-								</a>
-							</div>
-						</div>
-					</div>
-				</section>
 				<!-- breadcrumb_section - end
 				================================================== -->
 
