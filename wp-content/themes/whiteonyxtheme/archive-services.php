@@ -18,7 +18,8 @@
 								<p class="">
 								Our Mission is to help businesses combine Web Design, Sales, and Marketing, into a single system to make businesses grow.
 								</p>
-								<a class="btn btn_border border_dark text-uppercase" href="<?php the_field('s25_agency_start_project_link', 'option'); ?>">Start a project</a>
+								
+								
 							</div>
 						</div>
 					</div>
@@ -34,13 +35,12 @@
 					<div class="container">
 						<div class="row">
 
-							<div class="col-lg-3">
+							<div class="col-lg-3 d-none d-lg-block">
 								<div class="section_title style_2">
-									<h2 class="small_title ">
+									<h2 class="small_title">
 										01
 										<span class="line"></span>
 									</h2>
-									
 								</div>
 							</div>
 							<div class="col-12 col-sm-7 col-md-7 col-lg-6">
@@ -127,7 +127,7 @@
 					<div class="container">
 						<div class="row">
 
-							<div class="col-lg-3">
+							<div class="col-lg-3 d-none d-lg-block">
 								<div class="section_title style_2">
 									<h2 class="small_title ">
 										02
@@ -219,7 +219,7 @@
 					<div class="container">
 						<div class="row">
 
-							<div class="col-lg-3">
+							<div class="col-lg-3 d-none d-lg-block">
 								<div class="section_title style_2">
 									<h2 class="small_title ">
 										03
@@ -306,11 +306,11 @@
 
 				<!-- about_section - start
 				================================================== -->
-				<section class="about_section  section_space   mt-0 black-bg">
+				<section class="about_section  section_space mt-0 black-bg">
 					<div class="container">
 						<div class="row">
 
-							<div class="col-lg-12">
+							<div class="col-lg-12 d-none d-lg-block">
 								<div class="section_title style_2">
 									<h2 class="small_title">
 										<?php the_field('s04_small_header',$service_page_id); ?>

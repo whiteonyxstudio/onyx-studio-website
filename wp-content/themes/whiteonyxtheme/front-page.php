@@ -6,106 +6,64 @@
 			<main>
 				<section class="slider_section">
 					<div class="main_slider">
-
-            <div class="slider_item d-flex align-items-start align-items-lg-center" style="background-image: url('<?php echo get_template_directory_uri();?>/assets/images/slider/slide-1.webp')">
+						<div class="slider_item d-flex align-items-start align-items-lg-center" style="background-image: url(../assets/images/slider/black-slide.jpg)">
 							<div class="slider_content banner_section">
-								<h3 class="banner_title text_effect_wrap">
-									<span class="text_effect_wrap1">
-										<span class="text_effect_wrap2">
-											<span class="text_effect_wrap3">Creative</span>
-										</span>
-									</span>
-									<span class="text_effect_wrap1 text_outline">
-										<span class="text_effect_wrap2">
-											<span class="text_effect_wrap3">Marketing</span>
-										</span>
-									</span>
-									<span class="text_effect_wrap1 ">
-										<span class="text_effect_wrap2">
-											<span class="text_effect_wrap3">Connecting</span>
-										</span>
-									</span>
-									<span class="text_effect_wrap1">
-										<span class="text_effect_wrap2">
-											<span class="text_effect_wrap3">Things</span>
-										</span>
-									</span>
-								</h3>
+								<h1 class="main_header">
+										A web design and web development agency
+								</h1>
+								<p>
+									We bring bespoke web design and developemnt to every business and startup in the world
+								</p>
 								<!-- <p data-animation="fadeInUp2" data-delay=".4s" class="text-dark">
-									We develop optimized wesbsite websites that sell and rank high in google
+									
 								</p> -->
 								<div data-animation="fadeInUp2" data-delay=".6s">
-									<a class="btn btn_white" href="<?php the_field('s25_agency_start_project_link', 'option'); ?>">Contact us</a>
+									<a class="btn btn_border border_dark text-uppercase" href="">Start a project</a>
 								</div>
 							</div>
 						</div>
-          
-						<div class="slider_item d-flex align-items-start align-items-lg-center" style="background-image: url('<?php echo get_template_directory_uri();?>/assets/images/slider/slide-2.webp')">
+
+						<div class="slider_item d-flex align-items-start align-items-lg-center" style="background-image: url(../assets/images/slider/black-slide.jpg)">
 							<div class="slider_content banner_section">
-								<h3 class="banner_title text_effect_wrap">
-									<span class="text_effect_wrap1">
-										<span class="text_effect_wrap2">
-											<span class="text_effect_wrap3">Bespoke</span>
-										</span>
-									</span>
-									<span class="text_effect_wrap1 text_outline">
-										<span class="text_effect_wrap2">
-											<span class="text_effect_wrap3">Websites</span>
-										</span>
-									</span>
-									<span class="text_effect_wrap1 ">
-										<span class="text_effect_wrap2">
-											<span class="text_effect_wrap3">that boost</span>
-										</span>
-									</span>
-									<span class="text_effect_wrap1">
-										<span class="text_effect_wrap2">
-											<span class="text_effect_wrap3">businesses</span>
-										</span>
-									</span>
-								</h3>
+								<h1 class="main_header">
+										MVP websites for SMEs and startups
+								</h1>
+								<p>
+										Increase credibility and outreach of your business with a bespoke website that will rank high on Google.		
+								</p>
 								<!-- <p data-animation="fadeInUp2" data-delay=".4s" class="text-dark">
-									We develop optimized wesbsite websites that sell and rank high in google
+									
 								</p> -->
 								<div data-animation="fadeInUp2" data-delay=".6s">
-									<a class="btn btn_white" href="<?php the_field('s25_agency_start_project_link', 'option'); ?>">Contact us</a>
+									<a class="btn btn_border border_dark text-uppercase" href="">Start a project</a>
 								</div>
 							</div>
 						</div>
 
-
-						<div class="slider_item d-flex  align-items-start align-items-lg-center" style="background-image: url('<?php echo get_template_directory_uri();?>/assets/images/slider/slide-3.webp')">
-							<div class="slider_content  banner_section">
-								<h3 class="banner_title text_effect_wrap ">
-										<span class="text_effect_wrap1">
-											<span class="text_effect_wrap2">
-												<span class="text_effect_wrap3">Thoughtful</span>
-											</span>
-										</span>
-										<span class="text_effect_wrap1 text_outline ">
-											<span class="text_effect_wrap2">
-												<span class="text_effect_wrap3">Designs</span>
-											</span>
-										</span>
-										<span class="text_effect_wrap1  ">
-											<span class="text_effect_wrap2  ">
-												<span class="text_effect_wrap3 ">For unique</span>
-											</span>
-										</span>
-										<span class="text_effect_wrap1">
-											<span class="text_effect_wrap2">
-												<span class="text_effect_wrap3">Brands</span>
-											</span>
-										</span>
-									</h3>
-								
+						<div class="slider_item d-flex align-items-start align-items-lg-center" style="background-image: url(../assets/images/slider/black-slide.jpg)">
+							<div class="slider_content banner_section">
+								<h1 class="main_header">
+									Custom websites for unique businesses	
+								</h1>
+								<p>
+									Get a lead-generating website without the strugle and headache of planning, designing, developing and testing.
+								</p>
+								<!-- <p data-animation="fadeInUp2" data-delay=".4s" class="text-dark">
+									
+								</p> -->
 								<div data-animation="fadeInUp2" data-delay=".6s">
-									<a class="btn btn_white" href="<?php the_field('s25_agency_start_project_link', 'option'); ?>">Contact us</a>
+									<a class="btn btn_border border_dark text-uppercase" href="">Start a project</a>
 								</div>
 							</div>
 						</div>
-
 					</div>
+
+					<ul class="social_primary ul_li">
+						<li><a href="#!"><i class="fab fa-facebook-f"></i></a></li>
+						<li><a href="#!"><i class="fab fa-twitter"></i></a></li>
+						<li><a href="#!"><i class="fab fa-linkedin-in"></i></a></li>
+						<li><a href="#!"><i class="fab fa-pinterest-p"></i></a></li>
+					</ul>
 				</section>
 
 

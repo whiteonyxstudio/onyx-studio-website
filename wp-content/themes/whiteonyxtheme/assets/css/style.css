@@ -2317,16 +2317,22 @@ section {
   background-position: left 0px center;
   padding-left: 125px; }
 .main_slider .slider_content {
-  max-width: 560px; }
+  max-width: 70%; }
 .main_slider h3 {
   line-height: 1;
   font-size: 150px;
   margin-bottom: 0px; }
+.main_slider .main_header {
+  color: white;
+  font-size: 120px;
+  line-height: 1; }
 .main_slider p {
+  max-width: 700px;
   color: #404040;
-  font-size: 30px;
+  font-size: 24px;
+  font-weight: 300;
   margin-bottom: 40px;
-  color: black; }
+  color: white; }
 .main_slider .btn {
   font-size: 18px;
   letter-spacing: 1px;
