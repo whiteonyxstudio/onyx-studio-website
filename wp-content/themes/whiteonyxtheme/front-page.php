@@ -12,13 +12,13 @@
 										A web design and web development agency
 								</h1>
 								<p>
-									We bring bespoke web design and developemnt to every business and startup in the world
+									We bring bespoke web developemnt and web design services to every business and startup in the world
 								</p>
 								<!-- <p data-animation="fadeInUp2" data-delay=".4s" class="text-dark">
 									
 								</p> -->
 								<div data-animation="fadeInUp2" data-delay=".6s">
-									<a class="btn btn_border border_dark text-uppercase" href="">Start a project</a>
+									<a class="btn btn_border border_dark text-uppercase" href="<?php the_field('s25_agency_start_project_link', 'option'); ?>">Start a project</a>
 								</div>
 							</div>
 						</div>
@@ -26,7 +26,7 @@
 						<div class="slider_item d-flex align-items-start align-items-lg-center" style="background-image: url(../assets/images/slider/black-slide.jpg)">
 							<div class="slider_content banner_section">
 								<h1 class="main_header">
-										MVP websites for SMEs and startups
+									Web design services for SMEs and startups
 								</h1>
 								<p>
 										Increase credibility and outreach of your business with a bespoke website that will rank high on Google.		
@@ -35,7 +35,7 @@
 									
 								</p> -->
 								<div data-animation="fadeInUp2" data-delay=".6s">
-									<a class="btn btn_border border_dark text-uppercase" href="">Start a project</a>
+									<a class="btn btn_border border_dark text-uppercase" href="<?php the_field('s25_agency_start_project_link', 'option'); ?>">Start a project</a>
 								</div>
 							</div>
 						</div>
@@ -43,16 +43,16 @@
 						<div class="slider_item d-flex align-items-start align-items-lg-center" style="background-image: url(../assets/images/slider/black-slide.jpg)">
 							<div class="slider_content banner_section">
 								<h1 class="main_header">
-									Custom websites for unique businesses	
+									Custom websites for industry pioneers	
 								</h1>
 								<p>
-									Get a lead-generating website without the strugle and headache of planning, designing, developing and testing.
+									Get a lead-generating website without the strugle and headache of planning, designing, developing and maintaining.
 								</p>
 								<!-- <p data-animation="fadeInUp2" data-delay=".4s" class="text-dark">
 									
 								</p> -->
 								<div data-animation="fadeInUp2" data-delay=".6s">
-									<a class="btn btn_border border_dark text-uppercase" href="">Start a project</a>
+									<a class="btn btn_border border_dark text-uppercase" href="<?php the_field('s25_agency_start_project_link', 'option'); ?>">Start a project</a>
 								</div>
 							</div>
 						</div>
@@ -65,7 +65,6 @@
 						<li><a href="#!"><i class="fab fa-pinterest-p"></i></a></li>
 					</ul>
 				</section>
-
 
 				<!-- about_section - start
 				================================================== -->
