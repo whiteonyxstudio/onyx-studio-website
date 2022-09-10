@@ -373,15 +373,26 @@
 							</div>
 						</div>
 						<div class="row">
-							<div class="col-lg-6 col-md-6 col-sm-6">
-								<a class="portfolio_fullimage_layout" href="#">
-									<img src="<?php echo get_template_directory_uri(); ?>/assets/images/portfolio/portfolio-item2.jpg" alt="image_not_found">
-									<span class="item_content">
-										<strong class="item_title">Brand promotion</strong>
-										<small class="item_categories text-uppercase">Brand, Design</small>
-									</span>
-								</a>
-							</div>
+								<?php
+
+								$related = get_posts( array( 'category__in' => wp_get_post_categories($post->ID), 'numberposts' => 2,'post_type' => 'portfolio', 'post__not_in' => array($post->ID) ) );
+								if( $related ) foreach( $related as $post ) {
+								setup_postdata($post); ?>
+								  <div class="col-lg-6 col-md-6 col-sm-6">
+										<a class="portfolio_fullimage_layout" href="<?php the_permalink() ?>">
+											<?php  the_post_thumbnail(); ?>
+											<span class="item_content">
+												<strong class="item_title"><?php the_title(); ?></strong>
+												<small class="item_categories text-uppercase">Brand, Design</small>
+											</span>
+										</a>
+									</div>
+								
+								<?php }
+								wp_reset_postdata(); ?>
+
+
+							
 
 							<div class="col-lg-6 col-md-6 col-sm-6">
 								<a class="portfolio_fullimage_layout" href="#">

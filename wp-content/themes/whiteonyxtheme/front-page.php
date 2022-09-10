@@ -57,8 +57,6 @@
 							</div>
 						</div>
 					</div>
-
-					
 				</section>
 
 				<!-- about_section - start

@@ -435,9 +435,32 @@ if( function_exists('acf_add_options_page') ) {
 		'capability'	=> 'edit_posts',
 		'redirect'		=> false
 	));
-	
-	
-	
+}
+
+
+
+function related_posts_by_taxonomy( $post_id, $taxonomy, $args=array() ) {
+    $query = new WP_Query();
+    $terms = wp_get_object_terms( $post_id, $taxonomy );
+
+    // Make sure we have terms from the current post
+    if ( count( $terms ) ) {
+        $post_ids = get_objects_in_term( $terms[0]->term_id, $taxonomy );
+        $post = get_post( $post_id );
+        $post_type = get_post_type( $post );        
+
+        $args = wp_parse_args( $args, array(
+                'post_type' => $type,
+                'post__in' => $post_ids,
+                'taxonomy' => $taxonomy,
+                'term' => $terms[0]->slug,
+
+            ) );
+        $query = new WP_Query( $args );
+    }
+
+    // Return our results in query form
+    return $query;
 }
 
 
