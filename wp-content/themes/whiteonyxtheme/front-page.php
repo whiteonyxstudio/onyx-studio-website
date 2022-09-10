@@ -6,7 +6,7 @@
 			<main>
 				<section class="slider_section">
 					<div class="main_slider">
-						<div class="slider_item d-flex align-items-start align-items-lg-center" style="background-image: url(../assets/images/slider/black-slide.jpg)">
+						<div class="slider_item d-flex align-items-start align-items-lg-center" style="background-image: url(<?php echo get_template_directory_uri(); ?>/assets/images/slider/black-slide.jpg)">
 							<div class="slider_content banner_section">
 								<h1 class="main_header">
 										A web design and web development agency
@@ -23,7 +23,7 @@
 							</div>
 						</div>
 
-						<div class="slider_item d-flex align-items-start align-items-lg-center" style="background-image: url(../assets/images/slider/black-slide.jpg)">
+						<div class="slider_item d-flex align-items-start align-items-lg-center" style="background-image: url(<?php echo get_template_directory_uri(); ?>/assets/images/slider/black-slide.jpg)">
 							<div class="slider_content banner_section">
 								<h1 class="main_header">
 									Web design services for SMEs and startups
@@ -40,7 +40,7 @@
 							</div>
 						</div>
 
-						<div class="slider_item d-flex align-items-start align-items-lg-center" style="background-image: url(../assets/images/slider/black-slide.jpg)">
+						<div class="slider_item d-flex align-items-start align-items-lg-center" style="background-image: url(<?php echo get_template_directory_uri(); ?>/assets/images/slider/black-slide.jpg)">
 							<div class="slider_content banner_section">
 								<h1 class="main_header">
 									Custom websites for industry pioneers	
