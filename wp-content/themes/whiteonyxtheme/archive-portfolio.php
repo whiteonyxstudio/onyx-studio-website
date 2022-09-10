@@ -3,25 +3,8 @@
 
 			<?php $pageID = get_option('page_on_front');  ?>
       <?php get_header(); ?>
-			<!-- main body - start
-			================================================== -->
+		
 			<main>
-
-				<!-- breadcrumb_section - start
-				================================================== -->
-				<section class="breadcrumb_section services-main pb-0">
-					<div class="container">
-						<h1 class="page_title">
-							<span class="d-block">Portfolio</span>
-						</h1>
-						<p class="mb-0">
-							See projets from a super dedicated team of digital experts
-						</p>
-					</div>
-				</section>
-				<!-- breadcrumb_section - end
-				================================================== -->
-
 
 				<section class="category-navigation section_space pb-0">
 					<div class="container">
