@@ -46,7 +46,7 @@
 									Custom websites for industry pioneers	
 								</h1>
 								<p>
-									Get a lead-generating website without the strugle and headache of planning, designing, developing and maintaining.
+									Get a lead-generating website without the strugle and headache of planning, designing, developing and maintaining your project.
 								</p>
 								<!-- <p data-animation="fadeInUp2" data-delay=".4s" class="text-dark">
 									
