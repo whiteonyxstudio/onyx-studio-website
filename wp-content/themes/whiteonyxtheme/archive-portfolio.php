@@ -23,8 +23,11 @@
 				================================================== -->
 
 
-				<div class="category-navigation">
+				<section class="category-navigation section_space pb-0">
 					<div class="container">
+						<h1 class="page_title">
+							<span class="d-block">Portfolio</span>
+						</h1>
 						<div class="row">
 							<div class="filter_nav_wrap">
 								<h3 class="filter_nav_title text-uppercase">Filter by:</h3>
@@ -50,11 +53,11 @@
 							</div>
 						</div>
 					</div>
-				</div>
+				</section>
 
 				<!-- portfolio_section - start
 				================================================== -->
-				<div class="portfolio_section  section_space pt-0">
+				<section class="portfolio_section section_space pt-0">
 					<div class="container">
 						<div class="row">
 
@@ -100,7 +103,7 @@
 							<a class="btn btn_light text-uppercase" href="#main"><i class="fal fa-sync"></i> Load More</a>
 						</div>
 					</div>
-				</div>
+				</section>
 				<!-- portfolio_section - end
 				================================================== -->
 
