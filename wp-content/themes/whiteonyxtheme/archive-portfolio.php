@@ -6,7 +6,7 @@
 		
 			<main>
 
-				<section class="category-navigation section_space pb-0">
+				<section class=" section_space pb-0">
 					<div class="container">
 						<h1 class="page_title">
 							<span class="d-block">Portfolio</span>
