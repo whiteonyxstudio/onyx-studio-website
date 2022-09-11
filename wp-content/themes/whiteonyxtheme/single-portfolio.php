@@ -157,7 +157,13 @@
 					<div class="container">
 						<div class="row">	
 							<div class="col-12">
+								<?php $typography_image = get_field('s08_typography_image'); ?>
 								<img src="<?php echo get_template_directory_uri(); ?>/assets/images/cases/typography-image.png" alt="">
+								<?php 
+									$typography_image = get_field('s08_typography_image');
+									if( !empty( $image ) ): ?>
+								  <img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+								<?php endif; ?>
 							</div>
 						</div>	
 					</div>
