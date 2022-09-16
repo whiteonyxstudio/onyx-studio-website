@@ -55,7 +55,7 @@
 
 								while ( $loop->have_posts() ) : $loop->the_post(); 
 									?>
-										<div class="col-lg-12">
+										<div class="col-lg-6 col-md-6 col-sm-6">
 											<a class="portfolio_fullimage_layout" href="<?php the_permalink(); ?>"> 
 												<?php the_post_thumbnail('full'); ?>
 												<span class="item_content">
