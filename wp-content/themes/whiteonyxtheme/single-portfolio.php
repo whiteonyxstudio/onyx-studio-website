@@ -146,7 +146,7 @@
 								</div>
 							</div>
 							<div class="col-lg-7 ">
-								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, eum beatae iusto incidunt numquam maxime, provident distinctio ratione officiis unde hic ducimus doloribus at reprehenderit! Ex ipsum possimus eius quod. Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe eos eaque ipsum excepturi sit ipsam qui sed laboriosam velit cumque blanditiis consectetur expedita necessitatibus ducimus, voluptatem ullam neque doloremque aut?</p>
+								<p><?php echo the_field('s08_typography_text'); ?></p>
 							</div>
 						</div>
 					</div>
