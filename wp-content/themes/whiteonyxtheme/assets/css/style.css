@@ -5719,4 +5719,7 @@ span.wpcf7-list-item {
   .service-category-hero .custom-flex {
     -webkit-box-align: start;
         -ms-flex-align: start;
-            align-items: flex-start; } }
+            align-items: flex-start; }
+
+  .service-category-hero .btn_text_white {
+    margin-left: 15px; } }
