@@ -95,9 +95,12 @@
 											<li><a href="https://www.facebook.com/sharer/sharer.php?u=<?php the_permalink(); ?>" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
 											<li><a href="http://twitter.com/share?url=<?php the_permalink(); ?>&text=<?php the_title(); ?>" target="_blank" ><i class="fab fa-twitter"></i></a></li>
 											<li><a href="https://www.linkedin.com/sharing/share-offsite/?url=<?php the_permalink(); ?>" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
-											<li><a href="https://t.me/share/url?url=<?php the_permalink(); ?>" target="_blank"><i class="fab fa-telegram"></i></a></li>
+											<li><a href="https://telegram.me/share/url?url=<?php the_permalink(); ?>text=text" target="_blank"><i class="fab fa-telegram"></i></a></li>
 										</ul>
 									</div>
+
+
+									https://telegram.me/share/url?url={url}&text={text}
 
 									
 
