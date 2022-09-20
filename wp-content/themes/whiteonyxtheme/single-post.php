@@ -99,11 +99,6 @@
 										</ul>
 									</div>
 
-
-									https://telegram.me/share/url?url={url}&text={text}
-
-									
-
 									<div class="sb_widget sb_recent_post">
 										<h3 class="sb_widget_title text-uppercase">Related Posts</h3>
 										<div class="recent_post_item">
