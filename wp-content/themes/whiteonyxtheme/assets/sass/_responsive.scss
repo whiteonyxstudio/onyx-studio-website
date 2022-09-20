@@ -43,6 +43,10 @@
 	.header_section + main {
 		margin-top: 103px;
 	}
+	.main_slider .slider_content{
+		width: 85%;
+		max-width: 85%;
+	}
 
 	// .header_section.style_3 .header_container {
 	// 	padding: 20px 30px;
@@ -109,6 +113,14 @@
 	/* global reset - start */
 	.section_space {
 		//padding: 100px 0px;
+	}
+
+		.main_slider .slider_content{
+		width: 100%;
+		max-width: 100%;
+		h1{
+			font-size: 100px;
+		}
 	}
 
 	.section_title .big_title {
@@ -487,6 +499,17 @@
 /* media screen and (max-width: 991px) - start
 ================================================== */
 @media screen and (max-width: 991px) {
+
+	.main_slider .slider_content{
+		width: 100%;
+		max-width: 100%;
+		h1{
+			font-size: 90px;
+		}
+		p{
+			padding:0;
+		}
+		}
 
 	.blog-details-section .title_text {
 		font-size: 35px;
@@ -992,6 +1015,7 @@
 ================================================== */
 @media screen and (max-width: 575px) {
 
+		
 	/* global reset - start */
 	.section_title .big_title {
 		font-size: 54px;
@@ -1412,11 +1436,12 @@
 @media screen and (max-width: 576px){
 	.main_slider{
 		
+		
 		.slider_item{	
 		padding: 0;
 		margin: 0 20px;
 		text-align: left;
-		background-size: contain;
+		background-size: auto 100%;
 		background-position:top 0px left 0px;
 		p{
 			padding: 0;
@@ -1429,17 +1454,21 @@
 		.slider_content{
 			width: 100%;
 			padding-top:40px;
+			padding-right: 15px;
+			padding-left: 15px;
 			text-align: left;
 			background-color:transparent;
-			.banner_title{
-				padding-right: 20%;
-				font-size: 60px;
+			h1{
+				padding-right: 10%;
+				font-size: 50px;
+				margin-top: 20px;
 			}
 			p{
 				padding: 0;
 			}
 			.btn{
 				width: 100%;
+
 			}
 		}
 	}

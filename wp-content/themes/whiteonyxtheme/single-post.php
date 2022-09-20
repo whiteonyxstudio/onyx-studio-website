@@ -115,25 +115,6 @@
 										
 										<?php }
 										wp_reset_postdata(); ?>
-
-										<div class="recent_post_item">
-											<h3 class="item_title">
-												<a href="#!">Ransformed in his bed into a horrible vermin</a>
-											</h3>
-											<span class="post_date text-uppercase">25 Mar 2021</span>
-										</div>
-										<div class="recent_post_item">
-											<h3 class="item_title">
-												<a href="#!">Northely was hardly able to cover ready</a>
-											</h3>
-											<span class="post_date text-uppercase">25 Apr 2021</span>
-										</div>
-										<div class="recent_post_item">
-											<h3 class="item_title">
-												<a href="#!">Moment his many legs pitifully thin</a>
-											</h3>
-											<span class="post_date text-uppercase">25 Apr 2021</span>
-										</div>
 									</div>
 
 									<div class="sb_widget sb_banner black-bg">
