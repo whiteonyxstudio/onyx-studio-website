@@ -5719,7 +5719,17 @@ span.wpcf7-list-item {
   .service-category-hero .custom-flex {
     -webkit-box-align: start;
         -ms-flex-align: start;
+            align-items: flex-start; } }
+@media screen and (max-width: 380px) {
+  .service-category-hero h1 {
+    font-size: 60px; }
+  .service-category-hero .custom-flex {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
             align-items: flex-start; }
-
+  .service-category-hero .btn {
+    margin-bottom: 15px; }
   .service-category-hero .btn_text_white {
-    margin-left: 5px; } }
+    margin-left: 10px;
+    -webkit-transform: translateY(-5px);
+            transform: translateY(-5px); } }

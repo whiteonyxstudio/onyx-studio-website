@@ -1159,7 +1159,24 @@ span.wpcf7-list-item {
 			align-items:flex-start;
 		}
 	}
-	.service-category-hero .btn_text_white{
-		margin-left: 5px;
+
+}
+
+@media screen and (max-width: 380px){
+	.service-category-hero{
+		h1{
+			font-size: 60px;
+		}
+		.custom-flex{
+			align-items:flex-start;
+		}
+		.btn{
+			margin-bottom: 15px;
+		}
+		.btn_text_white{
+			margin-left: 10px;
+			transform:translateY(-5px);
+		}
 	}
+	 
 }
