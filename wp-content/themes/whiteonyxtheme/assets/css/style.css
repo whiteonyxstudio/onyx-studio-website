@@ -5157,7 +5157,10 @@ section {
     padding-top: 50px; } }
 @media screen and (max-width: 768px) {
   .services-accordion .accordion-item .accordion-body .blog_simple_layout {
-    padding-top: 40px; } }
+    padding-top: 40px; }
+
+  .services-accordion .accordion-item .accordion-body .blog_simple_layout .btn {
+    width: 100%; } }
 .process {
   margin-top: 50px; }
   .process .process_row {
