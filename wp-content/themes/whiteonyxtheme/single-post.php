@@ -92,10 +92,10 @@
 									<div class="sb_widget sb_share">
 										<h3 class="sb_widget_title text-uppercase">Share Post</h3>
 										<ul class="social_primary ul_li">
-											<li><a href="https://www.facebook.com/sharer/sharer.php?u=<?php the_permalink(); ?>" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
-											<li><a href="http://twitter.com/share?url=<?php the_permalink(); ?>&text=<?php the_title(); ?>" target="_blank" ><i class="fab fa-twitter"></i></a></li>
-											<li><a href="https://www.linkedin.com/sharing/share-offsite/?url=<?php the_permalink(); ?>" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
-											<li><a href="https://telegram.me/share/url?url=<?php the_permalink(); ?>" target="_blank"><i class="fab fa-telegram"></i></a></li>
+											<li><a rel="nofollow" href="https://www.facebook.com/sharer/sharer.php?u=<?php the_permalink(); ?>" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+											<li><a rel="nofollow" href="http://twitter.com/share?url=<?php the_permalink(); ?>&text=<?php the_title(); ?>" target="_blank" ><i class="fab fa-twitter"></i></a></li>
+											<li><a rel="nofollow" href="https://www.linkedin.com/sharing/share-offsite/?url=<?php the_permalink(); ?>" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+											<li><a rel="nofollow" href="https://telegram.me/share/url?url=<?php the_permalink(); ?>" target="_blank"><i class="fab fa-telegram"></i></a></li>
 										</ul>
 									</div>
 
