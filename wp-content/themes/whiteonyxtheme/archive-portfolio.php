@@ -77,13 +77,6 @@
 									<?php
     						endwhile;
 							?>
-							
-
-							
-						</div>
-
-						<div class="loadmore_btn_wrap text-center">
-							<a class="btn btn_light text-uppercase" href="#main"><i class="fal fa-sync"></i> Load More</a>
 						</div>
 					</div>
 				</section>
