@@ -5103,9 +5103,11 @@ section {
       font-size: 28px;
       color: black; }
       .service-list li a span {
-        margin-right: 50px; }
+        margin-right: 50px;
+        font-family: 500; }
       .service-list li a .service-item-name {
-        margin-right: auto; }
+        margin-right: auto;
+        font-weight: 500; }
       .service-list li a svg path {
         fill: white;
         -webkit-transition: 0.3s;
