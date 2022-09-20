@@ -217,11 +217,12 @@
 	}
 }
 @media screen and (max-width: 992px){
-	.large-accordion .accordion-item .accordion-body .blog_simple_layout:first-child{
-		padding-top: 50;
+	.large-accordion .accordion-item .accordion-body .blog_simple_layout{
+		padding-top: 50px;
 	}
 }
 @media screen and (max-width: 768px){
+	
 	.large-accordion .accordion-item .accordion-header .accordion-button .blog_simple_layout .item_title{
 		font-size: 40px;
 	}
@@ -236,6 +237,10 @@
 		}
 	}
 }
+
+
+
+
 .team_section,.blog_section{
 	.more_btn{
 		margin-bottom: 20px;
@@ -363,10 +368,15 @@
 			}
 			.accordion-body{
 				.blog_simple_layout{
-					padding-top: 0;
+					padding-top: 50px;
 				}
 			}
 		}
+	}
+}
+@media screen and (max-width: 768px){
+	.services-accordion .accordion-item .accordion-body .blog_simple_layout{
+		padding-top: 40px;
 	}
 }
 
