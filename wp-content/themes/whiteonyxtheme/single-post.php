@@ -36,7 +36,7 @@
 														
 													?>
 													<li><a href="<?php echo get_post_type_archive_link( 'post' ); ?>" class="breadcrumb_link button" data-filter=".creative">Blog<sup><?php echo $numberOfBlog_Posts; ?></sup></a></li>
-													<a href="<?php echo $link; ?>" class="breadcrumb_link button" data-filter=".branding"><?php echo $category_name; ?><sup><?php echo $numberOfCat_Posts; ?></sup></a></li>
+													<li><a href="<?php echo $link; ?>" class="breadcrumb_link button" data-filter=".branding"><?php echo $category_name; ?><sup><?php echo $numberOfCat_Posts; ?></sup></a></li>
 												</ul>
 											</div>
 										</div>
