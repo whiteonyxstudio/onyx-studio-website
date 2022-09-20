@@ -101,6 +101,21 @@
 
 									<div class="sb_widget sb_recent_post">
 										<h3 class="sb_widget_title text-uppercase">Related Posts</h3>
+
+										<?php
+										$related = get_posts( array( 'category__in' => wp_get_post_categories($post->ID), 'numberposts' => 2,'post_type' => 'post', 'post__not_in' => array($post->ID) ) );
+										if( $related ) foreach( $related as $post ) {
+										setup_postdata($post); ?>
+										 <div class="recent_post_item">
+											<h3 class="item_title">
+												<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+											</h3>
+											<span class="post_date text-uppercase"><?php  echo get_the_date( );  ?></span>
+										</div>
+										
+										<?php }
+										wp_reset_postdata(); ?>
+
 										<div class="recent_post_item">
 											<h3 class="item_title">
 												<a href="#!">Ransformed in his bed into a horrible vermin</a>
