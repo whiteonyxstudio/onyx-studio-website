@@ -1415,10 +1415,11 @@ section {
 .header-logo {
   height: 40px;
   width: auto;
-  color: black; }
+  color: black;
+  font-family: 'Calibre'; }
   .header-logo span {
     font-size: 24px;
-    font-family: 'montserrat_regular';
+    font-family: 'Calibre';
     margin-bottom: 30px; }
   .header-logo:hover {
     color: black; }
