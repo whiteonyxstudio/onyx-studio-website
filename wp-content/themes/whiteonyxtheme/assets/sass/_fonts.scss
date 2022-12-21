@@ -8,12 +8,14 @@
 	src: url('../fonts/calibre/Calibre-Thin.ttf');
 	font-weight: 100;
 	font-style: normal;
+	font-display: swap;
 }
 @font-face {
 	font-family: 'Calibre';
 	src: url('../fonts/calibre/Calibre-ThinItalic.ttf') format('truetype');
 	font-weight: 100;
 	font-style: italic;
+	font-display: swap;
 }
 
 @font-face {
@@ -21,12 +23,15 @@
 	src: url('../fonts/calibre/Calibre-Light.ttf');
 	font-weight: 300;
 	font-style: normal;
+	font-display: swap;
+	
 }
 @font-face {
 	font-family: 'Calibre';
 	src: url('../fonts/calibre/Calibre-LightItalic.ttf');
 	font-weight: 300;
 	font-style: italic;
+	font-display: swap;
 }
 
 @font-face {
@@ -34,12 +39,14 @@
 	src: url('../fonts/calibre/Calibre-Regular.ttf');
 	font-weight: 400;
 	font-style: normal;
+	font-display: swap;
 }
 @font-face {
 	font-family: 'Calibre';
 	src: url('../fonts/calibre/Calibre-RegularItalic.ttf');
 	font-weight: 400;
 	font-style: italic;
+	font-display: swap;
 }
 
 @font-face {
@@ -47,12 +54,14 @@
 	src: url('../fonts/calibre/Calibre-Medium.ttf');
 	font-weight: 500;
 	font-style: normal;
+	font-display: swap;
 }
 @font-face {
 	font-family: 'Calibre';
 	src: url('../fonts/calibre/Calibre-MediumItalic.ttf');
 	font-weight: 500;
 	font-style: italic;
+	font-display: swap;
 }
 
 @font-face {
@@ -60,6 +69,7 @@
 	src: url('../fonts/calibre/Calibre-Semibold.ttf');
 	font-weight: 600;
 	font-style: normal;
+	font-display: swap;
 }
 @font-face {
 	font-family: 'Calibre';
@@ -73,12 +83,14 @@
 	src: url('../fonts/calibre/Calibre-Bold.ttf');
 	font-weight: bold;
 	font-style: normal;
+	font-display: swap;
 }
 @font-face {
 	font-family: 'Calibre';
 	src: url('../fonts/calibre/Calibre-BoldItalic.ttf');
 	font-weight: bold;
 	font-style: italic;
+	font-display: swap;
 }
 
 @font-face {
@@ -86,12 +98,14 @@
 	src: url('../fonts/calibre/Calibre-Black.ttf');
 	font-weight: 900;
 	font-style: normal;
+	font-display: swap;
 }
 @font-face {
 	font-family: 'Calibre';
 	src: url('../fonts/calibre/Calibre-BlackItalic.ttf');
 	font-weight: 900;
 	font-style: italic;
+	font-display: swap;
 }
 
 
