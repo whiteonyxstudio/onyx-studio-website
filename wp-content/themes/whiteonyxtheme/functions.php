@@ -365,10 +365,7 @@ add_action( 'after_setup_theme', 'add_navigation_menus' );
 
 function add_navigation_menus() {
 	register_nav_menu( 'main_menu', 'Main Navigation' );
-	register_nav_menu( 'services_menu', 'Services Navigation' );
-	register_nav_menu( 'useful_menu', 'Useful Navigation' );
-	register_nav_menu( 'footer_studio_menu', 'Footer Studio Navigation' );
-	register_nav_menu( 'footer_social_menu', 'Footer Social Navigation' );
+	register_nav_menu( 'footer_menu', 'Footer Navigation' );
 }
 
 
