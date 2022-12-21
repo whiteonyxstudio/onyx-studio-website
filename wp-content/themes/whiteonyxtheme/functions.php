@@ -172,11 +172,11 @@ add_action( 'wp_enqueue_scripts', 'studio_main_theme_scripts' );
  * Enque Styles in footer. Removes render blocking resourses
  */
 
-function prefix_add_footer_styles() {
-	wp_enqueue_style( 'fontawesone-style', get_template_directory_uri() .'/assets/css/fontawesome.css' );
-	wp_enqueue_script( 'fontawesome-script', 'https://kit.fontawesome.com/8d258d854c.js');
+// function prefix_add_footer_styles() {
+// 	wp_enqueue_style( 'fontawesone-style', get_template_directory_uri() .'/assets/css/fontawesome.css' );
+// 	wp_enqueue_script( 'fontawesome-script', 'https://kit.fontawesome.com/8d258d854c.js');
 	
-};
+// };
 add_action( 'get_footer', 'prefix_add_footer_styles' );
 
 /**
