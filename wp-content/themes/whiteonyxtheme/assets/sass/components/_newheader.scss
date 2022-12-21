@@ -165,7 +165,7 @@ html {
   justify-content: center;
   align-items: center;
   text-align: center;
-  // @include med();
+  font-family: 'Calibre';
   font-weight: 400;
   font-size: 16px;
   color: white;
@@ -197,7 +197,7 @@ html {
 
 .main-link {
   color: black;
-  // @include med();
+  font-family: 'Calibre';
   font-size: 18px;
 
   &:hover {
