@@ -284,7 +284,7 @@
 																			<?php 
 																			$image = get_field('s06_project_square_image');
 																			if( !empty( $image ) ): ?>
-																			    <img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+																			    <img loading="lazy" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
 																			<?php endif; ?>
 																		</a>
 																	</div>
