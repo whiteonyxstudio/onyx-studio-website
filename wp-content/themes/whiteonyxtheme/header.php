@@ -41,7 +41,7 @@
 			<!-- preloader - end -->
 
 			<!-- live chat - start -->
-			<div class="livechat_wrapper">
+			<!-- <div class="livechat_wrapper">
 				<button class="livechat_btn">
 					<span>
 						<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -50,7 +50,7 @@
 					</span>
 					<small>Live Chat</small>
 				</button>
-			</div>
+			</div> -->
 			<!-- live chat - end -->
 
 			<!-- header_section - start
