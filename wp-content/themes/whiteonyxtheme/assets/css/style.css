@@ -64,47 +64,56 @@
   font-family: 'Calibre';
   src: url("../fonts/calibre/Calibre-Thin.ttf");
   font-weight: 100;
-  font-style: normal; }
+  font-style: normal;
+  font-display: swap; }
 @font-face {
   font-family: 'Calibre';
   src: url("../fonts/calibre/Calibre-ThinItalic.ttf") format("truetype");
   font-weight: 100;
-  font-style: italic; }
+  font-style: italic;
+  font-display: swap; }
 @font-face {
   font-family: 'Calibre';
   src: url("../fonts/calibre/Calibre-Light.ttf");
   font-weight: 300;
-  font-style: normal; }
+  font-style: normal;
+  font-display: swap; }
 @font-face {
   font-family: 'Calibre';
   src: url("../fonts/calibre/Calibre-LightItalic.ttf");
   font-weight: 300;
-  font-style: italic; }
+  font-style: italic;
+  font-display: swap; }
 @font-face {
   font-family: 'Calibre';
   src: url("../fonts/calibre/Calibre-Regular.ttf");
   font-weight: 400;
-  font-style: normal; }
+  font-style: normal;
+  font-display: swap; }
 @font-face {
   font-family: 'Calibre';
   src: url("../fonts/calibre/Calibre-RegularItalic.ttf");
   font-weight: 400;
-  font-style: italic; }
+  font-style: italic;
+  font-display: swap; }
 @font-face {
   font-family: 'Calibre';
   src: url("../fonts/calibre/Calibre-Medium.ttf");
   font-weight: 500;
-  font-style: normal; }
+  font-style: normal;
+  font-display: swap; }
 @font-face {
   font-family: 'Calibre';
   src: url("../fonts/calibre/Calibre-MediumItalic.ttf");
   font-weight: 500;
-  font-style: italic; }
+  font-style: italic;
+  font-display: swap; }
 @font-face {
   font-family: 'Calibre';
   src: url("../fonts/calibre/Calibre-Semibold.ttf");
   font-weight: 600;
-  font-style: normal; }
+  font-style: normal;
+  font-display: swap; }
 @font-face {
   font-family: 'Calibre';
   src: url("../fonts/calibre/Calibre-SemiboldItalic.ttf");
@@ -114,22 +123,26 @@
   font-family: 'Calibre';
   src: url("../fonts/calibre/Calibre-Bold.ttf");
   font-weight: bold;
-  font-style: normal; }
+  font-style: normal;
+  font-display: swap; }
 @font-face {
   font-family: 'Calibre';
   src: url("../fonts/calibre/Calibre-BoldItalic.ttf");
   font-weight: bold;
-  font-style: italic; }
+  font-style: italic;
+  font-display: swap; }
 @font-face {
   font-family: 'Calibre';
   src: url("../fonts/calibre/Calibre-Black.ttf");
   font-weight: 900;
-  font-style: normal; }
+  font-style: normal;
+  font-display: swap; }
 @font-face {
   font-family: 'Calibre';
   src: url("../fonts/calibre/Calibre-BlackItalic.ttf");
   font-weight: 900;
-  font-style: italic; }
+  font-style: italic;
+  font-display: swap; }
 /* 1.1 Template Fonts - end
 ================================================== */
 /* 1.2 - Template Global Reset - start
@@ -1253,60 +1266,6 @@ button {
 .no-csspointerevents .nice-select.open .list {
   display: block; }
 
-@font-face {
-  font-family: 'montserrat_extrabold';
-  src: url("../fonts/montserrat/MontserratAlternates-ExtraBold.woff2") format("woff2"), url("../fonts/montserrat/MontserratAlternates-ExtraBold.woff") format("woff");
-  font-weight: 800;
-  font-style: normal;
-  font-display: swap; }
-@font-face {
-  font-family: 'montserrat_bold';
-  src: url("../fonts/montserrat/MontserratAlternates-Bold.woff2") format("woff2"), url("../fonts/montserrat/MontserratAlternates-Bold.woff") format("woff");
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap; }
-@font-face {
-  font-family: 'montserrat_black';
-  src: url("../fonts/montserrat/MontserratAlternates-Black.woff2") format("woff2"), url("../fonts/montserrat/MontserratAlternates-Black.woff") format("woff");
-  font-weight: 900;
-  font-style: normal;
-  font-display: swap; }
-@font-face {
-  font-family: 'montserrat_extralight';
-  src: url("../fonts/montserrat/MontserratAlternates-ExtraLight.woff2") format("woff2"), url("../fonts/montserrat/MontserratAlternates-ExtraLight.woff") format("woff");
-  font-weight: 200;
-  font-style: normal;
-  font-display: swap; }
-@font-face {
-  font-family: 'montserrat_semibold';
-  src: url("../fonts/montserrat/MontserratAlternates-SemiBold.woff2") format("woff2"), url("../fonts/montserrat/MontserratAlternates-SemiBold.woff") format("woff");
-  font-weight: 600;
-  font-style: normal;
-  font-display: swap; }
-@font-face {
-  font-family: 'montserrat_medium';
-  src: url("../fonts/montserrat/MontserratAlternates-Medium.woff2") format("woff2"), url("../fonts/montserrat/MontserratAlternates-Medium.woff") format("woff");
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap; }
-@font-face {
-  font-family: 'montserrat_thin';
-  src: url("../fonts/montserrat/MontserratAlternates-Thin.woff2") format("woff2"), url("../fonts/montserrat/MontserratAlternates-Thin.woff") format("woff");
-  font-weight: 100;
-  font-style: normal;
-  font-display: swap; }
-@font-face {
-  font-family: 'montserrat_light';
-  src: url("../fonts/montserrat/MontserratAlternates-Light.woff2") format("woff2"), url("../fonts/montserrat/MontserratAlternates-Light.woff") format("woff");
-  font-weight: 300;
-  font-style: normal;
-  font-display: swap; }
-@font-face {
-  font-family: 'montserrat_regular';
-  src: url("../fonts/montserrat/MontserratAlternates-Regular.woff2") format("woff2"), url("../fonts/montserrat/MontserratAlternates-Regular.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap; }
 * {
   padding: 0;
   margin: 0;
@@ -1346,7 +1305,6 @@ html {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-  font-family: 'montserrat_medium';
   font-weight: 400;
   font-size: 16px;
   color: white;
@@ -1371,7 +1329,6 @@ html {
 
 .main-link {
   color: black;
-  font-family: 'montserrat_medium';
   font-size: 18px; }
   .main-link:hover {
     color: #0e2924; }
@@ -3662,7 +3619,6 @@ section {
       height: auto; }
     .services .services-wrapper .service h3 {
       font-size: 25px;
-      font-family: 'montserrat_medium';
       color: black;
       margin-bottom: 20px; }
     .services .services-wrapper .service p {
