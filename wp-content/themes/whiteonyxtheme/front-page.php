@@ -58,7 +58,6 @@
 						</div>
 					</div>
 				</section>
-
 				<!-- about_section - start
 				================================================== -->
 				<section class="about_section  section_space pb-0">
