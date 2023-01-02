@@ -67,7 +67,7 @@
 							<div class="col-lg-3 d-none d-md-block">
 								<div class="section_title style_2">
 									<h2 class="small_title">
-										about us
+										about
 										<span class="line"></span>
 									</h2>
 								</div>
@@ -119,9 +119,9 @@
 						<div class="row">
 
 							<div class="col-lg-3">
-								<div class="section_title style_2">
+								<div class="section_title style_2 d-none d-md-block">
 									<h2 class="small_title">
-										01
+										services
 										<span class="line"></span>
 									</h2>
 								</div>
@@ -231,7 +231,7 @@
 						<div class="row">
 
 							<div class="col-12 col-lg-3">
-								<div class="section_title style_2">
+								<div class="section_title style_2 d-none d-md-block">
 									<h2 class="small_title">
 										portfolio
 										<span class="line"></span>
@@ -319,7 +319,7 @@
 						<div class="row">
 
 							<div class="col-lg-3">
-								<div class="section_title style_2">
+								<div class="section_title style_2 d-none d-md-block">
 									<h2 class="small_title">
 										contact us
 										<span class="line"></span>
@@ -352,7 +352,7 @@
 						<div class="row ">
 
 							<div class="col-lg-3">
-								<div class="section_title style_2">
+								<div class="section_title style_2 d-none d-md-block">
 									<h2 class="small_title">
 										blog
 										<span class="line"></span>
