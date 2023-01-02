@@ -123,7 +123,7 @@
 
 				<!-- services_section - start
 				================================================== -->
-				<section class="services section_space ">
+				<section class="services section_space pb-0">
 					<div class="container">
 						<div class="row">
 
