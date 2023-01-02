@@ -126,8 +126,8 @@
 									</h2>
 								</div>
 							</div>
-							<div class="col-12 col-md-7 col-lg-7">
-								<div class="section_title ">
+							<div class="col-12 col-md-7 col-lg-8">
+								<div class="section_title style_2">
 									<h3 class="big_title text_effect_wrap">
 										<span class="text_effect_wrap1">
 											<span class="text_effect_wrap2">

@@ -322,9 +322,14 @@
 	}
 	a{
 		color: white;
+		margin-top: 20px;
 	}
 	a:hover{
 		color: #5EC8B5;
+	}
+	.big_title+.big_title{
+		margin-top: 10px;
+		
 	}
 }
 
