@@ -193,6 +193,7 @@ wp_dequeue_style( 'storefront-gutenberg-blocks' ); // Storefront theme
 wp_dequeue_style( 'classic-theme-styles' );
 wp_dequeue_style( 'fontawesome' );
 wp_deregister_style( 'fontawesome' );
+wp_deregister_style( 'contact-form-7' );
 }
 
 /**

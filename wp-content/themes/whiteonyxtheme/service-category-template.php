@@ -400,8 +400,9 @@
 													<span class="text_effect_wrap3 text-break">Let's start today!</span>
 												</span>
 											</span>
-											<a class="btn btn_border border_dark text-uppercase" href="<?php the_field('s25_agency_start_project_link', 'option'); ?>">Start a project now!</a>
+											
 										</h3>
+										<a class="btn btn_border border_dark text-uppercase" href="<?php the_field('s25_agency_start_project_link', 'option'); ?>">Start a project now!</a>
 									</div>
 								</div>
 							</div>

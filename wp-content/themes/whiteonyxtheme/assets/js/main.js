@@ -179,7 +179,6 @@
             }
           }
         ]
-        
     });
 
     $('.main_slider').on('init', function (e, slick) {
