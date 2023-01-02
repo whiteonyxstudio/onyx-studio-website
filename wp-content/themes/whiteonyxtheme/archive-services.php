@@ -18,8 +18,6 @@
 								<p class="">
 								Our Mission is to help businesses combine Web Design, Sales, and Marketing, into a single system to make businesses grow.
 								</p>
-								
-								
 							</div>
 						</div>
 					</div>
@@ -517,17 +515,12 @@
 										<h3 class="big_title text_effect_wrap mb-0">
 											<span class="text_effect_wrap1">
 												<span class="text_effect_wrap2">
-													<span class="text_effect_wrap3 text-break">Ready to start? </span>
+													<span class="text_effect_wrap3 text-break">Boost your business with us! </span>
 												</span>
 											</span>
-											<a href="<?php the_field('s25_agency_contact_page_link', 'option'); ?>">
-												<span class="text_effect_wrap1">
-													<span class="text_effect_wrap2">
-														<span class="text_effect_wrap3 text-break">Get in touch now!</span>
-													</span>
-												</span>
-											</a>
+											
 										</h3>
+										<a class="btn btn_border border_dark text-uppercase " href="<?php the_field('s25_agency_start_project_link', 'option'); ?>">Get in touch now!</a>
 									</div>
 								</div>
 							</div>

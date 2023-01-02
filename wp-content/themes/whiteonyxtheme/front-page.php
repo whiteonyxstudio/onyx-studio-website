@@ -335,7 +335,7 @@
 										<h3 class="big_title text_effect_wrap mb-0">
 											Don't hesitate!
 										</h3>
-										<a class="btn btn_border border_dark text-uppercase " href="<?php the_field('s25_agency_start_project_link', 'option'); ?>">Start a project now!</a>
+										<a class="btn btn_border border_dark text-uppercase " href="<?php the_field('s25_agency_start_project_link', 'option'); ?>">Get in touch now!</a>
 									</div>
 								</div>
 							</div>

@@ -168,9 +168,13 @@
 	}
 }
 .btn_text_white{
+	color: white;
 	svg path{
 		fill:white;
 	}
+}
+.btn_text_white:hover{
+	color: white;
 }
 .btn-small{
 	font-size: 14px;
