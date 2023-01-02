@@ -534,88 +534,12 @@
 
 				<!-- FAQ_section - start
 				================================================== -->
-				<section class="faq section_space faq_accordion">
-					<div class="container">
-						<div class="row">
-
-							<div class="col-lg-3">
-								<div class="section_title style_2">
-									<h2 class="small_title">
-										FAQ
-										<span class="line"></span>
-									</h2>
-								</div>
-							</div>
-
-							<div class="col-12 col-md-12 col-lg-9">
-								<div class="section_title style_2">
-									<h3 class="big_title text_effect_wrap">
-										<span class="text_effect_wrap1">
-											<span class="text_effect_wrap2">
-												<span class="text_effect_wrap3 text-break">Frequently asked</span>
-											</span>
-										</span>
-										<span class="text_effect_wrap1">
-											<span class="text_effect_wrap2">
-												<span class="text_effect_wrap3 text-break">questions</span>
-											</span>
-										</span>
-									</h3>
-									
-								</div>
-								<div class="accordion accordion-flush services-accordion" id="accordionFlushExample">
-
-									<?php if( have_rows('s00_faq_accordion',$service_page_id) ): ?>
-									    
-									    <?php $faq_counter=1; while( have_rows('s00_faq_accordion',$service_page_id) ): the_row(); 
-									    ?>
-
-												<div class="accordion-item">
-								  			  <h2 class="accordion-header" id="flush-heading<?php echo $faq_counter; ?>">
-								  			    <button class="accordion-button  collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse<?php echo $faq_counter; ?>" aria-expanded="false" aria-controls="flush-collapse<?php echo $faq_counter; ?>">
-								  			      <div class="blog_simple_layout">
-																<h3 class="item_title text_effect_wrap">
-																		<span class="text_effect_wrap1">
-																			<span class="text_effect_wrap2">
-																				<span class="text_effect_wrap3"><?php the_sub_field('faq_question'); ?></span>
-																			</span>
-																		</span>
-																	</h3>
-
-															</div>
-								  			    </button>
-								  			  </h2>
-								  			  <div id="flush-collapse<?php echo $faq_counter; ?>" class="accordion-collapse collapse" aria-labelledby="flush-heading<?php echo $faq_counter; ?>" data-bs-parent="#accordionFlushExample">
-								  			    <div class="accordion-body">
-															<div class="blog_simple_layout">
-																<p>
-																	<?php the_sub_field('faq_answer'); ?>
-																</p>
-															</div>
-														</div>
-								  			  </div>
-								  			</div> <!-- accordion-item -->
-
-									    <?php $faq_counter++; endwhile; ?>
-
-									<?php endif; ?>
-	
-								</div> <!-- accordion -->
-
-          		</div>
-						</div>
-					</div>
-				</section>
+				
 				<!-- FAQ_section - end
 				================================================== -->
 
 				
-				<section class="extra_section">
-					<div	div class="container">
-						<h2 class="biggest_title text-center">A modern digital agency</h2>
-						
-					</div>
-				</section>
+				
 
 			</main>
 			<!-- main body - end
