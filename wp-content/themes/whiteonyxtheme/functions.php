@@ -464,4 +464,16 @@ function related_posts_by_taxonomy( $post_id, $taxonomy, $args=array() ) {
 }
 
 
+function disable_comments_status($open, $post_id) {
+    $post = get_post($post_id);
+    $post_types = array('post', 'page', 'portfolio', 'services', 'testemonials'); // add your custom post types here
+    if (in_array($post->post_type, $post_types)) {
+        return false;
+    }
+    return $open;
+}
+add_filter('comments_open', 'disable_comments_status', 20, 2);
+add_filter('pings_open', 'disable_comments_status', 20, 2);
+
+
 
