@@ -1,0 +1,71 @@
+.important-points{
+  background: black;
+  &-grid{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+      column-gap: 25px;
+      row-gap: 20px;
+    &-item{
+      padding: 50px 25px;
+      background: rgba(255, 255, 255, 0.05);
+      border: 0.5px solid rgba(227, 229, 232, 0.5);
+      border-radius: 30px;
+      img{
+        margin-bottom: 20px;
+      }
+      h3{
+        color: white;
+        margin-bottom: 15px;
+        font-size: 26px;
+        line-height: 120%;
+      }
+      p{
+        font-size: 23px;
+        line-height: 120%;
+        color: #BAC3C9;
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+.quote{
+  background: black;
+  p{
+    max-width: 800px;
+    font-size: 26px;
+    line-height: 120%;
+    color: #FFFFFF;
+  }
+  &-form{
+    display: flex;
+    gap: 25px;
+    &-input{
+      flex: 1;
+      padding-left: 60px;
+      padding-right: 60px;
+      padding-top: 18px;
+      padding-bottom: 12px;
+      background: white;
+      height: 54px;
+      border-radius: 50px;
+      outline: none;
+      border: none;
+      vertical-align: middle;
+      font-family: 'Calibre';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 26px;
+      line-height: 18px;
+      color: #989DA4;
+    } 
+    .submit{
+      flex-basis: 230px;
+      flex: 0;
+      text-align: center;
+      color: black;
+      font-weight: 600;
+    } 
+  }
+}

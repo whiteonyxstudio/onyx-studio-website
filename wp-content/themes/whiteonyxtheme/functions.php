@@ -12,6 +12,10 @@ if ( ! defined( '_S_VERSION' ) ) {
 	define( '_S_VERSION', '1.0.0' );
 }
 
+@ini_set( 'upload_max_size' , '1024M' );
+@ini_set( 'post_max_size', '1024M');
+@ini_set( 'max_execution_time', '300' );
+
 /**
  * Sets up theme defaults and registers support for various WordPress features.
  *
@@ -147,37 +151,27 @@ function studio_main_theme_scripts() {
 	wp_style_add_data( 'studio_main_theme-style', 'rtl', 'replace' );
 
 	wp_enqueue_style( 'bootstrap-style', get_template_directory_uri() .'/assets/css/bootstrap.min.css' );
-	// wp_enqueue_style( 'magnific-style', get_template_directory_uri() .'/assets/css/magnific-popup.css' );
-
-	// wp_enqueue_style( 'slick-style', get_template_directory_uri() .'/assets/css/slick.css', rand(111,9999), 'all' );
-	// wp_enqueue_style( 'slick-theme-style', get_template_directory_uri() .'/assets/css/slick-theme.css', rand(111,9999), 'all' );
+	
 	wp_enqueue_style( 'slick-bundle-style', get_template_directory_uri() .'/assets/css/slick-bundle.css', rand(111,9999), 'all' );
   wp_enqueue_style( 'main-style', get_template_directory_uri() .'/assets/css/style.min.css', rand(111,9991), 'all' );
+  
 
 	wp_deregister_script( 'jquery-core' );
 	wp_register_script( 'jquery-core', '//code.jquery.com/jquery-3.6.0.min.js');
 	wp_enqueue_script( 'jquery' );
 
-	// wp_enqueue_script( 'studio_main_theme-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
-	// wp_enqueue_script( 'popper-script', get_template_directory_uri() . '/assets/js/popper.min.js', array(), _S_VERSION, true );
+	
 	wp_enqueue_script( 'jq-plugins-script', get_template_directory_uri() . '/assets/js/jquery-plugins-collection.js', array(), _S_VERSION, true );
 	wp_enqueue_script( 'bootstrap-script', get_template_directory_uri() . '/assets/js/bootstrap.min.js', array(), _S_VERSION, true );
 	wp_enqueue_script( 'main-script', get_template_directory_uri() . '/assets/js/main.js', array(), _S_VERSION, true );
+	
 	
 
 	}
 add_action( 'wp_enqueue_scripts', 'studio_main_theme_scripts' );
 
 
-/**
- * Enque Styles in footer. Removes render blocking resourses
- */
 
-// function prefix_add_footer_styles() {
-// 	wp_enqueue_style( 'fontawesone-style', get_template_directory_uri() .'/assets/css/fontawesome.css' );
-// 	wp_enqueue_script( 'fontawesome-script', 'https://kit.fontawesome.com/8d258d854c.js');
-	
-// };
 add_action( 'get_footer', 'prefix_add_footer_styles' );
 
 /**

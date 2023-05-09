@@ -1,0 +1,104 @@
+.portfolio-single-head {
+  background-image: url(../images/Case-head-bg.png);
+  background-position: center center;
+  background-size: cover;
+  height: 750px;
+  display: flex;
+  align-items: flex-end;
+}
+.portfolio-single-head .page-haeder {
+  margin-bottom: 0;
+}
+.portfolio-single-head p {
+  font-size: 30px;
+  line-height: 120%;
+}
+.portfolio-single-head .pills-wrapper .pill {
+  margin-right: 12px;
+}
+.portfolio-single-head .link {
+  border-color: white;
+  background-color: white;
+  color: black;
+}
+.portfolio-signle-cta {
+  background: black;
+}
+.portfolio-single-about {
+  background: #F6F7F8;
+}
+.portfolio-single-about .section-header {
+  margin-left: 165px;
+}
+.portfolio-single-about-meta {
+  margin: 50px 165px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.portfolio-single-about-meta-item {
+  width: 25%;
+}
+.portfolio-single-about-meta-item span {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 120%;
+  color: #727272;
+}
+.portfolio-single-about-meta-item p {
+  margin-top: 5px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 120%;
+  color: #000000;
+}
+.portfolio-single-about-text {
+  margin: 50px 165px;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 120%;
+  color: #000000;
+}
+.portfolio-single-about-deliverables {
+  margin: 50px 165px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.portfolio-single-about-deliverables-item {
+  width: 25%;
+}
+.portfolio-single-about-deliverables-item h3 {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 120%;
+  color: #727272;
+  margin-bottom: 15px;
+}
+.portfolio-single-about-deliverables-item p {
+  font-size: 20px;
+  line-height: 120%;
+}
+.case-about {
+  display: block;
+  max-width: 1620px;
+  width: auto;
+  margin: 0 auto 50px;
+  height: auto;
+}
+.portfolio-single-gallery {
+  margin: 0 auto;
+  padding: 0;
+  border-radius: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
+}
+.portfolio-single-gallery-image {
+  width: 100%;
+}
+.portfolio-single-about-design {
+  margin: 0 275px;
+}
+.portfolio-single-about-text-2 .section-header {
+  font-size: 40px;
+  line-height: 100%;
+}

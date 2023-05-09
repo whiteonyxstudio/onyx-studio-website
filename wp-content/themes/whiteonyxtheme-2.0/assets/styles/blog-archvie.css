@@ -1,0 +1,125 @@
+.blog-archive-head {
+  background: #F6F7F8;
+}
+.blog-archive-head p {
+  max-width: 990px;
+}
+.blog-archive-head .page-header {
+  color: black;
+}
+.blog-archive-main .section-header {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 80px;
+  line-height: 100%;
+  text-transform: uppercase;
+  color: #000000;
+}
+.blog-archive-main hr {
+  margin: 100px 0;
+}
+.blog-archvie-grid {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 25px;
+  row-gap: 50px;
+}
+.blog-archvie-grid-item img {
+  width: 100%;
+  aspect-ratio: 1.77777778;
+  border-radius: 12px;
+  object-fit: cover;
+  object-position: center;
+}
+.blog-archvie-grid-item .blog-post-meta {
+  padding: 30px 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 20px;
+}
+.blog-archvie-grid-item .blog-post-meta .pill {
+  display: inline-block;
+  padding: 5px 20px;
+  font-size: 15px;
+  line-height: 100%;
+  vertical-align: middle;
+  text-align: center;
+  color: #515151;
+  border: 1px solid #515151;
+  border-radius: 50px;
+  height: 23px;
+}
+.blog-archvie-grid-item .blog-post-meta .time {
+  padding-top: 3px;
+  line-height: 23px;
+  vertical-align: middle;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 15px;
+  color: #989DA4;
+}
+.blog-archvie-grid-item .blog-post-meta h3 {
+  font-weight: 500;
+  font-size: 35px;
+  line-height: 100%;
+  color: #000000;
+  width: 100%;
+}
+.pagination {
+  margin-top: 60px;
+  display: flex;
+  justify-content: space-between;
+}
+.pagination .show-more {
+  padding: 10px 20px;
+  background-color: black;
+  border-radius: 50px;
+  color: white;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 100%;
+  text-align: center;
+}
+.pagination .pagination-wrapper {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.pagination .pagination-wrapper .page-numbers {
+  padding-top: 7px;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 18px;
+  color: #BAC3C9;
+}
+.pagination .pagination-wrapper .current {
+  color: #0e0c0c;
+}
+.pagination .pagination-wrapper .next {
+  background-color: black;
+  color: white;
+  border-radius: 50px;
+  width: 33px;
+  height: 33px;
+  position: relative;
+}
+.pagination .pagination-wrapper .next svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.blog-pills {
+  margin-top: 40px;
+}
+.blog-pills .pill {
+  height: 38px;
+  color: black;
+  border-color: black;
+}
+.blog-pills .active {
+  color: white;
+  background-color: black;
+}

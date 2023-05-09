@@ -1202,3 +1202,24 @@ span.wpcf7-list-item {
 	}
 	 
 }
+
+
+.new-btn{
+	
+	display: flex;
+	min-width: 200px;
+	width: 234px;
+	max-width: 250px;
+	height: 54px;
+	justify-content: center;
+	align-items: center;
+	background: black;
+	color: white;
+	font-size: 26px;
+	line-height: 18px;
+	padding: 6px 60px 0;
+	border-radius: 50px;
+	&:hover{
+		color: white;
+	}
+}

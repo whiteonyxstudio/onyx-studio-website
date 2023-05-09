@@ -1,0 +1,224 @@
+.contact{
+  background: black;
+  vertical-align: top;
+  .row{
+    padding: 100px 0;
+    border-bottom: 1px solid #BAC3C9;
+    &.p0{
+      border: none;
+      padding-bottom: 0;
+    }
+    &.b-none{
+      border: none;
+    }
+  }
+  .mail-link{
+    display: block;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 100%;
+    margin-bottom: 28px;
+    color: #FFFFFF;
+  }
+  .wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 60px;
+  }
+  ul{
+    display: inline-block;
+    list-style: none;
+    li{
+      a{
+        font-size: 18px;
+        line-height: 22px;
+        text-transform: uppercase;
+        color: #BAC3C9;
+      }
+    }
+  }
+  h2{
+    font-size: 40px;
+    line-height: 100%;
+    text-transform: uppercase;
+    color: #FFFFFF;
+  }
+  .text-input{
+    display: block;
+    width: 100%;
+    background: #FFFFFF;
+    border-radius: 50px;
+    margin-bottom: 30px;
+    padding: 18px 60px;
+    border: none;
+    outline: none;
+    font-size: 26px;
+    line-height: 100%;
+    height: 54px;
+  }
+
+  .pill-container{
+    max-width:  640px;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 15px;
+    & input[type="checkbox"]{
+	  	opacity: 0;
+	  	width: 0;
+	  }
+
+    .selector{
+      display: flex;
+	    align-items: center;
+	    justify-content:center;
+      margin-right: 15px;
+      height: 54px;
+      padding: 18px 60px;
+	    cursor: pointer;
+	    background: transparent;
+	    border: 1px solid white;
+	    border-radius: 50px;
+      color: white;
+      font-size: 26px;
+      line-height: 100%;
+	    &:hover {
+	    	background: white;
+	    	color: black;
+	    }
+    }
+  }
+  .radio-buttons{
+    display: flex;
+    flex-wrap: wrap;
+    width: 600px;
+    row-gap: 20px;
+    &-item{
+      display: flex;
+      align-items: center;
+      width: 50%;
+      label{
+        font-size: 30px;
+        line-height: 100%;
+        color: #FFFFFF;
+        font-weight: 600;
+        font-size: 26px;
+              line-height: 100%;
+      }
+
+      [type="radio"]:checked,
+      [type="radio"]:not(:checked) {
+          position: absolute;
+          left: -9999px;
+      }
+
+      [type="radio"]:checked + label,
+      [type="radio"]:not(:checked) + label
+      {
+          position: relative;
+          padding-left: 28px;
+          cursor: pointer;
+          line-height: 20px;
+          display: inline-block;
+          color: #fff;
+      }
+
+      [type="radio"]:checked + label:before,
+      [type="radio"]:not(:checked) + label:before {
+          content: '';
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 18px;
+          height: 18px;
+          border: 1px solid #ddd;
+          border-radius: 100%;
+          background: #fff;
+      }
+
+      [type="radio"]:checked + label:after,
+      [type="radio"]:not(:checked) + label:after {
+          content: '';
+          width: 12px;
+          height: 12px;
+          background: black;
+          position: absolute;
+          top: 3px;
+          left: 3px;
+          border-radius: 100%;
+          -webkit-transition: all 0.2s ease;
+          transition: all 0.2s ease;
+      }
+
+      [type="radio"]:not(:checked) + label:after {
+          opacity: 0;
+          -webkit-transform: scale(0);
+          transform: scale(0);
+      }
+      [type="radio"]:checked + label:after {
+          opacity: 1;
+          -webkit-transform: scale(1);
+          transform: scale(1);
+      }
+    }
+  }
+  .file-wrapper{
+    input{
+      
+    }
+  }
+  .accept{
+    input {
+      padding: 0;
+      height: initial;
+      width: initial;
+      margin-bottom: 0;
+      display: none;
+      cursor: pointer;
+    }
+    label {
+      position: relative;
+      cursor: pointer;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 100%;
+      /* or 20px */
+
+
+      color: #BAC3C9;
+    }
+    label:before {
+      content:'';
+      -webkit-appearance: none;
+      background-color: transparent;
+      border: 1px solid white;
+      box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+      padding: 10px;
+      display: inline-block;
+      position: relative;
+      vertical-align: middle;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-right: 10px;
+    }
+    input:checked + label:after {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 2px;
+      left: 9px;
+      width: 6px;
+      height: 14px;
+      border: solid #0079bf;
+      border-width: 0 2px 2px 0;
+      transform: rotate(45deg);
+    }
+  }
+  .button{
+    width: 100%;
+    margin-top: 40px;
+    font-weight:500;
+    font-size: 26px;
+    line-height: 120%;
+    font-size: 26px;
+  }
+}

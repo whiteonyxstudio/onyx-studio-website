@@ -1,0 +1,116 @@
+.blog-single-content {
+  max-width: 1074px;
+  margin: 0 auto;
+}
+.blog-single .post-header {
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 100%;
+  /* or 80px */
+  text-transform: uppercase;
+}
+.blog-single .post-meta {
+  display: flex;
+  padding: 5px 0 30px;
+}
+.blog-single hr {
+  height: 2px;
+  background: #989DA4;
+}
+.blog-single .post-author {
+  display: flex;
+  column-gap: 30px;
+  align-items: center;
+}
+.blog-single .post-author .author-thumbnail {
+  width: 75px;
+  height: 75px;
+}
+.blog-single .post-author-wrapper .author-name {
+  margin: 0;
+  font-weight: 400;
+  font-size: 23px;
+  line-height: 100%;
+}
+.blog-single .post-thumbnail {
+  margin-top: 40px;
+  width: 1074px;
+  height: auto;
+  border-radius: 12px;
+}
+.post-editor h2 {
+  margin: 50px 0 30px;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 100%;
+}
+.post-editor p {
+  margin: 20px 0;
+}
+.post-editor ul {
+  margin: 20px 0;
+  margin-inline-start: 20px;
+}
+.post-editor ul li {
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 120%;
+}
+.post-editor img {
+  display: inline-block;
+  margin: 20px auto;
+  width: 100%;
+  height: auto;
+}
+.newsletter-subscription {
+  background: black;
+}
+.newsletter-subscription .bg-text {
+  display: inline-block;
+  top: 50%;
+  left: 50%;
+  z-index: 1;
+  transform: translate(-50%, -30%);
+  width: 2000px;
+  position: absolute;
+  font-size: 296.99px;
+  line-height: 100%;
+  text-transform: uppercase;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 1px;
+  -webkit-text-stroke-color: white;
+  opacity: 0.2;
+  text-align: center;
+}
+.newsletter-subscription h2 {
+  font-weight: 600;
+  font-size: 80px;
+  line-height: 100%;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  text-align: center;
+}
+.newsletter-subscription .newsletter-form {
+  position: relative;
+  z-index: 5;
+}
+.newsletter-subscription .newsletter-form form {
+  display: flex;
+  column-gap: 25px;
+}
+.newsletter-subscription .newsletter-form form .text-input {
+  height: 54px;
+  padding: 18px 60px;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 100%;
+  color: #black;
+  border-radius: 50px;
+  outline: none;
+  border: none;
+  flex-grow: 1;
+}
+.newsletter-subscription .newsletter-form form .button {
+  border: none;
+  outline: none;
+}
