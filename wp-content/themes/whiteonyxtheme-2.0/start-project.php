@@ -1,51 +1,23 @@
-      <?php /* Template Name: Start a project
-      */ ?>
+<?php /* Template Name: Start Project Page
+*/ ?>
 
-      <?php get_header(); ?>
+<?php get_header(); ?>
 
-			<!-- main body - start
-			================================================== -->
-			<main>
+	<main>
 
-				<!-- breadcrumb_section - start
-				================================================== -->
-				<section class="section_space ">
-					<div class="container">
-						<div class="row">
-							<div class="col-12  ">
-								<h1 class="page_title">
-									<span class="d-block">Start</span>
-									<span class="d-block">a Project</span>
-								</h1>
-							</div>
-							
-						</div>
-						
-					</div>
-				</section>
-				<!-- breadcrumb_section - end
-				================================================== -->
+			<section class="sec contact">
+        <div class="row">
+          <div class="col">
+            <h1 class="page-header white">WRITE TO US</h1>
+          </div>
+          <div class="col">
+            <p class="white">Please, provide some basic information about yourself and tell us about your project</p></p>
+          </div>
+        </div>
 
-				<!-- contact_section - start
-				================================================== -->
-				<section class="contact_section section_space pt-0 pb-0" >
-					<div class="container">
-						<div class="row">
-						<div class="contact_form_area section_space pt-0">
-							<div class="main_contact_form">
-								<?php
-									$custom_shortcode= get_field('s27_shortcode');
-									echo do_shortcode($custom_shortcode);
-								?>
-							</div>
-						</div>
-					</div>
-				</section>
-				<!-- contact_section - end
-				================================================== -->
+        <?php echo do_shortcode('[contact-form-7 id="537" title="Contact US"]'); ?>
+      </section>
 
-			</main>
-			<!-- main body - end
-			================================================== -->
+		</main>
 
-			<?php get_footer('contact'); ?>
+<?php get_footer('contact'); ?>

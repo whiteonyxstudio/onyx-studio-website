@@ -7,6 +7,52 @@
 .blog-archive-head .page-header {
   color: black;
 }
+@media (max-width: 1366.98px) {
+  .blog-archive-head .page-header {
+    font-size: 80px;
+  }
+  .blog-archive-head .page-header b {
+    font-size: 80px;
+  }
+}
+@media (max-width: 1199.98px) {
+  .blog-archive-head .section-header .page-header {
+    font-size: 60px;
+  }
+  .blog-archive-head .section-header .page-header b {
+    font-size: 60px;
+  }
+}
+@media (max-width: 991.98px) {
+  .blog-archive-head {
+    padding: 75px 50px;
+  }
+  .blog-archive-head .page-header {
+    font-size: 50px;
+  }
+  .blog-archive-head .page-header b {
+    font-size: 50px;
+  }
+  .blog-archive-head p {
+    max-width: 450px;
+  }
+}
+@media (max-width: 575.98px) {
+  .blog-archive-head {
+    padding: 50px 19px;
+  }
+  .blog-archive-head .page-header {
+    font-size: 50px;
+  }
+  .blog-archive-head .page-header b {
+    font-size: 50px;
+  }
+  .blog-archive-head p {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 120%;
+  }
+}
 .blog-archive-main .section-header {
   font-style: normal;
   font-weight: 800;
@@ -17,6 +63,51 @@
 }
 .blog-archive-main hr {
   margin: 100px 0;
+}
+@media (max-width: 1366.98px) {
+  .blog-archive-main hr {
+    margin: 75px 0;
+  }
+  .blog-archive-main .section-header {
+    font-size: 70px;
+  }
+}
+@media (max-width: 1199.98px) {
+  .blog-archive-main hr {
+    margin: 50px 0;
+  }
+  .blog-archive-main .blog-pills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+}
+@media (max-width: 575.98px) {
+  .blog-archive-main {
+    padding-bottom: 30px;
+  }
+  .blog-archive-main .section-header {
+    font-weight: 800;
+    font-size: 45px;
+    line-height: 100%;
+  }
+  .blog-archive-main .blog-archvie-grid {
+    margin-top: 30px;
+  }
+  .blog-archive-main hr {
+    margin: 50px 0;
+  }
+  .blog-archive-main .blog-pills {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 15px;
+    column-gap: 10px;
+  }
+  .blog-archive-main .blog-pills .pills {
+    font-size: 18px;
+    line-height: 100%;
+    padding: 10px 20px;
+  }
 }
 .blog-archvie-grid {
   margin-top: 50px;
@@ -67,6 +158,51 @@
   color: #000000;
   width: 100%;
 }
+@media (max-width: 1199.98px) {
+  .blog-archvie-grid .blog-post-meta h3 {
+    font-size: 26px;
+  }
+  .blog-archvie-grid-item .blog-post-meta {
+    gap: 10px;
+  }
+  .blog-archvie-grid-item .blog-post-meta .pill {
+    padding: 5px 10px;
+  }
+}
+@media (max-width: 991.98px) {
+  .blog-archvie-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .blog-archvie-grid.featured > :last-child {
+    display: none;
+  }
+}
+@media (max-width: 575.98px) {
+  .blog-home {
+    padding-bottom: 30px;
+  }
+  .blog-home .pill.mobile {
+    margin-top: 50px;
+    width: 100%;
+    text-align: center;
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 100%;
+  }
+  .blog-archvie-grid {
+    grid-template-columns: 1fr;
+    row-gap: 30px;
+  }
+  .blog-archvie-grid .blog-post-meta {
+    padding-top: 20px;
+    gap: 15px;
+  }
+  .blog-archvie-grid .blog-post-meta h3 {
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 100%;
+  }
+}
 .pagination {
   margin-top: 60px;
   display: flex;
@@ -82,7 +218,10 @@
   line-height: 100%;
   text-align: center;
 }
-.pagination .pagination-wrapper {
+.pagination .pagination-wrapper .screen-reader-text {
+  display: none;
+}
+.pagination .pagination-wrapper .nav-links {
   display: flex;
   gap: 20px;
   align-items: center;
@@ -97,7 +236,8 @@
 .pagination .pagination-wrapper .current {
   color: #0e0c0c;
 }
-.pagination .pagination-wrapper .next {
+.pagination .pagination-wrapper .next,
+.pagination .pagination-wrapper .prev {
   background-color: black;
   color: white;
   border-radius: 50px;
@@ -105,11 +245,33 @@
   height: 33px;
   position: relative;
 }
-.pagination .pagination-wrapper .next svg {
+.pagination .pagination-wrapper .next svg,
+.pagination .pagination-wrapper .prev svg {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+@media (max-width: 575.98px) {
+  .pagination {
+    align-items: center;
+  }
+  .pagination .pagination-wrapper {
+    display: flex;
+    height: 33px;
+    align-items: center;
+    gap: 5px;
+  }
+  .pagination .pagination-wrapper .page-numbers {
+    line-height: 100%;
+    padding-top: 0;
+    transform: translateY(3px);
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  .pagination .pagination-wrapper .next {
+    transform: none;
+  }
 }
 .blog-pills {
   margin-top: 40px;

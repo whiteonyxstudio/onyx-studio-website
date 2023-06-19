@@ -30,6 +30,9 @@
   display: inline-block;
   list-style: none;
 }
+.contact ul li {
+  margin-bottom: 15px;
+}
 .contact ul li a {
   font-size: 18px;
   line-height: 22px;
@@ -47,13 +50,17 @@
   width: 100%;
   background: #FFFFFF;
   border-radius: 50px;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
   padding: 18px 60px;
   border: none;
   outline: none;
   font-size: 26px;
   line-height: 100%;
   height: 54px;
+  text-transform: none;
+}
+.contact .wpcf7-form-control-wrap {
+  font-family: sans-serif;
 }
 .contact .pill-container {
   max-width: 640px;
@@ -64,6 +71,44 @@
 .contact .pill-container input[type="checkbox"] {
   opacity: 0;
   width: 0;
+}
+.contact .pill-container .wpcf7-form-control {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 20px;
+}
+.contact .pill-container .wpcf7-form-control .wpcf7-form-control-wrap {
+  font-family: sans-serif;
+}
+.contact .pill-container .wpcf7-form-control .wpcf7-list-item {
+  display: flex;
+}
+.contact .pill-container .wpcf7-form-control .wpcf7-list-item input {
+  order: 1;
+}
+.contact .pill-container .wpcf7-form-control .wpcf7-list-item input[type="checkbox"]:checked + span {
+  color: black;
+  background-color: white;
+}
+.contact .pill-container .wpcf7-form-control .wpcf7-list-item span {
+  order: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 15px;
+  height: 54px;
+  padding: 19px 60px 15px;
+  cursor: pointer;
+  background: transparent;
+  border: 1px solid white;
+  border-radius: 50px;
+  color: white;
+  font-size: 26px;
+  line-height: 100%;
+}
+.contact .pill-container .wpcf7-form-control .wpcf7-list-item span:hover {
+  background: white;
+  color: black;
 }
 .contact .pill-container .selector {
   display: flex;
@@ -84,31 +129,43 @@
   background: white;
   color: black;
 }
-.contact .radio-buttons {
+.contact .radio-buttons .wpcf7-form-control {
   display: flex;
   flex-wrap: wrap;
   width: 600px;
   row-gap: 20px;
 }
-.contact .radio-buttons-item {
+.contact .radio-buttons-item,
+.contact .radio-buttons .wpcf7-list-item {
   display: flex;
   align-items: center;
   width: 50%;
 }
-.contact .radio-buttons-item label {
+.contact .radio-buttons-item label,
+.contact .radio-buttons .wpcf7-list-item label,
+.contact .radio-buttons-item .wpcf7-list-item-label,
+.contact .radio-buttons .wpcf7-list-item .wpcf7-list-item-label {
   font-size: 30px;
-  color: #FFFFFF;
-  font-weight: 600;
-  font-size: 26px;
   line-height: 100%;
+  color: #FFFFFF;
+  font-weight: 500;
+  line-height: 120%;
 }
 .contact .radio-buttons-item [type="radio"]:checked,
-.contact .radio-buttons-item [type="radio"]:not(:checked) {
+.contact .radio-buttons .wpcf7-list-item [type="radio"]:checked,
+.contact .radio-buttons-item [type="radio"]:not(:checked),
+.contact .radio-buttons .wpcf7-list-item [type="radio"]:not(:checked) {
   position: absolute;
   left: -9999px;
 }
 .contact .radio-buttons-item [type="radio"]:checked + label,
-.contact .radio-buttons-item [type="radio"]:not(:checked) + label {
+.contact .radio-buttons .wpcf7-list-item [type="radio"]:checked + label,
+.contact .radio-buttons-item [type="radio"]:not(:checked) + label,
+.contact .radio-buttons .wpcf7-list-item [type="radio"]:not(:checked) + label,
+.contact .radio-buttons-item [type="radio"]:checked + .wpcf7-list-item-label,
+.contact .radio-buttons .wpcf7-list-item [type="radio"]:checked + .wpcf7-list-item-label,
+.contact .radio-buttons-item [type="radio"]:not(:checked) + .wpcf7-list-item-label,
+.contact .radio-buttons .wpcf7-list-item [type="radio"]:not(:checked) + .wpcf7-list-item-label {
   position: relative;
   padding-left: 28px;
   cursor: pointer;
@@ -117,7 +174,13 @@
   color: #fff;
 }
 .contact .radio-buttons-item [type="radio"]:checked + label:before,
-.contact .radio-buttons-item [type="radio"]:not(:checked) + label:before {
+.contact .radio-buttons .wpcf7-list-item [type="radio"]:checked + label:before,
+.contact .radio-buttons-item [type="radio"]:checked + .wpcf7-list-item-label:before,
+.contact .radio-buttons .wpcf7-list-item [type="radio"]:checked + .wpcf7-list-item-label:before,
+.contact .radio-buttons-item [type="radio"]:not(:checked) + label:before,
+.contact .radio-buttons .wpcf7-list-item [type="radio"]:not(:checked) + label:before,
+.contact .radio-buttons-item [type="radio"]:not(:checked) + .wpcf7-list-item-label:before,
+.contact .radio-buttons .wpcf7-list-item [type="radio"]:not(:checked) + .wpcf7-list-item-label:before {
   content: '';
   position: absolute;
   left: 0;
@@ -129,7 +192,13 @@
   background: #fff;
 }
 .contact .radio-buttons-item [type="radio"]:checked + label:after,
-.contact .radio-buttons-item [type="radio"]:not(:checked) + label:after {
+.contact .radio-buttons .wpcf7-list-item [type="radio"]:checked + label:after,
+.contact .radio-buttons-item [type="radio"]:not(:checked) + label:after,
+.contact .radio-buttons .wpcf7-list-item [type="radio"]:not(:checked) + label:after,
+.contact .radio-buttons-item [type="radio"]:checked + .wpcf7-list-item-label:after,
+.contact .radio-buttons .wpcf7-list-item [type="radio"]:checked + .wpcf7-list-item-label:after,
+.contact .radio-buttons-item [type="radio"]:not(:checked) + .wpcf7-list-item-label:after,
+.contact .radio-buttons .wpcf7-list-item [type="radio"]:not(:checked) + .wpcf7-list-item-label:after {
   content: '';
   width: 12px;
   height: 12px;
@@ -141,15 +210,20 @@
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
 }
-.contact .radio-buttons-item [type="radio"]:not(:checked) + label:after {
+.contact .radio-buttons-item [type="radio"]:not(:checked) + .wpcf7-list-item-label:after,
+.contact .radio-buttons .wpcf7-list-item [type="radio"]:not(:checked) + .wpcf7-list-item-label:after {
   opacity: 0;
   -webkit-transform: scale(0);
   transform: scale(0);
 }
-.contact .radio-buttons-item [type="radio"]:checked + label:after {
+.contact .radio-buttons-item [type="radio"]:checked + .wpcf7-list-item-label:after,
+.contact .radio-buttons .wpcf7-list-item [type="radio"]:checked + .wpcf7-list-item-label:after {
   opacity: 1;
   -webkit-transform: scale(1);
   transform: scale(1);
+}
+.contact .accept {
+  margin-top: 40px;
 }
 .contact .accept input {
   padding: 0;
@@ -159,16 +233,15 @@
   display: none;
   cursor: pointer;
 }
-.contact .accept label {
+.contact .accept span {
   position: relative;
   cursor: pointer;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 24px;
   line-height: 100%;
-  /* or 20px */
   color: #BAC3C9;
 }
-.contact .accept label:before {
+.contact .accept .wpcf7-list-item-label:before {
   content: '';
   -webkit-appearance: none;
   background-color: transparent;
@@ -182,7 +255,7 @@
   cursor: pointer;
   margin-right: 10px;
 }
-.contact .accept input:checked + label:after {
+.contact .accept input:checked + .wpcf7-list-item-label:after {
   content: '';
   display: block;
   position: absolute;
@@ -200,4 +273,123 @@
   font-weight: 500;
   line-height: 120%;
   font-size: 26px;
+}
+@media (max-width: 1440.98px) {
+  .contact .page-header {
+    font-size: 80px;
+  }
+}
+@media (max-width: 1366.98px) {
+  .contact .row .col {
+    width: 50%;
+    flex: none;
+  }
+  .contact h2 {
+    font-size: 35px;
+  }
+}
+@media (max-width: 1199.98px) {
+  .contact .page-header {
+    font-size: 60px;
+  }
+  .contact .mail-link {
+    font-size: 25px;
+    line-height: 120%;
+  }
+  .contact .row {
+    padding: 50px 0;
+  }
+  .contact .row .col {
+    width: 50%;
+    flex: none;
+  }
+  .contact .row .col:first-child {
+    width: 45%;
+  }
+  .contact .row .col:last-child {
+    width: 55%;
+  }
+  .contact h2 {
+    font-size: 35px;
+  }
+}
+@media (max-width: 575.98px) {
+  .contact {
+    padding-top: 0px;
+  }
+  .contact .page-header {
+    font-size: 50px;
+  }
+  .contact .mail-link {
+    font-size: 20px;
+    line-height: 120%;
+    margin-bottom: 25px;
+  }
+  .contact ul li {
+    margin-bottom: 10px;
+  }
+  .contact .row {
+    padding: 50px 0;
+    flex-wrap: wrap;
+  }
+  .contact .row .col {
+    width: 100%;
+    flex: none;
+  }
+  .contact .row .col:first-child {
+    width: 100%;
+  }
+  .contact .row .col:last-child {
+    width: 100%;
+  }
+  .contact h2 {
+    font-weight: 600;
+    font-size: 30px;
+    margin-bottom: 30px;
+  }
+  .contact .text-input {
+    line-height: 600;
+    font-size: 18px;
+    line-height: 100%;
+    padding: 14px 30px;
+  }
+  .contact .button {
+    margin-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    outline: none;
+    border: none;
+    line-height: 100%;
+    font-weight: 600;
+  }
+  .contact .pill-container {
+    margin-top: -25px;
+  }
+  .contact .pill-container .wpcf7-form-control {
+    gap: 10px;
+  }
+  .contact .pill-container .wpcf7-form-control .wpcf7-list-item {
+    line-height: 100%;
+    height: 38px;
+  }
+  .contact .pill-container .wpcf7-form-control .wpcf7-list-item label {
+    line-height: 100%;
+  }
+  .contact .pill-container .wpcf7-form-control .wpcf7-list-item input {
+    height: 0;
+  }
+  .contact .pill-container .wpcf7-form-control .wpcf7-list-item span {
+    height: 38px;
+    font-size: 18px;
+    line-height: 18;
+    padding: 8px 20px 3px;
+    margin-right: 0;
+  }
+  .contact .radio-buttons .wpcf7-form-control {
+    width: 100%;
+  }
+  .contact .accept span {
+    font-size: 18px;
+    line-height: 120%;
+  }
 }

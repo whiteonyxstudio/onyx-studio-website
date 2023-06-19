@@ -29,3 +29,20 @@
 .header .button {
   margin-left: 50px;
 }
+@media (max-width: 991.98px) {
+  .header .navigation {
+    display: none;
+  }
+}
+@media (max-width: 575.98px) {
+  .header {
+    height: 70px;
+  }
+  .header .button {
+    display: none;
+  }
+  .header .menu-open svg {
+    width: 46px;
+    height: 46px;
+  }
+}

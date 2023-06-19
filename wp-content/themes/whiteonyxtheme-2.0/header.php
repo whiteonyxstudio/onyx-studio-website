@@ -19,7 +19,6 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		<meta http-equiv="x-ua-compatible" content="ie=edge">
 
-		<title>Blog</title>
 		<link rel="icon" type="image/x-icon" href="../assets/images/icon/favicon.jpg">
 
 		<!-- fraimwork - css include -->
@@ -40,7 +39,7 @@
 
 		<!-- custom - css include -->
 		<link rel="stylesheet" type="text/css" href="../assets/styles/style.css">
-	<?php wp_header(); ?>
+	<?php wp_head(); ?>
 	</head>
 
 
@@ -48,15 +47,24 @@
 
 		<header class="sec header">
 			
-			<img src="../assets/images/studio-logo.svg" alt="" class="logo">
-			<ul class="navigation">
-				<li><a href="home-page-2.html">Home</a></li>
-				<li><a href="portfolio.html">Portfolio</a></li>
-				<li><a href="about.html">About</a></li>
-				<li><a href="blog.html">Blog</a></li>
-				
-				
-			</ul>
+			<img src="<?php echo get_template_directory_uri() ?>/assets/images/studio-logo.svg" alt="" class="logo">
+			<?php 
+      	wp_nav_menu( [
+      		'theme_location'  => 'main_menu',
+      		'container'       => false, 
+      		'menu_id'         => '',
+      		'echo'            => true,
+      		'fallback_cb'     => 'wp_page_menu',
+      		'before'          => '',
+      		'after'           => '',
+      		'link_before'     => '',
+      		'link_after'      => '',
+      		'items_wrap'      => '<ul class="navigation" >%3$s</ul>',
+      		'depth'           => 0,
+      		'walker'          => '',
+      	] );
+      ?>
+			
 				<a href="" class="button">Contact us</a>
 				<span class="menu-open">
 					<svg width="54" height="54" viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg">

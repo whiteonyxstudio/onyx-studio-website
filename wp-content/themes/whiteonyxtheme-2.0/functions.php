@@ -153,7 +153,7 @@ function studio_main_theme_scripts() {
 	wp_enqueue_style( 'bootstrap-style', get_template_directory_uri() .'/assets/css/bootstrap.min.css' );
 	
 	wp_enqueue_style( 'slick-bundle-style', get_template_directory_uri() .'/assets/css/slick-bundle.css', rand(111,9999), 'all' );
-  wp_enqueue_style( 'main-style', get_template_directory_uri() .'/assets/style/style.css', rand(111,9991), 'all' );
+  wp_enqueue_style( 'main-style', get_template_directory_uri() .'/assets/styles/style.css', rand(111,9991), 'all' );
   
 
 	wp_deregister_script( 'jquery-core' );
@@ -172,7 +172,7 @@ add_action( 'wp_enqueue_scripts', 'studio_main_theme_scripts' );
 
 
 
-add_action( 'get_footer', 'prefix_add_footer_styles' );
+// add_action( 'get_footer', 'prefix_add_footer_styles' );
 
 /**
  * Remove Gutenberg Library.
@@ -311,6 +311,7 @@ function add_custom_post_types(){
 		'publicly_queryable' => true,
 		'show_ui'            => true,
 		'show_in_menu'       => true,
+		'show_in_rest'       => true,
 		'menu_icon'          =>'dashicons-rest-api',
 		'query_var'          => true,
 		'rewrite'            => true,
@@ -319,7 +320,7 @@ function add_custom_post_types(){
 		'hierarchical'       => false,
 		'taxonomies'         => array('service-category'),
 		'menu_position'      => null,
-		'supports'           => array('title','excerpt','template','custom-fields','thumbnail', 'slug', 'page-attributes'),
+		'supports'           => array('title','excerpt','template','custom-fields','thumbnail', 'slug', 'page-attributes','editor'),
 	) );
 
 	register_post_type('testemonials', array(
@@ -413,48 +414,82 @@ function example_cats_related_post() {
 								<a class="btn_text text-uppercase" href="<?php the_permalink(); ?>"><span>Read More</span><i class="fal fa-long-arrow-right"></i></a>
 							</div>
 						</div>
-
         <?php endwhile;
         // Restore original Post Data
         wp_reset_postdata();
     endif;
 }
 
-if( function_exists('acf_add_options_page') ) {
-	
-	acf_add_options_page(array(
-		'page_title' 	=> 'Agency Global Setup',
-		'menu_title'	=> 'Agency Setup',
-		'menu_slug' 	=> 'agency-global-setup',
-		'capability'	=> 'edit_posts',
-		'redirect'		=> false
-	));
-}
-
-
 
 function related_posts_by_taxonomy( $post_id, $taxonomy, $args=array() ) {
     $query = new WP_Query();
     $terms = wp_get_object_terms( $post_id, $taxonomy );
-
     // Make sure we have terms from the current post
     if ( count( $terms ) ) {
         $post_ids = get_objects_in_term( $terms[0]->term_id, $taxonomy );
         $post = get_post( $post_id );
         $post_type = get_post_type( $post );        
-
         $args = wp_parse_args( $args, array(
                 'post_type' => $type,
                 'post__in' => $post_ids,
                 'taxonomy' => $taxonomy,
                 'term' => $terms[0]->slug,
-
             ) );
         $query = new WP_Query( $args );
     }
-
     // Return our results in query form
     return $query;
+}
+
+
+if( function_exists('acf_add_options_page') ) {
+    
+  acf_add_options_page(array(
+      'page_title'    => 'Global Fields',
+      'menu_title'    => 'Global Fields',
+      'menu_slug'     => 'global-fields',
+      'capability'    => 'edit_posts',
+      'redirect'      => false
+  ));
+  
+  acf_add_options_sub_page(array(
+      'page_title'    => 'Header Fields',
+      'menu_title'    => 'Header Fields',
+      'parent_slug'   => 'global-fields',
+  ));
+  
+  acf_add_options_sub_page(array(
+      'page_title'    => 'Footer Fields',
+      'menu_title'    => 'Footer Fields',
+      'parent_slug'   => 'global-fields',
+  ));
+
+	acf_add_options_sub_page(array(
+      'page_title'    => 'Theme Footer Settings',
+      'menu_title'    => 'Footer',
+      'parent_slug'   => 'global-fields',
+  ));
+
+	acf_add_options_sub_page(array(
+      'page_title'    => 'Services Archive Fields',
+      'menu_title'    => 'Services Archive Fields',
+      'parent_slug'   => 'global-fields',
+  ));
+
+	acf_add_options_sub_page(array(
+      'page_title'    => 'Portfolio Archive Fields',
+      'menu_title'    => 'Portfolio Archive Fields',
+      'parent_slug'   => 'global-fields',
+  ));
+
+	acf_add_options_sub_page(array(
+      'page_title'    => 'Blog Archive Fields',
+      'menu_title'    => 'Blog Archive Fields',
+      'parent_slug'   => 'global-fields',
+  ));
+
+	
+
 }
 
 

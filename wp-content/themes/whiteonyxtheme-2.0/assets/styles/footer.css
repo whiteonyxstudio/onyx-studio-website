@@ -54,3 +54,106 @@
 .footer .footer-extra .copyright {
   margin-left: auto;
 }
+@media (max-width: 575.98px) {
+  .footer {
+    padding: 30px 19px ;
+    column-gap: 0;
+    row-gap: 0px;
+  }
+  .footer .logo {
+    margin-bottom: 30px;
+  }
+  .footer .col h3 {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .footer .col ul li a {
+    display: inline-block;
+    font-size: 18px;
+    line-height: 22px;
+    background-position: center;
+  }
+  .footer .col-first {
+    width: 50%;
+    margin-bottom: 30px;
+  }
+  .footer .col-second {
+    width: 50%;
+    margin-bottom: 30px;
+  }
+  .footer .col-third {
+    width: 100%;
+    order: 4;
+  }
+  .footer .col-third h3 {
+    display: none;
+  }
+  .footer .col-third ul {
+    display: flex;
+    justify-content: space-between;
+  }
+  .footer .col-third .behance {
+    font-size: 0;
+    color: 0;
+    width: 50px;
+    height: 50px;
+    background-repeat: no-repeat;
+    background-image: url(../images/behance.svg);
+  }
+  .footer .col-third .linkedin {
+    font-size: 0;
+    color: 0;
+    width: 50px;
+    height: 50px;
+    background-repeat: no-repeat;
+    background-image: url(../images/linkedin.svg);
+  }
+  .footer .col-third .instagram {
+    font-size: 0;
+    color: 0;
+    width: 50px;
+    height: 50px;
+    background-repeat: no-repeat;
+    background-image: url(../images/instagram.svg);
+  }
+  .footer .col-third .telegram {
+    font-size: 0;
+    color: 0;
+    width: 50px;
+    height: 50px;
+    background-repeat: no-repeat;
+    background-image: url(../images/telegram.svg);
+  }
+  .footer .col-third .dribble {
+    font-size: 0;
+    color: 0;
+    width: 50px;
+    height: 50px;
+    background-repeat: no-repeat;
+    background-image: url(../images/dribble.svg);
+  }
+  .footer .line {
+    order: 5;
+    margin-top: 0;
+  }
+  .footer .col-fourth {
+    margin-bottom: 50px;
+  }
+  .footer .footer-extra {
+    order: 6;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+    margin-bottom: 0;
+  }
+  .footer .footer-extra span {
+    font-size: 16px;
+    line-height: 100%;
+  }
+  .footer .footer-extra .copyright {
+    width: 100%;
+    display: block;
+    text-align: center;
+  }
+}

@@ -1,0 +1,49 @@
+.portfolio-archive-head {
+  background: #F6F7F8;
+}
+.portfolio-archive-head .page-header {
+  color: black;
+}
+.portfolio-archive-head p {
+  max-width: 740px;
+}
+.portfolio-archive-head .pills-wrapper .pill {
+  border-color: black;
+  color: black;
+}
+.portfolio-archive-head .pills-wrapper .pill.active {
+  background: black;
+  color: white;
+}
+@media (max-width: 1199.98px) {
+  .portfolio-archive-head .page-header {
+    font-size: 80px;
+    line-height: 100%;
+  }
+}
+@media (max-width: 991.98px) {
+  .portfolio-archive-head .pills-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+  .portfolio-archive-head .pills-wrapper .pill {
+    padding: 10px 20px 6px ;
+  }
+}
+@media (max-width: 575.98px) {
+  .portfolio-archive-head .page-header {
+    font-size: 50px;
+    line-height: 100%;
+  }
+  .portfolio-archive-head p {
+    font-size: 20px;
+    line-height: 120%;
+  }
+  .portfolio-archive-body {
+    margin-bottom: 0;
+  }
+}
+.portfolio-cta {
+  background: #4C1092;
+}

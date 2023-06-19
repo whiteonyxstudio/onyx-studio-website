@@ -1,5 +1,32 @@
+.top-benefits.single-service {
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+@media (max-width: 575.98px) {
+  .top-benefits.single-service {
+    grid-template-columns: 1fr;
+  }
+  .secondary-hero .service-description {
+    font-size: 23px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}
+.service-hero {
+  background: radial-gradient(120.28% 231.41% at 21.57% -56.12%, #000000 61.98%, #2400ff 80.73%, #ffffff 100%);
+}
 .important-points {
-  background: black;
+  position: relative;
+  overflow: hidden;
+}
+.important-points .bg {
+  position: absolute;
+  width: 150%;
+  height: 150%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  background: radial-gradient(93.98% 154.1% at 74.51% -6.73%, #000000 48.44%, #2400ff 75.33%, #fefefe 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
 }
 .important-points-grid {
   display: grid;
@@ -27,6 +54,40 @@
   line-height: 120%;
   color: #BAC3C9;
   margin-bottom: 0;
+}
+@media (max-width: 1600.98px) {
+  .important-points .section-header {
+    font-size: 80px;
+    line-height: 100%;
+  }
+}
+@media (max-width: 1366.98px) {
+  .important-points-grid-item {
+    padding: 25px 25px;
+  }
+}
+@media (max-width: 1280.98px) {
+  .important-points-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .important-points-grid-item {
+    padding: 25px 25px;
+  }
+}
+@media (max-width: 575.98px) {
+  .important-points {
+    padding-bottom: 30px;
+  }
+  .important-points .section-header {
+    font-size: 50px;
+    line-height: 100%;
+  }
+  .important-points-grid {
+    grid-template-columns: 1fr;
+  }
+  .important-points-grid-item {
+    padding: 15px 15px;
+  }
 }
 .quote {
   background: black;
@@ -66,4 +127,27 @@
   text-align: center;
   color: black;
   font-weight: 600;
+}
+@media (max-width: 575.98px) {
+  .quote {
+    padding-bottom: 30px;
+  }
+  .quote .section-header {
+    font-size: 50px;
+    line-height: 100%;
+  }
+  .quote .quote-form {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 15px;
+    margin-top: 30px;
+  }
+  .quote .quote-form-input {
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .quote .quote-form .submit {
+    text-transform: uppercase;
+  }
 }

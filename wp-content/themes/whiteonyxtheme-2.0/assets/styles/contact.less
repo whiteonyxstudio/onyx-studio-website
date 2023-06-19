@@ -29,6 +29,7 @@
     display: inline-block;
     list-style: none;
     li{
+      margin-bottom: 15px;
       a{
         font-size: 18px;
         line-height: 22px;
@@ -48,15 +49,18 @@
     width: 100%;
     background: #FFFFFF;
     border-radius: 50px;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
     padding: 18px 60px;
     border: none;
     outline: none;
     font-size: 26px;
     line-height: 100%;
     height: 54px;
+    text-transform: none;
   }
-
+  .wpcf7-form-control-wrap{
+    font-family: sans-serif;
+  }
   .pill-container{
     max-width:  640px;
     display: flex;
@@ -66,7 +70,46 @@
 	  	opacity: 0;
 	  	width: 0;
 	  }
-
+    .wpcf7-form-control{
+      display: flex;
+      flex-wrap: wrap;
+      row-gap: 20px;
+      .wpcf7-form-control-wrap{
+        font-family: sans-serif;
+      }
+      .wpcf7-list-item{
+        display: flex;
+        input{
+          order:1;
+          
+        }
+        input[type="checkbox"]:checked + span {
+            color: black;
+            background-color: white;
+        }
+        
+        span{
+          order: 2;
+          display: flex;
+	        align-items: center;
+	        justify-content:center;
+          margin-right: 15px;
+          height: 54px;
+          padding: 19px 60px 15px;
+	        cursor: pointer;
+	        background: transparent;
+	        border: 1px solid white;
+	        border-radius: 50px;
+          color: white;
+          font-size: 26px;
+          line-height: 100%;
+	        &:hover {
+	        	background: white;
+	        	color: black;
+	        }
+        }
+      }
+    }
     .selector{
       display: flex;
 	    align-items: center;
@@ -87,32 +130,39 @@
 	    }
     }
   }
+
   .radio-buttons{
-    display: flex;
-    flex-wrap: wrap;
-    width: 600px;
-    row-gap: 20px;
-    &-item{
+    .wpcf7-form-control{
+      display: flex;
+      flex-wrap: wrap;
+      width: 600px;
+      row-gap: 20px;
+    }
+   
+    &-item,.wpcf7-list-item{
       display: flex;
       align-items: center;
       width: 50%;
-      label{
+      label,.wpcf7-list-item-label{
+
         font-size: 30px;
         line-height: 100%;
         color: #FFFFFF;
-        font-weight: 600;
-        font-size: 26px;
-              line-height: 100%;
+        font-weight: 500;
+       
+        line-height: 120%;
       }
 
       [type="radio"]:checked,
       [type="radio"]:not(:checked) {
-          position: absolute;
-          left: -9999px;
+        position: absolute;
+        left: -9999px;
       }
 
       [type="radio"]:checked + label,
-      [type="radio"]:not(:checked) + label
+      [type="radio"]:not(:checked) + label,
+      [type="radio"]:checked + .wpcf7-list-item-label,
+      [type="radio"]:not(:checked) + .wpcf7-list-item-label
       {
           position: relative;
           padding-left: 28px;
@@ -123,7 +173,9 @@
       }
 
       [type="radio"]:checked + label:before,
-      [type="radio"]:not(:checked) + label:before {
+      [type="radio"]:checked + .wpcf7-list-item-label:before,
+      [type="radio"]:not(:checked) + label:before,
+      [type="radio"]:not(:checked) + .wpcf7-list-item-label:before{
           content: '';
           position: absolute;
           left: 0;
@@ -136,7 +188,9 @@
       }
 
       [type="radio"]:checked + label:after,
-      [type="radio"]:not(:checked) + label:after {
+      [type="radio"]:not(:checked) + label:after,
+      [type="radio"]:checked + .wpcf7-list-item-label:after,
+      [type="radio"]:not(:checked) + .wpcf7-list-item-label:after {
           content: '';
           width: 12px;
           height: 12px;
@@ -149,24 +203,27 @@
           transition: all 0.2s ease;
       }
 
-      [type="radio"]:not(:checked) + label:after {
+      [type="radio"]:not(:checked) + .wpcf7-list-item-label:after {
           opacity: 0;
           -webkit-transform: scale(0);
           transform: scale(0);
       }
-      [type="radio"]:checked + label:after {
+      [type="radio"]:checked + .wpcf7-list-item-label:after {
           opacity: 1;
           -webkit-transform: scale(1);
           transform: scale(1);
       }
     }
   }
+
+
   .file-wrapper{
     input{
       
     }
   }
   .accept{
+    margin-top: 40px;
     input {
       padding: 0;
       height: initial;
@@ -175,18 +232,15 @@
       display: none;
       cursor: pointer;
     }
-    label {
+    span {
       position: relative;
       cursor: pointer;
       font-weight: 400;
-      font-size: 20px;
+      font-size: 24px;
       line-height: 100%;
-      /* or 20px */
-
-
       color: #BAC3C9;
     }
-    label:before {
+     .wpcf7-list-item-label:before {
       content:'';
       -webkit-appearance: none;
       background-color: transparent;
@@ -200,7 +254,8 @@
       cursor: pointer;
       margin-right: 10px;
     }
-    input:checked + label:after {
+    
+    input:checked + .wpcf7-list-item-label:after {
       content: '';
       display: block;
       position: absolute;
@@ -220,5 +275,145 @@
     font-size: 26px;
     line-height: 120%;
     font-size: 26px;
+  }
+}
+
+
+@media (max-width: 1440.98px) { 
+  .contact{
+    .page-header{
+      font-size: 80px;
+    }
+  }
+}
+
+////
+@media (max-width: 1366.98px) { 
+  .contact{
+    .row{
+      .col{
+        width: 50%;
+        flex: none;
+      }
+    }
+    h2{
+      font-size: 35px;
+    }
+  }
+}
+////
+@media (max-width: 1199.98px) { 
+  .contact{
+    .page-header{
+      font-size: 60px;
+    }
+    .mail-link{
+      font-size: 25px;
+      line-height: 120%;
+    }
+    .row{
+      padding: 50px 0;
+      .col{
+        width: 50%;
+        flex: none;
+      }
+      .col:first-child{
+        width: 45%;
+      }
+      .col:last-child{
+        width: 55%;
+      }
+    }
+    h2{
+      font-size: 35px;
+    }
+  }
+}
+/////
+@media (max-width: 991.98px) { 
+  
+}
+@media (max-width: 767.98px) { 
+
+}
+/////
+@media (max-width: 575.98px) { 
+  .contact{
+    padding-top: 0px;
+    .page-header{
+      font-size: 50px;
+    }
+    .mail-link{
+      font-size: 20px;
+      line-height: 120%;
+      margin-bottom: 25px;
+    }
+    ul li{
+      margin-bottom: 10px;
+    }
+    .row{
+      padding: 50px 0;
+      flex-wrap: wrap;
+      .col{
+        width: 100%;
+        flex: none;
+      }
+      .col:first-child{
+        width: 100%;
+      }
+      .col:last-child{
+        width: 100%;
+      }
+    }
+    h2{
+      font-weight: 600;
+      font-size: 30px;
+      margin-bottom: 30px;
+    }
+    .text-input{
+      line-height: 600;
+      font-size: 18px;
+      line-height: 100%;
+      padding: 14px 30px;
+    }
+    .button{
+      margin-top: 20px;
+      padding-left: 20px;
+      padding-right: 20px;
+      outline: none;
+      border: none;
+      line-height: 100%;
+      font-weight: 600;
+    }
+  }
+  .contact .pill-container{
+    margin-top: -25px;
+  }
+  .contact .pill-container .wpcf7-form-control{
+    gap: 10px;
+  }
+  .contact .pill-container .wpcf7-form-control .wpcf7-list-item{
+    line-height: 100%;
+    height: 38px;
+    label{
+      line-height: 100%;
+    }
+  }
+  .contact .pill-container .wpcf7-form-control .wpcf7-list-item input{
+    height: 0;
+  }
+  .contact .pill-container .wpcf7-form-control .wpcf7-list-item span{
+    height: 38px;
+    font-size: 18px;
+    line-height: 18;
+    padding: 8px 20px 3px;
+    margin-right: 0;
+  }
+  .contact .radio-buttons .wpcf7-form-control{
+    width: 100%;
+  }
+  .contact .accept span{
+    font-size: 18px;
+    line-height: 120%;
   }
 }

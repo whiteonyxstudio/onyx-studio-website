@@ -1,521 +1,424 @@
   <?php get_header(); ?>
 
-			<!-- main body - start
-			================================================== -->
-			<main>
+		<main>
 
-				<!-- breadcrumb_section - start
-				================================================== -->
-				<section class="service-category-hero">
-					<div class="container custom-flex">
-						<div class="row">
-							<div class="col-xxl-10 ">
-								<h1><?php the_field('s23_hero_title'); ?></h1>
-								<p><?php the_field('s23_hero_description'); ?></p>
-								<a class="btn btn_border border_dark text-uppercase" href="<?php the_field('s25_agency_start_project_link', 'option'); ?>">Start a project</a>
-								
-							</div>
-						</div>
-					</div>
-				</section>
-				
-				<section class="breadcrumb_section service-main">
-					<div class="container">
-						<div class="row">
-							<div class="col-12 col-md-10 col-lg-9">
-								<h1 class="page_title">
-									<span class="d-block"><?php the_field('s23_hero_title'); ?></span>
-								</h1>
-								<p>
-									<?php the_field('s23_hero_description'); ?>
-								</p>
-								<div data-animation="fadeInUp2" data-delay=".6s">
-									<a class="btn btn_white" href="<?php the_field('s25_agency_start_project_link', 'option'); ?>">Start a project</a>
+      <section class="sec secondary-hero service-hero">
+        <h1 class="page-header small whites"><?php the_field('s09_page_title'); ?></h1>
+        <p class="service-description">
+          There are many reasons why people end up on this page including:
+        </p>
+        <div class="top-benefits single-service">
+
+         <?php if( have_rows('s09_key_advantages') ): ?>
+
+              <?php while( have_rows('s09_key_advantages') ): the_row(); 
+                ?>
+                  <div class="top-benefits-item">
+                    <h3><b><?php the_sub_field('advantage_header'); ?><br></b><?php the_sub_field('advantage_description'); ?></h3>
+                    
+                  </div>
+              <?php endwhile; ?>
+
+          <?php endif; ?>
+         
+        </div>
+        
+        <?php 
+        $link = get_field('s09_button');
+        if( $link ): 
+            $link_url = $link['url'];
+            $link_title = $link['title'];
+            $link_target = $link['target'] ? $link['target'] : '_self';
+            ?>
+            <a class="button full white" href="<?php echo esc_url( $link_url ); ?>" target="<?php echo esc_attr( $link_target ); ?>"><?php echo esc_html( $link_title ); ?></a>
+        <?php endif; ?>
+
+        
+        <div class="descriptors">
+          <div class="descriptors-item">
+            <img src="<?php echo get_template_directory_uri() ?>/assets/images/webflow-services.svg" alt="">
+            <p><?php the_field('s09_icon_description_1'); ?></p>
+          </div>
+          <div class="descriptors-item">
+            <img src="<?php echo get_template_directory_uri() ?>/assets/images/agency-team-services.svg" alt="">
+            <p><?php the_field('s09_icon_description_2'); ?></p>
+          </div>
+        </div>
+      </section>
+
+      <section class="sec about-text">
+        <h2 class="section-header">
+          <?php the_field('s16_section_header'); ?>
+        </h2>
+        <p class="par-1"><?php the_field('s16_paragraph_1'); ?></p>
+        <p class="par-2"><?php the_field('s16_paragraph_2'); ?></p>
+        <?php 
+        $link = get_field('s16_section_button');
+        if( $link ): 
+            $link_url = $link['url'];
+            $link_title = $link['title'];
+            $link_target = $link['target'] ? $link['target'] : '_self';
+            ?>
+            <a class="button" href="<?php echo esc_url( $link_url ); ?>" target="<?php echo esc_attr( $link_target ); ?>"><?php echo esc_html( $link_title ); ?></a>
+        <?php endif; ?>
+        <div class="additional-info">
+          <h3><?php the_field('s16_sub_header'); ?></h3>
+          <p><?php the_field('s16_paragraph_3'); ?></p>
+          <p class="par-4"><?php the_field('s16_paragraph_4'); ?></p>
+        </div>
+        <div class="industries-wrapper">
+            <?php if( have_rows('s16_advantages_grid') ): ?>
+              <?php while( have_rows('s16_advantages_grid') ): the_row(); 
+                  ?>
+                  <div class="industries-wrapper-item">
+                    <?php the_sub_field('number'); ?>
+                    <?php 
+                    $image = get_sub_field('image');
+                    if( !empty( $image ) ): ?>
+                        <img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+                    <?php endif; ?>
+                    <div class="content">
+                      <h3><?php the_sub_field('header'); ?></h3>
+                        <p><?php the_sub_field('text'); ?></p>
+                    </div>
+                  </div>
+              <?php endwhile; ?>
+            <?php endif; ?>
+        </div>
+      </section>
+
+      <section class="sec testemonials">
+        <h2 class="section-header white">
+          DON’T JUST TAKE OUR WORD FOR IT.
+        <b>SEE WHAT OUR HAPPY CLIENTS HAVE TO SAY:</b>
+        </h2>
+        <div class="testemonials-slider">
+
+
+        <?php 
+        
+            // параметры по умолчанию
+            $my_posts = get_posts( array(
+            	'numberposts' => 15,
+            	'category'    => 0,
+            	'orderby'     => 'date',
+            	'order'       => 'DESC',
+            	'include'     => array(),
+            	'exclude'     => array(),
+            	'meta_key'    => '',
+            	'meta_value'  =>'',
+            	'post_type'   => 'testemonials',
+            	'suppress_filters' => true, // подавление работы фильтров изменения SQL запроса
+            ) );
+            
+            global $post;
+            
+            foreach( $my_posts as $post ){
+            	setup_postdata( $post );
+              
+            	?>
+                <div class="testemonials-slider-item">
+                  <div class="client">
+                    <?php 
+                        $image = get_field('s11_client_image');
+                        if( !empty( $image ) ): ?>
+                        <img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+                    <?php endif; ?>
+                    <h3><?php the_field('s11_client_name'); ?></h3>
+                    <p><?php the_field('s11_client_position'); ?></p>
+                  </div>
+                  <div class="quote">
+                    <p>“<?php the_field('s11_quote'); ?>”</p>
+                  </div>
+                  <div class="logo">
+                    <?php 
+                        $image = get_field('s11_logo');
+                        if( !empty( $image ) ): ?>
+                        <img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+                    <?php endif; ?>
+                  </div>
+                  <div class="button-wrapper">
+                    <a href="/contact-us" class="button white">Become Our Client!</a>
+                  </div>
+                </div>  
+              <?php
+            }
+
+            wp_reset_postdata(); // сброс
+        
+        ?>
+
+        
+          
+        </div>
+      </section>
+
+      <section class="sec why-service">
+        <h2 class="section-header">
+          <?php the_field('s15_section_header'); ?>
+        </h2>
+        <p><?php the_field('s15_section_description'); ?></p>
+        <div class="why-service-grid">
+          <?php if( have_rows('s15_section_grid') ): ?>
+              <?php while( have_rows('s15_section_grid') ): the_row(); 
+                  ?>
+                  <div class="why-service-grid-item">
+                    <?php 
+                    $image = get_sub_field('icon');
+                    if( !empty( $image ) ): ?>
+                        <img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+                    <?php endif; ?>
+                    <h3><?php the_sub_field('header'); ?></h3>
+                    <p><?php the_sub_field('description'); ?></p>
+                  </div>
+              <?php endwhile; ?>
+          <?php endif; ?>
+        </div> 
+
+        <?php 
+        $link = get_field('s15_full_width_section_button');
+        if( $link ): 
+            $link_url = $link['url'];
+            $link_title = $link['title'];
+            $link_target = $link['target'] ? $link['target'] : '_self';
+            ?>
+            <a class="button full" href="<?php echo esc_url( $link_url ); ?>" target="<?php echo esc_attr( $link_target ); ?>"><?php echo esc_html( $link_title ); ?></a>
+        <?php endif; ?>
+      </section>
+
+      <section class="sec important-points">
+        <div class="bg"></div>
+
+        <h2 class="section-header white">
+          <?php the_field('s22_section_header'); ?>
+        </h2>
+        
+        <div class="important-points-grid">
+          <?php if( have_rows('s22_honest_grid') ): ?>
+
+              <?php while( have_rows('s22_honest_grid') ): the_row(); 
+                  ?>
+                 <div class="important-points-grid-item">
+                  <?php 
+                  $image = get_sub_field('image');
+                  if( !empty( $image ) ): ?>
+                      <img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+                  <?php endif; ?>
+                  <h3><?php the_sub_field('header'); ?></h3>
+                  <p><?php the_sub_field('description'); ?></p>
+                </div>
+              <?php endwhile; ?>
+          <?php endif; ?>
+
+        </div>
+      </section>
+
+      <section class="sec quote">
+        <h2 class="section-header white">
+          Get a Free Consultation <br> and Project quote
+        </h2>
+        <p class="white" >Don't wait any longer to take your next steps - schedule your free consultation today and receive personalized advice and a quote tailored to your specific project in under 24 hours!</p>
+        <from class="quote-form">
+          <input type="text" class="quote-form-input" placeholder="Your Full Name">
+          <input type="text" class="quote-form-input" placeholder="Your Email">
+          <input type="text" class="quote-form-input submit" value="GET Quote!">
+        </from>
+      </section>
+
+
+
+
+      <section class="sec portfolio-home no-sec">
+				<div class="portfolio-home-wrapper">
+					<h2 class="section-header">CHECK OUR <br> LATEST PROJECTS</h2>
+				</div>
+				<p >We help clients around the world create more engaging experiences through design.</p>
+			</section>
+
+			<section class="portfolio-secondary">
+				<div class="portfolio-secondary-wrapper">
+
+        <?php 
+        
+            // параметры по умолчанию
+            $my_posts = get_posts( array(
+            	'numberposts' => 2,
+            	'category'    => 0,
+            	'orderby'     => 'date',
+            	'order'       => 'DESC',
+            	'include'     => array(),
+            	'exclude'     => array(),
+            	'meta_key'    => '',
+            	'meta_value'  =>'',
+            	'post_type'   => 'portfolio',
+            	'suppress_filters' => true, // подавление работы фильтров изменения SQL запроса
+            ) );
+            
+            global $post;
+            
+            foreach( $my_posts as $post ){
+            	setup_postdata( $post );
+              $thumbnail_id = get_post_thumbnail_id( $post->ID );
+                $alt = get_post_meta($thumbnail_id, '_wp_attachment_image_alt', true);   
+								$url = get_the_post_thumbnail_url($featured_post );
+            	?>
+                <div class="portfolio-secondary-item">
+									<a href="<?php the_permalink(); ?>">
+										<img  src="<?php echo $url; ?>" alt="<?php echo $alt; ?>" loading="lazy">
+									</a>
+									<a href="<?php the_permalink(); ?>">
+										<h3><?php the_title(); ?></h3>
+									</a>
+									<p><?php echo get_the_excerpt(); ?></p>
 								</div>
-							</div>
-						</div>
-					</div>
-				</section>
-				<!-- breadcrumb_section - end
-				================================================== -->
+              <?php
+            }
 
-				<!-- steps_section - start
-				================================================== -->
-				<section class="stages_section  section_space mt-0 ">
-					<div class="decoration_item service_sec_bg"></div>
-					<div class="container">
-						<div class="row">
-							<div class="col-lg-12">
-								<div class="section_title style_2">
-									<h2 class="small_title">
-										<?php the_field('s01_small_header'); ?>
-										<span class="line"></span>
-									</h2>
-								</div>
-							</div>
-							<div class="col-lg-10">
-								<div class="section_title style_2">
-									<h3 class="big_title text_effect_wrap">
-										<span class="text_effect_wrap1">
-											<span class="text_effect_wrap2">
-												<span class="text_effect_wrap3 text-break"><?php the_field('s01_largeheader'); ?></span>
-											</span>
-										</span>
-										<span class="text_effect_wrap1">
-											<span class="text_effect_wrap2">
-												<span class="text_effect_wrap3 text-break"><?php the_field('s01_largeheader_2'); ?></span>
-											</span>
-										</span>
-									</h3>
-								</div>
-							</div>
-							<div class="col-lg-12">
-								<div class="development-steps">
-									<?php if( have_rows('s01_steps_table') ): ?>
+            wp_reset_postdata(); // сброс
+        
+        ?>
+				</div>
+			</section>
+      <section class="sec steps">
 
-									    <?php $counter=1; while( have_rows('s01_steps_table') ): the_row(); 
-									        ?>
-									       	<div class="development-steps-item">
-														<h4><sup> 0<?php echo $counter; ?> </sup><?php the_sub_field('step_name'); ?></h4>
-														<p><?php the_sub_field('step_text'); ?></p>
-													</div>
-									    <?php $counter++; endwhile; ?>
+        <h2 class="section-header"><?php the_field('s14_steps_header'); ?></h2>
+        <p><?php the_field('s14_steps_description'); ?></p>
+        
+        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Research & Planning</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Design & Development</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Delivery & Support</button>
+          </li>
 
-									<?php endif; ?>
-								</div>
-							</div>
-						</div>
-						
-					</div>
-				</section>
-				<!-- steps_section - end
-				================================================== -->
+        </ul>
+        <div class="tab-content" id="pills-tabContent">
+          <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
+            <div class="steps-table">
+              <div class="steps-table-row head">
+                <div class="stage"><h3>STAGE</h3></div>
+                <div class="works"><h3>WORKS</h3></div>
+                <div class="results"><h3>RESULTS</h3></div>
+              </div>
+              <div class="steps-table-row">
+                <div class="stage">
+                  <span>01</span>
+                  <h4>Briefing</h4>
+                </div>
+                <div class="works"><p>Marketing research, market analysis, and business planning to determine the front of the project</p></div>
+                <div class="results"><p>Defining tasks and deadlines for their implementation</p></div>
+              </div>
+              <div class="steps-table-row">
+                <div class="stage">
+                  <span>02</span>
+                  <h4>Reaseach and Marketing Strategy</h4>
+                </div>
+                <div class="works"><p>Preparation of preliminary design models for further development of the corporate portal project</p></div>
+                <div class="results"><p>Ready-made product concept that can be taken into development</p></div>
+              </div>
 
-			<!-- about_section - start
-				================================================== -->
-				<section class="about_section  section_space   mt-0 black-bg">
-					<div class="container">
-						<div class="row">
+              <div class="steps-table-row">
+                <div class="stage">
+                  <span>03</span>
+                  <h4>Design</h4>
+                </div>
+                <div class="works"><p>Creation of visual and interface solutions for the project of the corporate site, as well as their coordination with the client</p></div>
+                <div class="results"><p>Ready UI/UX for the project</p></div>
+              </div>
+            </div> <!-- steps-table -->
+          </div>
+          <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
+            <div class="steps-table">
+              <div class="steps-table-row head">
+                <div class="stage"><h3>STAGE</h3></div>
+                <div class="works"><h3>WORKS</h3></div>
+                <div class="results"><h3>RESULTS</h3></div>
+              </div>
+              <div class="steps-table-row">
+                <div class="stage">
+                  <span>01</span>
+                  <h4>Briefing</h4>
+                </div>
+                <div class="works"><p>Marketing research, market analysis, and business planning to determine the front of the project</p></div>
+                <div class="results"><p>Defining tasks and deadlines for their implementation</p></div>
+              </div>
+              <div class="steps-table-row">
+                <div class="stage">
+                  <span>02</span>
+                  <h4>Reaseach and Marketing Strategy</h4>
+                </div>
+                <div class="works"><p>Preparation of preliminary design models for further development of the corporate portal project</p></div>
+                <div class="results"><p>Ready-made product concept that can be taken into development</p></div>
+              </div>
 
-							<div class="col-lg-12">
-								<div class="section_title style_2">
-									<h2 class="small_title">
-										<?php the_field('s04_small_header'); ?>
-										<span class="line"></span>
-									</h2>
-								</div>
-							</div>
-							<div class="col-lg-7">
-									
-									<div class="section_title style_2">
-										<h3 class="big_title text_effect_wrap">
-											<span class="text_effect_wrap1">
-												<span class="text_effect_wrap2">
-													<span class="text_effect_wrap3 text-break"><?php the_field('s04_large_header_1_row'); ?></span>
-												</span>
-											</span>
-											<span class="text_effect_wrap1">
-												<span class="text_effect_wrap2">
-													<span class="text_effect_wrap3 text-break"><?php the_field('s04_large_header_2_row'); ?></span>
-												</span>
-											</span>
-										</h3>
-									</div>
-							</div>
-							<div class="col-lg-5 ">
-								<p class="p-0  mt-0">
-									<?php the_field('s04_section_content'); ?>
-								</p>
-								
-								<a class="btn_text btn_text_white" href="<?php the_field('s04_button_url'); ?>">
-									<span><?php the_field('s04_button_text'); ?></span> 
-									<svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path d="M10 0V7.50063H9.16833V1.42131L0.587991 10L0 9.41015L8.57868 0.833125H2.49418V0H10Z" fill="white"></path>
-									</svg>
-								</a>
-							</div>
-							
-						</div>
-					</div>
-				</section>
-				<!-- about_section - end
-				================================================== -->
+              <div class="steps-table-row">
+                <div class="stage">
+                  <span>03</span>
+                  <h4>Design</h4>
+                </div>
+                <div class="works"><p>Creation of visual and interface solutions for the project of the corporate site, as well as their coordination with the client</p></div>
+                <div class="results"><p>Ready UI/UX for the project</p></div>
+              </div>
+            </div> <!-- steps-table -->
+          </div>
+          <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab" tabindex="0">
+            <div class="steps-table">
+              <div class="steps-table-row head">
+                <div class="stage"><h3>STAGE</h3></div>
+                <div class="works"><h3>WORKS</h3></div>
+                <div class="results"><h3>RESULTS</h3></div>
+              </div>
+              <div class="steps-table-row">
+                <div class="stage">
+                  <span>01</span>
+                  <h4>Briefing</h4>
+                </div>
+                <div class="works"><p>Marketing research, market analysis, and business planning to determine the front of the project</p></div>
+                <div class="results"><p>Defining tasks and deadlines for their implementation</p></div>
+              </div>
+              <div class="steps-table-row">
+                <div class="stage">
+                  <span>02</span>
+                  <h4>Reaseach and Marketing Strategy</h4>
+                </div>
+                <div class="works"><p>Preparation of preliminary design models for further development of the corporate portal project</p></div>
+                <div class="results"><p>Ready-made product concept that can be taken into development</p></div>
+              </div>
 
-				<!-- advantages_section - start
-				================================================== -->
-				<section class="advantages_section section_space ">
-					<div class="container">
-						<div class="row">
-							<div class="col-12  col-lg-3">
-								<div class="section_title style_2">
-									<h2 class="small_title">
-										<?php the_field('s05_small_header'); ?>
-										<span class="line"></span>
-									</h2>
-								</div>
-							</div>
-							<div class="col-12 col-lg-7">
-								<div class="about_content mt-0">
-									<div class="section_title ">
-										<h3 class="big_title text_effect_wrap">
-											<span class="text_effect_wrap1">
-												<span class="text_effect_wrap2">
-													<span class="text_effect_wrap3 text-break"><?php the_field('s05-large_header_1_row'); ?></span>
-												</span>
-											</span>
-											<span class="text_effect_wrap1">
-												<span class="text_effect_wrap2">
-													<span class="text_effect_wrap3 text-break"><?php the_field('s05-large_header_2_row'); ?></span>
-												</span>
-											</span>
-										</h3>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-12 offset-lg-3 col-lg-7 ">
-								<div class="advantages">
-									<?php if( have_rows('s05_advantages_list') ): ?>
-									    <?php $counter=1; while( have_rows('s05_advantages_list') ): the_row(); 
-									    $image = get_sub_field('advantage_icon');
-									    ?>
-												<div class="advantages_step">
-													<div class="advantage_number" style="color:#afed10;">
-														0<?php echo $counter; ?>.
-													</div>
-													<div class="advantage_content">
-															<img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" class="adv_icon">
-															<h3 class="adv_header"><?php the_sub_field('advantage_heading'); ?></h3>
-															<p><?php the_sub_field('advantage_text'); ?></p>
-													</div>
-												</div>
+              <div class="steps-table-row">
+                <div class="stage">
+                  <span>03</span>
+                  <h4>Design</h4>
+                </div>
+                <div class="works"><p>Creation of visual and interface solutions for the project of the corporate site, as well as their coordination with the client</p></div>
+                <div class="results"><p>Ready UI/UX for the project</p></div>
+              </div>
+            </div> <!-- steps-table -->
+          </div>
+        </div>
+      </section>
+      <section class="sec services-faq">
+        <h2 class="white section-header small">
+          Frequently asked <br> questions
+        </h2>
+        <div class="services-faq-text-editor">
+          <?php the_content(); ?>
+        </div>
+        <div class="services-faq-cta">
+          <h3>any questions left? 
+          <br> get a free consultation now!</h3>
+          <p>
+            Don't wait any longer to take your next steps - schedule your free consultation today and receive personalized advice and a quote tailored to your specific project in under 24 hours!
+          </p>
+          <a href="" class="button white full">Get  It Now!</a>
+        </div>
+      </section>
+		</main>
 
-									    <?php $counter++; endwhile; ?>
-									<?php endif; ?>
-						
-								</div>
-							</div>
-						</div>
-					</div>
-				</section>
-				<!-- advantages_section - end
-				================================================== -->
+<?php get_footer(); ?>
 
-				<!-- cta_section with button - start
-				================================================== -->
-				<section class="cta_section section_space">
-					<div class="container">
-						<div class="row">
-
-							<div class="col-lg-3">
-								<div class="section_title style_2">
-									<h2 class="small_title">
-										contact us
-										<span class="line"></span>
-									</h2>
-								</div>
-							</div>
-              <div class="col-lg-7">
-								<div class="about_content mt-0">
-									<div class="section_title style_2">
-										<h3 class="big_title text_effect_wrap mb-0">
-											<span class="text_effect_wrap1">
-												<span class="text_effect_wrap2">
-													<span class="text_effect_wrap3 text-break">Don't wait!</span>
-												</span>
-											</span>
-											<span class="text_effect_wrap1">
-												<span class="text_effect_wrap2">
-													<span class="text_effect_wrap3 text-break">Let's start today!</span>
-												</span>
-											</span>
-											<a class="btn btn_border border_dark text-uppercase" href="<?php the_field('s25_agency_start_project_link', 'option'); ?>">Start a project now!</a>
-										</h3>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</section>
-				<!-- cta_section - end
-				================================================== -->
-
-				
-
-				<!-- portfolio_section - start
-				================================================== -->
-				<section class="team_section section_space">
-					<div class="container">
-						<div class="row">
-
-							<div class="col-12 col-lg-3">
-								<div class="section_title style_2">
-									<h2 class="small_title">
-										Portfolio
-										<span class="line"></span>
-									</h2>
-								</div>
-							</div>
-							
-							<div class="col-12 col-sm-6 col-lg-6">
-								<div class="about_content mt-0">
-									<div class="section_title style_2">
-										<h3 class="big_title text_effect_wrap">
-											<span class="text_effect_wrap1">
-												<span class="text_effect_wrap2">
-													<span class="text_effect_wrap3 text-break">Check our</span>
-												</span>
-											</span>
-											<span class="text_effect_wrap1">
-												<span class="text_effect_wrap2">
-													<span class="text_effect_wrap3 text-break">latest projects</span>
-												</span>
-											</span>
-										</h3>
-									</div>
-								</div>
-							</div>
-
-							<div class="col-12 col-sm-6  col-lg-3 d-flex  justify-content-start justify-content-lg-end align-items-end">
-								<a class="btn_text more_btn" href="<?php echo get_post_type_archive_link('portfolio'); ?>"> 
-									<span>See all projects</span> 
-									<svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path d="M10 0V7.50063H9.16833V1.42131L0.587991 10L0 9.41015L8.57868 0.833125H2.49418V0H10Z" fill="white"></path>
-									</svg>
-								</a>
-							</div>
-
-							<div class="offset-0 col-12 col-md-12 offset-lg-3 col-lg-9 ">
-								<div class="team_carousel_wrap">
-									<div class="team_carousel row" data-slick='{"dots": false, "arrows": false}'>
-
-										<?php
-											$featured_posts = get_field('s17_featured_projects_slider');
-											if( $featured_posts ): ?>
-											    <?php foreach( $featured_posts as $post ): 
-											        // Setup this post for WP functions (variable must be named $post).
-											        setup_postdata($post); ?>
-											        <div class="slider_item col">
-																<div class="team_grid_layout">
-																	<div class="team_person_image">
-																		<a href="<?php the_permalink(); ?>">
-																			<?php 
-																			$image = get_field('s06_project_square_image');
-																			if( !empty( $image ) ): ?>
-																			    <img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
-																			<?php endif; ?>
-																		</a>
-																	</div>
-																	<div class="team_content">
-																		<h3 class="team_person_name"><?php the_field('s07-project_brand_name'); ?></h3>
-																		<span class="team_person_title text-uppercase"><?php the_field('s07_project_deliverable'); ?></span>
-																	</div>
-																</div>
-															</div>
-											    <?php endforeach; ?>
-											<?php 
-											// Reset the global post object so that the rest of the page works correctly.
-											wp_reset_postdata(); ?>
-										<?php endif; ?>
-																				
-									</div>
-								</div>
-							</div>
-							
-						</div>
-					</div>
-				</section>
-				<!-- portfolio_section - end
-				================================================== -->						
-
-				
-
-				<!-- process_section - start
-				================================================== -->
-
-				<section class="process_section section_space">
-					<div class="container">
-						<div class="row">
-							<div class="col-12">
-								<div class="section_title style_2">
-									<h2 class="small_title">
-										<?php the_field('s03_small_header'); ?>
-										<span class="line"></span>
-									</h2>
-									<h3 class="big_title text_effect_wrap">
-										<span class="text_effect_wrap1">
-											<span class="text_effect_wrap2">
-												<span class="text_effect_wrap3 text-break"><?php the_field('s03_large_header'); ?></span>
-											</span>
-										</span>
-										<span class="text_effect_wrap1">
-											<span class="text_effect_wrap2">
-												<span class="text_effect_wrap3 text-break"><?php the_field('s03_large_header_2'); ?></span>
-											</span>
-										</span>
-									</h3>
-								</div>
-							</div>
-						</div>
-						<div class="row">
-							<div class="process">
-								<div class="process_row process_head">
-									<div class="process_stage">
-										<span>STAGE</span>
-										<div class="line"></div>
-									</div>
-									<div class="process_works">
-										<span>WORKS</span>
-										<div class="line"></div>
-									</div>
-									<div class="process_results">
-										<span>RESULTS</span>
-										<div class="line"></div>
-									</div>
-								</div>
-
-								<?php if( have_rows('s03_process_table') ): ?>
-								    <?php $counter=1; while( have_rows('s03_process_table') ): the_row(); 
-								    ?>
-								    	<div class="process_row">
-												<div class="process_stage">
-													<p><sup>0<?php echo $counter; ?></sup><?php the_sub_field('stage_name'); ?></p>
-												</div>
-												<div class="process_works">
-													<p><?php the_sub_field('works text'); ?></p>
-												</div>
-												<div class="process_results">
-													<p><?php the_sub_field('results_text'); ?></p>
-												</div>
-											</div>    
-								    <?php $counter++; endwhile; ?>
-								<?php endif; ?>
-							</div>
-						</div>
-					</div>
-				</section>
-
-				<!-- process_section - end
-				================================================== -->
-
-				<!-- cta_section - start
-				================================================== -->
-				<section class="cta_section section_space">
-					<div class="container">
-						<div class="row">
-
-							<div class="col-lg-3">
-								<div class="section_title style_2">
-									<h2 class="small_title">
-										contact us
-										<span class="line"></span>
-									</h2>
-								</div>
-							</div>
-              <div class="col-lg-7">
-								<div class="about_content mt-0">
-									<div class="section_title style_2">
-										<h3 class="big_title text_effect_wrap mb-0">
-											<span class="text_effect_wrap1">
-												<span class="text_effect_wrap2">
-													<span class="text_effect_wrap3 text-break">Any enquiries? </span>
-												</span>
-											</span>
-											<a class="btn btn_border border_dark text-uppercase" href="<?php the_field('s25_agency_contact_page_link', 'option'); ?>">Contact us now!</a>
-										</h3>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</section>
-				<!-- cta_section - end
-				================================================== -->
-
-				<!-- FAQ_section - start
-				================================================== -->
-				<section class="faq section_space faq_accordion">
-					<div class="container">
-						<div class="row">
-
-							<div class="col-lg-3">
-								<div class="section_title style_2">
-									<h2 class="small_title">
-										FAQ
-										<span class="line"></span>
-									</h2>
-								</div>
-							</div>
-
-							<div class="col-12 col-md-12 col-lg-9">
-								<div class="section_title style_2">
-									<h3 class="big_title text_effect_wrap">
-										<span class="text_effect_wrap1">
-											<span class="text_effect_wrap2">
-												<span class="text_effect_wrap3 text-break">Frequently asked</span>
-											</span>
-										</span>
-										<span class="text_effect_wrap1">
-											<span class="text_effect_wrap2">
-												<span class="text_effect_wrap3 text-break">questions</span>
-											</span>
-										</span>
-									</h3>
-									
-								</div>
-								<div class="accordion accordion-flush services-accordion" id="accordionFlushExample">
-								  
-										<?php if( have_rows('s00_faq_accordion') ): ?>
-									    
-									    <?php $counter=1; while( have_rows('s00_faq_accordion') ): the_row(); 
-										    ?>
-
-													<div class="accordion-item"> 
-								  				  <h2 class="accordion-header" id="flush-heading<?php echo $counter; ?>">
-								  				    <button class="accordion-button  collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse<?php echo $counter; ?>" aria-expanded="false" aria-controls="flush-collapse<?php echo $counter; ?>">
-								  				      <div class="blog_simple_layout">
-																	<h3 class="item_title text_effect_wrap">
-																			<span class="text_effect_wrap1">
-																				<span class="text_effect_wrap2">
-																					<span class="text_effect_wrap3"><?php the_sub_field('faq_question'); ?></span>
-																				</span>
-																			</span>
-																		</h3>
-
-																</div>
-								  				    </button>
-								  				  </h2>
-								  				  <div id="flush-collapse<?php echo $counter; ?>" class="accordion-collapse collapse" aria-labelledby="flush-heading<?php echo $counter; ?>" data-bs-parent="#accordionFlushExample">
-								  				    <div class="accordion-body">
-																<div class="blog_simple_layout">
-																	<p>
-																		<?php the_sub_field('faq_answer'); ?>
-																	</p>
-																</div>
-															</div>
-								  				  </div>
-								  				</div> <!-- accordion-item -->
-
-										    <?php $counter++; endwhile; ?>
-											
-										<?php endif; ?>
-
-								</div>
-          		</div>
-						</div>
-					</div>
-				</section>
-				<!-- FAQ_section - end
-				================================================== -->
-				
-				<section class="extra_section">
-					<div	div class="container">
-						<h2 class="biggest_title text-center">A modern digital agency</h2>
-					</div>
-				</section>
-			</main>
-			<!-- main body - end
-			================================================== -->
-
-       <?php get_footer(); ?>
+<img src="" alt="">

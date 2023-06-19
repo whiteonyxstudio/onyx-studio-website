@@ -12,7 +12,7 @@
 ?>
 			
 			<footer class="sec footer transparent">
-			<img src="../assets/images/studio-logo.svg" alt="" class="logo">
+			<img src="<?php echo get_template_directory_uri() ?>/assets/images/studio-logo.svg" alt="" class="logo">
 			<div class="col">
 				<h3>Sitemap</h3>
 				<ul>

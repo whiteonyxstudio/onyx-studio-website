@@ -1,163 +1,141 @@
 
 <?php get_header(); ?>
-<?php
-$page_for_posts = get_option( 'page_for_posts' );
-?>
 
-			<!-- main body - start
-			================================================== -->
-			<main>
-				<!-- breadcrumb_section - start
-				================================================== -->
-				<section class="breadcrumb_section breadcrumbs_blog  section_space pb-0">
-					<div class="container ">
-						<h1 class="page_title">
-							<span class="d-block">Blog</span>
-						</h1>
-						<p class="mb-0 d-none d-md-inline">
-							Regular dose of usefull content from our studio experts
-						</p>
-						<div class="category-navigation d-block d-lg-none pt-0">
-							<div class="container mx-0 px-0">
-								<div class="row">
-									<div class="filter_nav_wrap">
+<main>
+		<section class="sec blog-archive-head">
+      <h1 class="page-header">
+        BLOG
+      </h1>
+      <p>Welcome to our blog! Here you'll find expert insights and opinions  of seasoned web professionals that share their experiences, knowledge and latest trends in the industry. Stay tuned for informative and engaging articles, case studies, and more!</p>
+    </section>
+		
+    <section class="sec transparent blog-archive-main">
+      <div class="section-header">Featured Posts</div>
+      <div class="blog-archvie-grid">
+				<?php
+				$featured_posts = get_field('s08_featured_posts','options');
+				if( $featured_posts ): ?>
 
-										<ul class="filter-btns-group button-group ul_li">
-											<li><a href="" class="button">All<sup>10</sup></a></li>
-											<?php $categories = get_categories(); 
-												foreach($categories as $category) {
-
-												echo '<li><a href="' . get_category_link($category->term_id) . '" class="button" >' . $category->name . '<sup>'. $category->count .'</sup></a></li>';
-											}
-											?>
-										</ul>
-
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</section>
-				<!-- breadcrumb_section - end
-				================================================== -->
-
-				<!-- blog_section - start
-				================================================== -->
-				<section class="blog_archive_section section_space ">
-					<div class="container">
-						<div class="row justify-content-lg-between justify-content-md-center justify-content-sm-center">
-							<div class="col-12 col-sm-12 col-md-12 col-lg-8 ">
-
-							<?php 
-                if ( have_posts() ) {
-                  $counter=1;
-                	while ( have_posts() ) {
-                		the_post(); 
-                		?>
-                      <article class="blog_standard_layout">
-												<a class="item_image" href="<?php the_permalink(); ?>">
-													<?php the_post_thumbnail('full'); ?>
-												</a>
-												<div class="item_content">
-													<ul class="post_meta ul_li text-uppercase">
-														<li>By - <a href="#!">Admin</a></li>
-														<li><a href="#!">Branding</a></li>
-													</ul>
-													<h3 class="item_title text_effect_wrap">
-														<a href="<?php the_permalink(); ?>">
-															<span class="text_effect_wrap1">
-																<span class="text_effect_wrap2">
-																	<span class="text_effect_wrap3"><?php the_title(); ?></span>
-																</span>
-															</span>
-														</a>
-													</h3>
-													<p>
-														<?php echo get_the_excerpt(); ?>
-													</p>
-													<a class="btn_text text-uppercase" href="<?php the_permalink(); ?>"><span>Read More</span> <i class="fal fa-long-arrow-right"></i></a>
-												</div>
-											</article>
-                    <?php
-                    $counter++;
-                	} // end while
-                } // end if
-              ?>
-
-								
-
-                <?php
-                    the_posts_pagination( array(
-                    'mid_size' => 2,
-                    'prev_text' => __( 'Prev', 'textdomain' ),
-                    'next_text' => __( 'next', 'textdomain' ),
-                    ) );
-                ?>
-                
-							</div>
-
-							<div class="col-12 col-sm-12 col-md-12 col-lg-4  ">
-								<aside class="sidebar_section">
-
-									<div class="sb_widget sb_category">
-										<h3 class="sb_widget_title text-uppercase">Categories</h3>
-										<ul class="ul_li_block">
-											<?php $categories = get_categories(); 
-												foreach($categories as $category) {
-													if( $category->count>0){
-															echo '<li><a href="' . get_category_link($category->term_id) . '" class="button" >' . $category->name . '<sup>'. $category->count .'</sup></a></li>';
+						<?php foreach( $featured_posts as $post ): 
+						setup_postdata($post); ?>
+						
+							<article class="blog-archvie-grid-item">
+        			  <?php $thumbnail_id = get_post_thumbnail_id( $post->ID );
+                	$alt = get_post_meta($thumbnail_id, '_wp_attachment_image_alt', true);    
+								?>
+        				<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail( 'full', array( 'alt' => $alt ) );  ?></a>
+        			  <div class="blog-post-meta">
+        			    <?php 
+													$categories = get_the_category();
+													if ( ! empty( $categories ) ) {
+													  
+													  foreach ( $categories as $category ) {
+													      echo '<a class="pill" href="' . esc_url( get_category_link( $category->term_id ) ) . '">' . esc_html( $category->name ) . '</a>';
+													  }
+													  
 													}
-												}
-											?>
-										</ul>
-									</div>
+												?>
+									<?php
+                    // Time to read function 
+                    $content = get_post_field( 'post_content',$featured_post->ID);
+                    $word_count = str_word_count( strip_tags( $content ) );
+                    $readingtime = ceil($word_count / 200);
+                  ?>
+        			    <span class="time"><?php echo $readingtime; ?> Mins to read</span>
+        			    <a href="<?php the_permalink(); ?>">
+										<h3><?php the_title(); ?></h3>
+									</a>
+        			  </div>
 
-									<div class="sb_widget sb_recent_post">
-										<h3 class="sb_widget_title text-uppercase">Featured Posts</h3>
-										<?php
-										$featured_posts = get_field('s24_popular_posts',$page_for_posts);
-										if( $featured_posts ): ?>
-										    <?php foreach( $featured_posts as $featured_post ): 
-										        $permalink = get_permalink( $featured_post->ID );
-										        $title = get_the_title( $featured_post->ID );
-										        ?>
-															<div class="recent_post_item">
-																<h3 class="item_title">
-																	<a href="<?php echo $permalink; ?>"><?php echo $title; ?></a>
-																</h3>
-																<span class="post_date text-uppercase"><?php echo get_the_date( ); ?></span>
-															</div>
-										    <?php endforeach; ?>
-										<?php endif; ?>
-									</div>
+        			</article>
 
-									<div class="sb_widget sb_banner black-bg">
-										<h3 class="sb_widget_title text-uppercase mb-0">Want to get useful content?</h3>
-										<p >Subscribe to our blog!</p>
-										<form action="#">
-											<div class="form_item">
-												<input type="email" name="email" placeholder="Your Email*">
-											</div>
-											<buton type="submit" class="btn btn_border border_dark text-uppercase" href="#">   Subscribe   </buton>
-										</form>
-									</div>
-									
-								</aside>
-							</div>
-						</div>
-					</div>
-				</section>
-				<!-- blog_section - end
-				================================================== -->
+						<?php endforeach; ?>
 
-			</main>
-			<!-- main body - end
-			================================================== -->
+						<?php 
+						// Reset the global post object so that the rest of the page works correctly.
+						wp_reset_postdata(); ?>
+				<?php endif; ?>
+       
+      </div>
+      <hr>
 
-			<section class="title_section ">
-				<div class="container">
-					<h2 class="biggest_title text-center">A modern digital agency</h2>
-				</div>
-			</section>
+      <div class="section-header">Latest POSTS</div>
+      <div class="pills-wrapper blog-pills">
+        <span class="pill active">All Posts</span>
+        <span class="pill ">Web Design</span>
+        <span class="pill ">Web Development</span>
+        <span class="pill ">SEO</span>
+        <span class="pill ">Branding</span>
+      </div>
+      <div class="blog-archvie-grid">
+				<?php 
+          if ( have_posts() ) {
+            $counter=1;
+          	while ( have_posts() ) {
+          		the_post();
+              $thumbnail_id = get_post_thumbnail_id( $post->ID );
+              $alt = get_post_meta($thumbnail_id, '_wp_attachment_image_alt', true);   
+              
+          		?>
+              
+                <article class="blog-archvie-grid-item">
+									<?php $thumbnail_id = get_post_thumbnail_id( $post->ID );
+                		$alt = get_post_meta($thumbnail_id, '_wp_attachment_image_alt', true);    
+									?>
+        				   <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail( 'full', array( 'alt' => $alt ) );  ?></a>
+        				  <div class="blog-post-meta">
+        				    <span class="pill">Web Design</span>
+        				    <span class="pill">Web Development</span>
+        				    <span class="time">5 Mins to read</span>
+        				    <a href="<?php the_permalink(); ?>">
+											<h3><?php the_title(); ?></h3>
+										</a>
+        				  </div>
+        				</article>
+              <?php
+              $counter++;
+          	} // end while
+          } // end if
+        ?>
+      </div>
+			<?php 
+			
+					global $wp_query;
+					$has_pagination = ( $wp_query->max_num_pages > 1 );
+					if ( $has_pagination ) {
+							?>
+							
+								<div class="pagination">
+      					  <a href="<?php echo get_next_posts_page_link(); ?>" class="show-more">Show More</a>
+									<?php
+      						  $args = array(
+      						  	'show_all'     => false, // показаны все страницы участвующие в пагинации
+      						  	'end_size'     => 1,     // количество страниц на концах
+      						  	'mid_size'     => 1,     // количество страниц вокруг текущей
+      						  	'prev_next'    => true,  // выводить ли боковые ссылки "предыдущая/следующая страница".
+      						  	'prev_text'    => __('<svg width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7.58984 1L1.00161 8L7.58984 15" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>'),
+      						  	'next_text'    => __('<svg width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1L7.58824 8L1 15" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>'),
+      						  	'add_args'     => false, // Массив аргументов (переменных запроса), которые нужно добавить к ссылкам.
+      						  	'add_fragment' => '',     // Текст который добавиться ко всем ссылкам.
+      						  	'class'        => 'pagination-wrapper', // CSS класс, добавлено в 5.5.0.
+      						  );
+      						  the_posts_pagination( $args );
+      						?>
 
-		<?php get_footer(); ?>
+      					</div>
+							
+							<?php
+					} else {
+							// No pagination, do something else
+					}
+
+			?>
+      
+    </section>
+    <section class="sec promo">
+			<div class="bg"></div>
+			<h2>A MODERN DIGITAL AGENCY</h2>
+		</section>
+	</main>
+
+<?php get_footer(); ?>

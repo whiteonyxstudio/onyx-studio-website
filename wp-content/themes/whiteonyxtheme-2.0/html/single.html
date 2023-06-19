@@ -59,6 +59,7 @@
 		<main>
 
     <section class="sec blog-single transparent">
+			<a href="blog.html" class="backwards-link"> &#60  Blog</a>
       <div class="blog-single-content">
         <h1 class="post-header">Website Launch Checklist: A Comprehensive Guide to Launching Your Website</h1>
         
@@ -79,7 +80,7 @@
             <h2>1. Domain Name and Hosting</h2>
             <p>Register your domain name: Your domain name is the address of your website, and it’s important to choose a domain name that is easy to remember and relevant to your business.</p>
             <p>Choose a hosting provider: A hosting provider is a company that stores your website on their servers, making it accessible to the public. Choose a provider that offers reliable uptime, good customer service, and the ability to scale as your website grows.</p>
-            <h2>2. Ensure your website SSL certificate is working</h2>
+            <h3>2. Ensure your website SSL certificate is working</h3>
             <p>SSL (Secure Sockets Layer) encrypts the connection between a visitor’s browser and your website, ensuring that any sensitive information, such as passwords or credit card numbers, is kept secure. Make sure to install a valid SSL certificate on your website before launch and ensure it is properly set up to avoid any security breaches and ensure that your website is accessible via https.</p>
             <p>Design your website: Your website should be visually appealing, easy to navigate, and optimized for mobile devices. Consider hiring a professional designer or using a website builder to create a professional-looking website.</p>
             <ul>
@@ -108,56 +109,57 @@
 			</div>
     </section>
 
-		<section class="sec blog-home ">
+		<section class="sec blog-home related-blog-posts">
 				<div class="blog-home-wrapper">
 					<h2 class="section-header">
 						RELATED ARTICLES
 					</h2>
-						
 				</div>
 
-				<div class="blog-home-grid">
-					<div class="blog-home-grid-item">
-						<img src="../assets/images/blog-thumbnail.png" alt="" class="blog-thumbnail">
-						<div class="post-meta">
-							<a href="" class="pill">Web Design</a>
-							<a href="" class="pill">Web Development</a>
-							<span>5 Mins to read</span>
-							<h3>Why Landing Page Design is Important for Your Business</h3>
-						</div>
-					</div>
-					<div class="blog-home-grid-item">
-						<img src="../assets/images/blog-thumbnail.png" alt="" class="blog-thumbnail">
-						<div class="post-meta">
-							<a href="" class="pill">Web Design</a>
-							<a href="" class="pill">Web Development</a>
-							<span>5 Mins to read</span>
-							<h3>Why Landing Page Design is Important for Your Business</h3>
-						</div>
-					</div>
-					<div class="blog-home-grid-item">
-						<img src="../assets/images/blog-thumbnail.png" alt="" class="blog-thumbnail">
-						<div class="post-meta">
-							<a href="" class="pill">Web Design</a>
-							<a href="" class="pill">Web Development</a>
-							<span>5 Mins to read</span>
-							<h3>Why Landing Page Design is Important for Your Business</h3>
-						</div>
-					</div>
-
-				</div>
+				<div class="blog-archvie-grid">
+          <article class="blog-archvie-grid-item">
+            <img src="../assets/images/blog-post-thumbnail.jpeg" alt="">
+            <div class="blog-post-meta">
+              <span class="pill">Web Design</span>
+              <span class="pill">Web Development</span>
+              <span class="time">5 Mins to read</span>
+              <h3>Why Landing Page Design is Important for Your Business</h3>
+            </div>
+            
+          </article>
+          <article class="blog-archvie-grid-item">
+            <img src="../assets/images/blog-post-thumbnail.jpeg" alt="">
+            <div class="blog-post-meta">
+              <span class="pill">Web Design</span>
+              <span class="pill">Web Development</span>
+              <span class="time">5 Mins to read</span>
+              <h3>Why Landing Page Design is Important for Your Business</h3>
+            </div>
+          </article>
+          <article class="blog-archvie-grid-item">
+            <img src="../assets/images/blog-post-thumbnail.jpeg" alt="">
+            <div class="blog-post-meta">
+              <span class="pill">Web Design</span>
+              <span class="pill">Web Development</span>
+              <span class="time">5 Mins to read</span>
+              <h3>Why Landing Page Design is Important for Your Business</h3>
+            </div>
+          </article>
+        </div>
 			</section>
 
 			<section class="sec promo">
 				<div class="bg"></div>
-				<h2>A MODERN DIGITAL AGENCY</h2>
+				<div class="rotation-wrapper">
+					<h2>A MODERN DIGITAL AGENCY</h2>
+				</div>
 			</section>
 
 		</main>
 
 		<footer class="sec footer transparent">
 			<img src="../assets/images/studio-logo.svg" alt="" class="logo">
-			<div class="col">
+			<div class="col col-first">
 				<h3>Sitemap</h3>
 				<ul>
 					<li><a href="">Home</a></li>
@@ -167,7 +169,7 @@
 					<li><a href="">Portfolio</a></li>
 				</ul>
 			</div>
-			<div class="col">
+			<div class="col col-second">
 				<h3>Services</h3>
 				<ul>
 					<li><a href="">Web Development</a></li>
@@ -176,16 +178,17 @@
 					<li><a href="">Branding</a></li>
 				</ul>
 			</div>
-			<div class="col">
+			<div class="col col-third">
 				<h3>Social Links</h3>
 				<ul>
-					<li><a href="">Behance</a></li>
-					<li><a href="">Facebook</a></li>
-					<li><a href="">Instagram</a></li>
-					<li><a href="">Telegram</a></li>
+					<li><a class="behance" href="">Behance</a></li>
+					<li><a class="linkedin" href="">Facebook</a></li>
+					<li><a class="telegram" href="">Dribble</a></li>
+					<li><a class="instagram" href="">Instagram</a></li>
+					<li><a class="dribble" href="">Telegram</a></li>
 				</ul>
 			</div>
-			<div class="col">
+			<div class="col col-fourth">
 				<h3>Contacts</h3>
 				<ul>
 					<li><a href="">+39 348 9195991</a></li>
@@ -197,10 +200,10 @@
 			<div class="line"></div>
 
 			<div class="footer-extra">
-					<span>Lviv - 3:54 PM</span>
+					<span id="lviv-time">Lviv - 3:54 PM</span>
 					<span id="london-time">London - 1:54 PM</span>
-					<span id="london-time"></span>
-					<span class="copyright">© 2023 White Onyx</span>
+
+					<span class="copyright">© 2021-2023 White Onyx Studio</span>
 				</div>
 			
 		</footer>
